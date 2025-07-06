@@ -1,7 +1,6 @@
 ﻿Imports System.Runtime.InteropServices.JavaScript.JSType
 Imports System.Xml
 Imports System.Xml.XPath
-
 Public Class frmMain
     Public G, M As Graphics
     Public MyPen As New Pen(Color.Black, 1)
@@ -14,6 +13,7 @@ Public Class frmMain
     Public DaysfromStart As Integer
     Public droidData(30, 16) As Single '(Droid number,Parameter)
     Public Mapping As Boolean
+    Public dr As DroidStruct
     '
     'Each Program is stored as a string in the format:
     '
@@ -28,7 +28,7 @@ Public Class frmMain
     Public status(NoOfDroids) As String
     Public Prg(NoOfDroids, 2, 30) As Single
     Public FailureFrequency As Integer
-    '                     |
+    '                     
     '  Droid! constants
     '
     '
@@ -69,7 +69,7 @@ Public Class frmMain
     Public Const I_PGM = 3    ' Executing Pgm
     Public Const I_OGpgm = 4  ' Original Program
     Public Const I_Tow = 5    ' Tow Droid Name
-
+    Public droidlist As New List(Of DroidStruct)
     Public Function DegtoRad(Degg As Integer) As Single
         DegtoRad = Degg * (Math.PI / 180)
     End Function
@@ -117,15 +117,24 @@ Public Class frmMain
 
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+
+        Dim droids As New DroidStruct
+
+        For ix = 0 To NoOfDroids
+            droids.Name = "Droid " + ix.ToString
+            droids.Enabled = False
+            droidlist.Add(droids)
+        Next
         G = pnlMain.CreateGraphics()
         M = pnlMap.CreateGraphics()
-
+        'droids = droidlist.Find(Name)
         Dim pnt As PointF
         xPos = 500 : yPos = 255 - 55 : angl = 0 : Speed = 0
         xPos = 535 : yPos = 238 + 55
         xPos = 570
         xPos = 605
         xPos = 640
+
 
         txtXPOS.Text = xPos : txtYPOS.Text = yPos : txtANGL.Text = angl : txtSpeed.Text = Speed
         pnt.X = xPos
@@ -162,8 +171,65 @@ Public Class frmMain
         btnStartStopDroid.Text = "Stop Droid"
         tmrMovebot.Enabled = True
         tmrFlashLights.Enabled = True
+        DaysfromStart = droidlist.Count
     End Sub
+    Private Sub InitializeDroids()
+        Dim objst As System.Object
+        Dim XX, YY, DD, VV, GRG As Single
 
+        For drds = 1 To NoOfDroids
+            XX = 0 : YY = 0 : DD = 0 : VV = 0 : GRG = 0
+            objst = Findcntl("picDoc", drds, pnlMain, cntlfnd)
+            If cntlfnd Then
+                Call GetDocDta(objst, XX, YY)
+                dr = droidlist(drds)
+
+                Droid(drds, D_X) = XX
+                dr.X = XX                       'X Coord
+                Droid(drds, D_Y) = YY
+                dr.Y = YY                       'Y Coord
+                Droid(drds, D_Dir) = 0
+                dr.Dir = 0
+                Droid(drds, D_Vel) = 4          'Travel Velocity
+                dr.Vel = 4                      'Travel Velocity
+                Droid(drds, D_TurrDir) = 0      'Turret Direction
+                Droid(drds, D_Batt) = 100       'Battery Power
+                dr.Batt = 100                   'Battery Power
+                Droid(drds, D_ETemp) = 70       'Ext skin temp
+                dr.ETemp = 70                   'Ext skin temp
+                Droid(drds, D_ITemp) = 70       'internal temp
+                dr.ITemp = 70                   'internal temp
+                Droid(drds, D_EnvSet) = 0       'Environ setting
+                Droid(drds, D_Speed) = 4        'Speed setting (0-7)
+                Droid(drds, D_AutoNav) = 0      'Auto Navigate Switch
+                Droid(drds, D_Color) = 1        'Droid Color
+                Droid(drds, D_BaseX) = XX       'Base X Position
+                Droid(drds, D_BaseY) = YY       'Base X Position
+                Droid(drds, D_Prgm) = 0         'Currently executing Program
+                Droid(drds, D_PC) = 0           'Current Program Counter
+                Droid(drds, D_Connect) = 1      'Connected to a station
+                Droid(drds, D_PrdCap) = 0       'Product Capacity
+                Droid(drds, D_Enabled) = False  'Droid enable/disable switch
+                Droid(drds, D_Tow) = 0          'Droid is towing another Droid (droid in tow)
+                Droid(drds, D_DestX) = XX       'Destination X coord
+                Droid(drds, D_DestY) = YY       'Destination Y coord
+                If drds < 11 Then
+                    GRG = 1
+                ElseIf drds < 21 Then
+                    GRG = 2
+                Else
+                    GRG = 3
+                End If
+                Info(drds, I_Garage) = GRG
+                Info(drds, I_Dest) = "HOME"
+                Info(drds, I_PGM) = "HOME"
+                Info(drds, I_OGpgm) = "HOME"
+                Info(drds, I_Tow) = "NONE"
+            End If
+        Next
+        DaysfromStart = droidlist.Count
+        GRG = 4
+    End Sub
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         G.Clear(bgColor)
     End Sub
@@ -171,7 +237,7 @@ Public Class frmMain
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles tmrMovebot.Tick
 
         Call MoveAllDroids()
-        Call DisplayDroid
+        Call DisplayDroid()
         Call DrawMap()
 
     End Sub
@@ -356,53 +422,6 @@ Public Class frmMain
             tmrMovebot.Enabled = True
         End If
     End Sub
-    Private Sub InitializeDroids()
-        Dim objst As System.Object
-        Dim XX, YY, DD, VV, GRG As Single
-        For drds = 1 To NoOfDroids
-
-
-            XX = 0 : YY = 0 : DD = 0 : VV = 0 : GRG = 0
-            objst = Findcntl("picDoc", drds, pnlMain, cntlfnd)
-            If cntlfnd Then
-                Call GetDocDta(objst, XX, YY)
-                Droid(drds, D_X) = XX
-                Droid(drds, D_Y) = YY
-                Droid(drds, D_Dir) = 0
-                Droid(drds, D_Vel) = 4          'Travel Velocity
-                Droid(drds, D_TurrDir) = 0      'Turret Direction
-                Droid(drds, D_Batt) = 100       'Battery Power
-                Droid(drds, D_ETemp) = 70       'Ext skin temp
-                Droid(drds, D_ITemp) = 70       'internal temp
-                Droid(drds, D_EnvSet) = 0       'Environ setting
-                Droid(drds, D_Speed) = 4        'Speed setting (0-7)
-                Droid(drds, D_AutoNav) = 0      'Auto Navigate Switch
-                Droid(drds, D_Color) = 1        'Droid Color
-                Droid(drds, D_BaseX) = XX       'Base X Position
-                Droid(drds, D_BaseY) = YY       'Base X Position
-                Droid(drds, D_Prgm) = 0         'Currently executing Program
-                Droid(drds, D_PC) = 0           'Current Program Counter
-                Droid(drds, D_Connect) = 1      'Connected to a station
-                Droid(drds, D_PrdCap) = 0       'Product Capacity
-                Droid(drds, D_Enabled) = False  'Droid enable/disable switch
-                Droid(drds, D_Tow) = 0          'Droid is towing another Droid (droid in tow)
-                Droid(drds, D_DestX) = XX       'Destination X coord
-                Droid(drds, D_DestY) = YY       'Destination Y coord
-                If drds < 11 Then
-                    GRG = 1
-                ElseIf drds < 21 Then
-                    GRG = 2
-                Else
-                    GRG = 3
-                End If
-                Info(drds, I_Garage) = GRG
-                Info(drds, I_Dest) = "HOME"
-                Info(drds, I_PGM) = "HOME"
-                Info(drds, I_OGpgm) = "HOME"
-                Info(drds, I_Tow) = "NONE"
-            End If
-        Next
-    End Sub
     Private Sub GetDocDta(pic As PictureBox, ByRef X As Single, ByRef Y As Single)
 
         Select Case pic.Tag
@@ -563,7 +582,11 @@ Public Class frmMain
     End Sub
     Private Sub DisplayDroid()
         Dim drd As Integer
+        Dim testst As String
+
         drd = Val(txtDroid.Text)
+        dr = droidlist(14)
+
         txtGarge.Text = Info(drd, I_Garage)
         txtDest.Text = Info(drd, I_Dest)
         txtPGM.Text = Info(drd, I_PGM)
@@ -806,5 +829,38 @@ Public Class frmMain
         Droid(drd, D_DestY) = yPos
 
     End Sub
+
+End Class
+Public Class DroidStruct
+    Public Name As String           ' Droid X
+    Public Enabled As Boolean       ' Droid enable/disable switch
+    Public X As Integer             ' X Coordinate
+    Public Y As Integer             ' Y Coordinate
+
+    Public BaseX As Single          ' Home Base X Position
+    Public BaseY As Single          ' Home Base Y Position
+
+    Public DestX As Integer         ' Droid Destination X-Coord
+    Public DestY As Integer         ' Droid Destination Y-Coord
+
+    Public Speed As Integer         ' Speed setting (0-7)
+    Public Dir As Single            ' Travel Direction
+    Public Vel As Single            ' Travel Velocity
+    Public Batt As Integer          ' Battery Power 0-100
+    Public ETemp As Single          ' Ext skin temp
+    Public ITemp As Single          ' internal temp
+    Public PrdOnBoard As Integer    ' Product Capacity
+
+    Public Connected As Boolean     ' Connected to a station
+    Public ConnectionName As String ' Conected Device
+
+    Public RemainingPGM As String   ' remaining Pgm string
+    Public OGpgm As String          ' Original Program
+    Public Exec As String           ' Current Program executing
+
+    Public Tow As String            ' Droid is towing another Droid (droid in tow)
+
+    Public Garage As String         ' Droid Garage Assignment
+    Public Dest As String           ' Droid Destination Name
 
 End Class
