@@ -1099,7 +1099,7 @@ Partial Class frmMain
         ' Label29
         ' 
         Label29.AutoSize = True
-        Label29.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label29.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
         Label29.Location = New Point(2542, 4138)
         Label29.Name = "Label29"
         Label29.Size = New Size(88, 18)
@@ -1177,7 +1177,7 @@ Partial Class frmMain
         ' 
         ' lbls17
         ' 
-        lbls17.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbls17.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lbls17.Location = New Point(2565, 4218)
         lbls17.Name = "lbls17"
         lbls17.Size = New Size(42, 18)
@@ -1346,7 +1346,7 @@ Partial Class frmMain
         ' lbld7
         ' 
         lbld7.BackColor = Color.White
-        lbld7.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbld7.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lbld7.Location = New Point(2948, 403)
         lbld7.Name = "lbld7"
         lbld7.Size = New Size(42, 18)
@@ -1486,7 +1486,7 @@ Partial Class frmMain
         ' 
         ' lblp1
         ' 
-        lblp1.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblp1.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lblp1.Location = New Point(3082, 2282)
         lblp1.Name = "lblp1"
         lblp1.Size = New Size(42, 18)
@@ -1506,7 +1506,7 @@ Partial Class frmMain
         ' 
         ' Label24
         ' 
-        Label24.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label24.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
         Label24.Location = New Point(3075, 2255)
         Label24.Name = "Label24"
         Label24.Size = New Size(145, 18)
@@ -1606,7 +1606,7 @@ Partial Class frmMain
         ' Label44
         ' 
         Label44.AutoSize = True
-        Label44.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label44.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
         Label44.Location = New Point(3091, 220)
         Label44.Name = "Label44"
         Label44.Size = New Size(88, 18)
@@ -1625,7 +1625,7 @@ Partial Class frmMain
         ' Label38
         ' 
         Label38.AutoSize = True
-        Label38.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label38.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
         Label38.Location = New Point(3321, 2160)
         Label38.Name = "Label38"
         Label38.Size = New Size(88, 18)
@@ -1634,7 +1634,7 @@ Partial Class frmMain
         ' 
         ' lbls18
         ' 
-        lbls18.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbls18.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lbls18.Location = New Point(3114, 300)
         lbls18.Name = "lbls18"
         lbls18.Size = New Size(42, 18)
@@ -1653,7 +1653,7 @@ Partial Class frmMain
         ' 
         ' lbls21
         ' 
-        lbls21.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbls21.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lbls21.Location = New Point(3344, 2240)
         lbls21.Name = "lbls21"
         lbls21.Size = New Size(42, 18)
@@ -1682,7 +1682,7 @@ Partial Class frmMain
         ' Label32
         ' 
         Label32.AutoSize = True
-        Label32.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label32.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
         Label32.Location = New Point(2742, 222)
         Label32.Name = "Label32"
         Label32.Size = New Size(88, 18)
@@ -1691,7 +1691,7 @@ Partial Class frmMain
         ' 
         ' lbls16
         ' 
-        lbls16.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbls16.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lbls16.Location = New Point(2765, 302)
         lbls16.Name = "lbls16"
         lbls16.Size = New Size(42, 18)
@@ -1739,7 +1739,7 @@ Partial Class frmMain
         ' Label40
         ' 
         Label40.AutoSize = True
-        Label40.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label40.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
         Label40.Location = New Point(3110, 1953)
         Label40.Name = "Label40"
         Label40.Size = New Size(88, 18)
@@ -1758,7 +1758,7 @@ Partial Class frmMain
         ' 
         ' lbls20
         ' 
-        lbls20.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbls20.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lbls20.Location = New Point(3133, 2033)
         lbls20.Name = "lbls20"
         lbls20.Size = New Size(42, 18)
@@ -1805,7 +1805,7 @@ Partial Class frmMain
         ' Label42
         ' 
         Label42.AutoSize = True
-        Label42.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label42.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
         Label42.Location = New Point(2890, 2178)
         Label42.Name = "Label42"
         Label42.Size = New Size(88, 18)
@@ -1824,7 +1824,7 @@ Partial Class frmMain
         ' 
         ' lbls19
         ' 
-        lbls19.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbls19.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lbls19.Location = New Point(2913, 2258)
         lbls19.Name = "lbls19"
         lbls19.Size = New Size(42, 18)
@@ -1993,7 +1993,7 @@ Partial Class frmMain
         ' Label34
         ' 
         Label34.AutoSize = True
-        Label34.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label34.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
         Label34.Location = New Point(166, 2064)
         Label34.Name = "Label34"
         Label34.Size = New Size(88, 18)
@@ -2012,7 +2012,7 @@ Partial Class frmMain
         ' 
         ' lbls15
         ' 
-        lbls15.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbls15.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lbls15.Location = New Point(189, 2144)
         lbls15.Name = "lbls15"
         lbls15.Size = New Size(42, 18)
@@ -2061,7 +2061,7 @@ Partial Class frmMain
         ' Label36
         ' 
         Label36.AutoSize = True
-        Label36.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label36.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
         Label36.Location = New Point(22, 2063)
         Label36.Name = "Label36"
         Label36.Size = New Size(88, 18)
@@ -2072,7 +2072,7 @@ Partial Class frmMain
         ' 
         lblg1.BackColor = Color.White
         lblg1.BorderStyle = BorderStyle.FixedSingle
-        lblg1.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblg1.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lblg1.Location = New Point(2904, 2919)
         lblg1.Name = "lblg1"
         lblg1.Size = New Size(42, 18)
@@ -2081,7 +2081,7 @@ Partial Class frmMain
         ' 
         ' lbls14
         ' 
-        lbls14.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbls14.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lbls14.Location = New Point(45, 2143)
         lbls14.Name = "lbls14"
         lbls14.Size = New Size(42, 18)
@@ -2091,7 +2091,7 @@ Partial Class frmMain
         ' lblwt3
         ' 
         lblwt3.BackColor = Color.White
-        lblwt3.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblwt3.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lblwt3.Location = New Point(218, 5233)
         lblwt3.Name = "lblwt3"
         lblwt3.Size = New Size(42, 18)
@@ -2102,7 +2102,7 @@ Partial Class frmMain
         ' 
         lblg3.BackColor = Color.White
         lblg3.BorderStyle = BorderStyle.FixedSingle
-        lblg3.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblg3.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lblg3.Location = New Point(649, 417)
         lblg3.Name = "lblg3"
         lblg3.Size = New Size(42, 18)
@@ -2122,7 +2122,7 @@ Partial Class frmMain
         ' 
         lblg2.BackColor = Color.White
         lblg2.BorderStyle = BorderStyle.FixedSingle
-        lblg2.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblg2.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lblg2.Location = New Point(335, 5091)
         lblg2.Name = "lblg2"
         lblg2.Size = New Size(42, 18)
@@ -2132,7 +2132,7 @@ Partial Class frmMain
         ' Label25
         ' 
         Label25.AutoSize = True
-        Label25.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label25.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
         Label25.Location = New Point(166, 1883)
         Label25.Name = "Label25"
         Label25.Size = New Size(88, 18)
@@ -2142,7 +2142,7 @@ Partial Class frmMain
         ' lblwt1
         ' 
         lblwt1.BackColor = Color.White
-        lblwt1.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblwt1.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lblwt1.Location = New Point(797, 87)
         lblwt1.Name = "lblwt1"
         lblwt1.Size = New Size(42, 18)
@@ -2151,7 +2151,7 @@ Partial Class frmMain
         ' 
         ' lbls13
         ' 
-        lbls13.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbls13.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lbls13.Location = New Point(189, 1963)
         lbls13.Name = "lbls13"
         lbls13.Size = New Size(42, 18)
@@ -2161,7 +2161,7 @@ Partial Class frmMain
         ' lblwt2
         ' 
         lblwt2.BackColor = Color.White
-        lblwt2.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblwt2.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lblwt2.Location = New Point(2471, 3042)
         lblwt2.Name = "lblwt2"
         lblwt2.Size = New Size(42, 18)
@@ -2170,9 +2170,9 @@ Partial Class frmMain
         ' 
         ' lblm2
         ' 
-        lblm2.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
+        lblm2.BackColor = Color.FromArgb(255, 255, 128)
         lblm2.BorderStyle = BorderStyle.FixedSingle
-        lblm2.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblm2.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lblm2.Location = New Point(2737, 3226)
         lblm2.Name = "lblm2"
         lblm2.Size = New Size(42, 18)
@@ -2190,8 +2190,8 @@ Partial Class frmMain
         ' 
         ' lblm1
         ' 
-        lblm1.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        lblm1.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblm1.BackColor = Color.FromArgb(255, 255, 128)
+        lblm1.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lblm1.Location = New Point(593, 57)
         lblm1.Name = "lblm1"
         lblm1.Size = New Size(42, 18)
@@ -2201,7 +2201,7 @@ Partial Class frmMain
         ' Label27
         ' 
         Label27.AutoSize = True
-        Label27.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label27.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
         Label27.Location = New Point(20, 1883)
         Label27.Name = "Label27"
         Label27.Size = New Size(88, 18)
@@ -2211,7 +2211,7 @@ Partial Class frmMain
         ' lbld5
         ' 
         lbld5.BackColor = Color.White
-        lbld5.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbld5.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lbld5.Location = New Point(454, 4942)
         lbld5.Name = "lbld5"
         lbld5.Size = New Size(42, 18)
@@ -2220,7 +2220,7 @@ Partial Class frmMain
         ' 
         ' lbls12
         ' 
-        lbls12.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbls12.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lbls12.Location = New Point(43, 1963)
         lbls12.Name = "lbls12"
         lbls12.Size = New Size(42, 18)
@@ -2230,7 +2230,7 @@ Partial Class frmMain
         ' lbld6
         ' 
         lbld6.BackColor = Color.White
-        lbld6.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbld6.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lbld6.Location = New Point(2717, 4138)
         lbld6.Name = "lbld6"
         lbld6.Size = New Size(42, 18)
@@ -2240,7 +2240,7 @@ Partial Class frmMain
         ' lbld3
         ' 
         lbld3.BackColor = Color.White
-        lbld3.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbld3.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lbld3.Location = New Point(5244, 3357)
         lbld3.Name = "lbld3"
         lbld3.Size = New Size(42, 18)
@@ -2259,7 +2259,7 @@ Partial Class frmMain
         ' lbls8
         ' 
         lbls8.BackColor = Color.White
-        lbls8.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbls8.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lbls8.Location = New Point(2238, 4716)
         lbls8.Name = "lbls8"
         lbls8.Size = New Size(42, 18)
@@ -2269,7 +2269,7 @@ Partial Class frmMain
         ' Label22
         ' 
         Label22.AutoSize = True
-        Label22.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label22.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
         Label22.Location = New Point(167, 1700)
         Label22.Name = "Label22"
         Label22.Size = New Size(88, 18)
@@ -2279,7 +2279,7 @@ Partial Class frmMain
         ' lbld4
         ' 
         lbld4.BackColor = Color.White
-        lbld4.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbld4.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lbld4.Location = New Point(6311, 1234)
         lbld4.Name = "lbld4"
         lbld4.Size = New Size(42, 18)
@@ -2288,7 +2288,7 @@ Partial Class frmMain
         ' 
         ' lbls11
         ' 
-        lbls11.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbls11.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lbls11.Location = New Point(190, 1780)
         lbls11.Name = "lbls11"
         lbls11.Size = New Size(42, 18)
@@ -2298,7 +2298,7 @@ Partial Class frmMain
         ' lbls9
         ' 
         lbls9.BackColor = Color.White
-        lbls9.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbls9.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lbls9.Location = New Point(6090, 1251)
         lbls9.Name = "lbls9"
         lbls9.Size = New Size(42, 18)
@@ -2308,7 +2308,7 @@ Partial Class frmMain
         ' lbls6
         ' 
         lbls6.BackColor = Color.White
-        lbls6.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbls6.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lbls6.Location = New Point(5084, 3383)
         lbls6.Name = "lbls6"
         lbls6.Size = New Size(42, 18)
@@ -2326,7 +2326,7 @@ Partial Class frmMain
         ' 
         ' lbls2
         ' 
-        lbls2.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbls2.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lbls2.Location = New Point(71, 165)
         lbls2.Name = "lbls2"
         lbls2.Size = New Size(42, 18)
@@ -2336,7 +2336,7 @@ Partial Class frmMain
         ' Label23
         ' 
         Label23.AutoSize = True
-        Label23.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label23.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
         Label23.Location = New Point(21, 1700)
         Label23.Name = "Label23"
         Label23.Size = New Size(88, 18)
@@ -2346,7 +2346,7 @@ Partial Class frmMain
         ' lbld1
         ' 
         lbld1.BackColor = Color.White
-        lbld1.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbld1.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lbld1.Location = New Point(6486, 5855)
         lbld1.Name = "lbld1"
         lbld1.Size = New Size(42, 18)
@@ -2355,7 +2355,7 @@ Partial Class frmMain
         ' 
         ' lbls10
         ' 
-        lbls10.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbls10.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lbls10.Location = New Point(44, 1780)
         lbls10.Name = "lbls10"
         lbls10.Size = New Size(42, 18)
@@ -2365,7 +2365,7 @@ Partial Class frmMain
         ' lbls3
         ' 
         lbls3.BackColor = Color.White
-        lbls3.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbls3.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lbls3.Location = New Point(2609, 2952)
         lbls3.Name = "lbls3"
         lbls3.Size = New Size(42, 18)
@@ -2402,7 +2402,7 @@ Partial Class frmMain
         ' lbls4
         ' 
         lbls4.BackColor = Color.White
-        lbls4.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbls4.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lbls4.Location = New Point(6276, 5852)
         lbls4.Name = "lbls4"
         lbls4.Size = New Size(42, 18)
@@ -2412,7 +2412,7 @@ Partial Class frmMain
         ' lbld2
         ' 
         lbld2.BackColor = Color.White
-        lbld2.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbld2.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lbld2.Location = New Point(2439, 4695)
         lbld2.Name = "lbld2"
         lbld2.Size = New Size(42, 18)
@@ -2422,7 +2422,7 @@ Partial Class frmMain
         ' lbls5
         ' 
         lbls5.BackColor = Color.White
-        lbls5.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbls5.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lbls5.Location = New Point(36, 5139)
         lbls5.Name = "lbls5"
         lbls5.Size = New Size(42, 18)
@@ -2443,7 +2443,7 @@ Partial Class frmMain
         ' lbls7
         ' 
         lbls7.BackColor = Color.White
-        lbls7.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbls7.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lbls7.Location = New Point(71, 473)
         lbls7.Name = "lbls7"
         lbls7.Size = New Size(42, 18)
@@ -2462,7 +2462,7 @@ Partial Class frmMain
         ' lbls1
         ' 
         lbls1.BackColor = Color.White
-        lbls1.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbls1.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lbls1.Location = New Point(601, 259)
         lbls1.Name = "lbls1"
         lbls1.Size = New Size(42, 18)
@@ -2502,9 +2502,9 @@ Partial Class frmMain
         ' 
         ' Label19
         ' 
-        Label19.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
+        Label19.BackColor = Color.FromArgb(255, 255, 128)
         Label19.BorderStyle = BorderStyle.FixedSingle
-        Label19.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label19.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
         Label19.Location = New Point(2718, 3187)
         Label19.Name = "Label19"
         Label19.Size = New Size(80, 18)
@@ -2759,7 +2759,7 @@ Partial Class frmMain
         ' Label18
         ' 
         Label18.AutoSize = True
-        Label18.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label18.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
         Label18.Location = New Point(6073, 1170)
         Label18.Name = "Label18"
         Label18.Size = New Size(78, 18)
@@ -2769,7 +2769,7 @@ Partial Class frmMain
         ' Label16
         ' 
         Label16.AutoSize = True
-        Label16.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label16.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
         Label16.Location = New Point(53, 393)
         Label16.Name = "Label16"
         Label16.Size = New Size(78, 18)
@@ -2778,9 +2778,9 @@ Partial Class frmMain
         ' 
         ' Label13
         ' 
-        Label13.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
+        Label13.BackColor = Color.FromArgb(255, 255, 128)
         Label13.BorderStyle = BorderStyle.FixedSingle
-        Label13.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label13.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
         Label13.Location = New Point(574, 25)
         Label13.Name = "Label13"
         Label13.Size = New Size(80, 18)
@@ -2862,7 +2862,7 @@ Partial Class frmMain
         ' Label17
         ' 
         Label17.AutoSize = True
-        Label17.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label17.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
         Label17.Location = New Point(2222, 4631)
         Label17.Name = "Label17"
         Label17.Size = New Size(78, 18)
@@ -2905,7 +2905,7 @@ Partial Class frmMain
         ' Label14
         ' 
         Label14.AutoSize = True
-        Label14.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label14.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
         Label14.Location = New Point(18, 5055)
         Label14.Name = "Label14"
         Label14.Size = New Size(78, 18)
@@ -2970,7 +2970,7 @@ Partial Class frmMain
         ' Label11
         ' 
         Label11.AutoSize = True
-        Label11.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label11.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
         Label11.Location = New Point(2590, 2872)
         Label11.Name = "Label11"
         Label11.Size = New Size(78, 18)
@@ -2989,7 +2989,7 @@ Partial Class frmMain
         ' Label15
         ' 
         Label15.AutoSize = True
-        Label15.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label15.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
         Label15.Location = New Point(5067, 3300)
         Label15.Name = "Label15"
         Label15.Size = New Size(78, 18)
@@ -3053,7 +3053,7 @@ Partial Class frmMain
         ' 
         Label2.AutoSize = True
         Label2.BorderStyle = BorderStyle.FixedSingle
-        Label2.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
         Label2.Location = New Point(2775, 2919)
         Label2.Name = "Label2"
         Label2.Size = New Size(90, 20)
@@ -3103,7 +3103,7 @@ Partial Class frmMain
         ' Label12
         ' 
         Label12.AutoSize = True
-        Label12.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label12.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
         Label12.Location = New Point(6259, 5771)
         Label12.Name = "Label12"
         Label12.Size = New Size(78, 18)
@@ -3132,7 +3132,7 @@ Partial Class frmMain
         ' 
         Label7.AutoSize = True
         Label7.BorderStyle = BorderStyle.FixedSingle
-        Label7.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label7.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
         Label7.Location = New Point(211, 5088)
         Label7.Name = "Label7"
         Label7.Size = New Size(90, 20)
@@ -3250,7 +3250,7 @@ Partial Class frmMain
         ' Label10
         ' 
         Label10.AutoSize = True
-        Label10.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label10.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
         Label10.Location = New Point(52, 84)
         Label10.Name = "Label10"
         Label10.Size = New Size(78, 18)
@@ -3260,7 +3260,7 @@ Partial Class frmMain
         ' Label9
         ' 
         Label9.AutoSize = True
-        Label9.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label9.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
         Label9.Location = New Point(582, 175)
         Label9.Name = "Label9"
         Label9.Size = New Size(78, 18)
@@ -3311,7 +3311,7 @@ Partial Class frmMain
         ' 
         Label8.AutoSize = True
         Label8.BorderStyle = BorderStyle.FixedSingle
-        Label8.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label8.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
         Label8.Location = New Point(545, 416)
         Label8.Name = "Label8"
         Label8.Size = New Size(90, 20)

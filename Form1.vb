@@ -23,8 +23,8 @@ Public Class frmMain
 
     Const noOfPix = 100
 
-    Public Droid(NoOfDroids, 30) As Single
-    Public Info(NoOfDroids, 10) As String
+    'Public Droid(NoOfDroids, 30) As Single
+    'Public Info(NoOfDroids, 10) As String
     Public status(NoOfDroids) As String
     Public Prg(NoOfDroids, 2, 30) As Single
     Public FailureFrequency As Integer
@@ -32,28 +32,28 @@ Public Class frmMain
     '  Droid! constants
     '
     '
-    Public Const D_X = 1  '   1 = X position
-    Public Const D_Y = 2  '   2 = Y position
-    Public Const D_Dir = 3  '   3 = Travel Direction
-    Public Const D_Vel = 4  '   4 = Travel Velocity
-    Public Const D_TurrDir = 5  '   5 = Turret Direction
-    Public Const D_Batt = 6  '   6 = Battery Power
-    Public Const D_ETemp = 7  '   7 = Ext skin temp
-    Public Const D_ITemp = 8  '   8 = internal temp
-    Public Const D_EnvSet = 9  '   9 = Environ setting
-    Public Const D_Speed = 10 '  10 = Speed setting (0-7)
-    Public Const D_AutoNav = 11 '  11 = Auto Navigate Switch
-    Public Const D_Color = 12 '  12 = Droid Color
-    Public Const D_BaseX = 13 '  13 = Base X Position
-    Public Const D_BaseY = 14 '  14 = Base Y Position
-    Public Const D_Prgm = 15 '  15 = Currently executing Program
-    Public Const D_PC = 16 '  16 = Current Program Counter
-    Public Const D_Connect = 17 '  17 = Connected to a station
-    Public Const D_PrdCap = 18 '  18 = Product Capacity
-    Public Const D_Enabled = 19 '  19 = Droid enable/disable switch
-    Public Const D_Tow = 20 '  20 = Droid is towing another Droid (droid in tow)
-    Public Const D_DestX = 21 ' Droid Destination X-Coord
-    Public Const D_DestY = 22 ' Droid Destination Y-Coord
+    ' Public Const D_X = 1  '   1 = X position
+    ' Public Const D_Y = 2  '   2 = Y position
+    ' Public Const D_Dir = 3  '   3 = Travel Direction
+    ' Public Const D_Vel = 4  '   4 = Travel Velocity
+    ' Public Const D_TurrDir = 5  '   5 = Turret Direction
+    ' Public Const D_Batt = 6  '   6 = Battery Power
+    ' Public Const D_ETemp = 7  '   7 = Ext skin temp
+    ' Public Const D_ITemp = 8  '   8 = internal temp
+    ' Public Const D_EnvSet = 9  '   9 = Environ setting
+    ' Public Const D_Speed = 10 '  10 = Speed setting (0-7)
+    ' Public Const D_AutoNav = 11 '  11 = Auto Navigate Switch
+    ' Public Const D_Color = 12 '  12 = Droid Color
+    ' Public Const D_BaseX = 13 '  13 = Base X Position
+    ' Public Const D_BaseY = 14 '  14 = Base Y Position
+    ' Public Const D_Prgm = 15 '  15 = Currently executing Program
+    ' Public Const D_PC = 16 '  16 = Current Program Counter
+    ' Public Const D_Connect = 17 '  17 = Connected to a station
+    ' Public Const D_PrdCap = 18 '  18 = Product Capacity
+    ' Public Const D_Enabled = 19 '  19 = Droid enable/disable switch
+    ' Public Const D_Tow = 20 '  20 = Droid is towing another Droid (droid in tow)
+    ' Public Const D_DestX = 21 ' Droid Destination X-Coord
+    ' Public Const D_DestY = 22 ' Droid Destination Y-Coord
     '
     ' Info (Droid Number, Piece of Info)
     '
@@ -64,11 +64,11 @@ Public Class frmMain
     '                       3 = Original Program           WP2|SP1|WP2|WP6|MF4|HOME
     '                       4 = Towing droid Name          None    or    Droid 4
     '
-    Public Const I_Garage = 1 ' Droid Garage Assignment
-    Public Const I_Dest = 2   ' Droid Destination Name
-    Public Const I_PGM = 3    ' Executing Pgm
-    Public Const I_OGpgm = 4  ' Original Program
-    Public Const I_Tow = 5    ' Tow Droid Name
+    'Public Const I_Garage = 1 ' Droid Garage Assignment
+    'Public Const I_Dest = 2   ' Droid Destination Name
+    'Public Const I_PGM = 3    ' Executing Pgm
+    'Public Const I_OGpgm = 4  ' Original Program
+    'Public Const I_Tow = 5    ' Tow Droid Name
     Public droidlist As New List(Of DroidStruct)
     Public Function DegtoRad(Degg As Integer) As Single
         DegtoRad = Degg * (Math.PI / 180)
@@ -117,24 +117,18 @@ Public Class frmMain
 
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-
-        Dim droids As New DroidStruct
-
-        For ix = 0 To NoOfDroids
-            droids.Name = "Droid " + ix.ToString
-            droids.Enabled = False
-            droidlist.Add(droids)
-        Next
         G = pnlMain.CreateGraphics()
         M = pnlMap.CreateGraphics()
-        'droids = droidlist.Find(Name)
-        Dim pnt As PointF
-        xPos = 500 : yPos = 255 - 55 : angl = 0 : Speed = 0
-        xPos = 535 : yPos = 238 + 55
-        xPos = 570
-        xPos = 605
-        xPos = 640
 
+        For ix = 0 To NoOfDroids
+            Dim Droids As New DroidStruct
+            Droids.Name = "Droid " + ix.ToString
+            droids.Enabled = False
+            droidlist.Add(Droids)
+        Next
+
+        Dim pnt As PointF
+        xPos = 0 : yPos = 0 : angl = 0 : Speed = 0
 
         txtXPOS.Text = xPos : txtYPOS.Text = yPos : txtANGL.Text = angl : txtSpeed.Text = Speed
         pnt.X = xPos
@@ -178,41 +172,12 @@ Public Class frmMain
         Dim XX, YY, DD, VV, GRG As Single
 
         For drds = 1 To NoOfDroids
+            dr = droidlist(drds)
             XX = 0 : YY = 0 : DD = 0 : VV = 0 : GRG = 0
             objst = Findcntl("picDoc", drds, pnlMain, cntlfnd)
             If cntlfnd Then
                 Call GetDocDta(objst, XX, YY)
-                dr = droidlist(drds)
 
-                Droid(drds, D_X) = XX
-                dr.X = XX                       'X Coord
-                Droid(drds, D_Y) = YY
-                dr.Y = YY                       'Y Coord
-                Droid(drds, D_Dir) = 0
-                dr.Dir = 0
-                Droid(drds, D_Vel) = 4          'Travel Velocity
-                dr.Vel = 4                      'Travel Velocity
-                Droid(drds, D_TurrDir) = 0      'Turret Direction
-                Droid(drds, D_Batt) = 100       'Battery Power
-                dr.Batt = 100                   'Battery Power
-                Droid(drds, D_ETemp) = 70       'Ext skin temp
-                dr.ETemp = 70                   'Ext skin temp
-                Droid(drds, D_ITemp) = 70       'internal temp
-                dr.ITemp = 70                   'internal temp
-                Droid(drds, D_EnvSet) = 0       'Environ setting
-                Droid(drds, D_Speed) = 4        'Speed setting (0-7)
-                Droid(drds, D_AutoNav) = 0      'Auto Navigate Switch
-                Droid(drds, D_Color) = 1        'Droid Color
-                Droid(drds, D_BaseX) = XX       'Base X Position
-                Droid(drds, D_BaseY) = YY       'Base X Position
-                Droid(drds, D_Prgm) = 0         'Currently executing Program
-                Droid(drds, D_PC) = 0           'Current Program Counter
-                Droid(drds, D_Connect) = 1      'Connected to a station
-                Droid(drds, D_PrdCap) = 0       'Product Capacity
-                Droid(drds, D_Enabled) = False  'Droid enable/disable switch
-                Droid(drds, D_Tow) = 0          'Droid is towing another Droid (droid in tow)
-                Droid(drds, D_DestX) = XX       'Destination X coord
-                Droid(drds, D_DestY) = YY       'Destination Y coord
                 If drds < 11 Then
                     GRG = 1
                 ElseIf drds < 21 Then
@@ -220,15 +185,58 @@ Public Class frmMain
                 Else
                     GRG = 3
                 End If
-                Info(drds, I_Garage) = GRG
-                Info(drds, I_Dest) = "HOME"
-                Info(drds, I_PGM) = "HOME"
-                Info(drds, I_OGpgm) = "HOME"
-                Info(drds, I_Tow) = "NONE"
+
+                dr.X = XX                       'X Coord
+                dr.Y = YY                       'Y Coord
+                dr.Dir = 0
+                dr.Vel = 4                      'Travel Velocity
+                dr.Batt = 100                   'Battery Power
+                dr.ETemp = 70                   'Ext skin temp
+                dr.ITemp = 70                   'internal temp
+                dr.Speed = 4                    'Speed setting (0-7)
+                dr.BaseX = XX                   'Base X Position
+                dr.BaseY = YY                   'Base Y Position
+                dr.PrdOnBoard = 0               'Product Capacity
+                dr.Enabled = False              'Droid enable/disable switch
+                dr.Tow = "None"                 'Droid is towing another Droid (droid in tow)
+                dr.DestX = XX                   'Destination X coord
+                dr.DestY = YY                   'Destination Y coord
+                dr.Garage = GRG.ToString        'garage assignment
+                dr.RemainingPGM = ""            'Remaining Program 
+                dr.OGpgm = ""                   'Original Program
+                dr.Exec = ""                    'Current Operation
+
+                'Droid(drds, D_X) = XX
+                'Droid(drds, D_Y) = YY
+                'Droid(drds, D_Dir) = 0
+                'Droid(drds, D_Vel) = 4          'Travel Velocity
+                'Droid(drds, D_TurrDir) = 0      'Turret Direction
+                'Droid(drds, D_Batt) = 100       'Battery Power
+                'Droid(drds, D_ETemp) = 70       'Ext skin temp
+                'Droid(drds, D_ITemp) = 70       'internal temp
+                'Droid(drds, D_EnvSet) = 0       'Environ setting
+                'Droid(drds, D_Speed) = 4        'Speed setting (0-7)
+                'Droid(drds, D_AutoNav) = 0      'Auto Navigate Switch
+                'Droid(drds, D_Color) = 1        'Droid Color
+                'Droid(drds, D_BaseX) = XX       'Base X Position
+                'Droid(drds, D_BaseY) = YY       'Base Y Position
+                'Droid(drds, D_Prgm) = 0         'Currently executing Program
+                'Droid(drds, D_PC) = 0           'Current Program Counter
+                'Droid(drds, D_Connect) = 1      'Connected to a station
+                'Droid(drds, D_PrdCap) = 0       'Product Capacity
+                'Droid(drds, D_Enabled) = False  'Droid enable/disable switch
+                'Droid(drds, D_Tow) = 0          'Droid is towing another Droid (droid in tow)
+                'Droid(drds, D_DestX) = XX       'Destination X coord
+                'Droid(drds, D_DestY) = YY       'Destination Y coord
+                'Info(drds, I_Garage) = GRG
+                'Info(drds, I_Dest) = "HOME"
+                'Info(drds, I_PGM) = "HOME"
+                'Info(drds, I_OGpgm) = "HOME"
+                'Info(drds, I_Tow) = "NONE"
             End If
         Next
-        DaysfromStart = droidlist.Count
-        GRG = 4
+
+
     End Sub
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         G.Clear(bgColor)
@@ -246,66 +254,67 @@ Public Class frmMain
     End Sub
     Private Sub MoveAllDroids()
         For drds = 1 To NoOfDroids
-            If Droid(drds, D_Enabled) = True Then
-                Call DrawDroid(False, drds)
-                Call MoveDroid(drds)
-                Call DrawDroid(True, drds)
+            dr = droidlist(drds)
+            If dr.Enabled = True Then
+                Call DrawDroid(False, dr)
+                Call MoveDroid(dr)
+                Call DrawDroid(True, dr)
             Else
-                Call DrawDroid(True, drds)
+                Call DrawDroid(True, dr)
             End If
         Next
     End Sub
-    Private Sub DrawDroid(drw As Boolean, drd As Integer)
+    Private Sub DrawDroid(drw As Boolean, ByRef dr As DroidStruct)
         Dim cntr As PointF
         Dim pnt As PointF
         '
         ' Droids are 30 pixels square.  Its position is offset by 15 X 15 
         '
-        pnt.X = Droid(drd, D_X) - 15 : pnt.Y = Droid(drd, D_Y) - 15
+        pnt.X = dr.X - 15 : pnt.Y = dr.Y - 15
         If drw Then
             cntr.X = 15 : cntr.Y = 15
-            G.DrawImage(RotateImage(picDroid.Image, cntr, Val(Droid(drd, D_Dir).ToString)), pnt)
+            G.DrawImage(RotateImage(picDroid.Image, cntr, Val(dr.Dir).ToString), pnt)
         Else
             cntr.X = 15 : cntr.Y = 15
             G.DrawImage(picClear.Image, pnt)
         End If
 
     End Sub
-    Private Sub MoveDroid(drd As Integer)
+    Private Sub MoveDroid(ByRef dr As DroidStruct)
         Dim DrdPoint, DrdVector As Point
         Dim dist As Single
         '
         'adjust speed according to distance to destination
         '
-        dist = Dist2Dest(drd)
+        dist = Dist2Dest(dr)
         Select Case dist
             Case Is > 500
-                Droid!(drd, D_Speed) = 20
+                dr.Speed = 20
             Case Is > 50
-                Droid!(drd, D_Speed) = 15
+                dr.Speed = 15
             Case Else
-                Droid!(drd, D_Speed) = 2
+                dr.Speed = 2
         End Select
 
 
-        angl = Droid(drd, D_Dir)
-        Speed = Droid(drd, D_Speed)
-        DrdPoint.X = Droid(drd, D_X)
-        DrdPoint.Y = Droid(drd, D_Y)
+        angl = dr.Dir
+        Speed = dr.Speed
+        DrdPoint.X = dr.X
+        DrdPoint.Y = dr.Y
         DrdVector.X = Speed * Math.Sin(DegtoRad(180 - angl)) + DrdPoint.X
         DrdVector.Y = Speed * Math.Cos(DegtoRad(180 - angl)) + DrdPoint.Y
-        Droid(drd, D_X) = DrdVector.X
-        Droid(drd, D_Y) = DrdVector.Y
+        dr.X = DrdVector.X
+        dr.Y = DrdVector.Y
 
-        If Arrived(drd) Then
-            Droid(drd, D_Enabled) = False
+        If Arrived(dr) Then
+            Call GetNexDest(dr)
         End If
 
     End Sub
-    Private Sub WGO(drd As Integer)
+    Private Sub WGO(ByRef dr As DroidStruct)
         Dim Oper As String
 
-        Oper = Mid(Info(drd, I_Dest), 1, 2)
+        Oper = Mid(dr.Dest, 1, 2)
 
         Select Case Oper
             Case "WT"       'Water Tower
@@ -325,21 +334,21 @@ Public Class frmMain
         End Select
 
         If Oper = "WP" Then
-            If Dist2Dest(drd) < 20 Then
+            If Dist2Dest(dr) < 20 Then
                 '
                 ' Get Next Destination
                 '
-                GetNexDest(drd)
+                GetNexDest(dr)
                 '
             End If
         End If
     End Sub
-    Private Function Dist2Dest(ByVal drd As Integer) As Integer
+    Private Function Dist2Dest(ByRef dr As DroidStruct) As Integer
         Dim dstX, dstY, drdX, drdY As Single
-        drdX = Droid(drd, D_X)
-        drdY = Droid(drd, D_Y)
-        dstX = Droid(drd, D_DestX)
-        dstY = Droid(drd, D_DestY)
+        drdX = dr.X
+        drdY = dr.Y
+        dstX = dr.DestX
+        dstY = dr.DestY
         Dist2Dest = Math.Abs(Math.Sqrt((dstX - drdX) ^ 2 + (dstY - drdY) ^ 2))
     End Function
 
@@ -385,32 +394,34 @@ Public Class frmMain
             End If
 
         Next
+
         For drd = 1 To NoOfDroids
+            dr = droidlist(drd)
             myBr.Color = Color.Red
-            px = Droid(drd, D_X) : py = Droid(drd, D_Y)
+            px = dr.X : py = dr.Y
             px = px * (noOfPix / 7000) : py = py * (noOfPix / 7000)
             M.FillRectangle(myBr, px, py, 2, 2)
         Next
 
     End Sub
     Private Sub btnCW_Click(sender As Object, e As EventArgs)
-        DrawDroid(False, 1)
+        DrawDroid(False, droidlist(1))
         angl = Val(txtANGL.Text) + 10
         Do While angl > 360
             angl = angl - 360
         Loop
         txtANGL.Text = Trim(Str(angl))
-        DrawDroid(True, 1)
+        DrawDroid(True, droidlist(1))
     End Sub
 
     Private Sub btnCCW_Click(sender As Object, e As EventArgs)
-        DrawDroid(False, 1)
+        DrawDroid(False, droidlist(1))
         angl = Val(txtANGL.Text) - 10
         Do While angl < 0
             angl = angl + 360
         Loop
         txtANGL.Text = Trim(Str(angl))
-        DrawDroid(True, 1)
+        DrawDroid(True, droidlist(1))
     End Sub
 
     Private Sub btnStartStopDroid_Click(sender As Object, e As EventArgs) Handles btnStartStopDroid.Click
@@ -442,8 +453,6 @@ Public Class frmMain
                 Y = pic.Location.Y + pic.Size.Height / 2
             Case Else
         End Select
-
-
     End Sub
 
     Private Sub picDoc_Click(sender As Object, e As EventArgs) Handles picDoc1.Click, picDoc2.Click, picDoc3.Click,
@@ -473,10 +482,11 @@ Public Class frmMain
                 txtANGL.Text = Trim(Str(angl))
             Case Else
         End Select
-        Droid(drd, D_Dir) = angl
-        Droid(drd, D_Enabled) = True
+        dr = droidlist(drd)
+        dr.Dir = angl
+        dr.Enabled = True
         GetDocDta(sender, xPos, yPos)
-        Droid(drd, D_X) = xPos : Droid(drd, D_Y) = yPos
+        dr.X = xPos : dr.Y = yPos
 
         SelDroid.Text = "Droid " + Trim(Str(drd))
     End Sub
@@ -485,13 +495,14 @@ Public Class frmMain
         frmMap.Show()
     End Sub
 
-    Private Function Arrived(DroidNumber As Integer) As Boolean
+    Private Function Arrived(ByRef dr As DroidStruct) As Boolean
         Dim drdX, drdY, dstX, dstY, xv, dx, dy As Integer
         Dim dist As Single
-        dstX = Droid(DroidNumber, D_DestX)
-        dstY = Droid(DroidNumber, D_DestY)
-        drdX = Droid(DroidNumber, D_X)
-        drdY = Droid(DroidNumber, D_Y)
+
+        dstX = dr.DestX
+        dstY = dr.DestY
+        drdX = dr.X
+        drdY = dr.Y
         '
         ' Update Direction
         '
@@ -499,7 +510,7 @@ Public Class frmMain
 
         If dx >= 0 Then xv = 90 Else xv = 270
         If dx <> 0 Then
-            Droid!(DroidNumber, D_Dir) = RadToDeg((Math.Atan(dy / dx))) + xv
+            dr.Dir = RadToDeg((Math.Atan(dy / dx))) + xv
         End If
         '
         ' Calculate Distance to Destination
@@ -547,9 +558,10 @@ Public Class frmMain
                 statn = "wp"
             Case Else
         End Select
+        dr = droidlist(drdno)
         objDest = Findcntl(statn, statno, pnlMain, fnd)
         If fnd Then
-            Droid(drdno, D_Enabled) = True
+            dr.Enabled = True
             GetDocDta(objDest, xPos, yPos)
         End If
 
@@ -558,11 +570,11 @@ Public Class frmMain
         '        Droid(drdno, D_X) = xPos : Droid(drdno, D_Y) = yPos
         '
 
-        Droid(drdno, D_DestX) = xPos
-        Droid(drdno, D_DestY) = yPos
+        dr.DestX = xPos
+        dr.DestY = yPos
 
-        drx = Droid(drdno, D_X)
-        dry = Droid(drdno, D_Y)
+        drx = dr.X
+        dry = dr.Y
         dist = Math.Sqrt(Math.Abs(xPos - drx) ^ 2 + Math.Abs(yPos - dry) ^ 2)
         '
         '  Check direction to target
@@ -575,27 +587,27 @@ Public Class frmMain
             xv = 270
         End If
         If drx <> 0 Then
-            Droid!(drdno, D_Dir) = RadToDeg(Math.Atan(dry / drx)) + xv
+            dr.Dir = RadToDeg(Math.Atan(dry / drx)) + xv
         End If
 
 
     End Sub
     Private Sub DisplayDroid()
         Dim drd As Integer
-        Dim testst As String
+
 
         drd = Val(txtDroid.Text)
-        dr = droidlist(14)
+        dr = droidlist(drd)
 
-        txtGarge.Text = Info(drd, I_Garage)
-        txtDest.Text = Info(drd, I_Dest)
-        txtPGM.Text = Info(drd, I_PGM)
-        txtOGpgm.Text = Info(drd, I_OGpgm)
-        txtTow.Text = Info(drd, I_Tow)
-        txtXPOS.Text = Droid(drd, D_X).ToString
-        txtYPOS.Text = Droid(drd, D_Y).ToString
-        txtSpeed.Text = Droid(drd, D_Speed).ToString
-        txtANGL.Text = Droid(drd, D_Dir).ToString
+        txtGarge.Text = dr.Garage
+        txtDest.Text = dr.Dest
+        txtPGM.Text = dr.RemainingPGM
+        txtOGpgm.Text = dr.OGpgm
+        txtTow.Text = dr.Tow
+        txtXPOS.Text = dr.X.ToString
+        txtYPOS.Text = dr.Y.ToString
+        txtSpeed.Text = dr.Speed.ToString
+        txtANGL.Text = dr.Dir.ToString
     End Sub
     Private Sub picMDoc_Click(sender As Object, e As EventArgs) Handles picMDoc1.Click, picMDoc2.Click, picMDoc3.Click,
         picMDoc4.Click, picMDoc5.Click, picMDoc6.Click, picMDoc7.Click, picMDoc8.Click, picMDoc9.Click, picMDoc10.Click,
@@ -705,7 +717,8 @@ Public Class frmMain
 
         lastdist = 130 : fnddrd = 0
         For ix = 1 To NoOfDroids
-            dist = Math.Sqrt(Math.Abs(x - Droid!(ix, D_X)) ^ 2 + Math.Abs(y - Droid!(ix, D_Y)) ^ 2)
+            dr = droidlist(ix)
+            dist = Math.Sqrt(Math.Abs(x - dr.X) ^ 2 + Math.Abs(y - dr.Y) ^ 2)
             If (dist < 25) And (dist < lastdist) Then
                 lastdist = dist
                 fnddrd = ix
@@ -723,30 +736,30 @@ Public Class frmMain
         P1 = ""
         drds = SelDroid.Text
         Parsenum(drds, P1) : drdno = Val(drds)
+        dr = droidlist(drdno)
+        dr.DestX = dr.BaseX
+        dr.DestY = dr.BaseY
 
-        Droid(drdno, D_DestX) = Droid(drdno, D_BaseX)
-        Droid(drdno, D_DestY) = Droid(drdno, D_BaseY)
-
-        Droid(drdno, D_Enabled) = True
+        dr.Enabled = True
         '
         '  Set direction to target
-        '
-        drx = Droid(drdno, D_DestX) - Droid(drdno, D_X)
-        dry = Droid(drdno, D_DestY) - Droid(drdno, D_Y)
+
+        drx = dr.DestX - dr.X
+        dry = dr.DestY - dr.Y
         If drx >= 0 Then
             xv = 90
         Else
             xv = 270
         End If
         If drx <> 0 Then
-            Droid!(drdno, D_Dir) = RadToDeg(Math.Atan(dry / drx)) + xv
+            dr.Dir = RadToDeg(Math.Atan(dry / drx)) + xv
         Else
-            Droid!(drdno, D_Dir) = xv
-            Droid(drdno, D_Enabled) = False
+            dr.Dir = xv
+            dr.Enabled = False
         End If
 
         xv = Math.Sqrt(Math.Abs(drx) ^ 2 + Math.Abs(dry) ^ 2)
-        If Math.Abs(xv) < 3 Then Droid(drdno, D_Enabled) = False
+        If Math.Abs(xv) < 3 Then dr.Enabled = False
 
     End Sub
 
@@ -770,33 +783,32 @@ Public Class frmMain
         st = ""
         lst = SelDroid.Text
         Parsenum(lst, st) : drd = Val(lst)
+        dr = droidlist(drd)
+        st = ""
+        lst = ""
         '
         'Fill the droid Info
         '
-        st = ""
-        lst = ""
+        'PGM NAME|WP30|SP2|MF4|WT1|WP2|HOME
         st = ListBox1.SelectedItem
-        Call PARSE(st, lst, "|", rc)    'Program name
-        Info(drd, I_OGpgm) = st              'OG Program
+        Call PARSE(st, lst, "|", rc)    'Skip Program name
+        dr.OGpgm = st                   'OG Program
         Call PARSE(st, lst, "|", rc)
-        Info(drd, I_PGM) = st           'Next Part of Program
-        Info(drd, I_Dest) = lst         'Destination (Current Operation)
-        Droid(drd, D_Enabled) = True
+        dr.RemainingPGM = st            'Next Part of Program
+        dr.Dest = lst                   'Destination (Current Operation)
+        Call GetDest(dr)
+        dr.Enabled = True
     End Sub
-    Private Sub GetNexDest(drd As Integer)
-        Dim Nd, St, statn As String
-        Dim rc, statno As Integer
+    Private Sub GetDest(ByRef dr As DroidStruct)
+        Dim St, statn As String
+        Dim statno As Integer
         Dim objDest As New System.Object
         Dim fnd = False
-        St = ""
-        Nd = Info(drd, I_PGM)
-        Call PARSE(Nd, St, "|", rc)
-        Info(drd, I_Dest) = St
-        Info(drd, I_PGM) = Nd
-        'WP30|SP2|MF4|WT1|WP2|HOME
+        St = dr.Dest
         statno = Val(Mid(St, 3))
         St = UCase(Mid(St, 1, 2))
         statn = ""
+
         Select Case St
             Case "HO"
             Case "WT"   ' water tower
@@ -816,18 +828,27 @@ Public Class frmMain
         End Select
         objDest = Findcntl(statn, statno, pnlMain, fnd)
         If fnd Then
-            Droid(drd, D_Enabled) = True
             GetDocDta(objDest, xPos, yPos)
         ElseIf St = "HO" Then
-            xPos = Droid(drd, D_BaseX)
-            yPos = Droid(drd, D_BaseY)
+            xPos = dr.BaseX
+            yPos = dr.BaseY
         End If
-        '        Droid(drdno, D_Dir) = angl
-        '        Droid(drdno, D_X) = xPos : Droid(drdno, D_Y) = yPos
-        '
-        Droid(drd, D_DestX) = xPos
-        Droid(drd, D_DestY) = yPos
 
+        dr.DestX = xPos
+        dr.DestY = yPos
+    End Sub
+    Private Sub GetNexDest(ByRef dr As DroidStruct)
+        Dim Nd, St As String
+        Dim rc As Integer
+        St = ""
+        Nd = dr.RemainingPGM
+        If Nd = "" Then
+            Nd = dr.OGpgm
+        End If
+        Call PARSE(Nd, St, "|", rc)
+        dr.RemainingPGM = Nd
+        dr.Dest = St
+        Call GetDest(dr)
     End Sub
 
 End Class

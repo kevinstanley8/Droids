@@ -4,6 +4,7 @@ Imports System.Security.Cryptography.Xml
 Public Class frmMap
     Public M As Graphics
     Const NoOfPix = 500
+    Private dr1 As DroidStruct
     Public Function Findcntl(ByVal objName As String, ByVal objIndx As Integer, ByVal root As Control, ByRef fnd As Boolean) As Object
         Dim panels(100) As String
         Dim panelcnt As Integer = 0
@@ -85,9 +86,10 @@ Public Class frmMap
 
         Next
         For drd = 1 To frmMain.NoOfDroids
+            dr1 = frmMain.droidlist(drd)
             myBr.Color = Color.Red
-            px = frmMain.Droid(drd, frmMain.D_X) : py = frmMain.Droid(drd, frmMain.D_Y)
-            px = px * (noOfPix / 7000) : py = py * (noOfPix / 7000)
+            px = dr1.X : py = dr1.Y
+            px = px * (NoOfPix / 7000) : py = py * (NoOfPix / 7000)
             M.FillRectangle(myBr, px, py, 2, 2)
         Next
 
