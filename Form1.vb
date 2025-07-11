@@ -8,12 +8,13 @@ Public Class frmMain
     Public MyRed As New Pen(Color.Red, 1)
     Public bgColor As Color
     Public xPos, yPos As Integer
-    Public angl, Speed, TOD As Single
+    Public angl, Speed, TOD, OutsideTemp, LowTemp, HighTemp As Single
     Public cntlfnd As Boolean = True
     Public DaysfromStart As Integer
     Public droidData(30, 16) As Single '(Droid number,Parameter)
     Public Mapping As Boolean
     Public dr As DroidStruct
+    Public CurrTI As Single
     '
     'Each Program is stored as a string in the format:
     '
@@ -28,6 +29,23 @@ Public Class frmMain
     Public status(NoOfDroids) As String
     Public Prg(NoOfDroids, 2, 30) As Single
     Public FailureFrequency As Integer
+
+    Public Const TimeOfTick = 0.002
+    Public Const LoTemp = 50
+    Public Const HiTemp = 130
+    Public Const heatval = (HiTemp - LoTemp) / 8
+    Public Const coolval = (HiTemp - LoTemp) / 12
+    Public Const DroidHV = 0.3  '1.2
+    Public Const DroidAC = -0.3 ' -0.75
+    Public Const DroidEnvDrain = 0.001
+    Public Const DroidMovingDrain = 0.005
+    Public Const DroidCharge = 0.4
+
+
+    Public Const Warn_Attn = 78
+    Public Const Warn_Low = 50
+    Public Const Warn_Crit = 25
+
     '                     
     '  Droid! constants
     '
@@ -126,7 +144,7 @@ Public Class frmMain
             droids.Enabled = False
             droidlist.Add(Droids)
         Next
-
+        OutsideTemp = 70
         Dim pnt As PointF
         xPos = 0 : yPos = 0 : angl = 0 : Speed = 0
 
@@ -165,7 +183,7 @@ Public Class frmMain
         btnStartStopDroid.Text = "Stop Droid"
         tmrMovebot.Enabled = True
         tmrFlashLights.Enabled = True
-        DaysfromStart = droidlist.Count
+        DaysfromStart = 0
     End Sub
     Private Sub InitializeDroids()
         Dim objst As System.Object
@@ -174,7 +192,7 @@ Public Class frmMain
         For drds = 1 To NoOfDroids
             dr = droidlist(drds)
             XX = 0 : YY = 0 : DD = 0 : VV = 0 : GRG = 0
-            objst = Findcntl("picDoc", drds, pnlMain, cntlfnd)
+            objst = Findcntl("dG", drds, pnlMain, cntlfnd)
             If cntlfnd Then
                 Call GetDocDta(objst, XX, YY)
 
@@ -205,7 +223,7 @@ Public Class frmMain
                 dr.RemainingPGM = ""            'Remaining Program 
                 dr.OGpgm = ""                   'Original Program
                 dr.Exec = ""                    'Current Operation
-
+                Call LoadPrograms()
                 'Droid(drds, D_X) = XX
                 'Droid(drds, D_Y) = YY
                 'Droid(drds, D_Dir) = 0
@@ -235,7 +253,68 @@ Public Class frmMain
                 'Info(drds, I_Tow) = "NONE"
             End If
         Next
-
+    End Sub
+    Private Sub LoadPrograms()
+        Dim st, su, lst As String
+        Dim iy, rc As Integer
+        lstG1pgm.Items.Clear()
+        lstG2pgm.Items.Clear()
+        lstG3pgm.Items.Clear()
+        For ix = 0 To LstPGMs.Items.Count - 1
+            st = LstPGMs.Items(ix)
+            su = Mid(st, 1, 4)
+            Select Case su
+                Case "Gar1"
+                    lstG1pgm.Items.Add(st)
+                Case "Gar2"
+                    lstG2pgm.Items.Add(st)
+                Case "Gar3"
+                    lstG3pgm.Items.Add(st)
+                Case Else
+            End Select
+        Next
+        iy = 0 : st = "" : lst = ""
+        For drds = 1 To 10
+            st = lstG1pgm.Items.Item(iy)
+            dr = droidlist(drds)
+            iy = iy + 1
+            If iy >= lstG1pgm.Items.Count Then iy = 0
+            Call PARSE(st, lst, "|", rc)    'Skip Program name
+            dr.OGpgm = st                   'OG Program
+            Call PARSE(st, lst, "|", rc)
+            dr.RemainingPGM = st            'Next Part of Program
+            dr.Dest = lst                   'Destination (Current Operation)
+            Call GetDest(dr)
+            dr.Enabled = True
+        Next
+        iy = 0 : st = "" : lst = ""
+        For drds = 11 To 20
+            st = lstG2pgm.Items.Item(iy)
+            dr = droidlist(drds)
+            iy = iy + 1
+            If iy >= lstG2pgm.Items.Count Then iy = 0
+            Call PARSE(st, lst, "|", rc)    'Skip Program name
+            dr.OGpgm = st                   'OG Program
+            Call PARSE(st, lst, "|", rc)
+            dr.RemainingPGM = st            'Next Part of Program
+            dr.Dest = lst                   'Destination (Current Operation)
+            Call GetDest(dr)
+            dr.Enabled = True
+        Next
+        iy = 0 : st = "" : lst = ""
+        For drds = 21 To 30
+            st = lstG3pgm.Items.Item(iy)
+            dr = droidlist(drds)
+            iy = iy + 1
+            If iy >= lstG3pgm.Items.Count Then iy = 0
+            Call PARSE(st, lst, "|", rc)    'Skip Program name
+            dr.OGpgm = st                   'OG Program
+            Call PARSE(st, lst, "|", rc)
+            dr.RemainingPGM = st            'Next Part of Program
+            dr.Dest = lst                   'Destination (Current Operation)
+            Call GetDest(dr)
+            dr.Enabled = True
+        Next
 
     End Sub
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
@@ -244,9 +323,19 @@ Public Class frmMain
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles tmrMovebot.Tick
 
+        Call RealWorld()
         Call MoveAllDroids()
         Call DisplayDroid()
         Call DrawMap()
+
+    End Sub
+    Private Sub tmrTick_Tick(sender As Object, e As EventArgs) Handles tmrTick.Tick
+
+        TOD = TOD + TimeOfTick
+        If TOD > 20 Then
+            DaysfromStart = DaysfromStart + 1
+            TOD = 0
+        End If
 
     End Sub
     Private Sub tmrFlashLights_Tick(sender As Object, e As EventArgs) Handles tmrFlashLights.Tick
@@ -290,12 +379,15 @@ Public Class frmMain
         Select Case dist
             Case Is > 500
                 dr.Speed = 20
-            Case Is > 50
+            Case Is > 15
                 dr.Speed = 15
             Case Else
                 dr.Speed = 2
         End Select
 
+        If Arrived(dr) Then
+            Call GetNexDest(dr)
+        End If
 
         angl = dr.Dir
         Speed = dr.Speed
@@ -306,9 +398,6 @@ Public Class frmMain
         dr.X = DrdVector.X
         dr.Y = DrdVector.Y
 
-        If Arrived(dr) Then
-            Call GetNexDest(dr)
-        End If
 
     End Sub
     Private Sub WGO(ByRef dr As DroidStruct)
@@ -455,14 +544,15 @@ Public Class frmMain
         End Select
     End Sub
 
-    Private Sub picDoc_Click(sender As Object, e As EventArgs) Handles picDoc1.Click, picDoc2.Click, picDoc3.Click,
-            picDoc4.Click, picDoc5.Click, picDoc6.Click, picDoc7.Click, picDoc8.Click, picDoc9.Click, picDoc10.Click,
-        picDoc11.Click, picDoc12.Click, picDoc13.Click, picDoc14.Click, picDoc15.Click, picDoc16.Click, picDoc17.Click,
-        picDoc18.Click, picDoc19.Click, picDoc20.Click, picDoc21.Click, picDoc22.Click, picDoc23.Click, picDoc24.Click,
-        picDoc25.Click, picDoc26.Click, picDoc27.Click, picDoc28.Click, picDoc29.Click, picDoc30.Click
+    Private Sub dG_Click(sender As Object, e As EventArgs) Handles dG1.Click, dG2.Click, dG3.Click,
+            dG4.Click, dG5.Click, dG6.Click, dG7.Click, dG8.Click, dG9.Click, dG10.Click,
+        dG11.Click, dG12.Click, dG13.Click, dG14.Click, dG15.Click, dG16.Click, dG17.Click,
+        dG18.Click, dG19.Click, dG20.Click, dG21.Click, dG22.Click, dG23.Click, dG24.Click,
+        dG25.Click, dG26.Click, dG27.Click, dG28.Click, dG29.Click, dG30.Click
 
         Dim nm, Tg As String
         Dim drd As Integer
+        Dim ax, ay As Single
         nm = sender.name
         Tg = sender.tag
         drd = Val(Mid(nm, 7))
@@ -485,8 +575,8 @@ Public Class frmMain
         dr = droidlist(drd)
         dr.Dir = angl
         dr.Enabled = True
-        GetDocDta(sender, xPos, yPos)
-        dr.X = xPos : dr.Y = yPos
+        GetDocDta(sender, ax, ay)
+        dr.X = ax : dr.Y = ay
 
         SelDroid.Text = "Droid " + Trim(Str(drd))
     End Sub
@@ -516,14 +606,22 @@ Public Class frmMain
         ' Calculate Distance to Destination
         '
         dist = Math.Sqrt(Math.Abs(dstX - drdX) ^ 2 + Math.Abs(dstY - drdY) ^ 2)
-        If Math.Abs(dist) < 3 Then Arrived = True Else Arrived = False
+        If Mid(dr.Dest, 1, 2) = "WP" Then
+            If Math.Abs(dist) < 20 Then Arrived = True Else Arrived = False
+        Else
+            If Math.Abs(dist) < 3 Then
+                Arrived = True
+            Else
+                Arrived = False
+            End If
+        End If
 
     End Function
 
     Private Sub pnlMap_MouseDown(sender As Object, ByVal e As MouseEventArgs) Handles pnlMap.MouseDown
         Dim px, py As Integer
         Dim pnt As Point
-        pnt.X = xPos
+        'pnt.X = xPos
         px = e.Location.X : py = e.Location.Y
         pnt.X = px * (7000 / noOfPix) : pnt.Y = py * (7000 / noOfPix)
 
@@ -534,6 +632,7 @@ Public Class frmMain
         Dim drds, statn, P1 As String
         Dim drdno, statno As Integer
         Dim drx, dry, dist, xv As Single
+        Dim dx, dy As Single
         Dim objDest As New System.Object
         Dim fnd = False
 
@@ -545,15 +644,15 @@ Public Class frmMain
 
         Select Case statn
             Case "H2OTower"
-                statn = "picWDoc"
+                statn = "dW"
             Case "Drill"
-                statn = "picDDoc"
+                statn = "dD"
             Case "Manuf"
-                statn = "picMDoc"
+                statn = "dM"
             Case "Solar"
-                statn = "picSDoc"
+                statn = "dS"
             Case "Pad"
-                statn = "picPDoc"
+                statn = "dP"
             Case "WayPoint"
                 statn = "wp"
             Case Else
@@ -562,7 +661,7 @@ Public Class frmMain
         objDest = Findcntl(statn, statno, pnlMain, fnd)
         If fnd Then
             dr.Enabled = True
-            GetDocDta(objDest, xPos, yPos)
+            GetDocDta(objDest, dx, dy)
         End If
 
 
@@ -570,17 +669,17 @@ Public Class frmMain
         '        Droid(drdno, D_X) = xPos : Droid(drdno, D_Y) = yPos
         '
 
-        dr.DestX = xPos
-        dr.DestY = yPos
+        dr.DestX = dx
+        dr.DestY = dy
 
         drx = dr.X
         dry = dr.Y
-        dist = Math.Sqrt(Math.Abs(xPos - drx) ^ 2 + Math.Abs(yPos - dry) ^ 2)
+        dist = Math.Sqrt(Math.Abs(dx - drx) ^ 2 + Math.Abs(dy - dry) ^ 2)
         '
         '  Check direction to target
         '
-        drx = xPos - drx
-        dry = yPos - dry
+        drx = dx - drx
+        dry = dx - dry
         If drx >= 0 Then
             xv = 90
         Else
@@ -592,6 +691,43 @@ Public Class frmMain
 
 
     End Sub
+    Private Sub RealWorld()
+        Dim ccc1 As Single
+        '
+        '  Time Of Day
+        '
+        '  0-5 =sun rise till noon
+        '  5-10=noon till sunset
+        '  10-15 = sunset till midnight
+        '  15-20 = midnight till sunrise    0   2   5   7   8   9  10  12  15  17  20
+        '                                   70  74  80  84  86  84 82  78  74  72  70
+        lblTimeOfDay.Text = Format$(DaysfromStart, "0") + " days " + Format$(TOD, "00.00")
+
+        Select Case TOD
+            Case Is <= 8
+                OutsideTemp = LoTemp + ((TOD) * heatval) + CurrTI
+            Case Is <= 20
+                OutsideTemp = HiTemp - ((TOD - 8) * coolval) + CurrTI
+            Case Else
+                OutsideTemp = 0 + CurrTI
+        End Select
+
+        ccc1 = Rnd()
+        If OutsideTemp > (420 + ccc1) Then OutsideTemp = 420 + ccc1
+        If OutsideTemp < (-455 + ccc1) Then OutsideTemp = -455 + ccc1
+        lblOTemp.Text = Format$(OutsideTemp, "0.00") + " DegF"
+
+        If LowTemp! > outsidetemp Then LowTemp! = OutsideTemp
+        If HighTemp! < OutsideTemp Then HighTemp! = OutsideTemp
+
+        ToolTip1.SetToolTip(lblOTemp, " Highest:" + Str(HighTemp!) + "   Lowest:" + Str(LowTemp!))
+        ToolTip1.SetToolTip(lblTemptxt, " Highest:" + Str(HighTemp!) + "   Lowest:" + Str(LowTemp!))
+        'Call TimeViewSet(TOD!, outsidetemp)
+    End Sub
+
+
+
+
     Private Sub DisplayDroid()
         Dim drd As Integer
 
@@ -609,61 +745,61 @@ Public Class frmMain
         txtSpeed.Text = dr.Speed.ToString
         txtANGL.Text = dr.Dir.ToString
     End Sub
-    Private Sub picMDoc_Click(sender As Object, e As EventArgs) Handles picMDoc1.Click, picMDoc2.Click, picMDoc3.Click,
-        picMDoc4.Click, picMDoc5.Click, picMDoc6.Click, picMDoc7.Click, picMDoc8.Click, picMDoc9.Click, picMDoc10.Click,
-        picMDoc11.Click, picMDoc12.Click, picMDoc13.Click, picMDoc14.Click, picMDoc15.Click, picMDoc16.Click
+    Private Sub dM_Click(sender As Object, e As EventArgs) Handles dM1.Click, dM2.Click, dM3.Click,
+        dM4.Click, dM5.Click, dM6.Click, dM7.Click, dM8.Click, dM9.Click, dM10.Click,
+        dM11.Click, dM12.Click, dM13.Click, dM14.Click, dM15.Click, dM16.Click
         'Manufaturing port
         Dim nm, tg As String
         Dim mfg As Integer
         nm = sender.name
         tg = sender.tag
-        mfg = Val(Mid(nm, 7))
-        If mfg = 0 Then mfg = Val(Mid(nm, 8))
+        mfg = Val(Mid(nm, 3))
+
         selStation.Text = "Manuf " + Trim(Str(mfg))
         If Mapping = True Then
             txtPGMmap.Text = txtPGMmap.Text + "|MF" + mfg.ToString
         End If
     End Sub
 
-    Private Sub picSDoc_Click(sender As Object, e As EventArgs) Handles picSDoc1.Click, picSDoc2.Click, picSDoc3.Click,
-        picSDoc4.Click, picSDoc5.Click, picSDoc6.Click, picSDoc7.Click, picSDoc8.Click, picSDoc9.Click, picSDoc10.Click,
-        picSDoc11.Click, picSDoc12.Click, picSDoc13.Click, picSDoc14.Click, picSDoc15.Click, picSDoc16.Click, picSDoc17.Click,
-        picSDoc18.Click, picSDoc19.Click, picSDoc20.Click, picSDoc21.Click
+    Private Sub dS_Click(sender As Object, e As EventArgs) Handles dS1.Click, dS2.Click, dS3.Click,
+        dS4.Click, dS5.Click, dS6.Click, dS7.Click, dS8.Click, dS9.Click, dS10.Click,
+        dS11.Click, dS12.Click, dS13.Click, dS14.Click, dS15.Click, dS16.Click, dS17.Click,
+        dS18.Click, dS19.Click, dS20.Click, dS21.Click
         'Solar port
         Dim nm, tg As String
         Dim sol As Integer
         nm = sender.name
         tg = sender.tag
-        sol = Val(Mid(nm, 7))
-        If sol = 0 Then sol = Val(Mid(nm, 8))
+        sol = Val(Mid(nm, 3))
+
         selStation.Text = "Solar " + Trim(Str(sol))
         If Mapping = True Then
             txtPGMmap.Text = txtPGMmap.Text + "|SP" + sol.ToString
         End If
     End Sub
 
-    Private Sub picPDoc1_Click(sender As Object, e As EventArgs) Handles picPDoc1.Click, picPDoc2.Click, picPDoc3.Click, picPDoc4.Click
+    Private Sub dP1_Click(sender As Object, e As EventArgs) Handles dP1.Click, dP2.Click, dP3.Click, dP4.Click
         'Landing Pad port
         Dim nm, tg As String
         Dim lp As Integer
         nm = sender.name
         tg = sender.tag
-        lp = Val(Mid(nm, 7))
-        If lp = 0 Then lp = Val(Mid(nm, 8))
+        lp = Val(Mid(nm, 3))
+
         selStation.Text = "Pad " + Trim(Str(lp))
 
         If Mapping = True Then
             txtPGMmap.Text = txtPGMmap.Text + "|LP" + lp.ToString
         End If
     End Sub
-    Private Sub picWDoc_Click(sender As Object, e As EventArgs) Handles picWDoc1.Click, picWDoc2.Click, picWDoc3.Click
+    Private Sub dW_Click(sender As Object, e As EventArgs) Handles dW1.Click, dW2.Click, dW3.Click
         'H2OTower port
         Dim nm, tg As String
         Dim h20 As Integer
         nm = sender.name
         tg = sender.tag
-        h20 = Val(Mid(nm, 7))
-        If h20 = 0 Then h20 = Val(Mid(nm, 8))
+        h20 = Val(Mid(nm, 3))
+
         selStation.Text = "H2OTower " + Trim(Str(h20))
 
         If Mapping = True Then
@@ -672,18 +808,18 @@ Public Class frmMain
 
     End Sub
 
-    Private Sub picDDoc_Click(sender As Object, e As EventArgs) Handles picDDoc1.Click, picDDoc2.Click, picDDoc3.Click,
-        picDDoc4.Click, picDDoc5.Click, picDDoc6.Click, picDDoc7.Click, picDDoc8.Click, picDDoc9.Click, picDDoc10.Click,
-        picDDoc11.Click, picDDoc12.Click, picDDoc13.Click, picDDoc14.Click, picDDoc15.Click, picDDoc16.Click, picDDoc17.Click,
-        picDDoc18.Click, picDDoc19.Click, picDDoc20.Click, picDDoc21.Click, picDDoc22.Click, picDDoc23.Click, picDDoc24.Click,
-        picDDoc25.Click, picDDoc26.Click, picDDoc27.Click, picDDoc28.Click ', picDDoc29.Click
+    Private Sub dD_Click(sender As Object, e As EventArgs) Handles dD1.Click, dD2.Click, dD3.Click,
+        dD4.Click, dD5.Click, dD6.Click, dD7.Click, dD8.Click, dD9.Click, dD10.Click,
+        dD11.Click, dD12.Click, dD13.Click, dD14.Click, dD15.Click, dD16.Click, dD17.Click,
+        dD18.Click, dD19.Click, dD20.Click, dD21.Click, dD22.Click, dD23.Click, dD24.Click,
+        dD25.Click, dD26.Click, dD27.Click, dD28.Click ', dD29.Click
         'Drill port
         Dim nm, tg As String
         Dim drl As Integer
         nm = sender.name
         tg = sender.tag
-        drl = Val(Mid(nm, 7))
-        If drl = 0 Then drl = Val(Mid(nm, 8))
+        drl = Val(Mid(nm, 3))
+
         selStation.Text = "Drill " + Trim(Str(drl))
 
         If Mapping = True Then
@@ -790,7 +926,7 @@ Public Class frmMain
         'Fill the droid Info
         '
         'PGM NAME|WP30|SP2|MF4|WT1|WP2|HOME
-        st = ListBox1.SelectedItem
+        st = UCase(LstPGMs.SelectedItem)
         Call PARSE(st, lst, "|", rc)    'Skip Program name
         dr.OGpgm = st                   'OG Program
         Call PARSE(st, lst, "|", rc)
@@ -804,6 +940,7 @@ Public Class frmMain
         Dim statno As Integer
         Dim objDest As New System.Object
         Dim fnd = False
+        Dim dx, dy As Single
         St = dr.Dest
         statno = Val(Mid(St, 3))
         St = UCase(Mid(St, 1, 2))
@@ -812,15 +949,15 @@ Public Class frmMain
         Select Case St
             Case "HO"
             Case "WT"   ' water tower
-                statn = "picWDoc"
+                statn = "dW"
             Case "DR"   ' Drill
-                statn = "picDDoc"
+                statn = "dD"
             Case "MF"   ' Manuf
-                statn = "picMDoc"
+                statn = "dM"
             Case "SP"   ' Solar Panel
-                statn = "picSDoc"
+                statn = "dS"
             Case "LP"   ' pad
-                statn = "picPDoc"
+                statn = "dP"
             Case "WP"   ' Way Point
                 statn = "wp"
             Case Else
@@ -828,14 +965,14 @@ Public Class frmMain
         End Select
         objDest = Findcntl(statn, statno, pnlMain, fnd)
         If fnd Then
-            GetDocDta(objDest, xPos, yPos)
+            GetDocDta(objDest, dx, dy)
         ElseIf St = "HO" Then
-            xPos = dr.BaseX
-            yPos = dr.BaseY
+            dx = dr.BaseX
+            dy = dr.BaseY
         End If
 
-        dr.DestX = xPos
-        dr.DestY = yPos
+        dr.DestX = dx
+        dr.DestY = dy
     End Sub
     Private Sub GetNexDest(ByRef dr As DroidStruct)
         Dim Nd, St As String
@@ -845,11 +982,16 @@ Public Class frmMain
         If Nd = "" Then
             Nd = dr.OGpgm
         End If
+        If Nd = "" Then
+            dr.Enabled = False
+            Exit Sub
+        End If
         Call PARSE(Nd, St, "|", rc)
         dr.RemainingPGM = Nd
         dr.Dest = St
         Call GetDest(dr)
     End Sub
+
 
 End Class
 Public Class DroidStruct

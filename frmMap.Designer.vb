@@ -24,26 +24,17 @@ Partial Class frmMap
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
         pnlMap = New Panel()
-        btmClose = New Button()
         tmrMap = New Timer(components)
         SuspendLayout()
         ' 
         ' pnlMap
         ' 
         pnlMap.BackColor = Color.White
-        pnlMap.Location = New Point(24, 11)
+        pnlMap.BorderStyle = BorderStyle.FixedSingle
+        pnlMap.Location = New Point(0, 0)
         pnlMap.Name = "pnlMap"
-        pnlMap.Size = New Size(500, 500)
+        pnlMap.Size = New Size(820, 820)
         pnlMap.TabIndex = 0
-        ' 
-        ' btmClose
-        ' 
-        btmClose.Location = New Point(219, 520)
-        btmClose.Name = "btmClose"
-        btmClose.Size = New Size(118, 29)
-        btmClose.TabIndex = 1
-        btmClose.Text = "Close"
-        btmClose.UseVisualStyleBackColor = True
         ' 
         ' tmrMap
         ' 
@@ -53,8 +44,7 @@ Partial Class frmMap
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(547, 561)
-        Controls.Add(btmClose)
+        ClientSize = New Size(864, 861)
         Controls.Add(pnlMap)
         Name = "frmMap"
         Text = "frmMap"
@@ -62,6 +52,5 @@ Partial Class frmMap
     End Sub
 
     Friend WithEvents pnlMap As Panel
-    Friend WithEvents btmClose As Button
     Friend WithEvents tmrMap As Timer
 End Class

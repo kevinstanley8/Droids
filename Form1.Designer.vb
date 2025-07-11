@@ -52,7 +52,7 @@ Partial Class frmMain
         wp47 = New PictureBox()
         wp34 = New PictureBox()
         wp46 = New PictureBox()
-        picSDoc17 = New PictureBox()
+        dS17 = New PictureBox()
         wp45 = New PictureBox()
         wp33 = New PictureBox()
         wp44 = New PictureBox()
@@ -65,13 +65,13 @@ Partial Class frmMain
         wp31 = New PictureBox()
         wp28 = New PictureBox()
         pd7 = New PictureBox()
-        picDDoc25 = New PictureBox()
+        dD25 = New PictureBox()
         wp29 = New PictureBox()
-        picDDoc28 = New PictureBox()
+        dD28 = New PictureBox()
         wp27 = New PictureBox()
-        picDDoc26 = New PictureBox()
+        dD26 = New PictureBox()
         lblp1 = New Label()
-        picDDoc27 = New PictureBox()
+        dD27 = New PictureBox()
         Label24 = New Label()
         PictureBox22 = New PictureBox()
         PictureBox16 = New PictureBox()
@@ -168,36 +168,36 @@ Partial Class frmMain
         lbls4 = New Label()
         lbld2 = New Label()
         lbls5 = New Label()
-        picDDoc22 = New PictureBox()
+        dD22 = New PictureBox()
         lbls7 = New Label()
         pel18 = New PictureBox()
         lbls1 = New Label()
-        picDDoc24 = New PictureBox()
+        dD24 = New PictureBox()
         pel17 = New PictureBox()
-        picDDoc23 = New PictureBox()
+        dD23 = New PictureBox()
         Label19 = New Label()
-        picDDoc21 = New PictureBox()
+        dD21 = New PictureBox()
         pd5 = New PictureBox()
         pm2 = New PictureBox()
-        picMDoc16 = New PictureBox()
-        picDDoc19 = New PictureBox()
-        picMDoc15 = New PictureBox()
+        dM16 = New PictureBox()
+        dD19 = New PictureBox()
+        dM15 = New PictureBox()
         pwl7 = New PictureBox()
-        picMDoc14 = New PictureBox()
-        picDDoc17 = New PictureBox()
-        picMDoc13 = New PictureBox()
+        dM14 = New PictureBox()
+        dD17 = New PictureBox()
+        dM13 = New PictureBox()
         pel9 = New PictureBox()
-        picMDoc12 = New PictureBox()
-        picDDoc20 = New PictureBox()
-        picMDoc11 = New PictureBox()
+        dM12 = New PictureBox()
+        dD20 = New PictureBox()
+        dM11 = New PictureBox()
         pd2 = New PictureBox()
-        picMDoc10 = New PictureBox()
-        picDDoc18 = New PictureBox()
-        picMDoc9 = New PictureBox()
+        dM10 = New PictureBox()
+        dD18 = New PictureBox()
+        dM9 = New PictureBox()
         pwl6 = New PictureBox()
         pel10 = New PictureBox()
         pwt3 = New PictureBox()
-        picWDoc3 = New PictureBox()
+        dW3 = New PictureBox()
         pwt2 = New PictureBox()
         pwl1 = New PictureBox()
         Label18 = New Label()
@@ -206,66 +206,66 @@ Partial Class frmMain
         ps7 = New PictureBox()
         pm1 = New PictureBox()
         ps9 = New PictureBox()
-        picMDoc8 = New PictureBox()
-        picMDoc7 = New PictureBox()
-        picMDoc6 = New PictureBox()
-        picMDoc5 = New PictureBox()
+        dM8 = New PictureBox()
+        dM7 = New PictureBox()
+        dM6 = New PictureBox()
+        dM5 = New PictureBox()
         Label17 = New Label()
-        picWDoc2 = New PictureBox()
-        picSDoc9 = New PictureBox()
-        picDDoc7 = New PictureBox()
+        dW2 = New PictureBox()
+        dS9 = New PictureBox()
+        dD7 = New PictureBox()
         Label14 = New Label()
-        picDDoc5 = New PictureBox()
-        picMDoc4 = New PictureBox()
-        picDDoc8 = New PictureBox()
-        picDDoc6 = New PictureBox()
-        picMDoc3 = New PictureBox()
+        dD5 = New PictureBox()
+        dM4 = New PictureBox()
+        dD8 = New PictureBox()
+        dD6 = New PictureBox()
+        dM3 = New PictureBox()
         Label11 = New Label()
         pd3 = New PictureBox()
         Label15 = New Label()
         pwl9 = New PictureBox()
-        picDDoc2 = New PictureBox()
-        picMDoc2 = New PictureBox()
-        picDDoc1 = New PictureBox()
-        picDDoc4 = New PictureBox()
+        dD2 = New PictureBox()
+        dM2 = New PictureBox()
+        dD1 = New PictureBox()
+        dD4 = New PictureBox()
         Label2 = New Label()
-        picDDoc3 = New PictureBox()
-        picMDoc1 = New PictureBox()
+        dD3 = New PictureBox()
+        dM1 = New PictureBox()
         pwt1 = New PictureBox()
         pwl2 = New PictureBox()
         Label12 = New Label()
         pd1 = New PictureBox()
         ps4 = New PictureBox()
         Label7 = New Label()
-        picSDoc4 = New PictureBox()
-        picDDoc15 = New PictureBox()
+        dS4 = New PictureBox()
+        dD15 = New PictureBox()
         pd4 = New PictureBox()
-        picDDoc14 = New PictureBox()
-        picDDoc10 = New PictureBox()
-        picDDoc16 = New PictureBox()
-        picDDoc13 = New PictureBox()
-        picDDoc12 = New PictureBox()
-        picDDoc11 = New PictureBox()
-        picDDoc9 = New PictureBox()
+        dD14 = New PictureBox()
+        dD10 = New PictureBox()
+        dD16 = New PictureBox()
+        dD13 = New PictureBox()
+        dD12 = New PictureBox()
+        dD11 = New PictureBox()
+        dD9 = New PictureBox()
         Label10 = New Label()
         Label9 = New Label()
         ps2 = New PictureBox()
-        picSDoc2 = New PictureBox()
+        dS2 = New PictureBox()
         ps1 = New PictureBox()
-        picSDoc1 = New PictureBox()
+        dS1 = New PictureBox()
         Label8 = New Label()
         pb3 = New PictureBox()
-        picDoc30 = New PictureBox()
-        picDoc29 = New PictureBox()
-        picDoc28 = New PictureBox()
-        picDoc27 = New PictureBox()
-        picDoc26 = New PictureBox()
-        picDoc25 = New PictureBox()
-        picDoc24 = New PictureBox()
-        picDoc23 = New PictureBox()
-        picDoc22 = New PictureBox()
-        picDoc21 = New PictureBox()
-        picWDoc1 = New PictureBox()
+        dG30 = New PictureBox()
+        dG29 = New PictureBox()
+        dG28 = New PictureBox()
+        dG27 = New PictureBox()
+        dG26 = New PictureBox()
+        dG25 = New PictureBox()
+        dG24 = New PictureBox()
+        dG23 = New PictureBox()
+        dG22 = New PictureBox()
+        dG21 = New PictureBox()
+        dW1 = New PictureBox()
         pwl3 = New PictureBox()
         pel1 = New PictureBox()
         pel2 = New PictureBox()
@@ -273,29 +273,29 @@ Partial Class frmMain
         pb2 = New PictureBox()
         ps5 = New PictureBox()
         pel4 = New PictureBox()
-        picSDoc5 = New PictureBox()
+        dS5 = New PictureBox()
         ps3 = New PictureBox()
         pb1 = New PictureBox()
-        picDoc10 = New PictureBox()
-        picDoc9 = New PictureBox()
-        picDoc8 = New PictureBox()
-        picDoc7 = New PictureBox()
-        picDoc6 = New PictureBox()
-        picDoc1 = New PictureBox()
-        picDoc2 = New PictureBox()
-        picDoc3 = New PictureBox()
-        picDoc4 = New PictureBox()
-        picDoc5 = New PictureBox()
-        picSDoc3 = New PictureBox()
+        dG10 = New PictureBox()
+        dG9 = New PictureBox()
+        dG8 = New PictureBox()
+        dG7 = New PictureBox()
+        dG6 = New PictureBox()
+        dG1 = New PictureBox()
+        dG2 = New PictureBox()
+        dG3 = New PictureBox()
+        dG4 = New PictureBox()
+        dG5 = New PictureBox()
+        dS3 = New PictureBox()
         pel5 = New PictureBox()
         ps6 = New PictureBox()
-        picSDoc6 = New PictureBox()
+        dS6 = New PictureBox()
         pel14 = New PictureBox()
         pwl10 = New PictureBox()
         pel11 = New PictureBox()
         pel12 = New PictureBox()
         ps8 = New PictureBox()
-        picSDoc8 = New PictureBox()
+        dS8 = New PictureBox()
         pel13 = New PictureBox()
         pwl4 = New PictureBox()
         pel6 = New PictureBox()
@@ -303,22 +303,22 @@ Partial Class frmMain
         pel7 = New PictureBox()
         pel8 = New PictureBox()
         pwl8 = New PictureBox()
-        picSDoc7 = New PictureBox()
+        dS7 = New PictureBox()
         pwl13 = New PictureBox()
         pwl11 = New PictureBox()
         pwl12 = New PictureBox()
         pel16 = New PictureBox()
         pel15 = New PictureBox()
-        picDoc13 = New PictureBox()
-        picDoc12 = New PictureBox()
-        picDoc14 = New PictureBox()
-        picDoc11 = New PictureBox()
-        picDoc15 = New PictureBox()
-        picDoc20 = New PictureBox()
-        picDoc19 = New PictureBox()
-        picDoc16 = New PictureBox()
-        picDoc17 = New PictureBox()
-        picDoc18 = New PictureBox()
+        dG13 = New PictureBox()
+        dG12 = New PictureBox()
+        dG14 = New PictureBox()
+        dG11 = New PictureBox()
+        dG15 = New PictureBox()
+        dG20 = New PictureBox()
+        dG19 = New PictureBox()
+        dG16 = New PictureBox()
+        dG17 = New PictureBox()
+        dG18 = New PictureBox()
         pwl14 = New PictureBox()
         pel19 = New PictureBox()
         PictureBox1 = New PictureBox()
@@ -330,21 +330,21 @@ Partial Class frmMain
         PictureBox17 = New PictureBox()
         PictureBox18 = New PictureBox()
         PictureBox23 = New PictureBox()
-        picPDoc4 = New PictureBox()
-        picPDoc1 = New PictureBox()
-        picPDoc3 = New PictureBox()
-        picPDoc2 = New PictureBox()
-        picSDoc21 = New PictureBox()
-        picSDoc20 = New PictureBox()
-        picSDoc19 = New PictureBox()
-        picSDoc18 = New PictureBox()
-        picSDoc16 = New PictureBox()
-        picSDoc15 = New PictureBox()
-        picSDoc14 = New PictureBox()
-        picSDoc13 = New PictureBox()
-        picSDoc12 = New PictureBox()
-        picSDoc11 = New PictureBox()
-        picSDoc10 = New PictureBox()
+        dP4 = New PictureBox()
+        dP1 = New PictureBox()
+        dP3 = New PictureBox()
+        dP2 = New PictureBox()
+        dS21 = New PictureBox()
+        dS20 = New PictureBox()
+        dS19 = New PictureBox()
+        dS18 = New PictureBox()
+        dS16 = New PictureBox()
+        dS15 = New PictureBox()
+        dS14 = New PictureBox()
+        dS13 = New PictureBox()
+        dS12 = New PictureBox()
+        dS11 = New PictureBox()
+        dS10 = New PictureBox()
         PictureBox29 = New PictureBox()
         PictureBox31 = New PictureBox()
         PictureBox30 = New PictureBox()
@@ -367,8 +367,14 @@ Partial Class frmMain
         Label1 = New Label()
         txtSpeed = New TextBox()
         Panel2 = New Panel()
+        lstG3pgm = New ListBox()
+        lstG2pgm = New ListBox()
+        lstG1pgm = New ListBox()
+        Label31 = New Label()
+        Label30 = New Label()
+        Label28 = New Label()
         btnLoad = New Button()
-        ListBox1 = New ListBox()
+        LstPGMs = New ListBox()
         btnGoHome = New Button()
         Label21 = New Label()
         selStation = New ComboBox()
@@ -384,6 +390,9 @@ Partial Class frmMain
         txtGarge = New TextBox()
         txtDroid = New TextBox()
         Panel3 = New Panel()
+        lblOTemp = New Label()
+        Label35 = New Label()
+        lblTemptxt = New Label()
         Label26 = New Label()
         btnMapping = New Button()
         txtPGMmap = New TextBox()
@@ -400,6 +409,8 @@ Partial Class frmMain
         PictureBox11 = New PictureBox()
         tmrFlashLights = New Timer(components)
         PictureBox36 = New PictureBox()
+        ToolTip1 = New ToolTip(components)
+        tmrTick = New Timer(components)
         pnlMain.SuspendLayout()
         CType(wp60, ComponentModel.ISupportInitialize).BeginInit()
         CType(wp59, ComponentModel.ISupportInitialize).BeginInit()
@@ -427,7 +438,7 @@ Partial Class frmMain
         CType(wp47, ComponentModel.ISupportInitialize).BeginInit()
         CType(wp34, ComponentModel.ISupportInitialize).BeginInit()
         CType(wp46, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picSDoc17, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dS17, ComponentModel.ISupportInitialize).BeginInit()
         CType(wp45, ComponentModel.ISupportInitialize).BeginInit()
         CType(wp33, ComponentModel.ISupportInitialize).BeginInit()
         CType(wp44, ComponentModel.ISupportInitialize).BeginInit()
@@ -439,12 +450,12 @@ Partial Class frmMain
         CType(wp31, ComponentModel.ISupportInitialize).BeginInit()
         CType(wp28, ComponentModel.ISupportInitialize).BeginInit()
         CType(pd7, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDDoc25, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dD25, ComponentModel.ISupportInitialize).BeginInit()
         CType(wp29, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDDoc28, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dD28, ComponentModel.ISupportInitialize).BeginInit()
         CType(wp27, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDDoc26, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDDoc27, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dD26, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dD27, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox22, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox16, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
@@ -497,88 +508,88 @@ Partial Class frmMain
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         CType(ps10, ComponentModel.ISupportInitialize).BeginInit()
         CType(pd6, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDDoc22, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dD22, ComponentModel.ISupportInitialize).BeginInit()
         CType(pel18, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDDoc24, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dD24, ComponentModel.ISupportInitialize).BeginInit()
         CType(pel17, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDDoc23, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDDoc21, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dD23, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dD21, ComponentModel.ISupportInitialize).BeginInit()
         CType(pd5, ComponentModel.ISupportInitialize).BeginInit()
         CType(pm2, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picMDoc16, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDDoc19, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picMDoc15, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dM16, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dD19, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dM15, ComponentModel.ISupportInitialize).BeginInit()
         CType(pwl7, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picMDoc14, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDDoc17, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picMDoc13, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dM14, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dD17, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dM13, ComponentModel.ISupportInitialize).BeginInit()
         CType(pel9, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picMDoc12, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDDoc20, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picMDoc11, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dM12, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dD20, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dM11, ComponentModel.ISupportInitialize).BeginInit()
         CType(pd2, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picMDoc10, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDDoc18, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picMDoc9, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dM10, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dD18, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dM9, ComponentModel.ISupportInitialize).BeginInit()
         CType(pwl6, ComponentModel.ISupportInitialize).BeginInit()
         CType(pel10, ComponentModel.ISupportInitialize).BeginInit()
         CType(pwt3, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picWDoc3, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dW3, ComponentModel.ISupportInitialize).BeginInit()
         CType(pwt2, ComponentModel.ISupportInitialize).BeginInit()
         CType(pwl1, ComponentModel.ISupportInitialize).BeginInit()
         CType(ps7, ComponentModel.ISupportInitialize).BeginInit()
         CType(pm1, ComponentModel.ISupportInitialize).BeginInit()
         CType(ps9, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picMDoc8, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picMDoc7, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picMDoc6, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picMDoc5, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picWDoc2, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picSDoc9, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDDoc7, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDDoc5, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picMDoc4, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDDoc8, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDDoc6, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picMDoc3, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dM8, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dM7, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dM6, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dM5, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dW2, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dS9, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dD7, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dD5, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dM4, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dD8, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dD6, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dM3, ComponentModel.ISupportInitialize).BeginInit()
         CType(pd3, ComponentModel.ISupportInitialize).BeginInit()
         CType(pwl9, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDDoc2, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picMDoc2, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDDoc1, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDDoc4, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDDoc3, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picMDoc1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dD2, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dM2, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dD1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dD4, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dD3, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dM1, ComponentModel.ISupportInitialize).BeginInit()
         CType(pwt1, ComponentModel.ISupportInitialize).BeginInit()
         CType(pwl2, ComponentModel.ISupportInitialize).BeginInit()
         CType(pd1, ComponentModel.ISupportInitialize).BeginInit()
         CType(ps4, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picSDoc4, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDDoc15, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dS4, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dD15, ComponentModel.ISupportInitialize).BeginInit()
         CType(pd4, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDDoc14, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDDoc10, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDDoc16, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDDoc13, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDDoc12, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDDoc11, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDDoc9, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dD14, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dD10, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dD16, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dD13, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dD12, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dD11, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dD9, ComponentModel.ISupportInitialize).BeginInit()
         CType(ps2, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picSDoc2, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dS2, ComponentModel.ISupportInitialize).BeginInit()
         CType(ps1, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picSDoc1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dS1, ComponentModel.ISupportInitialize).BeginInit()
         CType(pb3, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDoc30, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDoc29, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDoc28, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDoc27, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDoc26, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDoc25, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDoc24, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDoc23, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDoc22, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDoc21, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picWDoc1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dG30, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dG29, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dG28, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dG27, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dG26, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dG25, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dG24, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dG23, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dG22, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dG21, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dW1, ComponentModel.ISupportInitialize).BeginInit()
         CType(pwl3, ComponentModel.ISupportInitialize).BeginInit()
         CType(pel1, ComponentModel.ISupportInitialize).BeginInit()
         CType(pel2, ComponentModel.ISupportInitialize).BeginInit()
@@ -586,29 +597,29 @@ Partial Class frmMain
         CType(pb2, ComponentModel.ISupportInitialize).BeginInit()
         CType(ps5, ComponentModel.ISupportInitialize).BeginInit()
         CType(pel4, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picSDoc5, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dS5, ComponentModel.ISupportInitialize).BeginInit()
         CType(ps3, ComponentModel.ISupportInitialize).BeginInit()
         CType(pb1, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDoc10, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDoc9, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDoc8, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDoc7, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDoc6, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDoc1, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDoc2, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDoc3, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDoc4, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDoc5, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picSDoc3, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dG10, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dG9, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dG8, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dG7, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dG6, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dG1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dG2, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dG3, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dG4, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dG5, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dS3, ComponentModel.ISupportInitialize).BeginInit()
         CType(pel5, ComponentModel.ISupportInitialize).BeginInit()
         CType(ps6, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picSDoc6, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dS6, ComponentModel.ISupportInitialize).BeginInit()
         CType(pel14, ComponentModel.ISupportInitialize).BeginInit()
         CType(pwl10, ComponentModel.ISupportInitialize).BeginInit()
         CType(pel11, ComponentModel.ISupportInitialize).BeginInit()
         CType(pel12, ComponentModel.ISupportInitialize).BeginInit()
         CType(ps8, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picSDoc8, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dS8, ComponentModel.ISupportInitialize).BeginInit()
         CType(pel13, ComponentModel.ISupportInitialize).BeginInit()
         CType(pwl4, ComponentModel.ISupportInitialize).BeginInit()
         CType(pel6, ComponentModel.ISupportInitialize).BeginInit()
@@ -616,22 +627,22 @@ Partial Class frmMain
         CType(pel7, ComponentModel.ISupportInitialize).BeginInit()
         CType(pel8, ComponentModel.ISupportInitialize).BeginInit()
         CType(pwl8, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picSDoc7, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dS7, ComponentModel.ISupportInitialize).BeginInit()
         CType(pwl13, ComponentModel.ISupportInitialize).BeginInit()
         CType(pwl11, ComponentModel.ISupportInitialize).BeginInit()
         CType(pwl12, ComponentModel.ISupportInitialize).BeginInit()
         CType(pel16, ComponentModel.ISupportInitialize).BeginInit()
         CType(pel15, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDoc13, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDoc12, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDoc14, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDoc11, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDoc15, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDoc20, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDoc19, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDoc16, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDoc17, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picDoc18, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dG13, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dG12, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dG14, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dG11, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dG15, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dG20, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dG19, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dG16, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dG17, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dG18, ComponentModel.ISupportInitialize).BeginInit()
         CType(pwl14, ComponentModel.ISupportInitialize).BeginInit()
         CType(pel19, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -643,21 +654,21 @@ Partial Class frmMain
         CType(PictureBox17, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox18, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox23, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picPDoc4, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picPDoc1, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picPDoc3, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picPDoc2, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picSDoc21, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picSDoc20, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picSDoc19, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picSDoc18, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picSDoc16, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picSDoc15, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picSDoc14, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picSDoc13, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picSDoc12, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picSDoc11, ComponentModel.ISupportInitialize).BeginInit()
-        CType(picSDoc10, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dP4, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dP1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dP3, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dP2, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dS21, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dS20, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dS19, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dS18, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dS16, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dS15, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dS14, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dS13, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dS12, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dS11, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dS10, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox29, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox31, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox30, ComponentModel.ISupportInitialize).BeginInit()
@@ -718,7 +729,7 @@ Partial Class frmMain
         pnlMain.Controls.Add(wp47)
         pnlMain.Controls.Add(wp34)
         pnlMain.Controls.Add(wp46)
-        pnlMain.Controls.Add(picSDoc17)
+        pnlMain.Controls.Add(dS17)
         pnlMain.Controls.Add(wp45)
         pnlMain.Controls.Add(wp33)
         pnlMain.Controls.Add(wp44)
@@ -731,13 +742,13 @@ Partial Class frmMain
         pnlMain.Controls.Add(wp31)
         pnlMain.Controls.Add(wp28)
         pnlMain.Controls.Add(pd7)
-        pnlMain.Controls.Add(picDDoc25)
+        pnlMain.Controls.Add(dD25)
         pnlMain.Controls.Add(wp29)
-        pnlMain.Controls.Add(picDDoc28)
+        pnlMain.Controls.Add(dD28)
         pnlMain.Controls.Add(wp27)
-        pnlMain.Controls.Add(picDDoc26)
+        pnlMain.Controls.Add(dD26)
         pnlMain.Controls.Add(lblp1)
-        pnlMain.Controls.Add(picDDoc27)
+        pnlMain.Controls.Add(dD27)
         pnlMain.Controls.Add(Label24)
         pnlMain.Controls.Add(PictureBox22)
         pnlMain.Controls.Add(PictureBox16)
@@ -834,36 +845,36 @@ Partial Class frmMain
         pnlMain.Controls.Add(lbls4)
         pnlMain.Controls.Add(lbld2)
         pnlMain.Controls.Add(lbls5)
-        pnlMain.Controls.Add(picDDoc22)
+        pnlMain.Controls.Add(dD22)
         pnlMain.Controls.Add(lbls7)
         pnlMain.Controls.Add(pel18)
         pnlMain.Controls.Add(lbls1)
-        pnlMain.Controls.Add(picDDoc24)
+        pnlMain.Controls.Add(dD24)
         pnlMain.Controls.Add(pel17)
-        pnlMain.Controls.Add(picDDoc23)
+        pnlMain.Controls.Add(dD23)
         pnlMain.Controls.Add(Label19)
-        pnlMain.Controls.Add(picDDoc21)
+        pnlMain.Controls.Add(dD21)
         pnlMain.Controls.Add(pd5)
         pnlMain.Controls.Add(pm2)
-        pnlMain.Controls.Add(picMDoc16)
-        pnlMain.Controls.Add(picDDoc19)
-        pnlMain.Controls.Add(picMDoc15)
+        pnlMain.Controls.Add(dM16)
+        pnlMain.Controls.Add(dD19)
+        pnlMain.Controls.Add(dM15)
         pnlMain.Controls.Add(pwl7)
-        pnlMain.Controls.Add(picMDoc14)
-        pnlMain.Controls.Add(picDDoc17)
-        pnlMain.Controls.Add(picMDoc13)
+        pnlMain.Controls.Add(dM14)
+        pnlMain.Controls.Add(dD17)
+        pnlMain.Controls.Add(dM13)
         pnlMain.Controls.Add(pel9)
-        pnlMain.Controls.Add(picMDoc12)
-        pnlMain.Controls.Add(picDDoc20)
-        pnlMain.Controls.Add(picMDoc11)
+        pnlMain.Controls.Add(dM12)
+        pnlMain.Controls.Add(dD20)
+        pnlMain.Controls.Add(dM11)
         pnlMain.Controls.Add(pd2)
-        pnlMain.Controls.Add(picMDoc10)
-        pnlMain.Controls.Add(picDDoc18)
-        pnlMain.Controls.Add(picMDoc9)
+        pnlMain.Controls.Add(dM10)
+        pnlMain.Controls.Add(dD18)
+        pnlMain.Controls.Add(dM9)
         pnlMain.Controls.Add(pwl6)
         pnlMain.Controls.Add(pel10)
         pnlMain.Controls.Add(pwt3)
-        pnlMain.Controls.Add(picWDoc3)
+        pnlMain.Controls.Add(dW3)
         pnlMain.Controls.Add(pwt2)
         pnlMain.Controls.Add(pwl1)
         pnlMain.Controls.Add(Label18)
@@ -872,66 +883,66 @@ Partial Class frmMain
         pnlMain.Controls.Add(ps7)
         pnlMain.Controls.Add(pm1)
         pnlMain.Controls.Add(ps9)
-        pnlMain.Controls.Add(picMDoc8)
-        pnlMain.Controls.Add(picMDoc7)
-        pnlMain.Controls.Add(picMDoc6)
-        pnlMain.Controls.Add(picMDoc5)
+        pnlMain.Controls.Add(dM8)
+        pnlMain.Controls.Add(dM7)
+        pnlMain.Controls.Add(dM6)
+        pnlMain.Controls.Add(dM5)
         pnlMain.Controls.Add(Label17)
-        pnlMain.Controls.Add(picWDoc2)
-        pnlMain.Controls.Add(picSDoc9)
-        pnlMain.Controls.Add(picDDoc7)
+        pnlMain.Controls.Add(dW2)
+        pnlMain.Controls.Add(dS9)
+        pnlMain.Controls.Add(dD7)
         pnlMain.Controls.Add(Label14)
-        pnlMain.Controls.Add(picDDoc5)
-        pnlMain.Controls.Add(picMDoc4)
-        pnlMain.Controls.Add(picDDoc8)
-        pnlMain.Controls.Add(picDDoc6)
-        pnlMain.Controls.Add(picMDoc3)
+        pnlMain.Controls.Add(dD5)
+        pnlMain.Controls.Add(dM4)
+        pnlMain.Controls.Add(dD8)
+        pnlMain.Controls.Add(dD6)
+        pnlMain.Controls.Add(dM3)
         pnlMain.Controls.Add(Label11)
         pnlMain.Controls.Add(pd3)
         pnlMain.Controls.Add(Label15)
         pnlMain.Controls.Add(pwl9)
-        pnlMain.Controls.Add(picDDoc2)
-        pnlMain.Controls.Add(picMDoc2)
-        pnlMain.Controls.Add(picDDoc1)
-        pnlMain.Controls.Add(picDDoc4)
+        pnlMain.Controls.Add(dD2)
+        pnlMain.Controls.Add(dM2)
+        pnlMain.Controls.Add(dD1)
+        pnlMain.Controls.Add(dD4)
         pnlMain.Controls.Add(Label2)
-        pnlMain.Controls.Add(picDDoc3)
-        pnlMain.Controls.Add(picMDoc1)
+        pnlMain.Controls.Add(dD3)
+        pnlMain.Controls.Add(dM1)
         pnlMain.Controls.Add(pwt1)
         pnlMain.Controls.Add(pwl2)
         pnlMain.Controls.Add(Label12)
         pnlMain.Controls.Add(pd1)
         pnlMain.Controls.Add(ps4)
         pnlMain.Controls.Add(Label7)
-        pnlMain.Controls.Add(picSDoc4)
-        pnlMain.Controls.Add(picDDoc15)
+        pnlMain.Controls.Add(dS4)
+        pnlMain.Controls.Add(dD15)
         pnlMain.Controls.Add(pd4)
-        pnlMain.Controls.Add(picDDoc14)
-        pnlMain.Controls.Add(picDDoc10)
-        pnlMain.Controls.Add(picDDoc16)
-        pnlMain.Controls.Add(picDDoc13)
-        pnlMain.Controls.Add(picDDoc12)
-        pnlMain.Controls.Add(picDDoc11)
-        pnlMain.Controls.Add(picDDoc9)
+        pnlMain.Controls.Add(dD14)
+        pnlMain.Controls.Add(dD10)
+        pnlMain.Controls.Add(dD16)
+        pnlMain.Controls.Add(dD13)
+        pnlMain.Controls.Add(dD12)
+        pnlMain.Controls.Add(dD11)
+        pnlMain.Controls.Add(dD9)
         pnlMain.Controls.Add(Label10)
         pnlMain.Controls.Add(Label9)
         pnlMain.Controls.Add(ps2)
-        pnlMain.Controls.Add(picSDoc2)
+        pnlMain.Controls.Add(dS2)
         pnlMain.Controls.Add(ps1)
-        pnlMain.Controls.Add(picSDoc1)
+        pnlMain.Controls.Add(dS1)
         pnlMain.Controls.Add(Label8)
         pnlMain.Controls.Add(pb3)
-        pnlMain.Controls.Add(picDoc30)
-        pnlMain.Controls.Add(picDoc29)
-        pnlMain.Controls.Add(picDoc28)
-        pnlMain.Controls.Add(picDoc27)
-        pnlMain.Controls.Add(picDoc26)
-        pnlMain.Controls.Add(picDoc25)
-        pnlMain.Controls.Add(picDoc24)
-        pnlMain.Controls.Add(picDoc23)
-        pnlMain.Controls.Add(picDoc22)
-        pnlMain.Controls.Add(picDoc21)
-        pnlMain.Controls.Add(picWDoc1)
+        pnlMain.Controls.Add(dG30)
+        pnlMain.Controls.Add(dG29)
+        pnlMain.Controls.Add(dG28)
+        pnlMain.Controls.Add(dG27)
+        pnlMain.Controls.Add(dG26)
+        pnlMain.Controls.Add(dG25)
+        pnlMain.Controls.Add(dG24)
+        pnlMain.Controls.Add(dG23)
+        pnlMain.Controls.Add(dG22)
+        pnlMain.Controls.Add(dG21)
+        pnlMain.Controls.Add(dW1)
         pnlMain.Controls.Add(pwl3)
         pnlMain.Controls.Add(pel1)
         pnlMain.Controls.Add(pel2)
@@ -939,29 +950,29 @@ Partial Class frmMain
         pnlMain.Controls.Add(pb2)
         pnlMain.Controls.Add(ps5)
         pnlMain.Controls.Add(pel4)
-        pnlMain.Controls.Add(picSDoc5)
+        pnlMain.Controls.Add(dS5)
         pnlMain.Controls.Add(ps3)
         pnlMain.Controls.Add(pb1)
-        pnlMain.Controls.Add(picDoc10)
-        pnlMain.Controls.Add(picDoc9)
-        pnlMain.Controls.Add(picDoc8)
-        pnlMain.Controls.Add(picDoc7)
-        pnlMain.Controls.Add(picDoc6)
-        pnlMain.Controls.Add(picDoc1)
-        pnlMain.Controls.Add(picDoc2)
-        pnlMain.Controls.Add(picDoc3)
-        pnlMain.Controls.Add(picDoc4)
-        pnlMain.Controls.Add(picDoc5)
-        pnlMain.Controls.Add(picSDoc3)
+        pnlMain.Controls.Add(dG10)
+        pnlMain.Controls.Add(dG9)
+        pnlMain.Controls.Add(dG8)
+        pnlMain.Controls.Add(dG7)
+        pnlMain.Controls.Add(dG6)
+        pnlMain.Controls.Add(dG1)
+        pnlMain.Controls.Add(dG2)
+        pnlMain.Controls.Add(dG3)
+        pnlMain.Controls.Add(dG4)
+        pnlMain.Controls.Add(dG5)
+        pnlMain.Controls.Add(dS3)
         pnlMain.Controls.Add(pel5)
         pnlMain.Controls.Add(ps6)
-        pnlMain.Controls.Add(picSDoc6)
+        pnlMain.Controls.Add(dS6)
         pnlMain.Controls.Add(pel14)
         pnlMain.Controls.Add(pwl10)
         pnlMain.Controls.Add(pel11)
         pnlMain.Controls.Add(pel12)
         pnlMain.Controls.Add(ps8)
-        pnlMain.Controls.Add(picSDoc8)
+        pnlMain.Controls.Add(dS8)
         pnlMain.Controls.Add(pel13)
         pnlMain.Controls.Add(pwl4)
         pnlMain.Controls.Add(pel6)
@@ -969,22 +980,22 @@ Partial Class frmMain
         pnlMain.Controls.Add(pel7)
         pnlMain.Controls.Add(pel8)
         pnlMain.Controls.Add(pwl8)
-        pnlMain.Controls.Add(picSDoc7)
+        pnlMain.Controls.Add(dS7)
         pnlMain.Controls.Add(pwl13)
         pnlMain.Controls.Add(pwl11)
         pnlMain.Controls.Add(pwl12)
         pnlMain.Controls.Add(pel16)
         pnlMain.Controls.Add(pel15)
-        pnlMain.Controls.Add(picDoc13)
-        pnlMain.Controls.Add(picDoc12)
-        pnlMain.Controls.Add(picDoc14)
-        pnlMain.Controls.Add(picDoc11)
-        pnlMain.Controls.Add(picDoc15)
-        pnlMain.Controls.Add(picDoc20)
-        pnlMain.Controls.Add(picDoc19)
-        pnlMain.Controls.Add(picDoc16)
-        pnlMain.Controls.Add(picDoc17)
-        pnlMain.Controls.Add(picDoc18)
+        pnlMain.Controls.Add(dG13)
+        pnlMain.Controls.Add(dG12)
+        pnlMain.Controls.Add(dG14)
+        pnlMain.Controls.Add(dG11)
+        pnlMain.Controls.Add(dG15)
+        pnlMain.Controls.Add(dG20)
+        pnlMain.Controls.Add(dG19)
+        pnlMain.Controls.Add(dG16)
+        pnlMain.Controls.Add(dG17)
+        pnlMain.Controls.Add(dG18)
         pnlMain.Controls.Add(pwl14)
         pnlMain.Controls.Add(pel19)
         pnlMain.Controls.Add(PictureBox1)
@@ -996,21 +1007,21 @@ Partial Class frmMain
         pnlMain.Controls.Add(PictureBox17)
         pnlMain.Controls.Add(PictureBox18)
         pnlMain.Controls.Add(PictureBox23)
-        pnlMain.Controls.Add(picPDoc4)
-        pnlMain.Controls.Add(picPDoc1)
-        pnlMain.Controls.Add(picPDoc3)
-        pnlMain.Controls.Add(picPDoc2)
-        pnlMain.Controls.Add(picSDoc21)
-        pnlMain.Controls.Add(picSDoc20)
-        pnlMain.Controls.Add(picSDoc19)
-        pnlMain.Controls.Add(picSDoc18)
-        pnlMain.Controls.Add(picSDoc16)
-        pnlMain.Controls.Add(picSDoc15)
-        pnlMain.Controls.Add(picSDoc14)
-        pnlMain.Controls.Add(picSDoc13)
-        pnlMain.Controls.Add(picSDoc12)
-        pnlMain.Controls.Add(picSDoc11)
-        pnlMain.Controls.Add(picSDoc10)
+        pnlMain.Controls.Add(dP4)
+        pnlMain.Controls.Add(dP1)
+        pnlMain.Controls.Add(dP3)
+        pnlMain.Controls.Add(dP2)
+        pnlMain.Controls.Add(dS21)
+        pnlMain.Controls.Add(dS20)
+        pnlMain.Controls.Add(dS19)
+        pnlMain.Controls.Add(dS18)
+        pnlMain.Controls.Add(dS16)
+        pnlMain.Controls.Add(dS15)
+        pnlMain.Controls.Add(dS14)
+        pnlMain.Controls.Add(dS13)
+        pnlMain.Controls.Add(dS12)
+        pnlMain.Controls.Add(dS11)
+        pnlMain.Controls.Add(dS10)
         pnlMain.Controls.Add(PictureBox29)
         pnlMain.Controls.Add(PictureBox31)
         pnlMain.Controls.Add(PictureBox30)
@@ -1099,7 +1110,7 @@ Partial Class frmMain
         ' Label29
         ' 
         Label29.AutoSize = True
-        Label29.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        Label29.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label29.Location = New Point(2542, 4138)
         Label29.Name = "Label29"
         Label29.Size = New Size(88, 18)
@@ -1177,7 +1188,7 @@ Partial Class frmMain
         ' 
         ' lbls17
         ' 
-        lbls17.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lbls17.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbls17.Location = New Point(2565, 4218)
         lbls17.Name = "lbls17"
         lbls17.Size = New Size(42, 18)
@@ -1197,7 +1208,7 @@ Partial Class frmMain
         ' wp36
         ' 
         wp36.BackColor = Color.Fuchsia
-        wp36.Location = New Point(249, 5315)
+        wp36.Location = New Point(4706, 6865)
         wp36.Name = "wp36"
         wp36.Size = New Size(10, 10)
         wp36.TabIndex = 109
@@ -1246,7 +1257,7 @@ Partial Class frmMain
         ' wp35
         ' 
         wp35.BackColor = Color.Fuchsia
-        wp35.Location = New Point(129, 5187)
+        wp35.Location = New Point(4586, 6737)
         wp35.Name = "wp35"
         wp35.Size = New Size(10, 10)
         wp35.TabIndex = 108
@@ -1285,7 +1296,7 @@ Partial Class frmMain
         ' wp34
         ' 
         wp34.BackColor = Color.Fuchsia
-        wp34.Location = New Point(448, 5167)
+        wp34.Location = New Point(4905, 6717)
         wp34.Name = "wp34"
         wp34.Size = New Size(10, 10)
         wp34.TabIndex = 107
@@ -1302,16 +1313,16 @@ Partial Class frmMain
         wp46.TabStop = False
         wp46.Tag = "C"
         ' 
-        ' picSDoc17
+        ' dS17
         ' 
-        picSDoc17.BackColor = Color.DimGray
-        picSDoc17.BorderStyle = BorderStyle.FixedSingle
-        picSDoc17.Location = New Point(2581, 4238)
-        picSDoc17.Name = "picSDoc17"
-        picSDoc17.Size = New Size(15, 20)
-        picSDoc17.TabIndex = 193
-        picSDoc17.TabStop = False
-        picSDoc17.Tag = "B"
+        dS17.BackColor = Color.DimGray
+        dS17.BorderStyle = BorderStyle.FixedSingle
+        dS17.Location = New Point(2581, 4238)
+        dS17.Name = "dS17"
+        dS17.Size = New Size(15, 20)
+        dS17.TabIndex = 193
+        dS17.TabStop = False
+        dS17.Tag = "B"
         ' 
         ' wp45
         ' 
@@ -1326,7 +1337,7 @@ Partial Class frmMain
         ' wp33
         ' 
         wp33.BackColor = Color.Fuchsia
-        wp33.Location = New Point(450, 5042)
+        wp33.Location = New Point(4907, 6592)
         wp33.Name = "wp33"
         wp33.Size = New Size(10, 10)
         wp33.TabIndex = 106
@@ -1346,7 +1357,7 @@ Partial Class frmMain
         ' lbld7
         ' 
         lbld7.BackColor = Color.White
-        lbld7.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lbld7.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbld7.Location = New Point(2948, 403)
         lbld7.Name = "lbld7"
         lbld7.Size = New Size(42, 18)
@@ -1366,7 +1377,7 @@ Partial Class frmMain
         ' wp32
         ' 
         wp32.BackColor = Color.Fuchsia
-        wp32.Location = New Point(281, 5008)
+        wp32.Location = New Point(4738, 6558)
         wp32.Name = "wp32"
         wp32.Size = New Size(10, 10)
         wp32.TabIndex = 105
@@ -1405,7 +1416,7 @@ Partial Class frmMain
         ' wp31
         ' 
         wp31.BackColor = Color.Fuchsia
-        wp31.Location = New Point(354, 4819)
+        wp31.Location = New Point(4811, 6369)
         wp31.Name = "wp31"
         wp31.Size = New Size(10, 10)
         wp31.TabIndex = 104
@@ -1431,16 +1442,16 @@ Partial Class frmMain
         pd7.TabIndex = 111
         pd7.TabStop = False
         ' 
-        ' picDDoc25
+        ' dD25
         ' 
-        picDDoc25.BackColor = Color.DimGray
-        picDDoc25.BorderStyle = BorderStyle.FixedSingle
-        picDDoc25.Location = New Point(2922, 389)
-        picDDoc25.Name = "picDDoc25"
-        picDDoc25.Size = New Size(30, 15)
-        picDDoc25.TabIndex = 109
-        picDDoc25.TabStop = False
-        picDDoc25.Tag = "L"
+        dD25.BackColor = Color.DimGray
+        dD25.BorderStyle = BorderStyle.FixedSingle
+        dD25.Location = New Point(2922, 389)
+        dD25.Name = "dD25"
+        dD25.Size = New Size(30, 15)
+        dD25.TabIndex = 109
+        dD25.TabStop = False
+        dD25.Tag = "L"
         ' 
         ' wp29
         ' 
@@ -1452,16 +1463,16 @@ Partial Class frmMain
         wp29.TabStop = False
         wp29.Tag = "C"
         ' 
-        ' picDDoc28
+        ' dD28
         ' 
-        picDDoc28.BackColor = Color.DimGray
-        picDDoc28.BorderStyle = BorderStyle.FixedSingle
-        picDDoc28.Location = New Point(2985, 389)
-        picDDoc28.Name = "picDDoc28"
-        picDDoc28.Size = New Size(30, 15)
-        picDDoc28.TabIndex = 110
-        picDDoc28.TabStop = False
-        picDDoc28.Tag = "R"
+        dD28.BackColor = Color.DimGray
+        dD28.BorderStyle = BorderStyle.FixedSingle
+        dD28.Location = New Point(2985, 389)
+        dD28.Name = "dD28"
+        dD28.Size = New Size(30, 15)
+        dD28.TabIndex = 110
+        dD28.TabStop = False
+        dD28.Tag = "R"
         ' 
         ' wp27
         ' 
@@ -1473,40 +1484,40 @@ Partial Class frmMain
         wp27.TabStop = False
         wp27.Tag = "C"
         ' 
-        ' picDDoc26
+        ' dD26
         ' 
-        picDDoc26.BackColor = Color.DimGray
-        picDDoc26.BorderStyle = BorderStyle.FixedSingle
-        picDDoc26.Location = New Point(2962, 417)
-        picDDoc26.Name = "picDDoc26"
-        picDDoc26.Size = New Size(15, 20)
-        picDDoc26.TabIndex = 107
-        picDDoc26.TabStop = False
-        picDDoc26.Tag = "B"
+        dD26.BackColor = Color.DimGray
+        dD26.BorderStyle = BorderStyle.FixedSingle
+        dD26.Location = New Point(2962, 417)
+        dD26.Name = "dD26"
+        dD26.Size = New Size(15, 20)
+        dD26.TabIndex = 107
+        dD26.TabStop = False
+        dD26.Tag = "B"
         ' 
         ' lblp1
         ' 
-        lblp1.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lblp1.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblp1.Location = New Point(3082, 2282)
         lblp1.Name = "lblp1"
         lblp1.Size = New Size(42, 18)
         lblp1.TabIndex = 187
         lblp1.Text = "100%"
         ' 
-        ' picDDoc27
+        ' dD27
         ' 
-        picDDoc27.BackColor = Color.DimGray
-        picDDoc27.BorderStyle = BorderStyle.FixedSingle
-        picDDoc27.Location = New Point(2962, 354)
-        picDDoc27.Name = "picDDoc27"
-        picDDoc27.Size = New Size(15, 20)
-        picDDoc27.TabIndex = 106
-        picDDoc27.TabStop = False
-        picDDoc27.Tag = "T"
+        dD27.BackColor = Color.DimGray
+        dD27.BorderStyle = BorderStyle.FixedSingle
+        dD27.Location = New Point(2962, 354)
+        dD27.Name = "dD27"
+        dD27.Size = New Size(15, 20)
+        dD27.TabIndex = 106
+        dD27.TabStop = False
+        dD27.Tag = "T"
         ' 
         ' Label24
         ' 
-        Label24.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        Label24.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label24.Location = New Point(3075, 2255)
         Label24.Name = "Label24"
         Label24.Size = New Size(145, 18)
@@ -1606,7 +1617,7 @@ Partial Class frmMain
         ' Label44
         ' 
         Label44.AutoSize = True
-        Label44.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        Label44.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label44.Location = New Point(3091, 220)
         Label44.Name = "Label44"
         Label44.Size = New Size(88, 18)
@@ -1625,7 +1636,7 @@ Partial Class frmMain
         ' Label38
         ' 
         Label38.AutoSize = True
-        Label38.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        Label38.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label38.Location = New Point(3321, 2160)
         Label38.Name = "Label38"
         Label38.Size = New Size(88, 18)
@@ -1634,7 +1645,7 @@ Partial Class frmMain
         ' 
         ' lbls18
         ' 
-        lbls18.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lbls18.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbls18.Location = New Point(3114, 300)
         lbls18.Name = "lbls18"
         lbls18.Size = New Size(42, 18)
@@ -1653,7 +1664,7 @@ Partial Class frmMain
         ' 
         ' lbls21
         ' 
-        lbls21.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lbls21.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbls21.Location = New Point(3344, 2240)
         lbls21.Name = "lbls21"
         lbls21.Size = New Size(42, 18)
@@ -1682,7 +1693,7 @@ Partial Class frmMain
         ' Label32
         ' 
         Label32.AutoSize = True
-        Label32.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        Label32.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label32.Location = New Point(2742, 222)
         Label32.Name = "Label32"
         Label32.Size = New Size(88, 18)
@@ -1691,7 +1702,7 @@ Partial Class frmMain
         ' 
         ' lbls16
         ' 
-        lbls16.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lbls16.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbls16.Location = New Point(2765, 302)
         lbls16.Name = "lbls16"
         lbls16.Size = New Size(42, 18)
@@ -1739,7 +1750,7 @@ Partial Class frmMain
         ' Label40
         ' 
         Label40.AutoSize = True
-        Label40.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        Label40.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label40.Location = New Point(3110, 1953)
         Label40.Name = "Label40"
         Label40.Size = New Size(88, 18)
@@ -1758,7 +1769,7 @@ Partial Class frmMain
         ' 
         ' lbls20
         ' 
-        lbls20.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lbls20.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbls20.Location = New Point(3133, 2033)
         lbls20.Name = "lbls20"
         lbls20.Size = New Size(42, 18)
@@ -1805,7 +1816,7 @@ Partial Class frmMain
         ' Label42
         ' 
         Label42.AutoSize = True
-        Label42.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        Label42.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label42.Location = New Point(2890, 2178)
         Label42.Name = "Label42"
         Label42.Size = New Size(88, 18)
@@ -1824,7 +1835,7 @@ Partial Class frmMain
         ' 
         ' lbls19
         ' 
-        lbls19.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lbls19.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbls19.Location = New Point(2913, 2258)
         lbls19.Name = "lbls19"
         lbls19.Size = New Size(42, 18)
@@ -1923,7 +1934,7 @@ Partial Class frmMain
         ' wp1
         ' 
         wp1.BackColor = Color.Fuchsia
-        wp1.Location = New Point(691, 146)
+        wp1.Location = New Point(719, 135)
         wp1.Name = "wp1"
         wp1.Size = New Size(10, 10)
         wp1.TabIndex = 98
@@ -1933,7 +1944,7 @@ Partial Class frmMain
         ' wp2
         ' 
         wp2.BackColor = Color.Fuchsia
-        wp2.Location = New Point(621, 329)
+        wp2.Location = New Point(631, 329)
         wp2.Name = "wp2"
         wp2.Size = New Size(10, 10)
         wp2.TabIndex = 103
@@ -1943,7 +1954,7 @@ Partial Class frmMain
         ' wp3
         ' 
         wp3.BackColor = Color.Fuchsia
-        wp3.Location = New Point(187, 532)
+        wp3.Location = New Point(103, 532)
         wp3.Name = "wp3"
         wp3.Size = New Size(10, 10)
         wp3.TabIndex = 98
@@ -1963,7 +1974,7 @@ Partial Class frmMain
         ' wp10
         ' 
         wp10.BackColor = Color.Fuchsia
-        wp10.Location = New Point(900, 463)
+        wp10.Location = New Point(867, 491)
         wp10.Name = "wp10"
         wp10.Size = New Size(10, 10)
         wp10.TabIndex = 102
@@ -1973,7 +1984,7 @@ Partial Class frmMain
         ' wp9
         ' 
         wp9.BackColor = Color.Fuchsia
-        wp9.Location = New Point(900, 165)
+        wp9.Location = New Point(867, 161)
         wp9.Name = "wp9"
         wp9.Size = New Size(10, 10)
         wp9.TabIndex = 103
@@ -1993,7 +2004,7 @@ Partial Class frmMain
         ' Label34
         ' 
         Label34.AutoSize = True
-        Label34.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        Label34.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label34.Location = New Point(166, 2064)
         Label34.Name = "Label34"
         Label34.Size = New Size(88, 18)
@@ -2003,7 +2014,7 @@ Partial Class frmMain
         ' wp7
         ' 
         wp7.BackColor = Color.Fuchsia
-        wp7.Location = New Point(482, 532)
+        wp7.Location = New Point(469, 491)
         wp7.Name = "wp7"
         wp7.Size = New Size(10, 10)
         wp7.TabIndex = 98
@@ -2012,7 +2023,7 @@ Partial Class frmMain
         ' 
         ' lbls15
         ' 
-        lbls15.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lbls15.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbls15.Location = New Point(189, 2144)
         lbls15.Name = "lbls15"
         lbls15.Size = New Size(42, 18)
@@ -2022,7 +2033,7 @@ Partial Class frmMain
         ' wp5
         ' 
         wp5.BackColor = Color.Fuchsia
-        wp5.Location = New Point(179, 337)
+        wp5.Location = New Point(199, 532)
         wp5.Name = "wp5"
         wp5.Size = New Size(10, 10)
         wp5.TabIndex = 98
@@ -2032,7 +2043,7 @@ Partial Class frmMain
         ' wp6
         ' 
         wp6.BackColor = Color.Fuchsia
-        wp6.Location = New Point(521, 146)
+        wp6.Location = New Point(496, 135)
         wp6.Name = "wp6"
         wp6.Size = New Size(10, 10)
         wp6.TabIndex = 95
@@ -2051,7 +2062,7 @@ Partial Class frmMain
         ' wp4
         ' 
         wp4.BackColor = Color.Fuchsia
-        wp4.Location = New Point(151, 245)
+        wp4.Location = New Point(199, 211)
         wp4.Name = "wp4"
         wp4.Size = New Size(10, 10)
         wp4.TabIndex = 94
@@ -2061,7 +2072,7 @@ Partial Class frmMain
         ' Label36
         ' 
         Label36.AutoSize = True
-        Label36.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        Label36.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label36.Location = New Point(22, 2063)
         Label36.Name = "Label36"
         Label36.Size = New Size(88, 18)
@@ -2072,7 +2083,7 @@ Partial Class frmMain
         ' 
         lblg1.BackColor = Color.White
         lblg1.BorderStyle = BorderStyle.FixedSingle
-        lblg1.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lblg1.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblg1.Location = New Point(2904, 2919)
         lblg1.Name = "lblg1"
         lblg1.Size = New Size(42, 18)
@@ -2081,7 +2092,7 @@ Partial Class frmMain
         ' 
         ' lbls14
         ' 
-        lbls14.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lbls14.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbls14.Location = New Point(45, 2143)
         lbls14.Name = "lbls14"
         lbls14.Size = New Size(42, 18)
@@ -2091,8 +2102,8 @@ Partial Class frmMain
         ' lblwt3
         ' 
         lblwt3.BackColor = Color.White
-        lblwt3.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
-        lblwt3.Location = New Point(218, 5233)
+        lblwt3.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblwt3.Location = New Point(4675, 6783)
         lblwt3.Name = "lblwt3"
         lblwt3.Size = New Size(42, 18)
         lblwt3.TabIndex = 106
@@ -2102,7 +2113,7 @@ Partial Class frmMain
         ' 
         lblg3.BackColor = Color.White
         lblg3.BorderStyle = BorderStyle.FixedSingle
-        lblg3.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lblg3.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblg3.Location = New Point(649, 417)
         lblg3.Name = "lblg3"
         lblg3.Size = New Size(42, 18)
@@ -2122,8 +2133,8 @@ Partial Class frmMain
         ' 
         lblg2.BackColor = Color.White
         lblg2.BorderStyle = BorderStyle.FixedSingle
-        lblg2.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
-        lblg2.Location = New Point(335, 5091)
+        lblg2.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblg2.Location = New Point(4792, 6641)
         lblg2.Name = "lblg2"
         lblg2.Size = New Size(42, 18)
         lblg2.TabIndex = 105
@@ -2132,7 +2143,7 @@ Partial Class frmMain
         ' Label25
         ' 
         Label25.AutoSize = True
-        Label25.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        Label25.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label25.Location = New Point(166, 1883)
         Label25.Name = "Label25"
         Label25.Size = New Size(88, 18)
@@ -2142,7 +2153,7 @@ Partial Class frmMain
         ' lblwt1
         ' 
         lblwt1.BackColor = Color.White
-        lblwt1.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lblwt1.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblwt1.Location = New Point(797, 87)
         lblwt1.Name = "lblwt1"
         lblwt1.Size = New Size(42, 18)
@@ -2151,7 +2162,7 @@ Partial Class frmMain
         ' 
         ' lbls13
         ' 
-        lbls13.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lbls13.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbls13.Location = New Point(189, 1963)
         lbls13.Name = "lbls13"
         lbls13.Size = New Size(42, 18)
@@ -2161,7 +2172,7 @@ Partial Class frmMain
         ' lblwt2
         ' 
         lblwt2.BackColor = Color.White
-        lblwt2.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lblwt2.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblwt2.Location = New Point(2471, 3042)
         lblwt2.Name = "lblwt2"
         lblwt2.Size = New Size(42, 18)
@@ -2170,9 +2181,9 @@ Partial Class frmMain
         ' 
         ' lblm2
         ' 
-        lblm2.BackColor = Color.FromArgb(255, 255, 128)
+        lblm2.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         lblm2.BorderStyle = BorderStyle.FixedSingle
-        lblm2.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lblm2.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblm2.Location = New Point(2737, 3226)
         lblm2.Name = "lblm2"
         lblm2.Size = New Size(42, 18)
@@ -2190,8 +2201,8 @@ Partial Class frmMain
         ' 
         ' lblm1
         ' 
-        lblm1.BackColor = Color.FromArgb(255, 255, 128)
-        lblm1.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lblm1.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
+        lblm1.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblm1.Location = New Point(593, 57)
         lblm1.Name = "lblm1"
         lblm1.Size = New Size(42, 18)
@@ -2201,7 +2212,7 @@ Partial Class frmMain
         ' Label27
         ' 
         Label27.AutoSize = True
-        Label27.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        Label27.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label27.Location = New Point(20, 1883)
         Label27.Name = "Label27"
         Label27.Size = New Size(88, 18)
@@ -2211,8 +2222,8 @@ Partial Class frmMain
         ' lbld5
         ' 
         lbld5.BackColor = Color.White
-        lbld5.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
-        lbld5.Location = New Point(454, 4942)
+        lbld5.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbld5.Location = New Point(4911, 6492)
         lbld5.Name = "lbld5"
         lbld5.Size = New Size(42, 18)
         lbld5.TabIndex = 106
@@ -2220,7 +2231,7 @@ Partial Class frmMain
         ' 
         ' lbls12
         ' 
-        lbls12.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lbls12.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbls12.Location = New Point(43, 1963)
         lbls12.Name = "lbls12"
         lbls12.Size = New Size(42, 18)
@@ -2230,7 +2241,7 @@ Partial Class frmMain
         ' lbld6
         ' 
         lbld6.BackColor = Color.White
-        lbld6.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lbld6.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbld6.Location = New Point(2717, 4138)
         lbld6.Name = "lbld6"
         lbld6.Size = New Size(42, 18)
@@ -2240,7 +2251,7 @@ Partial Class frmMain
         ' lbld3
         ' 
         lbld3.BackColor = Color.White
-        lbld3.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lbld3.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbld3.Location = New Point(5244, 3357)
         lbld3.Name = "lbld3"
         lbld3.Size = New Size(42, 18)
@@ -2259,7 +2270,7 @@ Partial Class frmMain
         ' lbls8
         ' 
         lbls8.BackColor = Color.White
-        lbls8.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lbls8.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbls8.Location = New Point(2238, 4716)
         lbls8.Name = "lbls8"
         lbls8.Size = New Size(42, 18)
@@ -2269,7 +2280,7 @@ Partial Class frmMain
         ' Label22
         ' 
         Label22.AutoSize = True
-        Label22.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        Label22.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label22.Location = New Point(167, 1700)
         Label22.Name = "Label22"
         Label22.Size = New Size(88, 18)
@@ -2279,7 +2290,7 @@ Partial Class frmMain
         ' lbld4
         ' 
         lbld4.BackColor = Color.White
-        lbld4.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lbld4.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbld4.Location = New Point(6311, 1234)
         lbld4.Name = "lbld4"
         lbld4.Size = New Size(42, 18)
@@ -2288,7 +2299,7 @@ Partial Class frmMain
         ' 
         ' lbls11
         ' 
-        lbls11.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lbls11.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbls11.Location = New Point(190, 1780)
         lbls11.Name = "lbls11"
         lbls11.Size = New Size(42, 18)
@@ -2298,7 +2309,7 @@ Partial Class frmMain
         ' lbls9
         ' 
         lbls9.BackColor = Color.White
-        lbls9.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lbls9.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbls9.Location = New Point(6090, 1251)
         lbls9.Name = "lbls9"
         lbls9.Size = New Size(42, 18)
@@ -2308,7 +2319,7 @@ Partial Class frmMain
         ' lbls6
         ' 
         lbls6.BackColor = Color.White
-        lbls6.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lbls6.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbls6.Location = New Point(5084, 3383)
         lbls6.Name = "lbls6"
         lbls6.Size = New Size(42, 18)
@@ -2326,7 +2337,7 @@ Partial Class frmMain
         ' 
         ' lbls2
         ' 
-        lbls2.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lbls2.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbls2.Location = New Point(71, 165)
         lbls2.Name = "lbls2"
         lbls2.Size = New Size(42, 18)
@@ -2336,7 +2347,7 @@ Partial Class frmMain
         ' Label23
         ' 
         Label23.AutoSize = True
-        Label23.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        Label23.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label23.Location = New Point(21, 1700)
         Label23.Name = "Label23"
         Label23.Size = New Size(88, 18)
@@ -2346,7 +2357,7 @@ Partial Class frmMain
         ' lbld1
         ' 
         lbld1.BackColor = Color.White
-        lbld1.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lbld1.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbld1.Location = New Point(6486, 5855)
         lbld1.Name = "lbld1"
         lbld1.Size = New Size(42, 18)
@@ -2355,7 +2366,7 @@ Partial Class frmMain
         ' 
         ' lbls10
         ' 
-        lbls10.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lbls10.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbls10.Location = New Point(44, 1780)
         lbls10.Name = "lbls10"
         lbls10.Size = New Size(42, 18)
@@ -2365,7 +2376,7 @@ Partial Class frmMain
         ' lbls3
         ' 
         lbls3.BackColor = Color.White
-        lbls3.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lbls3.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbls3.Location = New Point(2609, 2952)
         lbls3.Name = "lbls3"
         lbls3.Size = New Size(42, 18)
@@ -2402,7 +2413,7 @@ Partial Class frmMain
         ' lbls4
         ' 
         lbls4.BackColor = Color.White
-        lbls4.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lbls4.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbls4.Location = New Point(6276, 5852)
         lbls4.Name = "lbls4"
         lbls4.Size = New Size(42, 18)
@@ -2412,7 +2423,7 @@ Partial Class frmMain
         ' lbld2
         ' 
         lbld2.BackColor = Color.White
-        lbld2.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lbld2.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbld2.Location = New Point(2439, 4695)
         lbld2.Name = "lbld2"
         lbld2.Size = New Size(42, 18)
@@ -2422,28 +2433,28 @@ Partial Class frmMain
         ' lbls5
         ' 
         lbls5.BackColor = Color.White
-        lbls5.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
-        lbls5.Location = New Point(36, 5139)
+        lbls5.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbls5.Location = New Point(4493, 6689)
         lbls5.Name = "lbls5"
         lbls5.Size = New Size(42, 18)
         lbls5.TabIndex = 99
         lbls5.Text = "100%"
         ' 
-        ' picDDoc22
+        ' dD22
         ' 
-        picDDoc22.BackColor = Color.DimGray
-        picDDoc22.BorderStyle = BorderStyle.FixedSingle
-        picDDoc22.Location = New Point(2730, 4153)
-        picDDoc22.Name = "picDDoc22"
-        picDDoc22.Size = New Size(15, 20)
-        picDDoc22.TabIndex = 95
-        picDDoc22.TabStop = False
-        picDDoc22.Tag = "B"
+        dD22.BackColor = Color.DimGray
+        dD22.BorderStyle = BorderStyle.FixedSingle
+        dD22.Location = New Point(2730, 4153)
+        dD22.Name = "dD22"
+        dD22.Size = New Size(15, 20)
+        dD22.TabIndex = 95
+        dD22.TabStop = False
+        dD22.Tag = "B"
         ' 
         ' lbls7
         ' 
         lbls7.BackColor = Color.White
-        lbls7.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lbls7.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbls7.Location = New Point(71, 473)
         lbls7.Name = "lbls7"
         lbls7.Size = New Size(42, 18)
@@ -2462,23 +2473,23 @@ Partial Class frmMain
         ' lbls1
         ' 
         lbls1.BackColor = Color.White
-        lbls1.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lbls1.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbls1.Location = New Point(601, 259)
         lbls1.Name = "lbls1"
         lbls1.Size = New Size(42, 18)
         lbls1.TabIndex = 95
         lbls1.Text = "100%"
         ' 
-        ' picDDoc24
+        ' dD24
         ' 
-        picDDoc24.BackColor = Color.DimGray
-        picDDoc24.BorderStyle = BorderStyle.FixedSingle
-        picDDoc24.Location = New Point(2730, 4090)
-        picDDoc24.Name = "picDDoc24"
-        picDDoc24.Size = New Size(15, 20)
-        picDDoc24.TabIndex = 94
-        picDDoc24.TabStop = False
-        picDDoc24.Tag = "T"
+        dD24.BackColor = Color.DimGray
+        dD24.BorderStyle = BorderStyle.FixedSingle
+        dD24.Location = New Point(2730, 4090)
+        dD24.Name = "dD24"
+        dD24.Size = New Size(15, 20)
+        dD24.TabIndex = 94
+        dD24.TabStop = False
+        dD24.Tag = "T"
         ' 
         ' pel17
         ' 
@@ -2489,22 +2500,22 @@ Partial Class frmMain
         pel17.TabIndex = 94
         pel17.TabStop = False
         ' 
-        ' picDDoc23
+        ' dD23
         ' 
-        picDDoc23.BackColor = Color.DimGray
-        picDDoc23.BorderStyle = BorderStyle.FixedSingle
-        picDDoc23.Location = New Point(2753, 4125)
-        picDDoc23.Name = "picDDoc23"
-        picDDoc23.Size = New Size(30, 15)
-        picDDoc23.TabIndex = 97
-        picDDoc23.TabStop = False
-        picDDoc23.Tag = "R"
+        dD23.BackColor = Color.DimGray
+        dD23.BorderStyle = BorderStyle.FixedSingle
+        dD23.Location = New Point(2753, 4125)
+        dD23.Name = "dD23"
+        dD23.Size = New Size(30, 15)
+        dD23.TabIndex = 97
+        dD23.TabStop = False
+        dD23.Tag = "R"
         ' 
         ' Label19
         ' 
-        Label19.BackColor = Color.FromArgb(255, 255, 128)
+        Label19.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         Label19.BorderStyle = BorderStyle.FixedSingle
-        Label19.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        Label19.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label19.Location = New Point(2718, 3187)
         Label19.Name = "Label19"
         Label19.Size = New Size(80, 18)
@@ -2512,21 +2523,21 @@ Partial Class frmMain
         Label19.Text = "Mfg 2"
         Label19.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' picDDoc21
+        ' dD21
         ' 
-        picDDoc21.BackColor = Color.DimGray
-        picDDoc21.BorderStyle = BorderStyle.FixedSingle
-        picDDoc21.Location = New Point(2690, 4125)
-        picDDoc21.Name = "picDDoc21"
-        picDDoc21.Size = New Size(30, 15)
-        picDDoc21.TabIndex = 96
-        picDDoc21.TabStop = False
-        picDDoc21.Tag = "L"
+        dD21.BackColor = Color.DimGray
+        dD21.BorderStyle = BorderStyle.FixedSingle
+        dD21.Location = New Point(2690, 4125)
+        dD21.Name = "dD21"
+        dD21.Size = New Size(30, 15)
+        dD21.TabIndex = 96
+        dD21.TabStop = False
+        dD21.Tag = "L"
         ' 
         ' pd5
         ' 
         pd5.Image = My.Resources.Resources.DrillSite
-        pd5.Location = New Point(443, 4904)
+        pd5.Location = New Point(4900, 6454)
         pd5.Name = "pd5"
         pd5.Size = New Size(63, 63)
         pd5.TabIndex = 100
@@ -2541,38 +2552,38 @@ Partial Class frmMain
         pm2.TabIndex = 103
         pm2.TabStop = False
         ' 
-        ' picMDoc16
+        ' dM16
         ' 
-        picMDoc16.BackColor = Color.DimGray
-        picMDoc16.BorderStyle = BorderStyle.FixedSingle
-        picMDoc16.Location = New Point(2800, 3244)
-        picMDoc16.Name = "picMDoc16"
-        picMDoc16.Size = New Size(30, 15)
-        picMDoc16.TabIndex = 95
-        picMDoc16.TabStop = False
-        picMDoc16.Tag = "R"
+        dM16.BackColor = Color.DimGray
+        dM16.BorderStyle = BorderStyle.FixedSingle
+        dM16.Location = New Point(2800, 3244)
+        dM16.Name = "dM16"
+        dM16.Size = New Size(30, 15)
+        dM16.TabIndex = 95
+        dM16.TabStop = False
+        dM16.Tag = "R"
         ' 
-        ' picDDoc19
+        ' dD19
         ' 
-        picDDoc19.BackColor = Color.DimGray
-        picDDoc19.BorderStyle = BorderStyle.FixedSingle
-        picDDoc19.Location = New Point(468, 4956)
-        picDDoc19.Name = "picDDoc19"
-        picDDoc19.Size = New Size(15, 20)
-        picDDoc19.TabIndex = 97
-        picDDoc19.TabStop = False
-        picDDoc19.Tag = "B"
+        dD19.BackColor = Color.DimGray
+        dD19.BorderStyle = BorderStyle.FixedSingle
+        dD19.Location = New Point(4925, 6506)
+        dD19.Name = "dD19"
+        dD19.Size = New Size(15, 20)
+        dD19.TabIndex = 97
+        dD19.TabStop = False
+        dD19.Tag = "B"
         ' 
-        ' picMDoc15
+        ' dM15
         ' 
-        picMDoc15.BackColor = Color.DimGray
-        picMDoc15.BorderStyle = BorderStyle.FixedSingle
-        picMDoc15.Location = New Point(2800, 3219)
-        picMDoc15.Name = "picMDoc15"
-        picMDoc15.Size = New Size(30, 15)
-        picMDoc15.TabIndex = 96
-        picMDoc15.TabStop = False
-        picMDoc15.Tag = "R"
+        dM15.BackColor = Color.DimGray
+        dM15.BorderStyle = BorderStyle.FixedSingle
+        dM15.Location = New Point(2800, 3219)
+        dM15.Name = "dM15"
+        dM15.Size = New Size(30, 15)
+        dM15.TabIndex = 96
+        dM15.TabStop = False
+        dM15.Tag = "R"
         ' 
         ' pwl7
         ' 
@@ -2583,38 +2594,38 @@ Partial Class frmMain
         pwl7.TabIndex = 94
         pwl7.TabStop = False
         ' 
-        ' picMDoc14
+        ' dM14
         ' 
-        picMDoc14.BackColor = Color.DimGray
-        picMDoc14.BorderStyle = BorderStyle.FixedSingle
-        picMDoc14.Location = New Point(2800, 3195)
-        picMDoc14.Name = "picMDoc14"
-        picMDoc14.Size = New Size(30, 15)
-        picMDoc14.TabIndex = 97
-        picMDoc14.TabStop = False
-        picMDoc14.Tag = "R"
+        dM14.BackColor = Color.DimGray
+        dM14.BorderStyle = BorderStyle.FixedSingle
+        dM14.Location = New Point(2800, 3195)
+        dM14.Name = "dM14"
+        dM14.Size = New Size(30, 15)
+        dM14.TabIndex = 97
+        dM14.TabStop = False
+        dM14.Tag = "R"
         ' 
-        ' picDDoc17
+        ' dD17
         ' 
-        picDDoc17.BackColor = Color.DimGray
-        picDDoc17.BorderStyle = BorderStyle.FixedSingle
-        picDDoc17.Location = New Point(468, 4893)
-        picDDoc17.Name = "picDDoc17"
-        picDDoc17.Size = New Size(15, 20)
-        picDDoc17.TabIndex = 96
-        picDDoc17.TabStop = False
-        picDDoc17.Tag = "T"
+        dD17.BackColor = Color.DimGray
+        dD17.BorderStyle = BorderStyle.FixedSingle
+        dD17.Location = New Point(4925, 6443)
+        dD17.Name = "dD17"
+        dD17.Size = New Size(15, 20)
+        dD17.TabIndex = 96
+        dD17.TabStop = False
+        dD17.Tag = "T"
         ' 
-        ' picMDoc13
+        ' dM13
         ' 
-        picMDoc13.BackColor = Color.DimGray
-        picMDoc13.BorderStyle = BorderStyle.FixedSingle
-        picMDoc13.Location = New Point(2800, 3172)
-        picMDoc13.Name = "picMDoc13"
-        picMDoc13.Size = New Size(30, 15)
-        picMDoc13.TabIndex = 94
-        picMDoc13.TabStop = False
-        picMDoc13.Tag = "R"
+        dM13.BackColor = Color.DimGray
+        dM13.BorderStyle = BorderStyle.FixedSingle
+        dM13.Location = New Point(2800, 3172)
+        dM13.Name = "dM13"
+        dM13.Size = New Size(30, 15)
+        dM13.TabIndex = 94
+        dM13.TabStop = False
+        dM13.Tag = "R"
         ' 
         ' pel9
         ' 
@@ -2625,38 +2636,38 @@ Partial Class frmMain
         pel9.TabIndex = 94
         pel9.TabStop = False
         ' 
-        ' picMDoc12
+        ' dM12
         ' 
-        picMDoc12.BackColor = Color.DimGray
-        picMDoc12.BorderStyle = BorderStyle.FixedSingle
-        picMDoc12.Location = New Point(2680, 3244)
-        picMDoc12.Name = "picMDoc12"
-        picMDoc12.Size = New Size(30, 15)
-        picMDoc12.TabIndex = 100
-        picMDoc12.TabStop = False
-        picMDoc12.Tag = "L"
+        dM12.BackColor = Color.DimGray
+        dM12.BorderStyle = BorderStyle.FixedSingle
+        dM12.Location = New Point(2680, 3244)
+        dM12.Name = "dM12"
+        dM12.Size = New Size(30, 15)
+        dM12.TabIndex = 100
+        dM12.TabStop = False
+        dM12.Tag = "L"
         ' 
-        ' picDDoc20
+        ' dD20
         ' 
-        picDDoc20.BackColor = Color.DimGray
-        picDDoc20.BorderStyle = BorderStyle.FixedSingle
-        picDDoc20.Location = New Point(491, 4928)
-        picDDoc20.Name = "picDDoc20"
-        picDDoc20.Size = New Size(30, 15)
-        picDDoc20.TabIndex = 98
-        picDDoc20.TabStop = False
-        picDDoc20.Tag = "R"
+        dD20.BackColor = Color.DimGray
+        dD20.BorderStyle = BorderStyle.FixedSingle
+        dD20.Location = New Point(4948, 6478)
+        dD20.Name = "dD20"
+        dD20.Size = New Size(30, 15)
+        dD20.TabIndex = 98
+        dD20.TabStop = False
+        dD20.Tag = "R"
         ' 
-        ' picMDoc11
+        ' dM11
         ' 
-        picMDoc11.BackColor = Color.DimGray
-        picMDoc11.BorderStyle = BorderStyle.FixedSingle
-        picMDoc11.Location = New Point(2680, 3219)
-        picMDoc11.Name = "picMDoc11"
-        picMDoc11.Size = New Size(30, 15)
-        picMDoc11.TabIndex = 101
-        picMDoc11.TabStop = False
-        picMDoc11.Tag = "L"
+        dM11.BackColor = Color.DimGray
+        dM11.BorderStyle = BorderStyle.FixedSingle
+        dM11.Location = New Point(2680, 3219)
+        dM11.Name = "dM11"
+        dM11.Size = New Size(30, 15)
+        dM11.TabIndex = 101
+        dM11.TabStop = False
+        dM11.Tag = "L"
         ' 
         ' pd2
         ' 
@@ -2667,38 +2678,38 @@ Partial Class frmMain
         pd2.TabIndex = 79
         pd2.TabStop = False
         ' 
-        ' picMDoc10
+        ' dM10
         ' 
-        picMDoc10.BackColor = Color.DimGray
-        picMDoc10.BorderStyle = BorderStyle.FixedSingle
-        picMDoc10.Location = New Point(2680, 3197)
-        picMDoc10.Name = "picMDoc10"
-        picMDoc10.Size = New Size(30, 15)
-        picMDoc10.TabIndex = 99
-        picMDoc10.TabStop = False
-        picMDoc10.Tag = "L"
+        dM10.BackColor = Color.DimGray
+        dM10.BorderStyle = BorderStyle.FixedSingle
+        dM10.Location = New Point(2680, 3197)
+        dM10.Name = "dM10"
+        dM10.Size = New Size(30, 15)
+        dM10.TabIndex = 99
+        dM10.TabStop = False
+        dM10.Tag = "L"
         ' 
-        ' picDDoc18
+        ' dD18
         ' 
-        picDDoc18.BackColor = Color.DimGray
-        picDDoc18.BorderStyle = BorderStyle.FixedSingle
-        picDDoc18.Location = New Point(428, 4928)
-        picDDoc18.Name = "picDDoc18"
-        picDDoc18.Size = New Size(30, 15)
-        picDDoc18.TabIndex = 99
-        picDDoc18.TabStop = False
-        picDDoc18.Tag = "L"
+        dD18.BackColor = Color.DimGray
+        dD18.BorderStyle = BorderStyle.FixedSingle
+        dD18.Location = New Point(4885, 6478)
+        dD18.Name = "dD18"
+        dD18.Size = New Size(30, 15)
+        dD18.TabIndex = 99
+        dD18.TabStop = False
+        dD18.Tag = "L"
         ' 
-        ' picMDoc9
+        ' dM9
         ' 
-        picMDoc9.BackColor = Color.DimGray
-        picMDoc9.BorderStyle = BorderStyle.FixedSingle
-        picMDoc9.Location = New Point(2680, 3172)
-        picMDoc9.Name = "picMDoc9"
-        picMDoc9.Size = New Size(30, 15)
-        picMDoc9.TabIndex = 98
-        picMDoc9.TabStop = False
-        picMDoc9.Tag = "L"
+        dM9.BackColor = Color.DimGray
+        dM9.BorderStyle = BorderStyle.FixedSingle
+        dM9.Location = New Point(2680, 3172)
+        dM9.Name = "dM9"
+        dM9.Size = New Size(30, 15)
+        dM9.TabIndex = 98
+        dM9.TabStop = False
+        dM9.Tag = "L"
         ' 
         ' pwl6
         ' 
@@ -2721,22 +2732,22 @@ Partial Class frmMain
         ' pwt3
         ' 
         pwt3.Image = My.Resources.Resources.WaterTower
-        pwt3.Location = New Point(207, 5203)
+        pwt3.Location = New Point(4664, 6753)
         pwt3.Name = "pwt3"
         pwt3.Size = New Size(63, 63)
         pwt3.TabIndex = 95
         pwt3.TabStop = False
         ' 
-        ' picWDoc3
+        ' dW3
         ' 
-        picWDoc3.BackColor = Color.DimGray
-        picWDoc3.BorderStyle = BorderStyle.FixedSingle
-        picWDoc3.Location = New Point(232, 5255)
-        picWDoc3.Name = "picWDoc3"
-        picWDoc3.Size = New Size(15, 20)
-        picWDoc3.TabIndex = 94
-        picWDoc3.TabStop = False
-        picWDoc3.Tag = "B"
+        dW3.BackColor = Color.DimGray
+        dW3.BorderStyle = BorderStyle.FixedSingle
+        dW3.Location = New Point(4689, 6805)
+        dW3.Name = "dW3"
+        dW3.Size = New Size(15, 20)
+        dW3.TabIndex = 94
+        dW3.TabStop = False
+        dW3.Tag = "B"
         ' 
         ' pwt2
         ' 
@@ -2759,7 +2770,7 @@ Partial Class frmMain
         ' Label18
         ' 
         Label18.AutoSize = True
-        Label18.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        Label18.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label18.Location = New Point(6073, 1170)
         Label18.Name = "Label18"
         Label18.Size = New Size(78, 18)
@@ -2769,7 +2780,7 @@ Partial Class frmMain
         ' Label16
         ' 
         Label16.AutoSize = True
-        Label16.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        Label16.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label16.Location = New Point(53, 393)
         Label16.Name = "Label16"
         Label16.Size = New Size(78, 18)
@@ -2778,9 +2789,9 @@ Partial Class frmMain
         ' 
         ' Label13
         ' 
-        Label13.BackColor = Color.FromArgb(255, 255, 128)
+        Label13.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         Label13.BorderStyle = BorderStyle.FixedSingle
-        Label13.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        Label13.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label13.Location = New Point(574, 25)
         Label13.Name = "Label13"
         Label13.Size = New Size(80, 18)
@@ -2815,162 +2826,162 @@ Partial Class frmMain
         ps9.TabIndex = 81
         ps9.TabStop = False
         ' 
-        ' picMDoc8
+        ' dM8
         ' 
-        picMDoc8.BackColor = Color.DimGray
-        picMDoc8.BorderStyle = BorderStyle.FixedSingle
-        picMDoc8.Location = New Point(657, 82)
-        picMDoc8.Name = "picMDoc8"
-        picMDoc8.Size = New Size(30, 15)
-        picMDoc8.TabIndex = 60
-        picMDoc8.TabStop = False
-        picMDoc8.Tag = "R"
+        dM8.BackColor = Color.DimGray
+        dM8.BorderStyle = BorderStyle.FixedSingle
+        dM8.Location = New Point(657, 82)
+        dM8.Name = "dM8"
+        dM8.Size = New Size(30, 15)
+        dM8.TabIndex = 60
+        dM8.TabStop = False
+        dM8.Tag = "R"
         ' 
-        ' picMDoc7
+        ' dM7
         ' 
-        picMDoc7.BackColor = Color.DimGray
-        picMDoc7.BorderStyle = BorderStyle.FixedSingle
-        picMDoc7.Location = New Point(657, 57)
-        picMDoc7.Name = "picMDoc7"
-        picMDoc7.Size = New Size(30, 15)
-        picMDoc7.TabIndex = 60
-        picMDoc7.TabStop = False
-        picMDoc7.Tag = "R"
+        dM7.BackColor = Color.DimGray
+        dM7.BorderStyle = BorderStyle.FixedSingle
+        dM7.Location = New Point(657, 57)
+        dM7.Name = "dM7"
+        dM7.Size = New Size(30, 15)
+        dM7.TabIndex = 60
+        dM7.TabStop = False
+        dM7.Tag = "R"
         ' 
-        ' picMDoc6
+        ' dM6
         ' 
-        picMDoc6.BackColor = Color.DimGray
-        picMDoc6.BorderStyle = BorderStyle.FixedSingle
-        picMDoc6.Location = New Point(657, 33)
-        picMDoc6.Name = "picMDoc6"
-        picMDoc6.Size = New Size(30, 15)
-        picMDoc6.TabIndex = 60
-        picMDoc6.TabStop = False
-        picMDoc6.Tag = "R"
+        dM6.BackColor = Color.DimGray
+        dM6.BorderStyle = BorderStyle.FixedSingle
+        dM6.Location = New Point(657, 33)
+        dM6.Name = "dM6"
+        dM6.Size = New Size(30, 15)
+        dM6.TabIndex = 60
+        dM6.TabStop = False
+        dM6.Tag = "R"
         ' 
-        ' picMDoc5
+        ' dM5
         ' 
-        picMDoc5.BackColor = Color.DimGray
-        picMDoc5.BorderStyle = BorderStyle.FixedSingle
-        picMDoc5.Location = New Point(657, 10)
-        picMDoc5.Name = "picMDoc5"
-        picMDoc5.Size = New Size(30, 15)
-        picMDoc5.TabIndex = 59
-        picMDoc5.TabStop = False
-        picMDoc5.Tag = "R"
+        dM5.BackColor = Color.DimGray
+        dM5.BorderStyle = BorderStyle.FixedSingle
+        dM5.Location = New Point(657, 10)
+        dM5.Name = "dM5"
+        dM5.Size = New Size(30, 15)
+        dM5.TabIndex = 59
+        dM5.TabStop = False
+        dM5.Tag = "R"
         ' 
         ' Label17
         ' 
         Label17.AutoSize = True
-        Label17.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        Label17.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label17.Location = New Point(2222, 4631)
         Label17.Name = "Label17"
         Label17.Size = New Size(78, 18)
         Label17.TabIndex = 71
         Label17.Text = "Solar 8"
         ' 
-        ' picWDoc2
+        ' dW2
         ' 
-        picWDoc2.BackColor = Color.DimGray
-        picWDoc2.BorderStyle = BorderStyle.FixedSingle
-        picWDoc2.Location = New Point(2485, 3062)
-        picWDoc2.Name = "picWDoc2"
-        picWDoc2.Size = New Size(15, 20)
-        picWDoc2.TabIndex = 94
-        picWDoc2.TabStop = False
-        picWDoc2.Tag = "B"
+        dW2.BackColor = Color.DimGray
+        dW2.BorderStyle = BorderStyle.FixedSingle
+        dW2.Location = New Point(2485, 3062)
+        dW2.Name = "dW2"
+        dW2.Size = New Size(15, 20)
+        dW2.TabIndex = 94
+        dW2.TabStop = False
+        dW2.Tag = "B"
         ' 
-        ' picSDoc9
+        ' dS9
         ' 
-        picSDoc9.BackColor = Color.DimGray
-        picSDoc9.BorderStyle = BorderStyle.FixedSingle
-        picSDoc9.Location = New Point(6104, 1270)
-        picSDoc9.Name = "picSDoc9"
-        picSDoc9.Size = New Size(15, 20)
-        picSDoc9.TabIndex = 81
-        picSDoc9.TabStop = False
-        picSDoc9.Tag = "B"
+        dS9.BackColor = Color.DimGray
+        dS9.BorderStyle = BorderStyle.FixedSingle
+        dS9.Location = New Point(6104, 1270)
+        dS9.Name = "dS9"
+        dS9.Size = New Size(15, 20)
+        dS9.TabIndex = 81
+        dS9.TabStop = False
+        dS9.Tag = "B"
         ' 
-        ' picDDoc7
+        ' dD7
         ' 
-        picDDoc7.BackColor = Color.DimGray
-        picDDoc7.BorderStyle = BorderStyle.FixedSingle
-        picDDoc7.Location = New Point(2453, 4709)
-        picDDoc7.Name = "picDDoc7"
-        picDDoc7.Size = New Size(15, 20)
-        picDDoc7.TabIndex = 76
-        picDDoc7.TabStop = False
-        picDDoc7.Tag = "B"
+        dD7.BackColor = Color.DimGray
+        dD7.BorderStyle = BorderStyle.FixedSingle
+        dD7.Location = New Point(2453, 4709)
+        dD7.Name = "dD7"
+        dD7.Size = New Size(15, 20)
+        dD7.TabIndex = 76
+        dD7.TabStop = False
+        dD7.Tag = "B"
         ' 
         ' Label14
         ' 
         Label14.AutoSize = True
-        Label14.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
-        Label14.Location = New Point(18, 5055)
+        Label14.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label14.Location = New Point(4475, 6605)
         Label14.Name = "Label14"
         Label14.Size = New Size(78, 18)
         Label14.TabIndex = 68
         Label14.Text = "Solar 5"
         ' 
-        ' picDDoc5
+        ' dD5
         ' 
-        picDDoc5.BackColor = Color.DimGray
-        picDDoc5.BorderStyle = BorderStyle.FixedSingle
-        picDDoc5.Location = New Point(2453, 4646)
-        picDDoc5.Name = "picDDoc5"
-        picDDoc5.Size = New Size(15, 20)
-        picDDoc5.TabIndex = 75
-        picDDoc5.TabStop = False
-        picDDoc5.Tag = "T"
+        dD5.BackColor = Color.DimGray
+        dD5.BorderStyle = BorderStyle.FixedSingle
+        dD5.Location = New Point(2453, 4646)
+        dD5.Name = "dD5"
+        dD5.Size = New Size(15, 20)
+        dD5.TabIndex = 75
+        dD5.TabStop = False
+        dD5.Tag = "T"
         ' 
-        ' picMDoc4
+        ' dM4
         ' 
-        picMDoc4.BackColor = Color.DimGray
-        picMDoc4.BorderStyle = BorderStyle.FixedSingle
-        picMDoc4.Location = New Point(537, 82)
-        picMDoc4.Name = "picMDoc4"
-        picMDoc4.Size = New Size(30, 15)
-        picMDoc4.TabIndex = 62
-        picMDoc4.TabStop = False
-        picMDoc4.Tag = "L"
+        dM4.BackColor = Color.DimGray
+        dM4.BorderStyle = BorderStyle.FixedSingle
+        dM4.Location = New Point(537, 82)
+        dM4.Name = "dM4"
+        dM4.Size = New Size(30, 15)
+        dM4.TabIndex = 62
+        dM4.TabStop = False
+        dM4.Tag = "L"
         ' 
-        ' picDDoc8
+        ' dD8
         ' 
-        picDDoc8.BackColor = Color.DimGray
-        picDDoc8.BorderStyle = BorderStyle.FixedSingle
-        picDDoc8.Location = New Point(2476, 4681)
-        picDDoc8.Name = "picDDoc8"
-        picDDoc8.Size = New Size(30, 15)
-        picDDoc8.TabIndex = 78
-        picDDoc8.TabStop = False
-        picDDoc8.Tag = "R"
+        dD8.BackColor = Color.DimGray
+        dD8.BorderStyle = BorderStyle.FixedSingle
+        dD8.Location = New Point(2476, 4681)
+        dD8.Name = "dD8"
+        dD8.Size = New Size(30, 15)
+        dD8.TabIndex = 78
+        dD8.TabStop = False
+        dD8.Tag = "R"
         ' 
-        ' picDDoc6
+        ' dD6
         ' 
-        picDDoc6.BackColor = Color.DimGray
-        picDDoc6.BorderStyle = BorderStyle.FixedSingle
-        picDDoc6.Location = New Point(2413, 4681)
-        picDDoc6.Name = "picDDoc6"
-        picDDoc6.Size = New Size(30, 15)
-        picDDoc6.TabIndex = 77
-        picDDoc6.TabStop = False
-        picDDoc6.Tag = "L"
+        dD6.BackColor = Color.DimGray
+        dD6.BorderStyle = BorderStyle.FixedSingle
+        dD6.Location = New Point(2413, 4681)
+        dD6.Name = "dD6"
+        dD6.Size = New Size(30, 15)
+        dD6.TabIndex = 77
+        dD6.TabStop = False
+        dD6.Tag = "L"
         ' 
-        ' picMDoc3
+        ' dM3
         ' 
-        picMDoc3.BackColor = Color.DimGray
-        picMDoc3.BorderStyle = BorderStyle.FixedSingle
-        picMDoc3.Location = New Point(537, 57)
-        picMDoc3.Name = "picMDoc3"
-        picMDoc3.Size = New Size(30, 15)
-        picMDoc3.TabIndex = 62
-        picMDoc3.TabStop = False
-        picMDoc3.Tag = "L"
+        dM3.BackColor = Color.DimGray
+        dM3.BorderStyle = BorderStyle.FixedSingle
+        dM3.Location = New Point(537, 57)
+        dM3.Name = "dM3"
+        dM3.Size = New Size(30, 15)
+        dM3.TabIndex = 62
+        dM3.TabStop = False
+        dM3.Tag = "L"
         ' 
         ' Label11
         ' 
         Label11.AutoSize = True
-        Label11.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        Label11.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label11.Location = New Point(2590, 2872)
         Label11.Name = "Label11"
         Label11.Size = New Size(78, 18)
@@ -2989,7 +3000,7 @@ Partial Class frmMain
         ' Label15
         ' 
         Label15.AutoSize = True
-        Label15.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        Label15.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label15.Location = New Point(5067, 3300)
         Label15.Name = "Label15"
         Label15.Size = New Size(78, 18)
@@ -3005,82 +3016,82 @@ Partial Class frmMain
         pwl9.TabIndex = 80
         pwl9.TabStop = False
         ' 
-        ' picDDoc2
+        ' dD2
         ' 
-        picDDoc2.BackColor = Color.DimGray
-        picDDoc2.BorderStyle = BorderStyle.FixedSingle
-        picDDoc2.Location = New Point(5259, 3371)
-        picDDoc2.Name = "picDDoc2"
-        picDDoc2.Size = New Size(15, 20)
-        picDDoc2.TabIndex = 60
-        picDDoc2.TabStop = False
-        picDDoc2.Tag = "B"
+        dD2.BackColor = Color.DimGray
+        dD2.BorderStyle = BorderStyle.FixedSingle
+        dD2.Location = New Point(5259, 3371)
+        dD2.Name = "dD2"
+        dD2.Size = New Size(15, 20)
+        dD2.TabIndex = 60
+        dD2.TabStop = False
+        dD2.Tag = "B"
         ' 
-        ' picMDoc2
+        ' dM2
         ' 
-        picMDoc2.BackColor = Color.DimGray
-        picMDoc2.BorderStyle = BorderStyle.FixedSingle
-        picMDoc2.Location = New Point(537, 35)
-        picMDoc2.Name = "picMDoc2"
-        picMDoc2.Size = New Size(30, 15)
-        picMDoc2.TabIndex = 61
-        picMDoc2.TabStop = False
-        picMDoc2.Tag = "L"
+        dM2.BackColor = Color.DimGray
+        dM2.BorderStyle = BorderStyle.FixedSingle
+        dM2.Location = New Point(537, 35)
+        dM2.Name = "dM2"
+        dM2.Size = New Size(30, 15)
+        dM2.TabIndex = 61
+        dM2.TabStop = False
+        dM2.Tag = "L"
         ' 
-        ' picDDoc1
+        ' dD1
         ' 
-        picDDoc1.BackColor = Color.DimGray
-        picDDoc1.BorderStyle = BorderStyle.FixedSingle
-        picDDoc1.Location = New Point(5259, 3308)
-        picDDoc1.Name = "picDDoc1"
-        picDDoc1.Size = New Size(15, 20)
-        picDDoc1.TabIndex = 54
-        picDDoc1.TabStop = False
-        picDDoc1.Tag = "T"
+        dD1.BackColor = Color.DimGray
+        dD1.BorderStyle = BorderStyle.FixedSingle
+        dD1.Location = New Point(5259, 3308)
+        dD1.Name = "dD1"
+        dD1.Size = New Size(15, 20)
+        dD1.TabIndex = 54
+        dD1.TabStop = False
+        dD1.Tag = "T"
         ' 
-        ' picDDoc4
+        ' dD4
         ' 
-        picDDoc4.BackColor = Color.DimGray
-        picDDoc4.BorderStyle = BorderStyle.FixedSingle
-        picDDoc4.Location = New Point(5282, 3343)
-        picDDoc4.Name = "picDDoc4"
-        picDDoc4.Size = New Size(30, 15)
-        picDDoc4.TabIndex = 61
-        picDDoc4.TabStop = False
-        picDDoc4.Tag = "R"
+        dD4.BackColor = Color.DimGray
+        dD4.BorderStyle = BorderStyle.FixedSingle
+        dD4.Location = New Point(5282, 3343)
+        dD4.Name = "dD4"
+        dD4.Size = New Size(30, 15)
+        dD4.TabIndex = 61
+        dD4.TabStop = False
+        dD4.Tag = "R"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
         Label2.BorderStyle = BorderStyle.FixedSingle
-        Label2.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        Label2.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.Location = New Point(2775, 2919)
         Label2.Name = "Label2"
         Label2.Size = New Size(90, 20)
         Label2.TabIndex = 39
         Label2.Text = "Garage 1"
         ' 
-        ' picDDoc3
+        ' dD3
         ' 
-        picDDoc3.BackColor = Color.DimGray
-        picDDoc3.BorderStyle = BorderStyle.FixedSingle
-        picDDoc3.Location = New Point(5219, 3343)
-        picDDoc3.Name = "picDDoc3"
-        picDDoc3.Size = New Size(30, 15)
-        picDDoc3.TabIndex = 61
-        picDDoc3.TabStop = False
-        picDDoc3.Tag = "L"
+        dD3.BackColor = Color.DimGray
+        dD3.BorderStyle = BorderStyle.FixedSingle
+        dD3.Location = New Point(5219, 3343)
+        dD3.Name = "dD3"
+        dD3.Size = New Size(30, 15)
+        dD3.TabIndex = 61
+        dD3.TabStop = False
+        dD3.Tag = "L"
         ' 
-        ' picMDoc1
+        ' dM1
         ' 
-        picMDoc1.BackColor = Color.DimGray
-        picMDoc1.BorderStyle = BorderStyle.FixedSingle
-        picMDoc1.Location = New Point(537, 10)
-        picMDoc1.Name = "picMDoc1"
-        picMDoc1.Size = New Size(30, 15)
-        picMDoc1.TabIndex = 60
-        picMDoc1.TabStop = False
-        picMDoc1.Tag = "L"
+        dM1.BackColor = Color.DimGray
+        dM1.BorderStyle = BorderStyle.FixedSingle
+        dM1.Location = New Point(537, 10)
+        dM1.Name = "dM1"
+        dM1.Size = New Size(30, 15)
+        dM1.TabIndex = 60
+        dM1.TabStop = False
+        dM1.Tag = "L"
         ' 
         ' pwt1
         ' 
@@ -3103,7 +3114,7 @@ Partial Class frmMain
         ' Label12
         ' 
         Label12.AutoSize = True
-        Label12.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        Label12.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label12.Location = New Point(6259, 5771)
         Label12.Name = "Label12"
         Label12.Size = New Size(78, 18)
@@ -3132,34 +3143,34 @@ Partial Class frmMain
         ' 
         Label7.AutoSize = True
         Label7.BorderStyle = BorderStyle.FixedSingle
-        Label7.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
-        Label7.Location = New Point(211, 5088)
+        Label7.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label7.Location = New Point(4668, 6638)
         Label7.Name = "Label7"
         Label7.Size = New Size(90, 20)
         Label7.TabIndex = 51
         Label7.Text = "Garage 2"
         ' 
-        ' picSDoc4
+        ' dS4
         ' 
-        picSDoc4.BackColor = Color.DimGray
-        picSDoc4.BorderStyle = BorderStyle.FixedSingle
-        picSDoc4.Location = New Point(6292, 5872)
-        picSDoc4.Name = "picSDoc4"
-        picSDoc4.Size = New Size(15, 20)
-        picSDoc4.TabIndex = 66
-        picSDoc4.TabStop = False
-        picSDoc4.Tag = "B"
+        dS4.BackColor = Color.DimGray
+        dS4.BorderStyle = BorderStyle.FixedSingle
+        dS4.Location = New Point(6292, 5872)
+        dS4.Name = "dS4"
+        dS4.Size = New Size(15, 20)
+        dS4.TabIndex = 66
+        dS4.TabStop = False
+        dS4.Tag = "B"
         ' 
-        ' picDDoc15
+        ' dD15
         ' 
-        picDDoc15.BackColor = Color.DimGray
-        picDDoc15.BorderStyle = BorderStyle.FixedSingle
-        picDDoc15.Location = New Point(6460, 5842)
-        picDDoc15.Name = "picDDoc15"
-        picDDoc15.Size = New Size(30, 15)
-        picDDoc15.TabIndex = 87
-        picDDoc15.TabStop = False
-        picDDoc15.Tag = "L"
+        dD15.BackColor = Color.DimGray
+        dD15.BorderStyle = BorderStyle.FixedSingle
+        dD15.Location = New Point(6460, 5842)
+        dD15.Name = "dD15"
+        dD15.Size = New Size(30, 15)
+        dD15.TabIndex = 87
+        dD15.TabStop = False
+        dD15.Tag = "L"
         ' 
         ' pd4
         ' 
@@ -3170,87 +3181,87 @@ Partial Class frmMain
         pd4.TabIndex = 84
         pd4.TabStop = False
         ' 
-        ' picDDoc14
+        ' dD14
         ' 
-        picDDoc14.BackColor = Color.DimGray
-        picDDoc14.BorderStyle = BorderStyle.FixedSingle
-        picDDoc14.Location = New Point(6523, 5842)
-        picDDoc14.Name = "picDDoc14"
-        picDDoc14.Size = New Size(30, 15)
-        picDDoc14.TabIndex = 88
-        picDDoc14.TabStop = False
-        picDDoc14.Tag = "R"
+        dD14.BackColor = Color.DimGray
+        dD14.BorderStyle = BorderStyle.FixedSingle
+        dD14.Location = New Point(6523, 5842)
+        dD14.Name = "dD14"
+        dD14.Size = New Size(30, 15)
+        dD14.TabIndex = 88
+        dD14.TabStop = False
+        dD14.Tag = "R"
         ' 
-        ' picDDoc10
+        ' dD10
         ' 
-        picDDoc10.BackColor = Color.DimGray
-        picDDoc10.BorderStyle = BorderStyle.FixedSingle
-        picDDoc10.Location = New Point(6285, 1220)
-        picDDoc10.Name = "picDDoc10"
-        picDDoc10.Size = New Size(30, 15)
-        picDDoc10.TabIndex = 82
-        picDDoc10.TabStop = False
-        picDDoc10.Tag = "L"
+        dD10.BackColor = Color.DimGray
+        dD10.BorderStyle = BorderStyle.FixedSingle
+        dD10.Location = New Point(6285, 1220)
+        dD10.Name = "dD10"
+        dD10.Size = New Size(30, 15)
+        dD10.TabIndex = 82
+        dD10.TabStop = False
+        dD10.Tag = "L"
         ' 
-        ' picDDoc16
+        ' dD16
         ' 
-        picDDoc16.BackColor = Color.DimGray
-        picDDoc16.BorderStyle = BorderStyle.FixedSingle
-        picDDoc16.Location = New Point(6500, 5870)
-        picDDoc16.Name = "picDDoc16"
-        picDDoc16.Size = New Size(15, 20)
-        picDDoc16.TabIndex = 86
-        picDDoc16.TabStop = False
-        picDDoc16.Tag = "B"
+        dD16.BackColor = Color.DimGray
+        dD16.BorderStyle = BorderStyle.FixedSingle
+        dD16.Location = New Point(6500, 5870)
+        dD16.Name = "dD16"
+        dD16.Size = New Size(15, 20)
+        dD16.TabIndex = 86
+        dD16.TabStop = False
+        dD16.Tag = "B"
         ' 
-        ' picDDoc13
+        ' dD13
         ' 
-        picDDoc13.BackColor = Color.DimGray
-        picDDoc13.BorderStyle = BorderStyle.FixedSingle
-        picDDoc13.Location = New Point(6500, 5807)
-        picDDoc13.Name = "picDDoc13"
-        picDDoc13.Size = New Size(15, 20)
-        picDDoc13.TabIndex = 85
-        picDDoc13.TabStop = False
-        picDDoc13.Tag = "T"
+        dD13.BackColor = Color.DimGray
+        dD13.BorderStyle = BorderStyle.FixedSingle
+        dD13.Location = New Point(6500, 5807)
+        dD13.Name = "dD13"
+        dD13.Size = New Size(15, 20)
+        dD13.TabIndex = 85
+        dD13.TabStop = False
+        dD13.Tag = "T"
         ' 
-        ' picDDoc12
+        ' dD12
         ' 
-        picDDoc12.BackColor = Color.DimGray
-        picDDoc12.BorderStyle = BorderStyle.FixedSingle
-        picDDoc12.Location = New Point(6348, 1220)
-        picDDoc12.Name = "picDDoc12"
-        picDDoc12.Size = New Size(30, 15)
-        picDDoc12.TabIndex = 83
-        picDDoc12.TabStop = False
-        picDDoc12.Tag = "R"
+        dD12.BackColor = Color.DimGray
+        dD12.BorderStyle = BorderStyle.FixedSingle
+        dD12.Location = New Point(6348, 1220)
+        dD12.Name = "dD12"
+        dD12.Size = New Size(30, 15)
+        dD12.TabIndex = 83
+        dD12.TabStop = False
+        dD12.Tag = "R"
         ' 
-        ' picDDoc11
+        ' dD11
         ' 
-        picDDoc11.BackColor = Color.DimGray
-        picDDoc11.BorderStyle = BorderStyle.FixedSingle
-        picDDoc11.Location = New Point(6325, 1248)
-        picDDoc11.Name = "picDDoc11"
-        picDDoc11.Size = New Size(15, 20)
-        picDDoc11.TabIndex = 81
-        picDDoc11.TabStop = False
-        picDDoc11.Tag = "B"
+        dD11.BackColor = Color.DimGray
+        dD11.BorderStyle = BorderStyle.FixedSingle
+        dD11.Location = New Point(6325, 1248)
+        dD11.Name = "dD11"
+        dD11.Size = New Size(15, 20)
+        dD11.TabIndex = 81
+        dD11.TabStop = False
+        dD11.Tag = "B"
         ' 
-        ' picDDoc9
+        ' dD9
         ' 
-        picDDoc9.BackColor = Color.DimGray
-        picDDoc9.BorderStyle = BorderStyle.FixedSingle
-        picDDoc9.Location = New Point(6325, 1185)
-        picDDoc9.Name = "picDDoc9"
-        picDDoc9.Size = New Size(15, 20)
-        picDDoc9.TabIndex = 80
-        picDDoc9.TabStop = False
-        picDDoc9.Tag = "T"
+        dD9.BackColor = Color.DimGray
+        dD9.BorderStyle = BorderStyle.FixedSingle
+        dD9.Location = New Point(6325, 1185)
+        dD9.Name = "dD9"
+        dD9.Size = New Size(15, 20)
+        dD9.TabIndex = 80
+        dD9.TabStop = False
+        dD9.Tag = "T"
         ' 
         ' Label10
         ' 
         Label10.AutoSize = True
-        Label10.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        Label10.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label10.Location = New Point(52, 84)
         Label10.Name = "Label10"
         Label10.Size = New Size(78, 18)
@@ -3260,7 +3271,7 @@ Partial Class frmMain
         ' Label9
         ' 
         Label9.AutoSize = True
-        Label9.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        Label9.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label9.Location = New Point(582, 175)
         Label9.Name = "Label9"
         Label9.Size = New Size(78, 18)
@@ -3276,16 +3287,16 @@ Partial Class frmMain
         ps2.TabIndex = 68
         ps2.TabStop = False
         ' 
-        ' picSDoc2
+        ' dS2
         ' 
-        picSDoc2.BackColor = Color.DimGray
-        picSDoc2.BorderStyle = BorderStyle.FixedSingle
-        picSDoc2.Location = New Point(87, 185)
-        picSDoc2.Name = "picSDoc2"
-        picSDoc2.Size = New Size(15, 20)
-        picSDoc2.TabIndex = 67
-        picSDoc2.TabStop = False
-        picSDoc2.Tag = "B"
+        dS2.BackColor = Color.DimGray
+        dS2.BorderStyle = BorderStyle.FixedSingle
+        dS2.Location = New Point(87, 185)
+        dS2.Name = "dS2"
+        dS2.Size = New Size(15, 20)
+        dS2.TabIndex = 67
+        dS2.TabStop = False
+        dS2.Tag = "B"
         ' 
         ' ps1
         ' 
@@ -3296,22 +3307,22 @@ Partial Class frmMain
         ps1.TabIndex = 68
         ps1.TabStop = False
         ' 
-        ' picSDoc1
+        ' dS1
         ' 
-        picSDoc1.BackColor = Color.DimGray
-        picSDoc1.BorderStyle = BorderStyle.FixedSingle
-        picSDoc1.Location = New Point(616, 276)
-        picSDoc1.Name = "picSDoc1"
-        picSDoc1.Size = New Size(15, 20)
-        picSDoc1.TabIndex = 67
-        picSDoc1.TabStop = False
-        picSDoc1.Tag = "B"
+        dS1.BackColor = Color.DimGray
+        dS1.BorderStyle = BorderStyle.FixedSingle
+        dS1.Location = New Point(616, 276)
+        dS1.Name = "dS1"
+        dS1.Size = New Size(15, 20)
+        dS1.TabIndex = 67
+        dS1.TabStop = False
+        dS1.Tag = "B"
         ' 
         ' Label8
         ' 
         Label8.AutoSize = True
         Label8.BorderStyle = BorderStyle.FixedSingle
-        Label8.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        Label8.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label8.Location = New Point(545, 416)
         Label8.Name = "Label8"
         Label8.Size = New Size(90, 20)
@@ -3328,126 +3339,126 @@ Partial Class frmMain
         pb3.TabIndex = 52
         pb3.TabStop = False
         ' 
-        ' picDoc30
+        ' dG30
         ' 
-        picDoc30.BackColor = Color.DimGray
-        picDoc30.BorderStyle = BorderStyle.FixedSingle
-        picDoc30.Location = New Point(661, 453)
-        picDoc30.Name = "picDoc30"
-        picDoc30.Size = New Size(15, 20)
-        picDoc30.TabIndex = 62
-        picDoc30.TabStop = False
-        picDoc30.Tag = "B"
+        dG30.BackColor = Color.DimGray
+        dG30.BorderStyle = BorderStyle.FixedSingle
+        dG30.Location = New Point(661, 453)
+        dG30.Name = "dG30"
+        dG30.Size = New Size(15, 20)
+        dG30.TabIndex = 62
+        dG30.TabStop = False
+        dG30.Tag = "B"
         ' 
-        ' picDoc29
+        ' dG29
         ' 
-        picDoc29.BackColor = Color.DimGray
-        picDoc29.BorderStyle = BorderStyle.FixedSingle
-        picDoc29.Location = New Point(626, 453)
-        picDoc29.Name = "picDoc29"
-        picDoc29.Size = New Size(15, 20)
-        picDoc29.TabIndex = 61
-        picDoc29.TabStop = False
-        picDoc29.Tag = "B"
+        dG29.BackColor = Color.DimGray
+        dG29.BorderStyle = BorderStyle.FixedSingle
+        dG29.Location = New Point(626, 453)
+        dG29.Name = "dG29"
+        dG29.Size = New Size(15, 20)
+        dG29.TabIndex = 61
+        dG29.TabStop = False
+        dG29.Tag = "B"
         ' 
-        ' picDoc28
+        ' dG28
         ' 
-        picDoc28.BackColor = Color.DimGray
-        picDoc28.BorderStyle = BorderStyle.FixedSingle
-        picDoc28.Location = New Point(591, 453)
-        picDoc28.Name = "picDoc28"
-        picDoc28.Size = New Size(15, 20)
-        picDoc28.TabIndex = 60
-        picDoc28.TabStop = False
-        picDoc28.Tag = "B"
+        dG28.BackColor = Color.DimGray
+        dG28.BorderStyle = BorderStyle.FixedSingle
+        dG28.Location = New Point(591, 453)
+        dG28.Name = "dG28"
+        dG28.Size = New Size(15, 20)
+        dG28.TabIndex = 60
+        dG28.TabStop = False
+        dG28.Tag = "B"
         ' 
-        ' picDoc27
+        ' dG27
         ' 
-        picDoc27.BackColor = Color.DimGray
-        picDoc27.BorderStyle = BorderStyle.FixedSingle
-        picDoc27.Location = New Point(556, 453)
-        picDoc27.Name = "picDoc27"
-        picDoc27.Size = New Size(15, 20)
-        picDoc27.TabIndex = 59
-        picDoc27.TabStop = False
-        picDoc27.Tag = "B"
+        dG27.BackColor = Color.DimGray
+        dG27.BorderStyle = BorderStyle.FixedSingle
+        dG27.Location = New Point(556, 453)
+        dG27.Name = "dG27"
+        dG27.Size = New Size(15, 20)
+        dG27.TabIndex = 59
+        dG27.TabStop = False
+        dG27.Tag = "B"
         ' 
-        ' picDoc26
+        ' dG26
         ' 
-        picDoc26.BackColor = Color.DimGray
-        picDoc26.BorderStyle = BorderStyle.FixedSingle
-        picDoc26.Location = New Point(521, 453)
-        picDoc26.Name = "picDoc26"
-        picDoc26.Size = New Size(15, 20)
-        picDoc26.TabIndex = 58
-        picDoc26.TabStop = False
-        picDoc26.Tag = "B"
+        dG26.BackColor = Color.DimGray
+        dG26.BorderStyle = BorderStyle.FixedSingle
+        dG26.Location = New Point(521, 453)
+        dG26.Name = "dG26"
+        dG26.Size = New Size(15, 20)
+        dG26.TabIndex = 58
+        dG26.TabStop = False
+        dG26.Tag = "B"
         ' 
-        ' picDoc25
+        ' dG25
         ' 
-        picDoc25.BackColor = Color.DimGray
-        picDoc25.BorderStyle = BorderStyle.FixedSingle
-        picDoc25.Location = New Point(661, 380)
-        picDoc25.Name = "picDoc25"
-        picDoc25.Size = New Size(15, 20)
-        picDoc25.TabIndex = 57
-        picDoc25.TabStop = False
-        picDoc25.Tag = "T"
+        dG25.BackColor = Color.DimGray
+        dG25.BorderStyle = BorderStyle.FixedSingle
+        dG25.Location = New Point(661, 380)
+        dG25.Name = "dG25"
+        dG25.Size = New Size(15, 20)
+        dG25.TabIndex = 57
+        dG25.TabStop = False
+        dG25.Tag = "T"
         ' 
-        ' picDoc24
+        ' dG24
         ' 
-        picDoc24.BackColor = Color.DimGray
-        picDoc24.BorderStyle = BorderStyle.FixedSingle
-        picDoc24.Location = New Point(626, 380)
-        picDoc24.Name = "picDoc24"
-        picDoc24.Size = New Size(15, 20)
-        picDoc24.TabIndex = 56
-        picDoc24.TabStop = False
-        picDoc24.Tag = "T"
+        dG24.BackColor = Color.DimGray
+        dG24.BorderStyle = BorderStyle.FixedSingle
+        dG24.Location = New Point(626, 380)
+        dG24.Name = "dG24"
+        dG24.Size = New Size(15, 20)
+        dG24.TabIndex = 56
+        dG24.TabStop = False
+        dG24.Tag = "T"
         ' 
-        ' picDoc23
+        ' dG23
         ' 
-        picDoc23.BackColor = Color.DimGray
-        picDoc23.BorderStyle = BorderStyle.FixedSingle
-        picDoc23.Location = New Point(591, 380)
-        picDoc23.Name = "picDoc23"
-        picDoc23.Size = New Size(15, 20)
-        picDoc23.TabIndex = 55
-        picDoc23.TabStop = False
-        picDoc23.Tag = "T"
+        dG23.BackColor = Color.DimGray
+        dG23.BorderStyle = BorderStyle.FixedSingle
+        dG23.Location = New Point(591, 380)
+        dG23.Name = "dG23"
+        dG23.Size = New Size(15, 20)
+        dG23.TabIndex = 55
+        dG23.TabStop = False
+        dG23.Tag = "T"
         ' 
-        ' picDoc22
+        ' dG22
         ' 
-        picDoc22.BackColor = Color.DimGray
-        picDoc22.BorderStyle = BorderStyle.FixedSingle
-        picDoc22.Location = New Point(556, 380)
-        picDoc22.Name = "picDoc22"
-        picDoc22.Size = New Size(15, 20)
-        picDoc22.TabIndex = 54
-        picDoc22.TabStop = False
-        picDoc22.Tag = "T"
+        dG22.BackColor = Color.DimGray
+        dG22.BorderStyle = BorderStyle.FixedSingle
+        dG22.Location = New Point(556, 380)
+        dG22.Name = "dG22"
+        dG22.Size = New Size(15, 20)
+        dG22.TabIndex = 54
+        dG22.TabStop = False
+        dG22.Tag = "T"
         ' 
-        ' picDoc21
+        ' dG21
         ' 
-        picDoc21.BackColor = Color.DimGray
-        picDoc21.BorderStyle = BorderStyle.FixedSingle
-        picDoc21.Location = New Point(521, 380)
-        picDoc21.Name = "picDoc21"
-        picDoc21.Size = New Size(15, 20)
-        picDoc21.TabIndex = 53
-        picDoc21.TabStop = False
-        picDoc21.Tag = "T"
+        dG21.BackColor = Color.DimGray
+        dG21.BorderStyle = BorderStyle.FixedSingle
+        dG21.Location = New Point(521, 380)
+        dG21.Name = "dG21"
+        dG21.Size = New Size(15, 20)
+        dG21.TabIndex = 53
+        dG21.TabStop = False
+        dG21.Tag = "T"
         ' 
-        ' picWDoc1
+        ' dW1
         ' 
-        picWDoc1.BackColor = Color.DimGray
-        picWDoc1.BorderStyle = BorderStyle.FixedSingle
-        picWDoc1.Location = New Point(811, 108)
-        picWDoc1.Name = "picWDoc1"
-        picWDoc1.Size = New Size(15, 20)
-        picWDoc1.TabIndex = 59
-        picWDoc1.TabStop = False
-        picWDoc1.Tag = "B"
+        dW1.BackColor = Color.DimGray
+        dW1.BorderStyle = BorderStyle.FixedSingle
+        dW1.Location = New Point(811, 108)
+        dW1.Name = "dW1"
+        dW1.Size = New Size(15, 20)
+        dW1.TabIndex = 59
+        dW1.TabStop = False
+        dW1.Tag = "B"
         ' 
         ' pwl3
         ' 
@@ -3489,7 +3500,7 @@ Partial Class frmMain
         ' 
         pb2.BackColor = Color.IndianRed
         pb2.Image = My.Resources.Resources.Base
-        pb2.Location = New Point(179, 5062)
+        pb2.Location = New Point(4636, 6612)
         pb2.Name = "pb2"
         pb2.Size = New Size(203, 74)
         pb2.TabIndex = 40
@@ -3498,7 +3509,7 @@ Partial Class frmMain
         ' ps5
         ' 
         ps5.Image = My.Resources.Resources.Solar_Panel
-        ps5.Location = New Point(9, 5045)
+        ps5.Location = New Point(4466, 6595)
         ps5.Name = "ps5"
         ps5.Size = New Size(94, 122)
         ps5.TabIndex = 67
@@ -3507,22 +3518,22 @@ Partial Class frmMain
         ' pel4
         ' 
         pel4.BackColor = Color.Red
-        pel4.Location = New Point(84, 5104)
+        pel4.Location = New Point(4541, 6654)
         pel4.Name = "pel4"
         pel4.Size = New Size(121, 5)
         pel4.TabIndex = 37
         pel4.TabStop = False
         ' 
-        ' picSDoc5
+        ' dS5
         ' 
-        picSDoc5.BackColor = Color.DimGray
-        picSDoc5.BorderStyle = BorderStyle.FixedSingle
-        picSDoc5.Location = New Point(51, 5156)
-        picSDoc5.Name = "picSDoc5"
-        picSDoc5.Size = New Size(15, 20)
-        picSDoc5.TabIndex = 66
-        picSDoc5.TabStop = False
-        picSDoc5.Tag = "B"
+        dS5.BackColor = Color.DimGray
+        dS5.BorderStyle = BorderStyle.FixedSingle
+        dS5.Location = New Point(4508, 6706)
+        dS5.Name = "dS5"
+        dS5.Size = New Size(15, 20)
+        dS5.TabIndex = 66
+        dS5.TabStop = False
+        dS5.Tag = "B"
         ' 
         ' ps3
         ' 
@@ -3543,126 +3554,126 @@ Partial Class frmMain
         pb1.TabIndex = 28
         pb1.TabStop = False
         ' 
-        ' picDoc10
+        ' dG10
         ' 
-        picDoc10.BackColor = Color.DimGray
-        picDoc10.BorderStyle = BorderStyle.FixedSingle
-        picDoc10.Location = New Point(2912, 2956)
-        picDoc10.Name = "picDoc10"
-        picDoc10.Size = New Size(15, 20)
-        picDoc10.TabIndex = 38
-        picDoc10.TabStop = False
-        picDoc10.Tag = "B"
+        dG10.BackColor = Color.DimGray
+        dG10.BorderStyle = BorderStyle.FixedSingle
+        dG10.Location = New Point(2912, 2956)
+        dG10.Name = "dG10"
+        dG10.Size = New Size(15, 20)
+        dG10.TabIndex = 38
+        dG10.TabStop = False
+        dG10.Tag = "B"
         ' 
-        ' picDoc9
+        ' dG9
         ' 
-        picDoc9.BackColor = Color.DimGray
-        picDoc9.BorderStyle = BorderStyle.FixedSingle
-        picDoc9.Location = New Point(2877, 2956)
-        picDoc9.Name = "picDoc9"
-        picDoc9.Size = New Size(15, 20)
-        picDoc9.TabIndex = 37
-        picDoc9.TabStop = False
-        picDoc9.Tag = "B"
+        dG9.BackColor = Color.DimGray
+        dG9.BorderStyle = BorderStyle.FixedSingle
+        dG9.Location = New Point(2877, 2956)
+        dG9.Name = "dG9"
+        dG9.Size = New Size(15, 20)
+        dG9.TabIndex = 37
+        dG9.TabStop = False
+        dG9.Tag = "B"
         ' 
-        ' picDoc8
+        ' dG8
         ' 
-        picDoc8.BackColor = Color.DimGray
-        picDoc8.BorderStyle = BorderStyle.FixedSingle
-        picDoc8.Location = New Point(2842, 2956)
-        picDoc8.Name = "picDoc8"
-        picDoc8.Size = New Size(15, 20)
-        picDoc8.TabIndex = 36
-        picDoc8.TabStop = False
-        picDoc8.Tag = "B"
+        dG8.BackColor = Color.DimGray
+        dG8.BorderStyle = BorderStyle.FixedSingle
+        dG8.Location = New Point(2842, 2956)
+        dG8.Name = "dG8"
+        dG8.Size = New Size(15, 20)
+        dG8.TabIndex = 36
+        dG8.TabStop = False
+        dG8.Tag = "B"
         ' 
-        ' picDoc7
+        ' dG7
         ' 
-        picDoc7.BackColor = Color.DimGray
-        picDoc7.BorderStyle = BorderStyle.FixedSingle
-        picDoc7.Location = New Point(2807, 2956)
-        picDoc7.Name = "picDoc7"
-        picDoc7.Size = New Size(15, 20)
-        picDoc7.TabIndex = 35
-        picDoc7.TabStop = False
-        picDoc7.Tag = "B"
+        dG7.BackColor = Color.DimGray
+        dG7.BorderStyle = BorderStyle.FixedSingle
+        dG7.Location = New Point(2807, 2956)
+        dG7.Name = "dG7"
+        dG7.Size = New Size(15, 20)
+        dG7.TabIndex = 35
+        dG7.TabStop = False
+        dG7.Tag = "B"
         ' 
-        ' picDoc6
+        ' dG6
         ' 
-        picDoc6.BackColor = Color.DimGray
-        picDoc6.BorderStyle = BorderStyle.FixedSingle
-        picDoc6.Location = New Point(2772, 2956)
-        picDoc6.Name = "picDoc6"
-        picDoc6.Size = New Size(15, 20)
-        picDoc6.TabIndex = 34
-        picDoc6.TabStop = False
-        picDoc6.Tag = "B"
+        dG6.BackColor = Color.DimGray
+        dG6.BorderStyle = BorderStyle.FixedSingle
+        dG6.Location = New Point(2772, 2956)
+        dG6.Name = "dG6"
+        dG6.Size = New Size(15, 20)
+        dG6.TabIndex = 34
+        dG6.TabStop = False
+        dG6.Tag = "B"
         ' 
-        ' picDoc1
+        ' dG1
         ' 
-        picDoc1.BackColor = Color.DimGray
-        picDoc1.BorderStyle = BorderStyle.FixedSingle
-        picDoc1.Location = New Point(2772, 2883)
-        picDoc1.Name = "picDoc1"
-        picDoc1.Size = New Size(15, 20)
-        picDoc1.TabIndex = 29
-        picDoc1.TabStop = False
-        picDoc1.Tag = "T"
+        dG1.BackColor = Color.DimGray
+        dG1.BorderStyle = BorderStyle.FixedSingle
+        dG1.Location = New Point(2772, 2883)
+        dG1.Name = "dG1"
+        dG1.Size = New Size(15, 20)
+        dG1.TabIndex = 29
+        dG1.TabStop = False
+        dG1.Tag = "T"
         ' 
-        ' picDoc2
+        ' dG2
         ' 
-        picDoc2.BackColor = Color.DimGray
-        picDoc2.BorderStyle = BorderStyle.FixedSingle
-        picDoc2.Location = New Point(2807, 2883)
-        picDoc2.Name = "picDoc2"
-        picDoc2.Size = New Size(15, 20)
-        picDoc2.TabIndex = 30
-        picDoc2.TabStop = False
-        picDoc2.Tag = "T"
+        dG2.BackColor = Color.DimGray
+        dG2.BorderStyle = BorderStyle.FixedSingle
+        dG2.Location = New Point(2807, 2883)
+        dG2.Name = "dG2"
+        dG2.Size = New Size(15, 20)
+        dG2.TabIndex = 30
+        dG2.TabStop = False
+        dG2.Tag = "T"
         ' 
-        ' picDoc3
+        ' dG3
         ' 
-        picDoc3.BackColor = Color.DimGray
-        picDoc3.BorderStyle = BorderStyle.FixedSingle
-        picDoc3.Location = New Point(2842, 2883)
-        picDoc3.Name = "picDoc3"
-        picDoc3.Size = New Size(15, 20)
-        picDoc3.TabIndex = 31
-        picDoc3.TabStop = False
-        picDoc3.Tag = "T"
+        dG3.BackColor = Color.DimGray
+        dG3.BorderStyle = BorderStyle.FixedSingle
+        dG3.Location = New Point(2842, 2883)
+        dG3.Name = "dG3"
+        dG3.Size = New Size(15, 20)
+        dG3.TabIndex = 31
+        dG3.TabStop = False
+        dG3.Tag = "T"
         ' 
-        ' picDoc4
+        ' dG4
         ' 
-        picDoc4.BackColor = Color.DimGray
-        picDoc4.BorderStyle = BorderStyle.FixedSingle
-        picDoc4.Location = New Point(2877, 2883)
-        picDoc4.Name = "picDoc4"
-        picDoc4.Size = New Size(15, 20)
-        picDoc4.TabIndex = 32
-        picDoc4.TabStop = False
-        picDoc4.Tag = "T"
+        dG4.BackColor = Color.DimGray
+        dG4.BorderStyle = BorderStyle.FixedSingle
+        dG4.Location = New Point(2877, 2883)
+        dG4.Name = "dG4"
+        dG4.Size = New Size(15, 20)
+        dG4.TabIndex = 32
+        dG4.TabStop = False
+        dG4.Tag = "T"
         ' 
-        ' picDoc5
+        ' dG5
         ' 
-        picDoc5.BackColor = Color.DimGray
-        picDoc5.BorderStyle = BorderStyle.FixedSingle
-        picDoc5.Location = New Point(2912, 2883)
-        picDoc5.Name = "picDoc5"
-        picDoc5.Size = New Size(15, 20)
-        picDoc5.TabIndex = 33
-        picDoc5.TabStop = False
-        picDoc5.Tag = "T"
+        dG5.BackColor = Color.DimGray
+        dG5.BorderStyle = BorderStyle.FixedSingle
+        dG5.Location = New Point(2912, 2883)
+        dG5.Name = "dG5"
+        dG5.Size = New Size(15, 20)
+        dG5.TabIndex = 33
+        dG5.TabStop = False
+        dG5.Tag = "T"
         ' 
-        ' picSDoc3
+        ' dS3
         ' 
-        picSDoc3.BackColor = Color.DimGray
-        picSDoc3.BorderStyle = BorderStyle.FixedSingle
-        picSDoc3.Location = New Point(2624, 2973)
-        picSDoc3.Name = "picSDoc3"
-        picSDoc3.Size = New Size(15, 20)
-        picSDoc3.TabIndex = 67
-        picSDoc3.TabStop = False
-        picSDoc3.Tag = "B"
+        dS3.BackColor = Color.DimGray
+        dS3.BorderStyle = BorderStyle.FixedSingle
+        dS3.Location = New Point(2624, 2973)
+        dS3.Name = "dS3"
+        dS3.Size = New Size(15, 20)
+        dS3.TabIndex = 67
+        dS3.TabStop = False
+        dS3.Tag = "B"
         ' 
         ' pel5
         ' 
@@ -3682,16 +3693,16 @@ Partial Class frmMain
         ps6.TabIndex = 67
         ps6.TabStop = False
         ' 
-        ' picSDoc6
+        ' dS6
         ' 
-        picSDoc6.BackColor = Color.DimGray
-        picSDoc6.BorderStyle = BorderStyle.FixedSingle
-        picSDoc6.Location = New Point(5100, 3401)
-        picSDoc6.Name = "picSDoc6"
-        picSDoc6.Size = New Size(15, 20)
-        picSDoc6.TabIndex = 66
-        picSDoc6.TabStop = False
-        picSDoc6.Tag = "B"
+        dS6.BackColor = Color.DimGray
+        dS6.BorderStyle = BorderStyle.FixedSingle
+        dS6.Location = New Point(5100, 3401)
+        dS6.Name = "dS6"
+        dS6.Size = New Size(15, 20)
+        dS6.TabIndex = 66
+        dS6.TabStop = False
+        dS6.Tag = "B"
         ' 
         ' pel14
         ' 
@@ -3738,16 +3749,16 @@ Partial Class frmMain
         ps8.TabIndex = 70
         ps8.TabStop = False
         ' 
-        ' picSDoc8
+        ' dS8
         ' 
-        picSDoc8.BackColor = Color.DimGray
-        picSDoc8.BorderStyle = BorderStyle.FixedSingle
-        picSDoc8.Location = New Point(2255, 4732)
-        picSDoc8.Name = "picSDoc8"
-        picSDoc8.Size = New Size(15, 20)
-        picSDoc8.TabIndex = 69
-        picSDoc8.TabStop = False
-        picSDoc8.Tag = "B"
+        dS8.BackColor = Color.DimGray
+        dS8.BorderStyle = BorderStyle.FixedSingle
+        dS8.Location = New Point(2255, 4732)
+        dS8.Name = "dS8"
+        dS8.Size = New Size(15, 20)
+        dS8.TabIndex = 69
+        dS8.TabStop = False
+        dS8.Tag = "B"
         ' 
         ' pel13
         ' 
@@ -3812,21 +3823,21 @@ Partial Class frmMain
         pwl8.TabIndex = 94
         pwl8.TabStop = False
         ' 
-        ' picSDoc7
+        ' dS7
         ' 
-        picSDoc7.BackColor = Color.DimGray
-        picSDoc7.BorderStyle = BorderStyle.FixedSingle
-        picSDoc7.Location = New Point(87, 491)
-        picSDoc7.Name = "picSDoc7"
-        picSDoc7.Size = New Size(15, 20)
-        picSDoc7.TabIndex = 66
-        picSDoc7.TabStop = False
-        picSDoc7.Tag = "B"
+        dS7.BackColor = Color.DimGray
+        dS7.BorderStyle = BorderStyle.FixedSingle
+        dS7.Location = New Point(87, 491)
+        dS7.Name = "dS7"
+        dS7.Size = New Size(15, 20)
+        dS7.TabIndex = 66
+        dS7.TabStop = False
+        dS7.Tag = "B"
         ' 
         ' pwl13
         ' 
         pwl13.BackColor = Color.DodgerBlue
-        pwl13.Location = New Point(185, 5247)
+        pwl13.Location = New Point(4642, 6797)
         pwl13.Name = "pwl13"
         pwl13.Size = New Size(390, 5)
         pwl13.TabIndex = 94
@@ -3835,7 +3846,7 @@ Partial Class frmMain
         ' pwl11
         ' 
         pwl11.BackColor = Color.DodgerBlue
-        pwl11.Location = New Point(488, 4915)
+        pwl11.Location = New Point(4945, 6465)
         pwl11.Name = "pwl11"
         pwl11.Size = New Size(83, 5)
         pwl11.TabIndex = 94
@@ -3844,7 +3855,7 @@ Partial Class frmMain
         ' pwl12
         ' 
         pwl12.BackColor = Color.DodgerBlue
-        pwl12.Location = New Point(570, 4915)
+        pwl12.Location = New Point(5027, 6465)
         pwl12.Name = "pwl12"
         pwl12.Size = New Size(5, 336)
         pwl12.TabIndex = 94
@@ -3853,7 +3864,7 @@ Partial Class frmMain
         ' pel16
         ' 
         pel16.BackColor = Color.Red
-        pel16.Location = New Point(169, 4918)
+        pel16.Location = New Point(4626, 6468)
         pel16.Name = "pel16"
         pel16.Size = New Size(5, 345)
         pel16.TabIndex = 94
@@ -3862,126 +3873,126 @@ Partial Class frmMain
         ' pel15
         ' 
         pel15.BackColor = Color.Red
-        pel15.Location = New Point(169, 4914)
+        pel15.Location = New Point(4626, 6464)
         pel15.Name = "pel15"
         pel15.Size = New Size(290, 5)
         pel15.TabIndex = 94
         pel15.TabStop = False
         ' 
-        ' picDoc13
+        ' dG13
         ' 
-        picDoc13.BackColor = Color.DimGray
-        picDoc13.BorderStyle = BorderStyle.FixedSingle
-        picDoc13.Location = New Point(273, 5052)
-        picDoc13.Name = "picDoc13"
-        picDoc13.Size = New Size(15, 20)
-        picDoc13.TabIndex = 43
-        picDoc13.TabStop = False
-        picDoc13.Tag = "T"
+        dG13.BackColor = Color.DimGray
+        dG13.BorderStyle = BorderStyle.FixedSingle
+        dG13.Location = New Point(4730, 6602)
+        dG13.Name = "dG13"
+        dG13.Size = New Size(15, 20)
+        dG13.TabIndex = 43
+        dG13.TabStop = False
+        dG13.Tag = "T"
         ' 
-        ' picDoc12
+        ' dG12
         ' 
-        picDoc12.BackColor = Color.DimGray
-        picDoc12.BorderStyle = BorderStyle.FixedSingle
-        picDoc12.Location = New Point(238, 5052)
-        picDoc12.Name = "picDoc12"
-        picDoc12.Size = New Size(15, 20)
-        picDoc12.TabIndex = 42
-        picDoc12.TabStop = False
-        picDoc12.Tag = "T"
+        dG12.BackColor = Color.DimGray
+        dG12.BorderStyle = BorderStyle.FixedSingle
+        dG12.Location = New Point(4695, 6602)
+        dG12.Name = "dG12"
+        dG12.Size = New Size(15, 20)
+        dG12.TabIndex = 42
+        dG12.TabStop = False
+        dG12.Tag = "T"
         ' 
-        ' picDoc14
+        ' dG14
         ' 
-        picDoc14.BackColor = Color.DimGray
-        picDoc14.BorderStyle = BorderStyle.FixedSingle
-        picDoc14.Location = New Point(308, 5052)
-        picDoc14.Name = "picDoc14"
-        picDoc14.Size = New Size(15, 20)
-        picDoc14.TabIndex = 44
-        picDoc14.TabStop = False
-        picDoc14.Tag = "T"
+        dG14.BackColor = Color.DimGray
+        dG14.BorderStyle = BorderStyle.FixedSingle
+        dG14.Location = New Point(4765, 6602)
+        dG14.Name = "dG14"
+        dG14.Size = New Size(15, 20)
+        dG14.TabIndex = 44
+        dG14.TabStop = False
+        dG14.Tag = "T"
         ' 
-        ' picDoc11
+        ' dG11
         ' 
-        picDoc11.BackColor = Color.DimGray
-        picDoc11.BorderStyle = BorderStyle.FixedSingle
-        picDoc11.Location = New Point(203, 5052)
-        picDoc11.Name = "picDoc11"
-        picDoc11.Size = New Size(15, 20)
-        picDoc11.TabIndex = 41
-        picDoc11.TabStop = False
-        picDoc11.Tag = "T"
+        dG11.BackColor = Color.DimGray
+        dG11.BorderStyle = BorderStyle.FixedSingle
+        dG11.Location = New Point(4660, 6602)
+        dG11.Name = "dG11"
+        dG11.Size = New Size(15, 20)
+        dG11.TabIndex = 41
+        dG11.TabStop = False
+        dG11.Tag = "T"
         ' 
-        ' picDoc15
+        ' dG15
         ' 
-        picDoc15.BackColor = Color.DimGray
-        picDoc15.BorderStyle = BorderStyle.FixedSingle
-        picDoc15.Location = New Point(343, 5052)
-        picDoc15.Name = "picDoc15"
-        picDoc15.Size = New Size(15, 20)
-        picDoc15.TabIndex = 45
-        picDoc15.TabStop = False
-        picDoc15.Tag = "T"
+        dG15.BackColor = Color.DimGray
+        dG15.BorderStyle = BorderStyle.FixedSingle
+        dG15.Location = New Point(4800, 6602)
+        dG15.Name = "dG15"
+        dG15.Size = New Size(15, 20)
+        dG15.TabIndex = 45
+        dG15.TabStop = False
+        dG15.Tag = "T"
         ' 
-        ' picDoc20
+        ' dG20
         ' 
-        picDoc20.BackColor = Color.DimGray
-        picDoc20.BorderStyle = BorderStyle.FixedSingle
-        picDoc20.Location = New Point(343, 5125)
-        picDoc20.Name = "picDoc20"
-        picDoc20.Size = New Size(15, 20)
-        picDoc20.TabIndex = 50
-        picDoc20.TabStop = False
-        picDoc20.Tag = "B"
+        dG20.BackColor = Color.DimGray
+        dG20.BorderStyle = BorderStyle.FixedSingle
+        dG20.Location = New Point(4800, 6675)
+        dG20.Name = "dG20"
+        dG20.Size = New Size(15, 20)
+        dG20.TabIndex = 50
+        dG20.TabStop = False
+        dG20.Tag = "B"
         ' 
-        ' picDoc19
+        ' dG19
         ' 
-        picDoc19.BackColor = Color.DimGray
-        picDoc19.BorderStyle = BorderStyle.FixedSingle
-        picDoc19.Location = New Point(308, 5125)
-        picDoc19.Name = "picDoc19"
-        picDoc19.Size = New Size(15, 20)
-        picDoc19.TabIndex = 49
-        picDoc19.TabStop = False
-        picDoc19.Tag = "B"
+        dG19.BackColor = Color.DimGray
+        dG19.BorderStyle = BorderStyle.FixedSingle
+        dG19.Location = New Point(4765, 6675)
+        dG19.Name = "dG19"
+        dG19.Size = New Size(15, 20)
+        dG19.TabIndex = 49
+        dG19.TabStop = False
+        dG19.Tag = "B"
         ' 
-        ' picDoc16
+        ' dG16
         ' 
-        picDoc16.BackColor = Color.DimGray
-        picDoc16.BorderStyle = BorderStyle.FixedSingle
-        picDoc16.Location = New Point(203, 5125)
-        picDoc16.Name = "picDoc16"
-        picDoc16.Size = New Size(15, 20)
-        picDoc16.TabIndex = 46
-        picDoc16.TabStop = False
-        picDoc16.Tag = "B"
+        dG16.BackColor = Color.DimGray
+        dG16.BorderStyle = BorderStyle.FixedSingle
+        dG16.Location = New Point(4660, 6675)
+        dG16.Name = "dG16"
+        dG16.Size = New Size(15, 20)
+        dG16.TabIndex = 46
+        dG16.TabStop = False
+        dG16.Tag = "B"
         ' 
-        ' picDoc17
+        ' dG17
         ' 
-        picDoc17.BackColor = Color.DimGray
-        picDoc17.BorderStyle = BorderStyle.FixedSingle
-        picDoc17.Location = New Point(238, 5125)
-        picDoc17.Name = "picDoc17"
-        picDoc17.Size = New Size(15, 20)
-        picDoc17.TabIndex = 47
-        picDoc17.TabStop = False
-        picDoc17.Tag = "B"
+        dG17.BackColor = Color.DimGray
+        dG17.BorderStyle = BorderStyle.FixedSingle
+        dG17.Location = New Point(4695, 6675)
+        dG17.Name = "dG17"
+        dG17.Size = New Size(15, 20)
+        dG17.TabIndex = 47
+        dG17.TabStop = False
+        dG17.Tag = "B"
         ' 
-        ' picDoc18
+        ' dG18
         ' 
-        picDoc18.BackColor = Color.DimGray
-        picDoc18.BorderStyle = BorderStyle.FixedSingle
-        picDoc18.Location = New Point(273, 5125)
-        picDoc18.Name = "picDoc18"
-        picDoc18.Size = New Size(15, 20)
-        picDoc18.TabIndex = 48
-        picDoc18.TabStop = False
-        picDoc18.Tag = "B"
+        dG18.BackColor = Color.DimGray
+        dG18.BorderStyle = BorderStyle.FixedSingle
+        dG18.Location = New Point(4730, 6675)
+        dG18.Name = "dG18"
+        dG18.Size = New Size(15, 20)
+        dG18.TabIndex = 48
+        dG18.TabStop = False
+        dG18.Tag = "B"
         ' 
         ' pwl14
         ' 
         pwl14.BackColor = Color.DodgerBlue
-        pwl14.Location = New Point(185, 5123)
+        pwl14.Location = New Point(4642, 6673)
         pwl14.Name = "pwl14"
         pwl14.Size = New Size(5, 128)
         pwl14.TabIndex = 95
@@ -4017,7 +4028,7 @@ Partial Class frmMain
         ' pel20
         ' 
         pel20.BackColor = Color.Red
-        pel20.Location = New Point(172, 5259)
+        pel20.Location = New Point(4629, 6809)
         pel20.Name = "pel20"
         pel20.Size = New Size(37, 5)
         pel20.TabIndex = 94
@@ -4077,170 +4088,170 @@ Partial Class frmMain
         PictureBox23.TabIndex = 107
         PictureBox23.TabStop = False
         ' 
-        ' picPDoc4
+        ' dP4
         ' 
-        picPDoc4.BackColor = Color.DimGray
-        picPDoc4.BorderStyle = BorderStyle.FixedSingle
-        picPDoc4.Location = New Point(3189, 2326)
-        picPDoc4.Name = "picPDoc4"
-        picPDoc4.Size = New Size(15, 20)
-        picPDoc4.TabIndex = 188
-        picPDoc4.TabStop = False
-        picPDoc4.Tag = "B"
+        dP4.BackColor = Color.DimGray
+        dP4.BorderStyle = BorderStyle.FixedSingle
+        dP4.Location = New Point(3189, 2326)
+        dP4.Name = "dP4"
+        dP4.Size = New Size(15, 20)
+        dP4.TabIndex = 188
+        dP4.TabStop = False
+        dP4.Tag = "B"
         ' 
-        ' picPDoc1
+        ' dP1
         ' 
-        picPDoc1.BackColor = Color.DimGray
-        picPDoc1.BorderStyle = BorderStyle.FixedSingle
-        picPDoc1.Location = New Point(3093, 2326)
-        picPDoc1.Name = "picPDoc1"
-        picPDoc1.Size = New Size(15, 20)
-        picPDoc1.TabIndex = 185
-        picPDoc1.TabStop = False
-        picPDoc1.Tag = "B"
+        dP1.BackColor = Color.DimGray
+        dP1.BorderStyle = BorderStyle.FixedSingle
+        dP1.Location = New Point(3093, 2326)
+        dP1.Name = "dP1"
+        dP1.Size = New Size(15, 20)
+        dP1.TabIndex = 185
+        dP1.TabStop = False
+        dP1.Tag = "B"
         ' 
-        ' picPDoc3
+        ' dP3
         ' 
-        picPDoc3.BackColor = Color.DimGray
-        picPDoc3.BorderStyle = BorderStyle.FixedSingle
-        picPDoc3.Location = New Point(3157, 2326)
-        picPDoc3.Name = "picPDoc3"
-        picPDoc3.Size = New Size(15, 20)
-        picPDoc3.TabIndex = 187
-        picPDoc3.TabStop = False
-        picPDoc3.Tag = "B"
+        dP3.BackColor = Color.DimGray
+        dP3.BorderStyle = BorderStyle.FixedSingle
+        dP3.Location = New Point(3157, 2326)
+        dP3.Name = "dP3"
+        dP3.Size = New Size(15, 20)
+        dP3.TabIndex = 187
+        dP3.TabStop = False
+        dP3.Tag = "B"
         ' 
-        ' picPDoc2
+        ' dP2
         ' 
-        picPDoc2.BackColor = Color.DimGray
-        picPDoc2.BorderStyle = BorderStyle.FixedSingle
-        picPDoc2.Location = New Point(3125, 2326)
-        picPDoc2.Name = "picPDoc2"
-        picPDoc2.Size = New Size(15, 20)
-        picPDoc2.TabIndex = 186
-        picPDoc2.TabStop = False
-        picPDoc2.Tag = "B"
+        dP2.BackColor = Color.DimGray
+        dP2.BorderStyle = BorderStyle.FixedSingle
+        dP2.Location = New Point(3125, 2326)
+        dP2.Name = "dP2"
+        dP2.Size = New Size(15, 20)
+        dP2.TabIndex = 186
+        dP2.TabStop = False
+        dP2.Tag = "B"
         ' 
-        ' picSDoc21
+        ' dS21
         ' 
-        picSDoc21.BackColor = Color.DimGray
-        picSDoc21.BorderStyle = BorderStyle.FixedSingle
-        picSDoc21.Location = New Point(3360, 2260)
-        picSDoc21.Name = "picSDoc21"
-        picSDoc21.Size = New Size(15, 20)
-        picSDoc21.TabIndex = 192
-        picSDoc21.TabStop = False
-        picSDoc21.Tag = "B"
+        dS21.BackColor = Color.DimGray
+        dS21.BorderStyle = BorderStyle.FixedSingle
+        dS21.Location = New Point(3360, 2260)
+        dS21.Name = "dS21"
+        dS21.Size = New Size(15, 20)
+        dS21.TabIndex = 192
+        dS21.TabStop = False
+        dS21.Tag = "B"
         ' 
-        ' picSDoc20
+        ' dS20
         ' 
-        picSDoc20.BackColor = Color.DimGray
-        picSDoc20.BorderStyle = BorderStyle.FixedSingle
-        picSDoc20.Location = New Point(3149, 2053)
-        picSDoc20.Name = "picSDoc20"
-        picSDoc20.Size = New Size(15, 20)
-        picSDoc20.TabIndex = 188
-        picSDoc20.TabStop = False
-        picSDoc20.Tag = "B"
+        dS20.BackColor = Color.DimGray
+        dS20.BorderStyle = BorderStyle.FixedSingle
+        dS20.Location = New Point(3149, 2053)
+        dS20.Name = "dS20"
+        dS20.Size = New Size(15, 20)
+        dS20.TabIndex = 188
+        dS20.TabStop = False
+        dS20.Tag = "B"
         ' 
-        ' picSDoc19
+        ' dS19
         ' 
-        picSDoc19.BackColor = Color.DimGray
-        picSDoc19.BorderStyle = BorderStyle.FixedSingle
-        picSDoc19.Location = New Point(2929, 2278)
-        picSDoc19.Name = "picSDoc19"
-        picSDoc19.Size = New Size(15, 20)
-        picSDoc19.TabIndex = 184
-        picSDoc19.TabStop = False
-        picSDoc19.Tag = "B"
+        dS19.BackColor = Color.DimGray
+        dS19.BorderStyle = BorderStyle.FixedSingle
+        dS19.Location = New Point(2929, 2278)
+        dS19.Name = "dS19"
+        dS19.Size = New Size(15, 20)
+        dS19.TabIndex = 184
+        dS19.TabStop = False
+        dS19.Tag = "B"
         ' 
-        ' picSDoc18
+        ' dS18
         ' 
-        picSDoc18.BackColor = Color.DimGray
-        picSDoc18.BorderStyle = BorderStyle.FixedSingle
-        picSDoc18.Location = New Point(3130, 320)
-        picSDoc18.Name = "picSDoc18"
-        picSDoc18.Size = New Size(15, 20)
-        picSDoc18.TabIndex = 192
-        picSDoc18.TabStop = False
-        picSDoc18.Tag = "B"
+        dS18.BackColor = Color.DimGray
+        dS18.BorderStyle = BorderStyle.FixedSingle
+        dS18.Location = New Point(3130, 320)
+        dS18.Name = "dS18"
+        dS18.Size = New Size(15, 20)
+        dS18.TabIndex = 192
+        dS18.TabStop = False
+        dS18.Tag = "B"
         ' 
-        ' picSDoc16
+        ' dS16
         ' 
-        picSDoc16.BackColor = Color.DimGray
-        picSDoc16.BorderStyle = BorderStyle.FixedSingle
-        picSDoc16.Location = New Point(2781, 322)
-        picSDoc16.Name = "picSDoc16"
-        picSDoc16.Size = New Size(15, 20)
-        picSDoc16.TabIndex = 184
-        picSDoc16.TabStop = False
-        picSDoc16.Tag = "B"
+        dS16.BackColor = Color.DimGray
+        dS16.BorderStyle = BorderStyle.FixedSingle
+        dS16.Location = New Point(2781, 322)
+        dS16.Name = "dS16"
+        dS16.Size = New Size(15, 20)
+        dS16.TabIndex = 184
+        dS16.TabStop = False
+        dS16.Tag = "B"
         ' 
-        ' picSDoc15
+        ' dS15
         ' 
-        picSDoc15.BackColor = Color.DimGray
-        picSDoc15.BorderStyle = BorderStyle.FixedSingle
-        picSDoc15.Location = New Point(205, 2164)
-        picSDoc15.Name = "picSDoc15"
-        picSDoc15.Size = New Size(15, 20)
-        picSDoc15.TabIndex = 168
-        picSDoc15.TabStop = False
-        picSDoc15.Tag = "B"
+        dS15.BackColor = Color.DimGray
+        dS15.BorderStyle = BorderStyle.FixedSingle
+        dS15.Location = New Point(205, 2164)
+        dS15.Name = "dS15"
+        dS15.Size = New Size(15, 20)
+        dS15.TabIndex = 168
+        dS15.TabStop = False
+        dS15.Tag = "B"
         ' 
-        ' picSDoc14
+        ' dS14
         ' 
-        picSDoc14.BackColor = Color.DimGray
-        picSDoc14.BorderStyle = BorderStyle.FixedSingle
-        picSDoc14.Location = New Point(61, 2163)
-        picSDoc14.Name = "picSDoc14"
-        picSDoc14.Size = New Size(15, 20)
-        picSDoc14.TabIndex = 164
-        picSDoc14.TabStop = False
-        picSDoc14.Tag = "B"
+        dS14.BackColor = Color.DimGray
+        dS14.BorderStyle = BorderStyle.FixedSingle
+        dS14.Location = New Point(61, 2163)
+        dS14.Name = "dS14"
+        dS14.Size = New Size(15, 20)
+        dS14.TabIndex = 164
+        dS14.TabStop = False
+        dS14.Tag = "B"
         ' 
-        ' picSDoc13
+        ' dS13
         ' 
-        picSDoc13.BackColor = Color.DimGray
-        picSDoc13.BorderStyle = BorderStyle.FixedSingle
-        picSDoc13.Location = New Point(205, 1983)
-        picSDoc13.Name = "picSDoc13"
-        picSDoc13.Size = New Size(15, 20)
-        picSDoc13.TabIndex = 160
-        picSDoc13.TabStop = False
-        picSDoc13.Tag = "B"
+        dS13.BackColor = Color.DimGray
+        dS13.BorderStyle = BorderStyle.FixedSingle
+        dS13.Location = New Point(205, 1983)
+        dS13.Name = "dS13"
+        dS13.Size = New Size(15, 20)
+        dS13.TabIndex = 160
+        dS13.TabStop = False
+        dS13.Tag = "B"
         ' 
-        ' picSDoc12
+        ' dS12
         ' 
-        picSDoc12.BackColor = Color.DimGray
-        picSDoc12.BorderStyle = BorderStyle.FixedSingle
-        picSDoc12.Location = New Point(59, 1983)
-        picSDoc12.Name = "picSDoc12"
-        picSDoc12.Size = New Size(15, 20)
-        picSDoc12.TabIndex = 156
-        picSDoc12.TabStop = False
-        picSDoc12.Tag = "B"
+        dS12.BackColor = Color.DimGray
+        dS12.BorderStyle = BorderStyle.FixedSingle
+        dS12.Location = New Point(59, 1983)
+        dS12.Name = "dS12"
+        dS12.Size = New Size(15, 20)
+        dS12.TabIndex = 156
+        dS12.TabStop = False
+        dS12.Tag = "B"
         ' 
-        ' picSDoc11
+        ' dS11
         ' 
-        picSDoc11.BackColor = Color.DimGray
-        picSDoc11.BorderStyle = BorderStyle.FixedSingle
-        picSDoc11.Location = New Point(206, 1800)
-        picSDoc11.Name = "picSDoc11"
-        picSDoc11.Size = New Size(15, 20)
-        picSDoc11.TabIndex = 152
-        picSDoc11.TabStop = False
-        picSDoc11.Tag = "B"
+        dS11.BackColor = Color.DimGray
+        dS11.BorderStyle = BorderStyle.FixedSingle
+        dS11.Location = New Point(206, 1800)
+        dS11.Name = "dS11"
+        dS11.Size = New Size(15, 20)
+        dS11.TabIndex = 152
+        dS11.TabStop = False
+        dS11.Tag = "B"
         ' 
-        ' picSDoc10
+        ' dS10
         ' 
-        picSDoc10.BackColor = Color.DimGray
-        picSDoc10.BorderStyle = BorderStyle.FixedSingle
-        picSDoc10.Location = New Point(60, 1800)
-        picSDoc10.Name = "picSDoc10"
-        picSDoc10.Size = New Size(15, 20)
-        picSDoc10.TabIndex = 148
-        picSDoc10.TabStop = False
-        picSDoc10.Tag = "B"
+        dS10.BackColor = Color.DimGray
+        dS10.BorderStyle = BorderStyle.FixedSingle
+        dS10.Location = New Point(60, 1800)
+        dS10.Name = "dS10"
+        dS10.Size = New Size(15, 20)
+        dS10.TabIndex = 148
+        dS10.TabStop = False
+        dS10.Tag = "B"
         ' 
         ' PictureBox29
         ' 
@@ -4428,8 +4439,14 @@ Partial Class frmMain
         ' 
         ' Panel2
         ' 
+        Panel2.Controls.Add(lstG3pgm)
+        Panel2.Controls.Add(lstG2pgm)
+        Panel2.Controls.Add(lstG1pgm)
+        Panel2.Controls.Add(Label31)
+        Panel2.Controls.Add(Label30)
+        Panel2.Controls.Add(Label28)
         Panel2.Controls.Add(btnLoad)
-        Panel2.Controls.Add(ListBox1)
+        Panel2.Controls.Add(LstPGMs)
         Panel2.Controls.Add(btnGoHome)
         Panel2.Controls.Add(Label21)
         Panel2.Controls.Add(selStation)
@@ -4447,6 +4464,63 @@ Partial Class frmMain
         Panel2.Size = New Size(123, 752)
         Panel2.TabIndex = 29
         ' 
+        ' lstG3pgm
+        ' 
+        lstG3pgm.FormattingEnabled = True
+        lstG3pgm.ItemHeight = 15
+        lstG3pgm.Items.AddRange(New Object() {"Gar3 1|WP30|WP2|SP1|WP2|WP9|WT1|WP1|MF8|WP1|WP6|WP4|SP2|WP5|WP3|SP7|WP3|WP30|HOME", "Gar3 2|WP2|SP1|WP30|WP3|SP7|WP3|WP5|WP4|SP2|WP4|MF2|WP6|WP1|WT1|WP9|WP2|HOME", "Gar3 3|WP8|WP27|SP10|SP11|WP27|WP28|SP13|SP12|WP28|WP29|SP14|SP15|WP29|WP8|HOME", "Gar3 4|WP8|WP3|SP7|WP3|WP5|WP4|SP2|WP4|WP6|MF3|WP6|WP1|WT1|WP9|WP2|SP1|HOME"})
+        lstG3pgm.Location = New Point(9, 674)
+        lstG3pgm.Name = "lstG3pgm"
+        lstG3pgm.Size = New Size(100, 49)
+        lstG3pgm.TabIndex = 116
+        ' 
+        ' lstG2pgm
+        ' 
+        lstG2pgm.FormattingEnabled = True
+        lstG2pgm.ItemHeight = 15
+        lstG2pgm.Items.AddRange(New Object() {"Gar2 1|WP35|SP5|WP35|WP36|WT3|WP36|WP34|WP33|DR19|WP32|HOME", "Gar2 2|WP32|WP31|WP23|SP17|WP49|DR22|WP49|WP24|DR5|DR8|WP40|WP26|SP8|WP31|HOME", "Gar2 3|WP34|SP8|DR7|WP40|WP51|SP4|WP53|DR16|WP59|DR2|WP59|SP6|WP60|WP22|DR22|SP17|WP23|HOME", "Gar2 4|WP34|WP51|SP4|WP53|DR15|WP54|DR2|WP59|SP6|WP60|DR22|WP49|SP17|WP23|DR17|WP31|WP35|SP5|WP35|HOME"})
+        lstG2pgm.Location = New Point(9, 606)
+        lstG2pgm.Name = "lstG2pgm"
+        lstG2pgm.Size = New Size(100, 49)
+        lstG2pgm.TabIndex = 115
+        ' 
+        ' lstG1pgm
+        ' 
+        lstG1pgm.FormattingEnabled = True
+        lstG1pgm.ItemHeight = 15
+        lstG1pgm.Items.AddRange(New Object() {"Gar1 1|WP13|WP12|WP15|SP3|WP14|WP17|WT2|WP17|WP17|WP18|MF10|WP18|WP48|LP2|WP48|WP46|SP19|WP46|WP44|SP20|WP45|WP47|SP21|WP47|HOME", "Gar1 2|WP13|SP9|WP57|DR11|WP57|WP41|SP18|WP39|DR28|WP39|WP38|SP16|WP42|WP45|WP47|SP21|WP47|WP48|LP3|WP48|WP46|SP19|WP46|WP44|SP20|WP45|HOME", "Gar1 3|WP16|WP15|WP12|SP16|DR25|WP38|WP39|SP18|WP39|WP56|SP9|WP57|DR11|WP57|WP45|WP47|SP21|WP47|WP48|LP3|WP48|WP46|SP19|WP46|WP44|SP20|WP45|WP13|HOME", "Gar1 4|WP16|WP15|SP3|WP14|WP17|WT2|WP17|WP18|MF10|WP18|WP20|HOME"})
+        lstG1pgm.Location = New Point(9, 536)
+        lstG1pgm.Name = "lstG1pgm"
+        lstG1pgm.Size = New Size(100, 49)
+        lstG1pgm.TabIndex = 114
+        ' 
+        ' Label31
+        ' 
+        Label31.AutoSize = True
+        Label31.Location = New Point(9, 656)
+        Label31.Name = "Label31"
+        Label31.Size = New Size(53, 15)
+        Label31.TabIndex = 113
+        Label31.Text = "Garage 3"
+        ' 
+        ' Label30
+        ' 
+        Label30.AutoSize = True
+        Label30.Location = New Point(9, 588)
+        Label30.Name = "Label30"
+        Label30.Size = New Size(53, 15)
+        Label30.TabIndex = 112
+        Label30.Text = "Garage 2"
+        ' 
+        ' Label28
+        ' 
+        Label28.AutoSize = True
+        Label28.Location = New Point(9, 519)
+        Label28.Name = "Label28"
+        Label28.Size = New Size(53, 15)
+        Label28.TabIndex = 111
+        Label28.Text = "Garage 1"
+        ' 
         ' btnLoad
         ' 
         btnLoad.Location = New Point(9, 155)
@@ -4456,15 +4530,15 @@ Partial Class frmMain
         btnLoad.Text = "Load Droid"
         btnLoad.UseVisualStyleBackColor = True
         ' 
-        ' ListBox1
+        ' LstPGMs
         ' 
-        ListBox1.FormattingEnabled = True
-        ListBox1.ItemHeight = 15
-        ListBox1.Items.AddRange(New Object() {"Gar 3 0|HOME", "Gar 3 1|WP2|SP1|WP2|WP6|MF4|WP4|SP2|WP3|SP7|WP3|WP7|HOME", "Gar 3 2|WP7|WP3|SP7|WP3|WP5|WP4|SP2|WP4|MF8|WP1|WT1|WP9|HOME", "Gar 3 3|WP2|WP9|WT1|MF8|WP1|WP6|WP5|WP4|SP2|WP4|WP5|WP3|S7|WP3|WP6|WP2|S1|HOME", "Gar 3 4|WP2|WP5|WP4|SP2|WP4|WP6|MF2|WP5|WP3|SP7|WP3|WP7|HOME", "Gar 3 5|WP30|WP4|SP2|WP4|WP3|SP7|WP6|MF4|WP6|WT1|WP2|SP1|HOME"})
-        ListBox1.Location = New Point(9, 58)
-        ListBox1.Name = "ListBox1"
-        ListBox1.Size = New Size(100, 94)
-        ListBox1.TabIndex = 106
+        LstPGMs.FormattingEnabled = True
+        LstPGMs.ItemHeight = 15
+        LstPGMs.Items.AddRange(New Object() {"Go Home|HOME", "Gar1 1|WP13|WP12|WP15|SP3|WP14|WP17|WT2|WP17|WP17|WP18|MF10|WP18|WP48|LP2|WP48|WP46|SP19|WP46|WP44|SP20|WP45|WP47|SP21|WP47|HOME", "Gar1 2|WP13|SP9|WP57|DR11|WP57|WP41|SP18|WP39|DR28|WP39|WP38|SP16|WP42|WP45|WP47|SP21|WP47|WP48|LP3|WP48|WP46|SP19|WP46|WP44|SP20|WP45|HOME", "Gar1 3|WP16|WP15|WP12|SP16|DR25|WP38|WP39|SP18|WP39|WP56|SP9|WP57|DR11|WP57|WP45|WP47|SP21|WP47|WP48|LP3|WP48|WP46|SP19|WP46|WP44|SP20|WP45|WP13|HOME", "Gar1 4|WP16|WP15|SP3|WP14|WP17|WT2|WP17|WP18|MF10|WP18|WP20|HOME", "Gar2 1|WP35|SP5|WP35|WP36|WT3|WP36|WP34|WP33|DR19|WP32|HOME", "Gar2 2|WP32|WP31|WP23|SP17|WP49|DR22|WP49|WP24|DR5|DR8|WP40|WP26|SP8|WP31|HOME", "Gar2 3|WP34|SP8|DR7|WP40|WP51|SP4|WP53|DR16|WP59|DR2|WP59|SP6|WP60|WP22|DR22|SP17|WP23|HOME", "Gar2 4|WP34|WP51|SP4|WP53|DR15|WP54|DR2|WP59|SP6|WP60|DR22|WP49|SP17|WP23|DR17|WP31|WP35|SP5|WP35|HOME", "Gar3 1|WP30|WP2|SP1|WP2|WP9|WT1|WP1|MF8|WP1|WP6|WP4|SP2|WP5|WP3|SP7|WP3|WP30|HOME", "Gar3 2|WP2|SP1|WP30|WP3|SP7|WP3|WP5|WP4|SP2|WP4|MF2|WP6|WP1|WT1|WP9|WP2|HOME", "Gar3 3|WP8|WP27|SP10|SP11|WP27|WP28|SP13|SP12|WP28|WP29|SP14|SP15|WP29|WP8|HOME", "Gar3 4|WP8|WP3|SP7|WP3|WP5|WP4|SP2|WP4|WP6|MF3|WP6|WP1|WT1|WP9|WP2|SP1|HOME"})
+        LstPGMs.Location = New Point(9, 58)
+        LstPGMs.Name = "LstPGMs"
+        LstPGMs.Size = New Size(100, 94)
+        LstPGMs.TabIndex = 106
         ' 
         ' btnGoHome
         ' 
@@ -4582,6 +4656,9 @@ Partial Class frmMain
         ' 
         ' Panel3
         ' 
+        Panel3.Controls.Add(lblOTemp)
+        Panel3.Controls.Add(Label35)
+        Panel3.Controls.Add(lblTemptxt)
         Panel3.Controls.Add(Label26)
         Panel3.Controls.Add(txtTow)
         Panel3.Controls.Add(btnMapping)
@@ -4607,6 +4684,34 @@ Partial Class frmMain
         Panel3.Name = "Panel3"
         Panel3.Size = New Size(927, 78)
         Panel3.TabIndex = 30
+        ' 
+        ' lblOTemp
+        ' 
+        lblOTemp.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        lblOTemp.Location = New Point(835, 29)
+        lblOTemp.Name = "lblOTemp"
+        lblOTemp.Size = New Size(80, 17)
+        lblOTemp.TabIndex = 108
+        lblOTemp.Text = "70.00 DegF"
+        lblOTemp.TextAlign = ContentAlignment.MiddleRight
+        ToolTip1.SetToolTip(lblOTemp, "hi")
+        ' 
+        ' Label35
+        ' 
+        Label35.Location = New Point(752, 12)
+        Label35.Name = "Label35"
+        Label35.Size = New Size(37, 16)
+        Label35.TabIndex = 107
+        Label35.Text = "Time:"
+        ' 
+        ' lblTemptxt
+        ' 
+        lblTemptxt.Location = New Point(751, 30)
+        lblTemptxt.Name = "lblTemptxt"
+        lblTemptxt.Size = New Size(80, 16)
+        lblTemptxt.TabIndex = 106
+        lblTemptxt.Text = "Temperature: "
+        ToolTip1.SetToolTip(lblTemptxt, "hi")
         ' 
         ' Label26
         ' 
@@ -4740,7 +4845,7 @@ Partial Class frmMain
         ' 
         ' tmrFlashLights
         ' 
-        tmrFlashLights.Interval = 5000
+        tmrFlashLights.Interval = 1000
         ' 
         ' PictureBox36
         ' 
@@ -4750,6 +4855,11 @@ Partial Class frmMain
         PictureBox36.Size = New Size(5, 39)
         PictureBox36.TabIndex = 103
         PictureBox36.TabStop = False
+        ' 
+        ' tmrTick
+        ' 
+        tmrTick.Enabled = True
+        tmrTick.Interval = 1000
         ' 
         ' frmMain
         ' 
@@ -4768,7 +4878,7 @@ Partial Class frmMain
         Controls.Add(Panel2)
         Controls.Add(PictureBox11)
         Name = "frmMain"
-        Text = "Form1"
+        Text = "Main"
         pnlMain.ResumeLayout(False)
         pnlMain.PerformLayout()
         CType(wp60, ComponentModel.ISupportInitialize).EndInit()
@@ -4797,7 +4907,7 @@ Partial Class frmMain
         CType(wp47, ComponentModel.ISupportInitialize).EndInit()
         CType(wp34, ComponentModel.ISupportInitialize).EndInit()
         CType(wp46, ComponentModel.ISupportInitialize).EndInit()
-        CType(picSDoc17, ComponentModel.ISupportInitialize).EndInit()
+        CType(dS17, ComponentModel.ISupportInitialize).EndInit()
         CType(wp45, ComponentModel.ISupportInitialize).EndInit()
         CType(wp33, ComponentModel.ISupportInitialize).EndInit()
         CType(wp44, ComponentModel.ISupportInitialize).EndInit()
@@ -4809,12 +4919,12 @@ Partial Class frmMain
         CType(wp31, ComponentModel.ISupportInitialize).EndInit()
         CType(wp28, ComponentModel.ISupportInitialize).EndInit()
         CType(pd7, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDDoc25, ComponentModel.ISupportInitialize).EndInit()
+        CType(dD25, ComponentModel.ISupportInitialize).EndInit()
         CType(wp29, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDDoc28, ComponentModel.ISupportInitialize).EndInit()
+        CType(dD28, ComponentModel.ISupportInitialize).EndInit()
         CType(wp27, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDDoc26, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDDoc27, ComponentModel.ISupportInitialize).EndInit()
+        CType(dD26, ComponentModel.ISupportInitialize).EndInit()
+        CType(dD27, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox22, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox16, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox6, ComponentModel.ISupportInitialize).EndInit()
@@ -4867,88 +4977,88 @@ Partial Class frmMain
         CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
         CType(ps10, ComponentModel.ISupportInitialize).EndInit()
         CType(pd6, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDDoc22, ComponentModel.ISupportInitialize).EndInit()
+        CType(dD22, ComponentModel.ISupportInitialize).EndInit()
         CType(pel18, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDDoc24, ComponentModel.ISupportInitialize).EndInit()
+        CType(dD24, ComponentModel.ISupportInitialize).EndInit()
         CType(pel17, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDDoc23, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDDoc21, ComponentModel.ISupportInitialize).EndInit()
+        CType(dD23, ComponentModel.ISupportInitialize).EndInit()
+        CType(dD21, ComponentModel.ISupportInitialize).EndInit()
         CType(pd5, ComponentModel.ISupportInitialize).EndInit()
         CType(pm2, ComponentModel.ISupportInitialize).EndInit()
-        CType(picMDoc16, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDDoc19, ComponentModel.ISupportInitialize).EndInit()
-        CType(picMDoc15, ComponentModel.ISupportInitialize).EndInit()
+        CType(dM16, ComponentModel.ISupportInitialize).EndInit()
+        CType(dD19, ComponentModel.ISupportInitialize).EndInit()
+        CType(dM15, ComponentModel.ISupportInitialize).EndInit()
         CType(pwl7, ComponentModel.ISupportInitialize).EndInit()
-        CType(picMDoc14, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDDoc17, ComponentModel.ISupportInitialize).EndInit()
-        CType(picMDoc13, ComponentModel.ISupportInitialize).EndInit()
+        CType(dM14, ComponentModel.ISupportInitialize).EndInit()
+        CType(dD17, ComponentModel.ISupportInitialize).EndInit()
+        CType(dM13, ComponentModel.ISupportInitialize).EndInit()
         CType(pel9, ComponentModel.ISupportInitialize).EndInit()
-        CType(picMDoc12, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDDoc20, ComponentModel.ISupportInitialize).EndInit()
-        CType(picMDoc11, ComponentModel.ISupportInitialize).EndInit()
+        CType(dM12, ComponentModel.ISupportInitialize).EndInit()
+        CType(dD20, ComponentModel.ISupportInitialize).EndInit()
+        CType(dM11, ComponentModel.ISupportInitialize).EndInit()
         CType(pd2, ComponentModel.ISupportInitialize).EndInit()
-        CType(picMDoc10, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDDoc18, ComponentModel.ISupportInitialize).EndInit()
-        CType(picMDoc9, ComponentModel.ISupportInitialize).EndInit()
+        CType(dM10, ComponentModel.ISupportInitialize).EndInit()
+        CType(dD18, ComponentModel.ISupportInitialize).EndInit()
+        CType(dM9, ComponentModel.ISupportInitialize).EndInit()
         CType(pwl6, ComponentModel.ISupportInitialize).EndInit()
         CType(pel10, ComponentModel.ISupportInitialize).EndInit()
         CType(pwt3, ComponentModel.ISupportInitialize).EndInit()
-        CType(picWDoc3, ComponentModel.ISupportInitialize).EndInit()
+        CType(dW3, ComponentModel.ISupportInitialize).EndInit()
         CType(pwt2, ComponentModel.ISupportInitialize).EndInit()
         CType(pwl1, ComponentModel.ISupportInitialize).EndInit()
         CType(ps7, ComponentModel.ISupportInitialize).EndInit()
         CType(pm1, ComponentModel.ISupportInitialize).EndInit()
         CType(ps9, ComponentModel.ISupportInitialize).EndInit()
-        CType(picMDoc8, ComponentModel.ISupportInitialize).EndInit()
-        CType(picMDoc7, ComponentModel.ISupportInitialize).EndInit()
-        CType(picMDoc6, ComponentModel.ISupportInitialize).EndInit()
-        CType(picMDoc5, ComponentModel.ISupportInitialize).EndInit()
-        CType(picWDoc2, ComponentModel.ISupportInitialize).EndInit()
-        CType(picSDoc9, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDDoc7, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDDoc5, ComponentModel.ISupportInitialize).EndInit()
-        CType(picMDoc4, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDDoc8, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDDoc6, ComponentModel.ISupportInitialize).EndInit()
-        CType(picMDoc3, ComponentModel.ISupportInitialize).EndInit()
+        CType(dM8, ComponentModel.ISupportInitialize).EndInit()
+        CType(dM7, ComponentModel.ISupportInitialize).EndInit()
+        CType(dM6, ComponentModel.ISupportInitialize).EndInit()
+        CType(dM5, ComponentModel.ISupportInitialize).EndInit()
+        CType(dW2, ComponentModel.ISupportInitialize).EndInit()
+        CType(dS9, ComponentModel.ISupportInitialize).EndInit()
+        CType(dD7, ComponentModel.ISupportInitialize).EndInit()
+        CType(dD5, ComponentModel.ISupportInitialize).EndInit()
+        CType(dM4, ComponentModel.ISupportInitialize).EndInit()
+        CType(dD8, ComponentModel.ISupportInitialize).EndInit()
+        CType(dD6, ComponentModel.ISupportInitialize).EndInit()
+        CType(dM3, ComponentModel.ISupportInitialize).EndInit()
         CType(pd3, ComponentModel.ISupportInitialize).EndInit()
         CType(pwl9, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDDoc2, ComponentModel.ISupportInitialize).EndInit()
-        CType(picMDoc2, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDDoc1, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDDoc4, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDDoc3, ComponentModel.ISupportInitialize).EndInit()
-        CType(picMDoc1, ComponentModel.ISupportInitialize).EndInit()
+        CType(dD2, ComponentModel.ISupportInitialize).EndInit()
+        CType(dM2, ComponentModel.ISupportInitialize).EndInit()
+        CType(dD1, ComponentModel.ISupportInitialize).EndInit()
+        CType(dD4, ComponentModel.ISupportInitialize).EndInit()
+        CType(dD3, ComponentModel.ISupportInitialize).EndInit()
+        CType(dM1, ComponentModel.ISupportInitialize).EndInit()
         CType(pwt1, ComponentModel.ISupportInitialize).EndInit()
         CType(pwl2, ComponentModel.ISupportInitialize).EndInit()
         CType(pd1, ComponentModel.ISupportInitialize).EndInit()
         CType(ps4, ComponentModel.ISupportInitialize).EndInit()
-        CType(picSDoc4, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDDoc15, ComponentModel.ISupportInitialize).EndInit()
+        CType(dS4, ComponentModel.ISupportInitialize).EndInit()
+        CType(dD15, ComponentModel.ISupportInitialize).EndInit()
         CType(pd4, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDDoc14, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDDoc10, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDDoc16, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDDoc13, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDDoc12, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDDoc11, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDDoc9, ComponentModel.ISupportInitialize).EndInit()
+        CType(dD14, ComponentModel.ISupportInitialize).EndInit()
+        CType(dD10, ComponentModel.ISupportInitialize).EndInit()
+        CType(dD16, ComponentModel.ISupportInitialize).EndInit()
+        CType(dD13, ComponentModel.ISupportInitialize).EndInit()
+        CType(dD12, ComponentModel.ISupportInitialize).EndInit()
+        CType(dD11, ComponentModel.ISupportInitialize).EndInit()
+        CType(dD9, ComponentModel.ISupportInitialize).EndInit()
         CType(ps2, ComponentModel.ISupportInitialize).EndInit()
-        CType(picSDoc2, ComponentModel.ISupportInitialize).EndInit()
+        CType(dS2, ComponentModel.ISupportInitialize).EndInit()
         CType(ps1, ComponentModel.ISupportInitialize).EndInit()
-        CType(picSDoc1, ComponentModel.ISupportInitialize).EndInit()
+        CType(dS1, ComponentModel.ISupportInitialize).EndInit()
         CType(pb3, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDoc30, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDoc29, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDoc28, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDoc27, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDoc26, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDoc25, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDoc24, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDoc23, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDoc22, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDoc21, ComponentModel.ISupportInitialize).EndInit()
-        CType(picWDoc1, ComponentModel.ISupportInitialize).EndInit()
+        CType(dG30, ComponentModel.ISupportInitialize).EndInit()
+        CType(dG29, ComponentModel.ISupportInitialize).EndInit()
+        CType(dG28, ComponentModel.ISupportInitialize).EndInit()
+        CType(dG27, ComponentModel.ISupportInitialize).EndInit()
+        CType(dG26, ComponentModel.ISupportInitialize).EndInit()
+        CType(dG25, ComponentModel.ISupportInitialize).EndInit()
+        CType(dG24, ComponentModel.ISupportInitialize).EndInit()
+        CType(dG23, ComponentModel.ISupportInitialize).EndInit()
+        CType(dG22, ComponentModel.ISupportInitialize).EndInit()
+        CType(dG21, ComponentModel.ISupportInitialize).EndInit()
+        CType(dW1, ComponentModel.ISupportInitialize).EndInit()
         CType(pwl3, ComponentModel.ISupportInitialize).EndInit()
         CType(pel1, ComponentModel.ISupportInitialize).EndInit()
         CType(pel2, ComponentModel.ISupportInitialize).EndInit()
@@ -4956,29 +5066,29 @@ Partial Class frmMain
         CType(pb2, ComponentModel.ISupportInitialize).EndInit()
         CType(ps5, ComponentModel.ISupportInitialize).EndInit()
         CType(pel4, ComponentModel.ISupportInitialize).EndInit()
-        CType(picSDoc5, ComponentModel.ISupportInitialize).EndInit()
+        CType(dS5, ComponentModel.ISupportInitialize).EndInit()
         CType(ps3, ComponentModel.ISupportInitialize).EndInit()
         CType(pb1, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDoc10, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDoc9, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDoc8, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDoc7, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDoc6, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDoc1, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDoc2, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDoc3, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDoc4, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDoc5, ComponentModel.ISupportInitialize).EndInit()
-        CType(picSDoc3, ComponentModel.ISupportInitialize).EndInit()
+        CType(dG10, ComponentModel.ISupportInitialize).EndInit()
+        CType(dG9, ComponentModel.ISupportInitialize).EndInit()
+        CType(dG8, ComponentModel.ISupportInitialize).EndInit()
+        CType(dG7, ComponentModel.ISupportInitialize).EndInit()
+        CType(dG6, ComponentModel.ISupportInitialize).EndInit()
+        CType(dG1, ComponentModel.ISupportInitialize).EndInit()
+        CType(dG2, ComponentModel.ISupportInitialize).EndInit()
+        CType(dG3, ComponentModel.ISupportInitialize).EndInit()
+        CType(dG4, ComponentModel.ISupportInitialize).EndInit()
+        CType(dG5, ComponentModel.ISupportInitialize).EndInit()
+        CType(dS3, ComponentModel.ISupportInitialize).EndInit()
         CType(pel5, ComponentModel.ISupportInitialize).EndInit()
         CType(ps6, ComponentModel.ISupportInitialize).EndInit()
-        CType(picSDoc6, ComponentModel.ISupportInitialize).EndInit()
+        CType(dS6, ComponentModel.ISupportInitialize).EndInit()
         CType(pel14, ComponentModel.ISupportInitialize).EndInit()
         CType(pwl10, ComponentModel.ISupportInitialize).EndInit()
         CType(pel11, ComponentModel.ISupportInitialize).EndInit()
         CType(pel12, ComponentModel.ISupportInitialize).EndInit()
         CType(ps8, ComponentModel.ISupportInitialize).EndInit()
-        CType(picSDoc8, ComponentModel.ISupportInitialize).EndInit()
+        CType(dS8, ComponentModel.ISupportInitialize).EndInit()
         CType(pel13, ComponentModel.ISupportInitialize).EndInit()
         CType(pwl4, ComponentModel.ISupportInitialize).EndInit()
         CType(pel6, ComponentModel.ISupportInitialize).EndInit()
@@ -4986,22 +5096,22 @@ Partial Class frmMain
         CType(pel7, ComponentModel.ISupportInitialize).EndInit()
         CType(pel8, ComponentModel.ISupportInitialize).EndInit()
         CType(pwl8, ComponentModel.ISupportInitialize).EndInit()
-        CType(picSDoc7, ComponentModel.ISupportInitialize).EndInit()
+        CType(dS7, ComponentModel.ISupportInitialize).EndInit()
         CType(pwl13, ComponentModel.ISupportInitialize).EndInit()
         CType(pwl11, ComponentModel.ISupportInitialize).EndInit()
         CType(pwl12, ComponentModel.ISupportInitialize).EndInit()
         CType(pel16, ComponentModel.ISupportInitialize).EndInit()
         CType(pel15, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDoc13, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDoc12, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDoc14, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDoc11, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDoc15, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDoc20, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDoc19, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDoc16, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDoc17, ComponentModel.ISupportInitialize).EndInit()
-        CType(picDoc18, ComponentModel.ISupportInitialize).EndInit()
+        CType(dG13, ComponentModel.ISupportInitialize).EndInit()
+        CType(dG12, ComponentModel.ISupportInitialize).EndInit()
+        CType(dG14, ComponentModel.ISupportInitialize).EndInit()
+        CType(dG11, ComponentModel.ISupportInitialize).EndInit()
+        CType(dG15, ComponentModel.ISupportInitialize).EndInit()
+        CType(dG20, ComponentModel.ISupportInitialize).EndInit()
+        CType(dG19, ComponentModel.ISupportInitialize).EndInit()
+        CType(dG16, ComponentModel.ISupportInitialize).EndInit()
+        CType(dG17, ComponentModel.ISupportInitialize).EndInit()
+        CType(dG18, ComponentModel.ISupportInitialize).EndInit()
         CType(pwl14, ComponentModel.ISupportInitialize).EndInit()
         CType(pel19, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
@@ -5013,21 +5123,21 @@ Partial Class frmMain
         CType(PictureBox17, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox18, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox23, ComponentModel.ISupportInitialize).EndInit()
-        CType(picPDoc4, ComponentModel.ISupportInitialize).EndInit()
-        CType(picPDoc1, ComponentModel.ISupportInitialize).EndInit()
-        CType(picPDoc3, ComponentModel.ISupportInitialize).EndInit()
-        CType(picPDoc2, ComponentModel.ISupportInitialize).EndInit()
-        CType(picSDoc21, ComponentModel.ISupportInitialize).EndInit()
-        CType(picSDoc20, ComponentModel.ISupportInitialize).EndInit()
-        CType(picSDoc19, ComponentModel.ISupportInitialize).EndInit()
-        CType(picSDoc18, ComponentModel.ISupportInitialize).EndInit()
-        CType(picSDoc16, ComponentModel.ISupportInitialize).EndInit()
-        CType(picSDoc15, ComponentModel.ISupportInitialize).EndInit()
-        CType(picSDoc14, ComponentModel.ISupportInitialize).EndInit()
-        CType(picSDoc13, ComponentModel.ISupportInitialize).EndInit()
-        CType(picSDoc12, ComponentModel.ISupportInitialize).EndInit()
-        CType(picSDoc11, ComponentModel.ISupportInitialize).EndInit()
-        CType(picSDoc10, ComponentModel.ISupportInitialize).EndInit()
+        CType(dP4, ComponentModel.ISupportInitialize).EndInit()
+        CType(dP1, ComponentModel.ISupportInitialize).EndInit()
+        CType(dP3, ComponentModel.ISupportInitialize).EndInit()
+        CType(dP2, ComponentModel.ISupportInitialize).EndInit()
+        CType(dS21, ComponentModel.ISupportInitialize).EndInit()
+        CType(dS20, ComponentModel.ISupportInitialize).EndInit()
+        CType(dS19, ComponentModel.ISupportInitialize).EndInit()
+        CType(dS18, ComponentModel.ISupportInitialize).EndInit()
+        CType(dS16, ComponentModel.ISupportInitialize).EndInit()
+        CType(dS15, ComponentModel.ISupportInitialize).EndInit()
+        CType(dS14, ComponentModel.ISupportInitialize).EndInit()
+        CType(dS13, ComponentModel.ISupportInitialize).EndInit()
+        CType(dS12, ComponentModel.ISupportInitialize).EndInit()
+        CType(dS11, ComponentModel.ISupportInitialize).EndInit()
+        CType(dS10, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox29, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox31, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox30, ComponentModel.ISupportInitialize).EndInit()
@@ -5071,100 +5181,100 @@ Partial Class frmMain
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel3 As Panel
     Friend WithEvents pb1 As PictureBox
-    Friend WithEvents picDoc1 As PictureBox
-    Friend WithEvents picDoc10 As PictureBox
-    Friend WithEvents picDoc9 As PictureBox
-    Friend WithEvents picDoc8 As PictureBox
-    Friend WithEvents picDoc7 As PictureBox
-    Friend WithEvents picDoc6 As PictureBox
-    Friend WithEvents picDoc5 As PictureBox
-    Friend WithEvents picDoc4 As PictureBox
-    Friend WithEvents picDoc3 As PictureBox
-    Friend WithEvents picDoc2 As PictureBox
+    Friend WithEvents dG1 As PictureBox
+    Friend WithEvents dG10 As PictureBox
+    Friend WithEvents dG9 As PictureBox
+    Friend WithEvents dG8 As PictureBox
+    Friend WithEvents dG7 As PictureBox
+    Friend WithEvents dG6 As PictureBox
+    Friend WithEvents dG5 As PictureBox
+    Friend WithEvents dG4 As PictureBox
+    Friend WithEvents dG3 As PictureBox
+    Friend WithEvents dG2 As PictureBox
     Friend WithEvents picClear As PictureBox
     Friend WithEvents Label2 As Label
     Friend WithEvents picDroid As PictureBox
     Friend WithEvents Label7 As Label
     Friend WithEvents pb2 As PictureBox
-    Friend WithEvents picDoc20 As PictureBox
-    Friend WithEvents picDoc19 As PictureBox
-    Friend WithEvents picDoc18 As PictureBox
-    Friend WithEvents picDoc17 As PictureBox
-    Friend WithEvents picDoc16 As PictureBox
-    Friend WithEvents picDoc15 As PictureBox
-    Friend WithEvents picDoc14 As PictureBox
-    Friend WithEvents picDoc13 As PictureBox
-    Friend WithEvents picDoc12 As PictureBox
-    Friend WithEvents picDoc11 As PictureBox
+    Friend WithEvents dG20 As PictureBox
+    Friend WithEvents dG19 As PictureBox
+    Friend WithEvents dG18 As PictureBox
+    Friend WithEvents dG17 As PictureBox
+    Friend WithEvents dG16 As PictureBox
+    Friend WithEvents dG15 As PictureBox
+    Friend WithEvents dG14 As PictureBox
+    Friend WithEvents dG13 As PictureBox
+    Friend WithEvents dG12 As PictureBox
+    Friend WithEvents dG11 As PictureBox
     Friend WithEvents Label8 As Label
     Friend WithEvents pb3 As PictureBox
-    Friend WithEvents picDoc30 As PictureBox
-    Friend WithEvents picDoc29 As PictureBox
-    Friend WithEvents picDoc28 As PictureBox
-    Friend WithEvents picDoc27 As PictureBox
-    Friend WithEvents picDoc26 As PictureBox
-    Friend WithEvents picDoc25 As PictureBox
-    Friend WithEvents picDoc24 As PictureBox
-    Friend WithEvents picDoc23 As PictureBox
-    Friend WithEvents picDoc22 As PictureBox
-    Friend WithEvents picDoc21 As PictureBox
+    Friend WithEvents dG30 As PictureBox
+    Friend WithEvents dG29 As PictureBox
+    Friend WithEvents dG28 As PictureBox
+    Friend WithEvents dG27 As PictureBox
+    Friend WithEvents dG26 As PictureBox
+    Friend WithEvents dG25 As PictureBox
+    Friend WithEvents dG24 As PictureBox
+    Friend WithEvents dG23 As PictureBox
+    Friend WithEvents dG22 As PictureBox
+    Friend WithEvents dG21 As PictureBox
     Friend WithEvents ps2 As PictureBox
-    Friend WithEvents picSDoc2 As PictureBox
+    Friend WithEvents dS2 As PictureBox
     Friend WithEvents ps1 As PictureBox
-    Friend WithEvents picSDoc1 As PictureBox
+    Friend WithEvents dS1 As PictureBox
     Friend WithEvents ps3 As PictureBox
-    Friend WithEvents picSDoc3 As PictureBox
+    Friend WithEvents dS3 As PictureBox
     Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents pm1 As PictureBox
-    Friend WithEvents picMDoc5 As PictureBox
+    Friend WithEvents dM5 As PictureBox
     Friend WithEvents Label13 As Label
     Friend WithEvents pnlView As Panel
-    Friend WithEvents picMDoc1 As PictureBox
-    Friend WithEvents picMDoc8 As PictureBox
-    Friend WithEvents picMDoc7 As PictureBox
-    Friend WithEvents picMDoc6 As PictureBox
-    Friend WithEvents picMDoc4 As PictureBox
-    Friend WithEvents picMDoc3 As PictureBox
-    Friend WithEvents picMDoc2 As PictureBox
+    Friend WithEvents dM1 As PictureBox
+    Friend WithEvents dM8 As PictureBox
+    Friend WithEvents dM7 As PictureBox
+    Friend WithEvents dM6 As PictureBox
+    Friend WithEvents dM4 As PictureBox
+    Friend WithEvents dM3 As PictureBox
+    Friend WithEvents dM2 As PictureBox
     Friend WithEvents Label16 As Label
     Friend WithEvents Label15 As Label
     Friend WithEvents ps7 As PictureBox
-    Friend WithEvents picSDoc7 As PictureBox
+    Friend WithEvents dS7 As PictureBox
     Friend WithEvents Label14 As Label
     Friend WithEvents ps6 As PictureBox
-    Friend WithEvents picSDoc6 As PictureBox
+    Friend WithEvents dS6 As PictureBox
     Friend WithEvents ps5 As PictureBox
-    Friend WithEvents picSDoc5 As PictureBox
+    Friend WithEvents dS5 As PictureBox
     Friend WithEvents Label17 As Label
     Friend WithEvents ps8 As PictureBox
-    Friend WithEvents picSDoc8 As PictureBox
+    Friend WithEvents dS8 As PictureBox
     Friend WithEvents pwt1 As PictureBox
-    Friend WithEvents picWDoc1 As PictureBox
+    Friend WithEvents dW1 As PictureBox
     Friend WithEvents pd3 As PictureBox
-    Friend WithEvents picDDoc1 As PictureBox
-    Friend WithEvents picDDoc2 As PictureBox
-    Friend WithEvents picDDoc3 As PictureBox
-    Friend WithEvents picDDoc4 As PictureBox
+    Friend WithEvents dD1 As PictureBox
+    Friend WithEvents dD2 As PictureBox
+    Friend WithEvents dD3 As PictureBox
+    Friend WithEvents dD4 As PictureBox
     Friend WithEvents pd2 As PictureBox
-    Friend WithEvents picDDoc6 As PictureBox
-    Friend WithEvents picDDoc8 As PictureBox
-    Friend WithEvents picDDoc5 As PictureBox
-    Friend WithEvents picDDoc7 As PictureBox
+    Friend WithEvents dD6 As PictureBox
+    Friend WithEvents dD8 As PictureBox
+    Friend WithEvents dD5 As PictureBox
+    Friend WithEvents dD7 As PictureBox
     Friend WithEvents pd4 As PictureBox
-    Friend WithEvents picDDoc10 As PictureBox
-    Friend WithEvents picDDoc12 As PictureBox
-    Friend WithEvents picDDoc9 As PictureBox
-    Friend WithEvents picDDoc11 As PictureBox
+    Friend WithEvents dD10 As PictureBox
+    Friend WithEvents dD12 As PictureBox
+    Friend WithEvents dD9 As PictureBox
+    Friend WithEvents dD11 As PictureBox
     Friend WithEvents pd1 As PictureBox
-    Friend WithEvents picDDoc15 As PictureBox
-    Friend WithEvents picDDoc14 As PictureBox
-    Friend WithEvents picDDoc16 As PictureBox
-    Friend WithEvents picDDoc13 As PictureBox
+    Friend WithEvents dD15 As PictureBox
+    Friend WithEvents dD14 As PictureBox
+    Friend WithEvents dD16 As PictureBox
+    Friend WithEvents dD13 As PictureBox
     Friend WithEvents Label12 As Label
     Friend WithEvents ps4 As PictureBox
-    Friend WithEvents picSDoc4 As PictureBox
+    Friend WithEvents dS4 As PictureBox
     Friend WithEvents pwl3 As PictureBox
     Friend WithEvents pwl2 As PictureBox
     Friend WithEvents pwXXX101 As PictureBox
@@ -5181,14 +5291,14 @@ Partial Class frmMain
     Friend WithEvents pwl10 As PictureBox
     Friend WithEvents Label18 As Label
     Friend WithEvents ps9 As PictureBox
-    Friend WithEvents picSDoc9 As PictureBox
+    Friend WithEvents dS9 As PictureBox
     Friend WithEvents pel11 As PictureBox
     Friend WithEvents pel12 As PictureBox
     Friend WithEvents pnlMap As Panel
     Friend WithEvents pel13 As PictureBox
     Friend WithEvents pwl1 As PictureBox
     Friend WithEvents pwt2 As PictureBox
-    Friend WithEvents picWDoc2 As PictureBox
+    Friend WithEvents dW2 As PictureBox
     Friend WithEvents pwl4 As PictureBox
     Friend WithEvents pel8 As PictureBox
     Friend WithEvents pwl6 As PictureBox
@@ -5201,12 +5311,12 @@ Partial Class frmMain
     Friend WithEvents pwl8 As PictureBox
     Friend WithEvents btnDrawMap As Button
     Friend WithEvents pwt3 As PictureBox
-    Friend WithEvents picWDoc3 As PictureBox
+    Friend WithEvents dW3 As PictureBox
     Friend WithEvents pd5 As PictureBox
-    Friend WithEvents picDDoc19 As PictureBox
-    Friend WithEvents picDDoc17 As PictureBox
-    Friend WithEvents picDDoc20 As PictureBox
-    Friend WithEvents picDDoc18 As PictureBox
+    Friend WithEvents dD19 As PictureBox
+    Friend WithEvents dD17 As PictureBox
+    Friend WithEvents dD20 As PictureBox
+    Friend WithEvents dD18 As PictureBox
     Friend WithEvents pel16 As PictureBox
     Friend WithEvents pel15 As PictureBox
     Friend WithEvents pwl13 As PictureBox
@@ -5215,22 +5325,22 @@ Partial Class frmMain
     Friend WithEvents pwl14 As PictureBox
     Friend WithEvents Label19 As Label
     Friend WithEvents pm2 As PictureBox
-    Friend WithEvents picMDoc16 As PictureBox
-    Friend WithEvents picMDoc15 As PictureBox
-    Friend WithEvents picMDoc14 As PictureBox
-    Friend WithEvents picMDoc13 As PictureBox
-    Friend WithEvents picMDoc12 As PictureBox
-    Friend WithEvents picMDoc11 As PictureBox
-    Friend WithEvents picMDoc10 As PictureBox
-    Friend WithEvents picMDoc9 As PictureBox
+    Friend WithEvents dM16 As PictureBox
+    Friend WithEvents dM15 As PictureBox
+    Friend WithEvents dM14 As PictureBox
+    Friend WithEvents dM13 As PictureBox
+    Friend WithEvents dM12 As PictureBox
+    Friend WithEvents dM11 As PictureBox
+    Friend WithEvents dM10 As PictureBox
+    Friend WithEvents dM9 As PictureBox
     Friend WithEvents pel19 As PictureBox
     Friend WithEvents pel18 As PictureBox
     Friend WithEvents pel17 As PictureBox
     Friend WithEvents pd6 As PictureBox
-    Friend WithEvents picDDoc22 As PictureBox
-    Friend WithEvents picDDoc24 As PictureBox
-    Friend WithEvents picDDoc23 As PictureBox
-    Friend WithEvents picDDoc21 As PictureBox
+    Friend WithEvents dD22 As PictureBox
+    Friend WithEvents dD24 As PictureBox
+    Friend WithEvents dD23 As PictureBox
+    Friend WithEvents dD21 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
@@ -5298,47 +5408,47 @@ Partial Class frmMain
     Friend WithEvents wp16 As PictureBox
     Friend WithEvents Label38 As Label
     Friend WithEvents lbls21 As Label
-    Friend WithEvents picSDoc21 As PictureBox
+    Friend WithEvents dS21 As PictureBox
     Friend WithEvents ps21 As PictureBox
     Friend WithEvents Label40 As Label
     Friend WithEvents lbls20 As Label
-    Friend WithEvents picSDoc20 As PictureBox
+    Friend WithEvents dS20 As PictureBox
     Friend WithEvents ps20 As PictureBox
     Friend WithEvents Label42 As Label
     Friend WithEvents lbls19 As Label
-    Friend WithEvents picSDoc19 As PictureBox
+    Friend WithEvents dS19 As PictureBox
     Friend WithEvents ps19 As PictureBox
     Friend WithEvents Label34 As Label
     Friend WithEvents lbls15 As Label
-    Friend WithEvents picSDoc15 As PictureBox
+    Friend WithEvents dS15 As PictureBox
     Friend WithEvents ps15 As PictureBox
     Friend WithEvents Label36 As Label
     Friend WithEvents lbls14 As Label
-    Friend WithEvents picSDoc14 As PictureBox
+    Friend WithEvents dS14 As PictureBox
     Friend WithEvents ps14 As PictureBox
     Friend WithEvents Label25 As Label
     Friend WithEvents lbls13 As Label
-    Friend WithEvents picSDoc13 As PictureBox
+    Friend WithEvents dS13 As PictureBox
     Friend WithEvents ps13 As PictureBox
     Friend WithEvents Label27 As Label
     Friend WithEvents lbls12 As Label
-    Friend WithEvents picSDoc12 As PictureBox
+    Friend WithEvents dS12 As PictureBox
     Friend WithEvents ps12 As PictureBox
     Friend WithEvents Label22 As Label
     Friend WithEvents lbls11 As Label
-    Friend WithEvents picSDoc11 As PictureBox
+    Friend WithEvents dS11 As PictureBox
     Friend WithEvents ps11 As PictureBox
     Friend WithEvents Label23 As Label
     Friend WithEvents lbls10 As Label
-    Friend WithEvents picSDoc10 As PictureBox
+    Friend WithEvents dS10 As PictureBox
     Friend WithEvents ps10 As PictureBox
     Friend WithEvents Label44 As Label
     Friend WithEvents lbls18 As Label
-    Friend WithEvents picSDoc18 As PictureBox
+    Friend WithEvents dS18 As PictureBox
     Friend WithEvents ps18 As PictureBox
     Friend WithEvents Label32 As Label
     Friend WithEvents lbls16 As Label
-    Friend WithEvents picSDoc16 As PictureBox
+    Friend WithEvents dS16 As PictureBox
     Friend WithEvents ps16 As PictureBox
     Friend WithEvents pada1 As PictureBox
     Friend WithEvents padb1 As PictureBox
@@ -5359,19 +5469,19 @@ Partial Class frmMain
     Friend WithEvents PictureBox22 As PictureBox
     Friend WithEvents PictureBox23 As PictureBox
     Friend WithEvents lblp1 As Label
-    Friend WithEvents picPDoc4 As PictureBox
-    Friend WithEvents picPDoc1 As PictureBox
-    Friend WithEvents picPDoc3 As PictureBox
-    Friend WithEvents picPDoc2 As PictureBox
+    Friend WithEvents dP4 As PictureBox
+    Friend WithEvents dP1 As PictureBox
+    Friend WithEvents dP3 As PictureBox
+    Friend WithEvents dP2 As PictureBox
     Friend WithEvents wp28 As PictureBox
     Friend WithEvents wp29 As PictureBox
     Friend WithEvents wp27 As PictureBox
     Friend WithEvents lbld7 As Label
     Friend WithEvents pd7 As PictureBox
-    Friend WithEvents picDDoc25 As PictureBox
-    Friend WithEvents picDDoc28 As PictureBox
-    Friend WithEvents picDDoc26 As PictureBox
-    Friend WithEvents picDDoc27 As PictureBox
+    Friend WithEvents dD25 As PictureBox
+    Friend WithEvents dD28 As PictureBox
+    Friend WithEvents dD26 As PictureBox
+    Friend WithEvents dD27 As PictureBox
     Friend WithEvents PictureBox29 As PictureBox
     Friend WithEvents PictureBox31 As PictureBox
     Friend WithEvents PictureBox30 As PictureBox
@@ -5383,7 +5493,7 @@ Partial Class frmMain
     Friend WithEvents Label29 As Label
     Friend WithEvents lbls17 As Label
     Friend WithEvents ps17 As PictureBox
-    Friend WithEvents picSDoc17 As PictureBox
+    Friend WithEvents dS17 As PictureBox
     Friend WithEvents PictureBox33 As PictureBox
     Friend WithEvents PictureBox28 As PictureBox
     Friend WithEvents PictureBox35 As PictureBox
@@ -5429,8 +5539,19 @@ Partial Class frmMain
     Friend WithEvents txtGarge As TextBox
     Friend WithEvents txtOGpgm As TextBox
     Friend WithEvents txtTow As TextBox
-    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents LstPGMs As ListBox
     Friend WithEvents Label26 As Label
     Friend WithEvents btnLoad As Button
+    Friend WithEvents Label31 As Label
+    Friend WithEvents Label30 As Label
+    Friend WithEvents Label28 As Label
+    Friend WithEvents lstG3pgm As ListBox
+    Friend WithEvents lstG2pgm As ListBox
+    Friend WithEvents lstG1pgm As ListBox
+    Friend WithEvents lblTemptxt As Label
+    Friend WithEvents lblOTemp As Label
+    Friend WithEvents Label35 As Label
+    Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents tmrTick As Timer
 
 End Class
