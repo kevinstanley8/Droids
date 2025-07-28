@@ -32,6 +32,8 @@ Public Class frmMap
     Private Sub frmMap_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         M = pnlMap.CreateGraphics()
         tmrMap.Enabled = True
+        Me.Left = 670
+        Me.Top = -10
     End Sub
     Private Sub DrawMap()
         Dim objmap As System.Object
@@ -119,17 +121,30 @@ Public Class frmMap
                 sx = sx * (NoOfPix / 7000) : sy = sy * (NoOfPix / 7000)
                 M.FillRectangle(myBr, px, py, 2, 2)
             End If
+            'pmz Mining Zone
+            objmap = Findcntl("pmz", ix, frmMain.pnlMain, cntlfnd)
+            If cntlfnd Then
+                myBr.Color = Color.LightGray
+                ps = objmap.Name
+                px = objmap.location.x : py = objmap.location.y
+                px = px * (NoOfPix / 7000) : py = py * (NoOfPix / 7000)
+                sx = objmap.size.width : sy = objmap.size.height
+                sx = sx * (NoOfPix / 7000) : sy = sy * (NoOfPix / 7000)
+                M.FillRectangle(myBr, px, py, sx, sy)
+            End If
 
 
 
         Next
-        For drd = 1 To frmMain.NoOfDroids
-            dr1 = frmMain.droidlist(drd)
-            myBr.Color = Color.Red
-            px = dr1.X : py = dr1.Y
-            px = px * (NoOfPix / 7000) : py = py * (NoOfPix / 7000)
-            M.FillRectangle(myBr, px, py, 3, 3)
-        Next
+        If chkDroids.Checked Then
+            For drd = 1 To frmMain.NoOfDroids
+                dr1 = frmMain.droidlist(drd)
+                myBr.Color = Color.Red
+                px = dr1.X : py = dr1.Y
+                px = px * (NoOfPix / 7000) : py = py * (NoOfPix / 7000)
+                M.FillRectangle(myBr, px, py, 3, 3)
+            Next
+        End If
 
     End Sub
 
@@ -139,5 +154,13 @@ Public Class frmMap
 
     Private Sub frmMap_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         tmrMap.Enabled = False
+    End Sub
+
+    Private Sub chkDroids_CheckedChanged(sender As Object, e As EventArgs) Handles chkDroids.CheckedChanged
+        If chkDroids.Checked Then
+            chkDroids.Text = "Droids On"
+        Else
+            chkDroids.Text = "Droids Off"
+        End If
     End Sub
 End Class

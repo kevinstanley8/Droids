@@ -25,13 +25,14 @@ Partial Class frmMap
         components = New ComponentModel.Container()
         pnlMap = New Panel()
         tmrMap = New Timer(components)
+        chkDroids = New CheckBox()
         SuspendLayout()
         ' 
         ' pnlMap
         ' 
         pnlMap.BackColor = Color.White
         pnlMap.BorderStyle = BorderStyle.FixedSingle
-        pnlMap.Location = New Point(0, 0)
+        pnlMap.Location = New Point(91, 3)
         pnlMap.Name = "pnlMap"
         pnlMap.Size = New Size(820, 820)
         pnlMap.TabIndex = 0
@@ -40,17 +41,34 @@ Partial Class frmMap
         ' 
         tmrMap.Interval = 200
         ' 
+        ' chkDroids
+        ' 
+        chkDroids.Appearance = Appearance.Button
+        chkDroids.AutoSize = True
+        chkDroids.Checked = True
+        chkDroids.CheckState = CheckState.Checked
+        chkDroids.FlatStyle = FlatStyle.Flat
+        chkDroids.Location = New Point(13, 45)
+        chkDroids.Name = "chkDroids"
+        chkDroids.Size = New Size(70, 25)
+        chkDroids.TabIndex = 1
+        chkDroids.Text = "Droids On"
+        chkDroids.UseVisualStyleBackColor = True
+        ' 
         ' frmMap
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(864, 861)
+        ClientSize = New Size(914, 861)
+        Controls.Add(chkDroids)
         Controls.Add(pnlMap)
         Name = "frmMap"
         Text = "frmMap"
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents pnlMap As Panel
     Friend WithEvents tmrMap As Timer
+    Friend WithEvents chkDroids As CheckBox
 End Class

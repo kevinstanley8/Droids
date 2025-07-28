@@ -23,13 +23,48 @@ Partial Class frmMain
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         pnlMain = New Panel()
+        lblp1 = New Label()
+        Label24 = New Label()
+        pad2b = New PictureBox()
+        pad2a = New PictureBox()
+        dN2 = New PictureBox()
+        lblmCnt2 = New Label()
+        lblmCnt1 = New Label()
+        dN3 = New PictureBox()
+        dN1 = New PictureBox()
+        Label39 = New Label()
+        Label37 = New Label()
+        pmz3 = New PictureBox()
+        pmz2 = New PictureBox()
+        Label33 = New Label()
+        pmz1 = New PictureBox()
+        wp80 = New PictureBox()
+        wp76 = New PictureBox()
+        wp79 = New PictureBox()
+        wp77 = New PictureBox()
+        wp75 = New PictureBox()
+        wp78 = New PictureBox()
+        wp74 = New PictureBox()
+        wp67 = New PictureBox()
+        wp73 = New PictureBox()
         wp60 = New PictureBox()
+        wp72 = New PictureBox()
+        wp66 = New PictureBox()
+        wp71 = New PictureBox()
         wp59 = New PictureBox()
+        wp65 = New PictureBox()
         wp50 = New PictureBox()
+        wp64 = New PictureBox()
         wp30 = New PictureBox()
+        wp70 = New PictureBox()
+        wp63 = New PictureBox()
+        wp69 = New PictureBox()
         wp51 = New PictureBox()
+        wp62 = New PictureBox()
         wp39 = New PictureBox()
+        wp61 = New PictureBox()
         wp52 = New PictureBox()
         Label29 = New Label()
         wp53 = New PictureBox()
@@ -70,9 +105,7 @@ Partial Class frmMain
         dD28 = New PictureBox()
         wp27 = New PictureBox()
         dD26 = New PictureBox()
-        lblp1 = New Label()
         dD27 = New PictureBox()
-        Label24 = New Label()
         PictureBox22 = New PictureBox()
         PictureBox16 = New PictureBox()
         PictureBox6 = New PictureBox()
@@ -81,10 +114,10 @@ Partial Class frmMain
         PictureBox13 = New PictureBox()
         PictureBox4 = New PictureBox()
         PictureBox12 = New PictureBox()
-        pada1 = New PictureBox()
+        pad1a = New PictureBox()
         PictureBox10 = New PictureBox()
         Label44 = New Label()
-        padb1 = New PictureBox()
+        pad1b = New PictureBox()
         Label38 = New Label()
         lbls18 = New Label()
         wp25 = New PictureBox()
@@ -103,7 +136,7 @@ Partial Class frmMain
         PictureBox15 = New PictureBox()
         wp24 = New PictureBox()
         ps20 = New PictureBox()
-        PictureBox19 = New PictureBox()
+        wp68 = New PictureBox()
         Label42 = New Label()
         wp19 = New PictureBox()
         lbls19 = New Label()
@@ -179,21 +212,13 @@ Partial Class frmMain
         dD21 = New PictureBox()
         pd5 = New PictureBox()
         pm2 = New PictureBox()
-        dM16 = New PictureBox()
         dD19 = New PictureBox()
-        dM15 = New PictureBox()
         pwl7 = New PictureBox()
-        dM14 = New PictureBox()
         dD17 = New PictureBox()
-        dM13 = New PictureBox()
         pel9 = New PictureBox()
-        dM12 = New PictureBox()
         dD20 = New PictureBox()
-        dM11 = New PictureBox()
         pd2 = New PictureBox()
-        dM10 = New PictureBox()
         dD18 = New PictureBox()
-        dM9 = New PictureBox()
         pwl6 = New PictureBox()
         pel10 = New PictureBox()
         pwt3 = New PictureBox()
@@ -206,26 +231,19 @@ Partial Class frmMain
         ps7 = New PictureBox()
         pm1 = New PictureBox()
         ps9 = New PictureBox()
-        dM8 = New PictureBox()
-        dM7 = New PictureBox()
-        dM6 = New PictureBox()
-        dM5 = New PictureBox()
         Label17 = New Label()
         dW2 = New PictureBox()
         dS9 = New PictureBox()
         dD7 = New PictureBox()
         Label14 = New Label()
         dD5 = New PictureBox()
-        dM4 = New PictureBox()
         dD8 = New PictureBox()
         dD6 = New PictureBox()
-        dM3 = New PictureBox()
         Label11 = New Label()
         pd3 = New PictureBox()
         Label15 = New Label()
         pwl9 = New PictureBox()
         dD2 = New PictureBox()
-        dM2 = New PictureBox()
         dD1 = New PictureBox()
         dD4 = New PictureBox()
         Label2 = New Label()
@@ -330,10 +348,6 @@ Partial Class frmMain
         PictureBox17 = New PictureBox()
         PictureBox18 = New PictureBox()
         PictureBox23 = New PictureBox()
-        dP4 = New PictureBox()
-        dP1 = New PictureBox()
-        dP3 = New PictureBox()
-        dP2 = New PictureBox()
         dS21 = New PictureBox()
         dS20 = New PictureBox()
         dS19 = New PictureBox()
@@ -354,6 +368,8 @@ Partial Class frmMain
         PictureBox28 = New PictureBox()
         PictureBox35 = New PictureBox()
         PictureBox24 = New PictureBox()
+        dM2 = New PictureBox()
+        dP1 = New PictureBox()
         btnClear = New Button()
         tmrMovebot = New Timer(components)
         Label3 = New Label()
@@ -367,13 +383,13 @@ Partial Class frmMain
         Label1 = New Label()
         txtSpeed = New TextBox()
         Panel2 = New Panel()
+        chkRocket = New CheckBox()
         lstG3pgm = New ListBox()
         lstG2pgm = New ListBox()
         lstG1pgm = New ListBox()
         Label31 = New Label()
         Label30 = New Label()
         Label28 = New Label()
-        btnLoad = New Button()
         LstPGMs = New ListBox()
         btnGoHome = New Button()
         Label21 = New Label()
@@ -390,10 +406,18 @@ Partial Class frmMain
         txtGarge = New TextBox()
         txtDroid = New TextBox()
         Panel3 = New Panel()
+        Label48 = New Label()
+        txtType = New TextBox()
+        Label47 = New Label()
+        Label46 = New Label()
+        Label45 = New Label()
+        Label26 = New Label()
+        Label43 = New Label()
+        Label41 = New Label()
+        btnShowStatus = New Button()
         lblOTemp = New Label()
         Label35 = New Label()
         lblTemptxt = New Label()
-        Label26 = New Label()
         btnMapping = New Button()
         txtPGMmap = New TextBox()
         lblTimeOfDay = New Label()
@@ -411,13 +435,48 @@ Partial Class frmMain
         PictureBox36 = New PictureBox()
         ToolTip1 = New ToolTip(components)
         tmrTick = New Timer(components)
+        MenuStrip1 = New MenuStrip()
+        ConfigToolStripMenuItem = New ToolStripMenuItem()
+        ConfigFileNameToolStripMenuItem = New ToolStripMenuItem()
+        txtConfigFileName = New ToolStripTextBox()
+        txtMainPath = New ToolStripMenuItem()
+        txtGarages = New ToolStripMenuItem()
+        DroidStructBindingSource = New BindingSource(components)
+        imgListD = New ImageList(components)
         pnlMain.SuspendLayout()
+        CType(pad2b, ComponentModel.ISupportInitialize).BeginInit()
+        CType(pad2a, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dN2, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dN3, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dN1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(pmz3, ComponentModel.ISupportInitialize).BeginInit()
+        CType(pmz2, ComponentModel.ISupportInitialize).BeginInit()
+        CType(pmz1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(wp80, ComponentModel.ISupportInitialize).BeginInit()
+        CType(wp76, ComponentModel.ISupportInitialize).BeginInit()
+        CType(wp79, ComponentModel.ISupportInitialize).BeginInit()
+        CType(wp77, ComponentModel.ISupportInitialize).BeginInit()
+        CType(wp75, ComponentModel.ISupportInitialize).BeginInit()
+        CType(wp78, ComponentModel.ISupportInitialize).BeginInit()
+        CType(wp74, ComponentModel.ISupportInitialize).BeginInit()
+        CType(wp67, ComponentModel.ISupportInitialize).BeginInit()
+        CType(wp73, ComponentModel.ISupportInitialize).BeginInit()
         CType(wp60, ComponentModel.ISupportInitialize).BeginInit()
+        CType(wp72, ComponentModel.ISupportInitialize).BeginInit()
+        CType(wp66, ComponentModel.ISupportInitialize).BeginInit()
+        CType(wp71, ComponentModel.ISupportInitialize).BeginInit()
         CType(wp59, ComponentModel.ISupportInitialize).BeginInit()
+        CType(wp65, ComponentModel.ISupportInitialize).BeginInit()
         CType(wp50, ComponentModel.ISupportInitialize).BeginInit()
+        CType(wp64, ComponentModel.ISupportInitialize).BeginInit()
         CType(wp30, ComponentModel.ISupportInitialize).BeginInit()
+        CType(wp70, ComponentModel.ISupportInitialize).BeginInit()
+        CType(wp63, ComponentModel.ISupportInitialize).BeginInit()
+        CType(wp69, ComponentModel.ISupportInitialize).BeginInit()
         CType(wp51, ComponentModel.ISupportInitialize).BeginInit()
+        CType(wp62, ComponentModel.ISupportInitialize).BeginInit()
         CType(wp39, ComponentModel.ISupportInitialize).BeginInit()
+        CType(wp61, ComponentModel.ISupportInitialize).BeginInit()
         CType(wp52, ComponentModel.ISupportInitialize).BeginInit()
         CType(wp53, ComponentModel.ISupportInitialize).BeginInit()
         CType(wp38, ComponentModel.ISupportInitialize).BeginInit()
@@ -464,9 +523,9 @@ Partial Class frmMain
         CType(PictureBox13, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox12, ComponentModel.ISupportInitialize).BeginInit()
-        CType(pada1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(pad1a, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox10, ComponentModel.ISupportInitialize).BeginInit()
-        CType(padb1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(pad1b, ComponentModel.ISupportInitialize).BeginInit()
         CType(wp25, ComponentModel.ISupportInitialize).BeginInit()
         CType(ps18, ComponentModel.ISupportInitialize).BeginInit()
         CType(wp26, ComponentModel.ISupportInitialize).BeginInit()
@@ -478,7 +537,7 @@ Partial Class frmMain
         CType(PictureBox15, ComponentModel.ISupportInitialize).BeginInit()
         CType(wp24, ComponentModel.ISupportInitialize).BeginInit()
         CType(ps20, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox19, ComponentModel.ISupportInitialize).BeginInit()
+        CType(wp68, ComponentModel.ISupportInitialize).BeginInit()
         CType(wp19, ComponentModel.ISupportInitialize).BeginInit()
         CType(wp20, ComponentModel.ISupportInitialize).BeginInit()
         CType(wp12, ComponentModel.ISupportInitialize).BeginInit()
@@ -516,21 +575,13 @@ Partial Class frmMain
         CType(dD21, ComponentModel.ISupportInitialize).BeginInit()
         CType(pd5, ComponentModel.ISupportInitialize).BeginInit()
         CType(pm2, ComponentModel.ISupportInitialize).BeginInit()
-        CType(dM16, ComponentModel.ISupportInitialize).BeginInit()
         CType(dD19, ComponentModel.ISupportInitialize).BeginInit()
-        CType(dM15, ComponentModel.ISupportInitialize).BeginInit()
         CType(pwl7, ComponentModel.ISupportInitialize).BeginInit()
-        CType(dM14, ComponentModel.ISupportInitialize).BeginInit()
         CType(dD17, ComponentModel.ISupportInitialize).BeginInit()
-        CType(dM13, ComponentModel.ISupportInitialize).BeginInit()
         CType(pel9, ComponentModel.ISupportInitialize).BeginInit()
-        CType(dM12, ComponentModel.ISupportInitialize).BeginInit()
         CType(dD20, ComponentModel.ISupportInitialize).BeginInit()
-        CType(dM11, ComponentModel.ISupportInitialize).BeginInit()
         CType(pd2, ComponentModel.ISupportInitialize).BeginInit()
-        CType(dM10, ComponentModel.ISupportInitialize).BeginInit()
         CType(dD18, ComponentModel.ISupportInitialize).BeginInit()
-        CType(dM9, ComponentModel.ISupportInitialize).BeginInit()
         CType(pwl6, ComponentModel.ISupportInitialize).BeginInit()
         CType(pel10, ComponentModel.ISupportInitialize).BeginInit()
         CType(pwt3, ComponentModel.ISupportInitialize).BeginInit()
@@ -540,22 +591,15 @@ Partial Class frmMain
         CType(ps7, ComponentModel.ISupportInitialize).BeginInit()
         CType(pm1, ComponentModel.ISupportInitialize).BeginInit()
         CType(ps9, ComponentModel.ISupportInitialize).BeginInit()
-        CType(dM8, ComponentModel.ISupportInitialize).BeginInit()
-        CType(dM7, ComponentModel.ISupportInitialize).BeginInit()
-        CType(dM6, ComponentModel.ISupportInitialize).BeginInit()
-        CType(dM5, ComponentModel.ISupportInitialize).BeginInit()
         CType(dW2, ComponentModel.ISupportInitialize).BeginInit()
         CType(dS9, ComponentModel.ISupportInitialize).BeginInit()
         CType(dD7, ComponentModel.ISupportInitialize).BeginInit()
         CType(dD5, ComponentModel.ISupportInitialize).BeginInit()
-        CType(dM4, ComponentModel.ISupportInitialize).BeginInit()
         CType(dD8, ComponentModel.ISupportInitialize).BeginInit()
         CType(dD6, ComponentModel.ISupportInitialize).BeginInit()
-        CType(dM3, ComponentModel.ISupportInitialize).BeginInit()
         CType(pd3, ComponentModel.ISupportInitialize).BeginInit()
         CType(pwl9, ComponentModel.ISupportInitialize).BeginInit()
         CType(dD2, ComponentModel.ISupportInitialize).BeginInit()
-        CType(dM2, ComponentModel.ISupportInitialize).BeginInit()
         CType(dD1, ComponentModel.ISupportInitialize).BeginInit()
         CType(dD4, ComponentModel.ISupportInitialize).BeginInit()
         CType(dD3, ComponentModel.ISupportInitialize).BeginInit()
@@ -654,10 +698,6 @@ Partial Class frmMain
         CType(PictureBox17, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox18, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox23, ComponentModel.ISupportInitialize).BeginInit()
-        CType(dP4, ComponentModel.ISupportInitialize).BeginInit()
-        CType(dP1, ComponentModel.ISupportInitialize).BeginInit()
-        CType(dP3, ComponentModel.ISupportInitialize).BeginInit()
-        CType(dP2, ComponentModel.ISupportInitialize).BeginInit()
         CType(dS21, ComponentModel.ISupportInitialize).BeginInit()
         CType(dS20, ComponentModel.ISupportInitialize).BeginInit()
         CType(dS19, ComponentModel.ISupportInitialize).BeginInit()
@@ -678,6 +718,8 @@ Partial Class frmMain
         CType(PictureBox28, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox35, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox24, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dM2, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dP1, ComponentModel.ISupportInitialize).BeginInit()
         Panel2.SuspendLayout()
         Panel3.SuspendLayout()
         CType(picClear, ComponentModel.ISupportInitialize).BeginInit()
@@ -691,6 +733,8 @@ Partial Class frmMain
         CType(PictureBox8, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox11, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox36, ComponentModel.ISupportInitialize).BeginInit()
+        MenuStrip1.SuspendLayout()
+        CType(DroidStructBindingSource, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' pnlMain
@@ -701,12 +745,46 @@ Partial Class frmMain
         pnlMain.AutoSize = True
         pnlMain.BackColor = Color.White
         pnlMain.BorderStyle = BorderStyle.FixedSingle
+        pnlMain.Controls.Add(lblp1)
+        pnlMain.Controls.Add(Label24)
+        pnlMain.Controls.Add(pad2b)
+        pnlMain.Controls.Add(pad2a)
+        pnlMain.Controls.Add(dN2)
+        pnlMain.Controls.Add(lblmCnt2)
+        pnlMain.Controls.Add(lblmCnt1)
+        pnlMain.Controls.Add(dN3)
+        pnlMain.Controls.Add(dN1)
+        pnlMain.Controls.Add(Label39)
+        pnlMain.Controls.Add(Label37)
+        pnlMain.Controls.Add(pmz3)
+        pnlMain.Controls.Add(pmz2)
+        pnlMain.Controls.Add(Label33)
+        pnlMain.Controls.Add(pmz1)
+        pnlMain.Controls.Add(wp80)
+        pnlMain.Controls.Add(wp76)
+        pnlMain.Controls.Add(wp79)
+        pnlMain.Controls.Add(wp77)
+        pnlMain.Controls.Add(wp75)
+        pnlMain.Controls.Add(wp78)
+        pnlMain.Controls.Add(wp74)
+        pnlMain.Controls.Add(wp67)
+        pnlMain.Controls.Add(wp73)
         pnlMain.Controls.Add(wp60)
+        pnlMain.Controls.Add(wp72)
+        pnlMain.Controls.Add(wp66)
+        pnlMain.Controls.Add(wp71)
         pnlMain.Controls.Add(wp59)
+        pnlMain.Controls.Add(wp65)
         pnlMain.Controls.Add(wp50)
+        pnlMain.Controls.Add(wp64)
         pnlMain.Controls.Add(wp30)
+        pnlMain.Controls.Add(wp70)
+        pnlMain.Controls.Add(wp63)
+        pnlMain.Controls.Add(wp69)
         pnlMain.Controls.Add(wp51)
+        pnlMain.Controls.Add(wp62)
         pnlMain.Controls.Add(wp39)
+        pnlMain.Controls.Add(wp61)
         pnlMain.Controls.Add(wp52)
         pnlMain.Controls.Add(Label29)
         pnlMain.Controls.Add(wp53)
@@ -747,9 +825,7 @@ Partial Class frmMain
         pnlMain.Controls.Add(dD28)
         pnlMain.Controls.Add(wp27)
         pnlMain.Controls.Add(dD26)
-        pnlMain.Controls.Add(lblp1)
         pnlMain.Controls.Add(dD27)
-        pnlMain.Controls.Add(Label24)
         pnlMain.Controls.Add(PictureBox22)
         pnlMain.Controls.Add(PictureBox16)
         pnlMain.Controls.Add(PictureBox6)
@@ -758,10 +834,10 @@ Partial Class frmMain
         pnlMain.Controls.Add(PictureBox13)
         pnlMain.Controls.Add(PictureBox4)
         pnlMain.Controls.Add(PictureBox12)
-        pnlMain.Controls.Add(pada1)
+        pnlMain.Controls.Add(pad1a)
         pnlMain.Controls.Add(PictureBox10)
         pnlMain.Controls.Add(Label44)
-        pnlMain.Controls.Add(padb1)
+        pnlMain.Controls.Add(pad1b)
         pnlMain.Controls.Add(Label38)
         pnlMain.Controls.Add(lbls18)
         pnlMain.Controls.Add(wp25)
@@ -780,7 +856,7 @@ Partial Class frmMain
         pnlMain.Controls.Add(PictureBox15)
         pnlMain.Controls.Add(wp24)
         pnlMain.Controls.Add(ps20)
-        pnlMain.Controls.Add(PictureBox19)
+        pnlMain.Controls.Add(wp68)
         pnlMain.Controls.Add(Label42)
         pnlMain.Controls.Add(wp19)
         pnlMain.Controls.Add(lbls19)
@@ -856,21 +932,13 @@ Partial Class frmMain
         pnlMain.Controls.Add(dD21)
         pnlMain.Controls.Add(pd5)
         pnlMain.Controls.Add(pm2)
-        pnlMain.Controls.Add(dM16)
         pnlMain.Controls.Add(dD19)
-        pnlMain.Controls.Add(dM15)
         pnlMain.Controls.Add(pwl7)
-        pnlMain.Controls.Add(dM14)
         pnlMain.Controls.Add(dD17)
-        pnlMain.Controls.Add(dM13)
         pnlMain.Controls.Add(pel9)
-        pnlMain.Controls.Add(dM12)
         pnlMain.Controls.Add(dD20)
-        pnlMain.Controls.Add(dM11)
         pnlMain.Controls.Add(pd2)
-        pnlMain.Controls.Add(dM10)
         pnlMain.Controls.Add(dD18)
-        pnlMain.Controls.Add(dM9)
         pnlMain.Controls.Add(pwl6)
         pnlMain.Controls.Add(pel10)
         pnlMain.Controls.Add(pwt3)
@@ -883,26 +951,19 @@ Partial Class frmMain
         pnlMain.Controls.Add(ps7)
         pnlMain.Controls.Add(pm1)
         pnlMain.Controls.Add(ps9)
-        pnlMain.Controls.Add(dM8)
-        pnlMain.Controls.Add(dM7)
-        pnlMain.Controls.Add(dM6)
-        pnlMain.Controls.Add(dM5)
         pnlMain.Controls.Add(Label17)
         pnlMain.Controls.Add(dW2)
         pnlMain.Controls.Add(dS9)
         pnlMain.Controls.Add(dD7)
         pnlMain.Controls.Add(Label14)
         pnlMain.Controls.Add(dD5)
-        pnlMain.Controls.Add(dM4)
         pnlMain.Controls.Add(dD8)
         pnlMain.Controls.Add(dD6)
-        pnlMain.Controls.Add(dM3)
         pnlMain.Controls.Add(Label11)
         pnlMain.Controls.Add(pd3)
         pnlMain.Controls.Add(Label15)
         pnlMain.Controls.Add(pwl9)
         pnlMain.Controls.Add(dD2)
-        pnlMain.Controls.Add(dM2)
         pnlMain.Controls.Add(dD1)
         pnlMain.Controls.Add(dD4)
         pnlMain.Controls.Add(Label2)
@@ -1007,10 +1068,6 @@ Partial Class frmMain
         pnlMain.Controls.Add(PictureBox17)
         pnlMain.Controls.Add(PictureBox18)
         pnlMain.Controls.Add(PictureBox23)
-        pnlMain.Controls.Add(dP4)
-        pnlMain.Controls.Add(dP1)
-        pnlMain.Controls.Add(dP3)
-        pnlMain.Controls.Add(dP2)
         pnlMain.Controls.Add(dS21)
         pnlMain.Controls.Add(dS20)
         pnlMain.Controls.Add(dS19)
@@ -1031,31 +1088,314 @@ Partial Class frmMain
         pnlMain.Controls.Add(PictureBox28)
         pnlMain.Controls.Add(PictureBox35)
         pnlMain.Controls.Add(PictureBox24)
-        pnlMain.Location = New Point(12, 14)
+        pnlMain.Controls.Add(dM2)
+        pnlMain.Controls.Add(dP1)
+        pnlMain.Location = New Point(3, 4)
         pnlMain.Name = "pnlMain"
-        pnlMain.Size = New Size(7000, 7000)
+        pnlMain.Size = New Size(7009, 7000)
         pnlMain.TabIndex = 2
         pnlMain.Tag = "C"
+        ' 
+        ' lblp1
+        ' 
+        lblp1.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblp1.Location = New Point(3082, 2282)
+        lblp1.Name = "lblp1"
+        lblp1.Size = New Size(42, 18)
+        lblp1.TabIndex = 187
+        lblp1.Text = "100%"
+        ' 
+        ' Label24
+        ' 
+        Label24.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label24.Location = New Point(3075, 2255)
+        Label24.Name = "Label24"
+        Label24.Size = New Size(145, 18)
+        Label24.TabIndex = 188
+        Label24.Text = "Import/Export"
+        ' 
+        ' pad2b
+        ' 
+        pad2b.Image = CType(resources.GetObject("pad2b.Image"), Image)
+        pad2b.Location = New Point(3079, 2161)
+        pad2b.Name = "pad2b"
+        pad2b.Size = New Size(140, 175)
+        pad2b.TabIndex = 105
+        pad2b.TabStop = False
+        pad2b.Visible = False
+        ' 
+        ' pad2a
+        ' 
+        pad2a.Image = CType(resources.GetObject("pad2a.Image"), Image)
+        pad2a.Location = New Point(3079, 2161)
+        pad2a.Name = "pad2a"
+        pad2a.Size = New Size(140, 175)
+        pad2a.TabIndex = 106
+        pad2a.TabStop = False
+        pad2a.Visible = False
+        ' 
+        ' dN2
+        ' 
+        dN2.BackColor = Color.DimGray
+        dN2.BorderStyle = BorderStyle.FixedSingle
+        dN2.Location = New Point(2140, 1904)
+        dN2.Name = "dN2"
+        dN2.Size = New Size(15, 20)
+        dN2.TabIndex = 198
+        dN2.TabStop = False
+        dN2.Tag = "C"
+        ' 
+        ' lblmCnt2
+        ' 
+        lblmCnt2.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
+        lblmCnt2.BorderStyle = BorderStyle.FixedSingle
+        lblmCnt2.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblmCnt2.Location = New Point(2716, 3219)
+        lblmCnt2.Name = "lblmCnt2"
+        lblmCnt2.Size = New Size(82, 18)
+        lblmCnt2.TabIndex = 107
+        lblmCnt2.Text = "0"
+        lblmCnt2.TextAlign = ContentAlignment.MiddleRight
+        ' 
+        ' lblmCnt1
+        ' 
+        lblmCnt1.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
+        lblmCnt1.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblmCnt1.Location = New Point(574, 59)
+        lblmCnt1.Name = "lblmCnt1"
+        lblmCnt1.Size = New Size(80, 18)
+        lblmCnt1.TabIndex = 108
+        lblmCnt1.Text = "0"
+        lblmCnt1.TextAlign = ContentAlignment.MiddleRight
+        ' 
+        ' dN3
+        ' 
+        dN3.BackColor = Color.DimGray
+        dN3.BorderStyle = BorderStyle.FixedSingle
+        dN3.Location = New Point(6766, 6680)
+        dN3.Name = "dN3"
+        dN3.Size = New Size(15, 20)
+        dN3.TabIndex = 198
+        dN3.TabStop = False
+        dN3.Tag = "C"
+        ' 
+        ' dN1
+        ' 
+        dN1.BackColor = Color.DimGray
+        dN1.BorderStyle = BorderStyle.FixedSingle
+        dN1.Location = New Point(255, 5864)
+        dN1.Name = "dN1"
+        dN1.Size = New Size(15, 20)
+        dN1.TabIndex = 106
+        dN1.TabStop = False
+        dN1.Tag = "C"
+        ' 
+        ' Label39
+        ' 
+        Label39.AutoSize = True
+        Label39.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label39.Location = New Point(6700, 6803)
+        Label39.Name = "Label39"
+        Label39.Size = New Size(138, 18)
+        Label39.TabIndex = 199
+        Label39.Text = "Mining Zone 3"
+        ' 
+        ' Label37
+        ' 
+        Label37.AutoSize = True
+        Label37.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label37.Location = New Point(2082, 2035)
+        Label37.Name = "Label37"
+        Label37.Size = New Size(138, 18)
+        Label37.TabIndex = 199
+        Label37.Text = "Mining Zone 2"
+        ' 
+        ' pmz3
+        ' 
+        pmz3.Image = CType(resources.GetObject("pmz3.Image"), Image)
+        pmz3.Location = New Point(6667, 6572)
+        pmz3.Name = "pmz3"
+        pmz3.Size = New Size(205, 217)
+        pmz3.TabIndex = 200
+        pmz3.TabStop = False
+        ' 
+        ' pmz2
+        ' 
+        pmz2.Image = CType(resources.GetObject("pmz2.Image"), Image)
+        pmz2.Location = New Point(2048, 1804)
+        pmz2.Name = "pmz2"
+        pmz2.Size = New Size(205, 217)
+        pmz2.TabIndex = 200
+        pmz2.TabStop = False
+        ' 
+        ' Label33
+        ' 
+        Label33.AutoSize = True
+        Label33.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label33.Location = New Point(199, 5997)
+        Label33.Name = "Label33"
+        Label33.Size = New Size(138, 18)
+        Label33.TabIndex = 164
+        Label33.Text = "Mining Zone 1"
+        ' 
+        ' pmz1
+        ' 
+        pmz1.Image = CType(resources.GetObject("pmz1.Image"), Image)
+        pmz1.Location = New Point(165, 5766)
+        pmz1.Name = "pmz1"
+        pmz1.Size = New Size(205, 217)
+        pmz1.TabIndex = 197
+        pmz1.TabStop = False
+        ' 
+        ' wp80
+        ' 
+        wp80.BackColor = Color.Fuchsia
+        wp80.Location = New Point(618, 131)
+        wp80.Name = "wp80"
+        wp80.Size = New Size(10, 10)
+        wp80.TabIndex = 106
+        wp80.TabStop = False
+        wp80.Tag = "C"
+        ' 
+        ' wp76
+        ' 
+        wp76.BackColor = Color.Fuchsia
+        wp76.Location = New Point(6328, 1328)
+        wp76.Name = "wp76"
+        wp76.Size = New Size(10, 10)
+        wp76.TabIndex = 111
+        wp76.TabStop = False
+        wp76.Tag = "C"
+        ' 
+        ' wp79
+        ' 
+        wp79.BackColor = Color.Fuchsia
+        wp79.Location = New Point(574, 125)
+        wp79.Name = "wp79"
+        wp79.Size = New Size(10, 10)
+        wp79.TabIndex = 105
+        wp79.TabStop = False
+        wp79.Tag = "C"
+        ' 
+        ' wp77
+        ' 
+        wp77.BackColor = Color.Fuchsia
+        wp77.Location = New Point(5188, 3451)
+        wp77.Name = "wp77"
+        wp77.Size = New Size(10, 10)
+        wp77.TabIndex = 112
+        wp77.TabStop = False
+        wp77.Tag = "C"
+        ' 
+        ' wp75
+        ' 
+        wp75.BackColor = Color.Fuchsia
+        wp75.Location = New Point(6232, 1219)
+        wp75.Name = "wp75"
+        wp75.Size = New Size(10, 10)
+        wp75.TabIndex = 110
+        wp75.TabStop = False
+        wp75.Tag = "C"
+        ' 
+        ' wp78
+        ' 
+        wp78.BackColor = Color.Fuchsia
+        wp78.Location = New Point(5106, 3478)
+        wp78.Name = "wp78"
+        wp78.Size = New Size(10, 10)
+        wp78.TabIndex = 113
+        wp78.TabStop = False
+        wp78.Tag = "C"
+        ' 
+        ' wp74
+        ' 
+        wp74.BackColor = Color.Fuchsia
+        wp74.Location = New Point(4820, 6841)
+        wp74.Name = "wp74"
+        wp74.Size = New Size(10, 10)
+        wp74.TabIndex = 109
+        wp74.TabStop = False
+        wp74.Tag = "C"
+        ' 
+        ' wp67
+        ' 
+        wp67.BackColor = Color.Fuchsia
+        wp67.Location = New Point(3032, 2334)
+        wp67.Name = "wp67"
+        wp67.Size = New Size(10, 10)
+        wp67.TabIndex = 110
+        wp67.TabStop = False
+        wp67.Tag = "C"
+        ' 
+        ' wp73
+        ' 
+        wp73.BackColor = Color.Fuchsia
+        wp73.Location = New Point(4875, 6724)
+        wp73.Name = "wp73"
+        wp73.Size = New Size(10, 10)
+        wp73.TabIndex = 108
+        wp73.TabStop = False
+        wp73.Tag = "C"
         ' 
         ' wp60
         ' 
         wp60.BackColor = Color.Fuchsia
-        wp60.Location = New Point(4947, 3450)
+        wp60.Location = New Point(4941, 3384)
         wp60.Name = "wp60"
         wp60.Size = New Size(10, 10)
         wp60.TabIndex = 132
         wp60.TabStop = False
         wp60.Tag = "C"
         ' 
+        ' wp72
+        ' 
+        wp72.BackColor = Color.Fuchsia
+        wp72.Location = New Point(4878, 6630)
+        wp72.Name = "wp72"
+        wp72.Size = New Size(10, 10)
+        wp72.TabIndex = 107
+        wp72.TabStop = False
+        wp72.Tag = "C"
+        ' 
+        ' wp66
+        ' 
+        wp66.BackColor = Color.Fuchsia
+        wp66.Location = New Point(3260, 2095)
+        wp66.Name = "wp66"
+        wp66.Size = New Size(10, 10)
+        wp66.TabIndex = 109
+        wp66.TabStop = False
+        wp66.Tag = "C"
+        ' 
+        ' wp71
+        ' 
+        wp71.BackColor = Color.Fuchsia
+        wp71.Location = New Point(4846, 6477)
+        wp71.Name = "wp71"
+        wp71.Size = New Size(10, 10)
+        wp71.TabIndex = 106
+        wp71.TabStop = False
+        wp71.Tag = "C"
+        ' 
         ' wp59
         ' 
         wp59.BackColor = Color.Fuchsia
-        wp59.Location = New Point(5221, 3432)
+        wp59.Location = New Point(5267, 3422)
         wp59.Name = "wp59"
         wp59.Size = New Size(10, 10)
         wp59.TabIndex = 133
         wp59.TabStop = False
         wp59.Tag = "C"
+        ' 
+        ' wp65
+        ' 
+        wp65.BackColor = Color.Fuchsia
+        wp65.Location = New Point(3280, 2293)
+        wp65.Name = "wp65"
+        wp65.Size = New Size(10, 10)
+        wp65.TabIndex = 108
+        wp65.TabStop = False
+        wp65.Tag = "C"
         ' 
         ' wp50
         ' 
@@ -1067,35 +1407,95 @@ Partial Class frmMain
         wp50.TabStop = False
         wp50.Tag = "C"
         ' 
+        ' wp64
+        ' 
+        wp64.BackColor = Color.Fuchsia
+        wp64.Location = New Point(2876, 390)
+        wp64.Name = "wp64"
+        wp64.Size = New Size(10, 10)
+        wp64.TabIndex = 107
+        wp64.TabStop = False
+        wp64.Tag = "C"
+        ' 
         ' wp30
         ' 
         wp30.BackColor = Color.Fuchsia
-        wp30.Location = New Point(521, 329)
+        wp30.Location = New Point(467, 329)
         wp30.Name = "wp30"
         wp30.Size = New Size(10, 10)
         wp30.TabIndex = 104
         wp30.TabStop = False
         wp30.Tag = "C"
         ' 
+        ' wp70
+        ' 
+        wp70.BackColor = Color.Fuchsia
+        wp70.Location = New Point(2457, 4767)
+        wp70.Name = "wp70"
+        wp70.Size = New Size(10, 10)
+        wp70.TabIndex = 105
+        wp70.TabStop = False
+        wp70.Tag = "C"
+        ' 
+        ' wp63
+        ' 
+        wp63.BackColor = Color.Fuchsia
+        wp63.Location = New Point(2792, 380)
+        wp63.Name = "wp63"
+        wp63.Size = New Size(10, 10)
+        wp63.TabIndex = 106
+        wp63.TabStop = False
+        wp63.Tag = "C"
+        ' 
+        ' wp69
+        ' 
+        wp69.BackColor = Color.Fuchsia
+        wp69.Location = New Point(2125, 4682)
+        wp69.Name = "wp69"
+        wp69.Size = New Size(10, 10)
+        wp69.TabIndex = 104
+        wp69.TabStop = False
+        wp69.Tag = "C"
+        ' 
         ' wp51
         ' 
         wp51.BackColor = Color.Fuchsia
-        wp51.Location = New Point(6148, 5926)
+        wp51.Location = New Point(6214, 5943)
         wp51.Name = "wp51"
         wp51.Size = New Size(10, 10)
         wp51.TabIndex = 130
         wp51.TabStop = False
         wp51.Tag = "C"
         ' 
+        ' wp62
+        ' 
+        wp62.BackColor = Color.Fuchsia
+        wp62.Location = New Point(719, 326)
+        wp62.Name = "wp62"
+        wp62.Size = New Size(10, 10)
+        wp62.TabIndex = 105
+        wp62.TabStop = False
+        wp62.Tag = "C"
+        ' 
         ' wp39
         ' 
         wp39.BackColor = Color.Fuchsia
-        wp39.Location = New Point(3102, 393)
+        wp39.Location = New Point(3132, 380)
         wp39.Name = "wp39"
         wp39.Size = New Size(10, 10)
         wp39.TabIndex = 112
         wp39.TabStop = False
         wp39.Tag = "C"
+        ' 
+        ' wp61
+        ' 
+        wp61.BackColor = Color.Fuchsia
+        wp61.Location = New Point(227, 267)
+        wp61.Name = "wp61"
+        wp61.Size = New Size(10, 10)
+        wp61.TabIndex = 104
+        wp61.TabStop = False
+        wp61.Tag = "C"
         ' 
         ' wp52
         ' 
@@ -1130,7 +1530,7 @@ Partial Class frmMain
         ' wp38
         ' 
         wp38.BackColor = Color.Fuchsia
-        wp38.Location = New Point(2960, 296)
+        wp38.Location = New Point(2962, 298)
         wp38.Name = "wp38"
         wp38.Size = New Size(10, 10)
         wp38.TabIndex = 111
@@ -1140,7 +1540,7 @@ Partial Class frmMain
         ' wp54
         ' 
         wp54.BackColor = Color.Fuchsia
-        wp54.Location = New Point(6383, 5631)
+        wp54.Location = New Point(6402, 5678)
         wp54.Name = "wp54"
         wp54.Size = New Size(10, 10)
         wp54.TabIndex = 127
@@ -1149,7 +1549,7 @@ Partial Class frmMain
         ' 
         ' PictureBox27
         ' 
-        PictureBox27.BackColor = Color.OrangeRed
+        PictureBox27.BackColor = Color.Yellow
         PictureBox27.Location = New Point(3040, 27)
         PictureBox27.Name = "PictureBox27"
         PictureBox27.Size = New Size(5, 3254)
@@ -1159,7 +1559,7 @@ Partial Class frmMain
         ' wp55
         ' 
         wp55.BackColor = Color.Fuchsia
-        wp55.Location = New Point(6490, 1223)
+        wp55.Location = New Point(6420, 1219)
         wp55.Name = "wp55"
         wp55.Size = New Size(10, 10)
         wp55.TabIndex = 126
@@ -1198,7 +1598,7 @@ Partial Class frmMain
         ' wp57
         ' 
         wp57.BackColor = Color.Fuchsia
-        wp57.Location = New Point(6236, 1362)
+        wp57.Location = New Point(6107, 1323)
         wp57.Name = "wp57"
         wp57.Size = New Size(10, 10)
         wp57.TabIndex = 124
@@ -1208,7 +1608,7 @@ Partial Class frmMain
         ' wp36
         ' 
         wp36.BackColor = Color.Fuchsia
-        wp36.Location = New Point(4706, 6865)
+        wp36.Location = New Point(4690, 6865)
         wp36.Name = "wp36"
         wp36.Size = New Size(10, 10)
         wp36.TabIndex = 109
@@ -1218,7 +1618,7 @@ Partial Class frmMain
         ' wp58
         ' 
         wp58.BackColor = Color.Fuchsia
-        wp58.Location = New Point(6228, 1099)
+        wp58.Location = New Point(6327, 1125)
         wp58.Name = "wp58"
         wp58.Size = New Size(10, 10)
         wp58.TabIndex = 123
@@ -1227,17 +1627,17 @@ Partial Class frmMain
         ' 
         ' PictureBox25
         ' 
-        PictureBox25.BackColor = Color.OrangeRed
-        PictureBox25.Location = New Point(2756, 3277)
+        PictureBox25.BackColor = Color.Yellow
+        PictureBox25.Location = New Point(2796, 3278)
         PictureBox25.Name = "PictureBox25"
-        PictureBox25.Size = New Size(289, 5)
+        PictureBox25.Size = New Size(248, 5)
         PictureBox25.TabIndex = 100
         PictureBox25.TabStop = False
         ' 
         ' wp40
         ' 
         wp40.BackColor = Color.Fuchsia
-        wp40.Location = New Point(2592, 4749)
+        wp40.Location = New Point(2543, 4683)
         wp40.Name = "wp40"
         wp40.Size = New Size(10, 10)
         wp40.TabIndex = 113
@@ -1257,7 +1657,7 @@ Partial Class frmMain
         ' wp35
         ' 
         wp35.BackColor = Color.Fuchsia
-        wp35.Location = New Point(4586, 6737)
+        wp35.Location = New Point(4512, 6771)
         wp35.Name = "wp35"
         wp35.Size = New Size(10, 10)
         wp35.TabIndex = 108
@@ -1267,7 +1667,7 @@ Partial Class frmMain
         ' wp48
         ' 
         wp48.BackColor = Color.Fuchsia
-        wp48.Location = New Point(3145, 2362)
+        wp48.Location = New Point(3148, 2379)
         wp48.Name = "wp48"
         wp48.Size = New Size(10, 10)
         wp48.TabIndex = 121
@@ -1286,7 +1686,7 @@ Partial Class frmMain
         ' wp47
         ' 
         wp47.BackColor = Color.Fuchsia
-        wp47.Location = New Point(3306, 2302)
+        wp47.Location = New Point(3364, 2325)
         wp47.Name = "wp47"
         wp47.Size = New Size(10, 10)
         wp47.TabIndex = 120
@@ -1296,7 +1696,7 @@ Partial Class frmMain
         ' wp34
         ' 
         wp34.BackColor = Color.Fuchsia
-        wp34.Location = New Point(4905, 6717)
+        wp34.Location = New Point(4740, 6724)
         wp34.Name = "wp34"
         wp34.Size = New Size(10, 10)
         wp34.TabIndex = 107
@@ -1306,7 +1706,7 @@ Partial Class frmMain
         ' wp46
         ' 
         wp46.BackColor = Color.Fuchsia
-        wp46.Location = New Point(2992, 2336)
+        wp46.Location = New Point(2931, 2334)
         wp46.Name = "wp46"
         wp46.Size = New Size(10, 10)
         wp46.TabIndex = 119
@@ -1327,7 +1727,7 @@ Partial Class frmMain
         ' wp45
         ' 
         wp45.BackColor = Color.Fuchsia
-        wp45.Location = New Point(3252, 2113)
+        wp45.Location = New Point(3152, 2095)
         wp45.Name = "wp45"
         wp45.Size = New Size(10, 10)
         wp45.TabIndex = 118
@@ -1337,7 +1737,7 @@ Partial Class frmMain
         ' wp33
         ' 
         wp33.BackColor = Color.Fuchsia
-        wp33.Location = New Point(4907, 6592)
+        wp33.Location = New Point(4929, 6548)
         wp33.Name = "wp33"
         wp33.Size = New Size(10, 10)
         wp33.TabIndex = 106
@@ -1347,7 +1747,7 @@ Partial Class frmMain
         ' wp44
         ' 
         wp44.BackColor = Color.Fuchsia
-        wp44.Location = New Point(3066, 2107)
+        wp44.Location = New Point(3034, 2095)
         wp44.Name = "wp44"
         wp44.Size = New Size(10, 10)
         wp44.TabIndex = 117
@@ -1387,7 +1787,7 @@ Partial Class frmMain
         ' wp42
         ' 
         wp42.BackColor = Color.Fuchsia
-        wp42.Location = New Point(2981, 589)
+        wp42.Location = New Point(2962, 511)
         wp42.Name = "wp42"
         wp42.Size = New Size(10, 10)
         wp42.TabIndex = 115
@@ -1495,15 +1895,6 @@ Partial Class frmMain
         dD26.TabStop = False
         dD26.Tag = "B"
         ' 
-        ' lblp1
-        ' 
-        lblp1.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblp1.Location = New Point(3082, 2282)
-        lblp1.Name = "lblp1"
-        lblp1.Size = New Size(42, 18)
-        lblp1.TabIndex = 187
-        lblp1.Text = "100%"
-        ' 
         ' dD27
         ' 
         dD27.BackColor = Color.DimGray
@@ -1514,15 +1905,6 @@ Partial Class frmMain
         dD27.TabIndex = 106
         dD27.TabStop = False
         dD27.Tag = "T"
-        ' 
-        ' Label24
-        ' 
-        Label24.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label24.Location = New Point(3075, 2255)
-        Label24.Name = "Label24"
-        Label24.Size = New Size(145, 18)
-        Label24.TabIndex = 188
-        Label24.Text = "Import/Export"
         ' 
         ' PictureBox22
         ' 
@@ -1596,14 +1978,15 @@ Partial Class frmMain
         PictureBox12.TabIndex = 102
         PictureBox12.TabStop = False
         ' 
-        ' pada1
+        ' pad1a
         ' 
-        pada1.Image = My.Resources.Resources.Pad
-        pada1.Location = New Point(3079, 2161)
-        pada1.Name = "pada1"
-        pada1.Size = New Size(140, 175)
-        pada1.TabIndex = 100
-        pada1.TabStop = False
+        pad1a.Image = CType(resources.GetObject("pad1a.Image"), Image)
+        pad1a.Location = New Point(3079, 2161)
+        pad1a.Name = "pad1a"
+        pad1a.Size = New Size(140, 175)
+        pad1a.TabIndex = 100
+        pad1a.TabStop = False
+        pad1a.Visible = False
         ' 
         ' PictureBox10
         ' 
@@ -1624,14 +2007,15 @@ Partial Class frmMain
         Label44.TabIndex = 195
         Label44.Text = "Solar 18"
         ' 
-        ' padb1
+        ' pad1b
         ' 
-        padb1.Image = My.Resources.Resources.Pad2
-        padb1.Location = New Point(3079, 2161)
-        padb1.Name = "padb1"
-        padb1.Size = New Size(140, 175)
-        padb1.TabIndex = 30
-        padb1.TabStop = False
+        pad1b.Image = CType(resources.GetObject("pad1b.Image"), Image)
+        pad1b.Location = New Point(3079, 2161)
+        pad1b.Name = "pad1b"
+        pad1b.Size = New Size(140, 175)
+        pad1b.TabIndex = 30
+        pad1b.TabStop = False
+        pad1b.Visible = False
         ' 
         ' Label38
         ' 
@@ -1655,7 +2039,7 @@ Partial Class frmMain
         ' wp25
         ' 
         wp25.BackColor = Color.Fuchsia
-        wp25.Location = New Point(2110, 4795)
+        wp25.Location = New Point(2258, 4785)
         wp25.Name = "wp25"
         wp25.Size = New Size(10, 10)
         wp25.TabIndex = 100
@@ -1740,7 +2124,7 @@ Partial Class frmMain
         ' wp22
         ' 
         wp22.BackColor = Color.Fuchsia
-        wp22.Location = New Point(2912, 4128)
+        wp22.Location = New Point(2845, 4134)
         wp22.Name = "wp22"
         wp22.Size = New Size(10, 10)
         wp22.TabIndex = 103
@@ -1788,7 +2172,7 @@ Partial Class frmMain
         ' wp24
         ' 
         wp24.BackColor = Color.Fuchsia
-        wp24.Location = New Point(2522, 4546)
+        wp24.Location = New Point(2446, 4609)
         wp24.Name = "wp24"
         wp24.Size = New Size(10, 10)
         wp24.TabIndex = 99
@@ -1804,14 +2188,15 @@ Partial Class frmMain
         ps20.TabIndex = 189
         ps20.TabStop = False
         ' 
-        ' PictureBox19
+        ' wp68
         ' 
-        PictureBox19.BackColor = Color.Fuchsia
-        PictureBox19.Location = New Point(2723, 3400)
-        PictureBox19.Name = "PictureBox19"
-        PictureBox19.Size = New Size(10, 10)
-        PictureBox19.TabIndex = 100
-        PictureBox19.TabStop = False
+        wp68.BackColor = Color.Fuchsia
+        wp68.Location = New Point(2749, 3313)
+        wp68.Name = "wp68"
+        wp68.Size = New Size(10, 10)
+        wp68.TabIndex = 100
+        wp68.TabStop = False
+        wp68.Tag = "C"
         ' 
         ' Label42
         ' 
@@ -1826,7 +2211,7 @@ Partial Class frmMain
         ' wp19
         ' 
         wp19.BackColor = Color.Fuchsia
-        wp19.Location = New Point(2871, 3207)
+        wp19.Location = New Point(2860, 3318)
         wp19.Name = "wp19"
         wp19.Size = New Size(10, 10)
         wp19.TabIndex = 101
@@ -1855,7 +2240,7 @@ Partial Class frmMain
         ' wp12
         ' 
         wp12.BackColor = Color.Fuchsia
-        wp12.Location = New Point(2712, 2859)
+        wp12.Location = New Point(2719, 2852)
         wp12.Name = "wp12"
         wp12.Size = New Size(10, 10)
         wp12.TabIndex = 103
@@ -1884,7 +2269,7 @@ Partial Class frmMain
         ' wp13
         ' 
         wp13.BackColor = Color.Fuchsia
-        wp13.Location = New Point(2863, 2859)
+        wp13.Location = New Point(2843, 2852)
         wp13.Name = "wp13"
         wp13.Size = New Size(10, 10)
         wp13.TabIndex = 105
@@ -1894,7 +2279,7 @@ Partial Class frmMain
         ' wp16
         ' 
         wp16.BackColor = Color.Fuchsia
-        wp16.Location = New Point(2857, 3008)
+        wp16.Location = New Point(2849, 3008)
         wp16.Name = "wp16"
         wp16.Size = New Size(10, 10)
         wp16.TabIndex = 106
@@ -1904,7 +2289,7 @@ Partial Class frmMain
         ' wp18
         ' 
         wp18.BackColor = Color.Fuchsia
-        wp18.Location = New Point(2620, 3207)
+        wp18.Location = New Point(2639, 3313)
         wp18.Name = "wp18"
         wp18.Size = New Size(10, 10)
         wp18.TabIndex = 99
@@ -1914,7 +2299,7 @@ Partial Class frmMain
         ' wp17
         ' 
         wp17.BackColor = Color.Fuchsia
-        wp17.Location = New Point(2531, 3105)
+        wp17.Location = New Point(2493, 3113)
         wp17.Name = "wp17"
         wp17.Size = New Size(10, 10)
         wp17.TabIndex = 100
@@ -1924,7 +2309,7 @@ Partial Class frmMain
         ' wp14
         ' 
         wp14.BackColor = Color.Fuchsia
-        wp14.Location = New Point(2571, 3014)
+        wp14.Location = New Point(2625, 3016)
         wp14.Name = "wp14"
         wp14.Size = New Size(10, 10)
         wp14.TabIndex = 101
@@ -1944,7 +2329,7 @@ Partial Class frmMain
         ' wp2
         ' 
         wp2.BackColor = Color.Fuchsia
-        wp2.Location = New Point(631, 329)
+        wp2.Location = New Point(618, 329)
         wp2.Name = "wp2"
         wp2.Size = New Size(10, 10)
         wp2.TabIndex = 103
@@ -1954,7 +2339,7 @@ Partial Class frmMain
         ' wp3
         ' 
         wp3.BackColor = Color.Fuchsia
-        wp3.Location = New Point(103, 532)
+        wp3.Location = New Point(87, 529)
         wp3.Name = "wp3"
         wp3.Size = New Size(10, 10)
         wp3.TabIndex = 98
@@ -1984,7 +2369,7 @@ Partial Class frmMain
         ' wp9
         ' 
         wp9.BackColor = Color.Fuchsia
-        wp9.Location = New Point(867, 161)
+        wp9.Location = New Point(811, 162)
         wp9.Name = "wp9"
         wp9.Size = New Size(10, 10)
         wp9.TabIndex = 103
@@ -1994,7 +2379,7 @@ Partial Class frmMain
         ' wp8
         ' 
         wp8.BackColor = Color.Fuchsia
-        wp8.Location = New Point(601, 532)
+        wp8.Location = New Point(596, 511)
         wp8.Name = "wp8"
         wp8.Size = New Size(10, 10)
         wp8.TabIndex = 99
@@ -2014,7 +2399,7 @@ Partial Class frmMain
         ' wp7
         ' 
         wp7.BackColor = Color.Fuchsia
-        wp7.Location = New Point(469, 491)
+        wp7.Location = New Point(467, 520)
         wp7.Name = "wp7"
         wp7.Size = New Size(10, 10)
         wp7.TabIndex = 98
@@ -2033,7 +2418,7 @@ Partial Class frmMain
         ' wp5
         ' 
         wp5.BackColor = Color.Fuchsia
-        wp5.Location = New Point(199, 532)
+        wp5.Location = New Point(227, 529)
         wp5.Name = "wp5"
         wp5.Size = New Size(10, 10)
         wp5.TabIndex = 98
@@ -2043,7 +2428,7 @@ Partial Class frmMain
         ' wp6
         ' 
         wp6.BackColor = Color.Fuchsia
-        wp6.Location = New Point(496, 135)
+        wp6.Location = New Point(484, 140)
         wp6.Name = "wp6"
         wp6.Size = New Size(10, 10)
         wp6.TabIndex = 95
@@ -2062,7 +2447,7 @@ Partial Class frmMain
         ' wp4
         ' 
         wp4.BackColor = Color.Fuchsia
-        wp4.Location = New Point(199, 211)
+        wp4.Location = New Point(87, 227)
         wp4.Name = "wp4"
         wp4.Size = New Size(10, 10)
         wp4.TabIndex = 94
@@ -2184,11 +2569,12 @@ Partial Class frmMain
         lblm2.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         lblm2.BorderStyle = BorderStyle.FixedSingle
         lblm2.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblm2.Location = New Point(2737, 3226)
+        lblm2.Location = New Point(2715, 3195)
         lblm2.Name = "lblm2"
-        lblm2.Size = New Size(42, 18)
+        lblm2.Size = New Size(82, 18)
         lblm2.TabIndex = 106
         lblm2.Text = "100%"
+        lblm2.TextAlign = ContentAlignment.MiddleRight
         ' 
         ' ps13
         ' 
@@ -2203,11 +2589,12 @@ Partial Class frmMain
         ' 
         lblm1.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         lblm1.Font = New Font("Courier New", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblm1.Location = New Point(593, 57)
+        lblm1.Location = New Point(574, 33)
         lblm1.Name = "lblm1"
-        lblm1.Size = New Size(42, 18)
+        lblm1.Size = New Size(80, 18)
         lblm1.TabIndex = 107
         lblm1.Text = "100%"
+        lblm1.TextAlign = ContentAlignment.MiddleRight
         ' 
         ' Label27
         ' 
@@ -2516,7 +2903,7 @@ Partial Class frmMain
         Label19.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         Label19.BorderStyle = BorderStyle.FixedSingle
         Label19.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label19.Location = New Point(2718, 3187)
+        Label19.Location = New Point(2717, 3171)
         Label19.Name = "Label19"
         Label19.Size = New Size(80, 18)
         Label19.TabIndex = 102
@@ -2552,17 +2939,6 @@ Partial Class frmMain
         pm2.TabIndex = 103
         pm2.TabStop = False
         ' 
-        ' dM16
-        ' 
-        dM16.BackColor = Color.DimGray
-        dM16.BorderStyle = BorderStyle.FixedSingle
-        dM16.Location = New Point(2800, 3244)
-        dM16.Name = "dM16"
-        dM16.Size = New Size(30, 15)
-        dM16.TabIndex = 95
-        dM16.TabStop = False
-        dM16.Tag = "R"
-        ' 
         ' dD19
         ' 
         dD19.BackColor = Color.DimGray
@@ -2574,17 +2950,6 @@ Partial Class frmMain
         dD19.TabStop = False
         dD19.Tag = "B"
         ' 
-        ' dM15
-        ' 
-        dM15.BackColor = Color.DimGray
-        dM15.BorderStyle = BorderStyle.FixedSingle
-        dM15.Location = New Point(2800, 3219)
-        dM15.Name = "dM15"
-        dM15.Size = New Size(30, 15)
-        dM15.TabIndex = 96
-        dM15.TabStop = False
-        dM15.Tag = "R"
-        ' 
         ' pwl7
         ' 
         pwl7.BackColor = Color.DodgerBlue
@@ -2593,17 +2958,6 @@ Partial Class frmMain
         pwl7.Size = New Size(5, 354)
         pwl7.TabIndex = 94
         pwl7.TabStop = False
-        ' 
-        ' dM14
-        ' 
-        dM14.BackColor = Color.DimGray
-        dM14.BorderStyle = BorderStyle.FixedSingle
-        dM14.Location = New Point(2800, 3195)
-        dM14.Name = "dM14"
-        dM14.Size = New Size(30, 15)
-        dM14.TabIndex = 97
-        dM14.TabStop = False
-        dM14.Tag = "R"
         ' 
         ' dD17
         ' 
@@ -2616,17 +2970,6 @@ Partial Class frmMain
         dD17.TabStop = False
         dD17.Tag = "T"
         ' 
-        ' dM13
-        ' 
-        dM13.BackColor = Color.DimGray
-        dM13.BorderStyle = BorderStyle.FixedSingle
-        dM13.Location = New Point(2800, 3172)
-        dM13.Name = "dM13"
-        dM13.Size = New Size(30, 15)
-        dM13.TabIndex = 94
-        dM13.TabStop = False
-        dM13.Tag = "R"
-        ' 
         ' pel9
         ' 
         pel9.BackColor = Color.Red
@@ -2635,17 +2978,6 @@ Partial Class frmMain
         pel9.Size = New Size(5, 1902)
         pel9.TabIndex = 94
         pel9.TabStop = False
-        ' 
-        ' dM12
-        ' 
-        dM12.BackColor = Color.DimGray
-        dM12.BorderStyle = BorderStyle.FixedSingle
-        dM12.Location = New Point(2680, 3244)
-        dM12.Name = "dM12"
-        dM12.Size = New Size(30, 15)
-        dM12.TabIndex = 100
-        dM12.TabStop = False
-        dM12.Tag = "L"
         ' 
         ' dD20
         ' 
@@ -2658,17 +2990,6 @@ Partial Class frmMain
         dD20.TabStop = False
         dD20.Tag = "R"
         ' 
-        ' dM11
-        ' 
-        dM11.BackColor = Color.DimGray
-        dM11.BorderStyle = BorderStyle.FixedSingle
-        dM11.Location = New Point(2680, 3219)
-        dM11.Name = "dM11"
-        dM11.Size = New Size(30, 15)
-        dM11.TabIndex = 101
-        dM11.TabStop = False
-        dM11.Tag = "L"
-        ' 
         ' pd2
         ' 
         pd2.Image = My.Resources.Resources.DrillSite
@@ -2677,17 +2998,6 @@ Partial Class frmMain
         pd2.Size = New Size(63, 63)
         pd2.TabIndex = 79
         pd2.TabStop = False
-        ' 
-        ' dM10
-        ' 
-        dM10.BackColor = Color.DimGray
-        dM10.BorderStyle = BorderStyle.FixedSingle
-        dM10.Location = New Point(2680, 3197)
-        dM10.Name = "dM10"
-        dM10.Size = New Size(30, 15)
-        dM10.TabIndex = 99
-        dM10.TabStop = False
-        dM10.Tag = "L"
         ' 
         ' dD18
         ' 
@@ -2699,17 +3009,6 @@ Partial Class frmMain
         dD18.TabIndex = 99
         dD18.TabStop = False
         dD18.Tag = "L"
-        ' 
-        ' dM9
-        ' 
-        dM9.BackColor = Color.DimGray
-        dM9.BorderStyle = BorderStyle.FixedSingle
-        dM9.Location = New Point(2680, 3172)
-        dM9.Name = "dM9"
-        dM9.Size = New Size(30, 15)
-        dM9.TabIndex = 98
-        dM9.TabStop = False
-        dM9.Tag = "L"
         ' 
         ' pwl6
         ' 
@@ -2792,7 +3091,7 @@ Partial Class frmMain
         Label13.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         Label13.BorderStyle = BorderStyle.FixedSingle
         Label13.Font = New Font("Courier New", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label13.Location = New Point(574, 25)
+        Label13.Location = New Point(574, 7)
         Label13.Name = "Label13"
         Label13.Size = New Size(80, 18)
         Label13.TabIndex = 66
@@ -2825,50 +3124,6 @@ Partial Class frmMain
         ps9.Size = New Size(94, 122)
         ps9.TabIndex = 81
         ps9.TabStop = False
-        ' 
-        ' dM8
-        ' 
-        dM8.BackColor = Color.DimGray
-        dM8.BorderStyle = BorderStyle.FixedSingle
-        dM8.Location = New Point(657, 82)
-        dM8.Name = "dM8"
-        dM8.Size = New Size(30, 15)
-        dM8.TabIndex = 60
-        dM8.TabStop = False
-        dM8.Tag = "R"
-        ' 
-        ' dM7
-        ' 
-        dM7.BackColor = Color.DimGray
-        dM7.BorderStyle = BorderStyle.FixedSingle
-        dM7.Location = New Point(657, 57)
-        dM7.Name = "dM7"
-        dM7.Size = New Size(30, 15)
-        dM7.TabIndex = 60
-        dM7.TabStop = False
-        dM7.Tag = "R"
-        ' 
-        ' dM6
-        ' 
-        dM6.BackColor = Color.DimGray
-        dM6.BorderStyle = BorderStyle.FixedSingle
-        dM6.Location = New Point(657, 33)
-        dM6.Name = "dM6"
-        dM6.Size = New Size(30, 15)
-        dM6.TabIndex = 60
-        dM6.TabStop = False
-        dM6.Tag = "R"
-        ' 
-        ' dM5
-        ' 
-        dM5.BackColor = Color.DimGray
-        dM5.BorderStyle = BorderStyle.FixedSingle
-        dM5.Location = New Point(657, 10)
-        dM5.Name = "dM5"
-        dM5.Size = New Size(30, 15)
-        dM5.TabIndex = 59
-        dM5.TabStop = False
-        dM5.Tag = "R"
         ' 
         ' Label17
         ' 
@@ -2934,17 +3189,6 @@ Partial Class frmMain
         dD5.TabStop = False
         dD5.Tag = "T"
         ' 
-        ' dM4
-        ' 
-        dM4.BackColor = Color.DimGray
-        dM4.BorderStyle = BorderStyle.FixedSingle
-        dM4.Location = New Point(537, 82)
-        dM4.Name = "dM4"
-        dM4.Size = New Size(30, 15)
-        dM4.TabIndex = 62
-        dM4.TabStop = False
-        dM4.Tag = "L"
-        ' 
         ' dD8
         ' 
         dD8.BackColor = Color.DimGray
@@ -2966,17 +3210,6 @@ Partial Class frmMain
         dD6.TabIndex = 77
         dD6.TabStop = False
         dD6.Tag = "L"
-        ' 
-        ' dM3
-        ' 
-        dM3.BackColor = Color.DimGray
-        dM3.BorderStyle = BorderStyle.FixedSingle
-        dM3.Location = New Point(537, 57)
-        dM3.Name = "dM3"
-        dM3.Size = New Size(30, 15)
-        dM3.TabIndex = 62
-        dM3.TabStop = False
-        dM3.Tag = "L"
         ' 
         ' Label11
         ' 
@@ -3027,17 +3260,6 @@ Partial Class frmMain
         dD2.TabStop = False
         dD2.Tag = "B"
         ' 
-        ' dM2
-        ' 
-        dM2.BackColor = Color.DimGray
-        dM2.BorderStyle = BorderStyle.FixedSingle
-        dM2.Location = New Point(537, 35)
-        dM2.Name = "dM2"
-        dM2.Size = New Size(30, 15)
-        dM2.TabIndex = 61
-        dM2.TabStop = False
-        dM2.Tag = "L"
-        ' 
         ' dD1
         ' 
         dD1.BackColor = Color.DimGray
@@ -3086,12 +3308,12 @@ Partial Class frmMain
         ' 
         dM1.BackColor = Color.DimGray
         dM1.BorderStyle = BorderStyle.FixedSingle
-        dM1.Location = New Point(537, 10)
+        dM1.Location = New Point(612, 85)
         dM1.Name = "dM1"
-        dM1.Size = New Size(30, 15)
+        dM1.Size = New Size(15, 30)
         dM1.TabIndex = 60
         dM1.TabStop = False
-        dM1.Tag = "L"
+        dM1.Tag = "B"
         ' 
         ' pwt1
         ' 
@@ -3472,7 +3694,7 @@ Partial Class frmMain
         ' pel1
         ' 
         pel1.BackColor = Color.Red
-        pel1.Location = New Point(616, 71)
+        pel1.Location = New Point(591, 71)
         pel1.Name = "pel1"
         pel1.Size = New Size(5, 122)
         pel1.TabIndex = 37
@@ -4088,50 +4310,6 @@ Partial Class frmMain
         PictureBox23.TabIndex = 107
         PictureBox23.TabStop = False
         ' 
-        ' dP4
-        ' 
-        dP4.BackColor = Color.DimGray
-        dP4.BorderStyle = BorderStyle.FixedSingle
-        dP4.Location = New Point(3189, 2326)
-        dP4.Name = "dP4"
-        dP4.Size = New Size(15, 20)
-        dP4.TabIndex = 188
-        dP4.TabStop = False
-        dP4.Tag = "B"
-        ' 
-        ' dP1
-        ' 
-        dP1.BackColor = Color.DimGray
-        dP1.BorderStyle = BorderStyle.FixedSingle
-        dP1.Location = New Point(3093, 2326)
-        dP1.Name = "dP1"
-        dP1.Size = New Size(15, 20)
-        dP1.TabIndex = 185
-        dP1.TabStop = False
-        dP1.Tag = "B"
-        ' 
-        ' dP3
-        ' 
-        dP3.BackColor = Color.DimGray
-        dP3.BorderStyle = BorderStyle.FixedSingle
-        dP3.Location = New Point(3157, 2326)
-        dP3.Name = "dP3"
-        dP3.Size = New Size(15, 20)
-        dP3.TabIndex = 187
-        dP3.TabStop = False
-        dP3.Tag = "B"
-        ' 
-        ' dP2
-        ' 
-        dP2.BackColor = Color.DimGray
-        dP2.BorderStyle = BorderStyle.FixedSingle
-        dP2.Location = New Point(3125, 2326)
-        dP2.Name = "dP2"
-        dP2.Size = New Size(15, 20)
-        dP2.TabIndex = 186
-        dP2.TabStop = False
-        dP2.Tag = "B"
-        ' 
         ' dS21
         ' 
         dS21.BackColor = Color.DimGray
@@ -4300,8 +4478,8 @@ Partial Class frmMain
         ' 
         ' PictureBox26
         ' 
-        PictureBox26.BackColor = Color.OrangeRed
-        PictureBox26.Location = New Point(2754, 3247)
+        PictureBox26.BackColor = Color.Yellow
+        PictureBox26.Location = New Point(2797, 3245)
         PictureBox26.Name = "PictureBox26"
         PictureBox26.Size = New Size(5, 34)
         PictureBox26.TabIndex = 100
@@ -4309,7 +4487,7 @@ Partial Class frmMain
         ' 
         ' PictureBox28
         ' 
-        PictureBox28.BackColor = Color.OrangeRed
+        PictureBox28.BackColor = Color.Yellow
         PictureBox28.Location = New Point(3040, 2168)
         PictureBox28.Name = "PictureBox28"
         PictureBox28.Size = New Size(47, 5)
@@ -4327,12 +4505,34 @@ Partial Class frmMain
         ' 
         ' PictureBox24
         ' 
-        PictureBox24.BackColor = Color.OrangeRed
+        PictureBox24.BackColor = Color.Yellow
         PictureBox24.Location = New Point(637, 28)
         PictureBox24.Name = "PictureBox24"
         PictureBox24.Size = New Size(2407, 5)
         PictureBox24.TabIndex = 102
         PictureBox24.TabStop = False
+        ' 
+        ' dM2
+        ' 
+        dM2.BackColor = Color.DimGray
+        dM2.BorderStyle = BorderStyle.FixedSingle
+        dM2.Location = New Point(2746, 3249)
+        dM2.Name = "dM2"
+        dM2.Size = New Size(15, 30)
+        dM2.TabIndex = 105
+        dM2.TabStop = False
+        dM2.Tag = "B"
+        ' 
+        ' dP1
+        ' 
+        dP1.BackColor = Color.DimGray
+        dP1.BorderStyle = BorderStyle.FixedSingle
+        dP1.Location = New Point(3126, 2333)
+        dP1.Name = "dP1"
+        dP1.Size = New Size(53, 20)
+        dP1.TabIndex = 185
+        dP1.TabStop = False
+        dP1.Tag = "B"
         ' 
         ' btnClear
         ' 
@@ -4350,7 +4550,7 @@ Partial Class frmMain
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(431, 5)
+        Label3.Location = New Point(542, 5)
         Label3.Name = "Label3"
         Label3.Size = New Size(36, 15)
         Label3.TabIndex = 15
@@ -4359,7 +4559,7 @@ Partial Class frmMain
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(375, 5)
+        Label4.Location = New Point(486, 5)
         Label4.Name = "Label4"
         Label4.Size = New Size(36, 15)
         Label4.TabIndex = 14
@@ -4367,7 +4567,7 @@ Partial Class frmMain
         ' 
         ' txtYPOS
         ' 
-        txtYPOS.Location = New Point(417, 23)
+        txtYPOS.Location = New Point(528, 21)
         txtYPOS.Name = "txtYPOS"
         txtYPOS.Size = New Size(50, 23)
         txtYPOS.TabIndex = 13
@@ -4376,7 +4576,7 @@ Partial Class frmMain
         ' 
         ' txtXPOS
         ' 
-        txtXPOS.Location = New Point(361, 23)
+        txtXPOS.Location = New Point(472, 21)
         txtXPOS.Name = "txtXPOS"
         txtXPOS.Size = New Size(50, 23)
         txtXPOS.TabIndex = 12
@@ -4386,7 +4586,7 @@ Partial Class frmMain
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(485, 5)
+        Label5.Location = New Point(596, 5)
         Label5.Name = "Label5"
         Label5.Size = New Size(38, 15)
         Label5.TabIndex = 17
@@ -4394,7 +4594,7 @@ Partial Class frmMain
         ' 
         ' txtANGL
         ' 
-        txtANGL.Location = New Point(473, 23)
+        txtANGL.Location = New Point(584, 21)
         txtANGL.Name = "txtANGL"
         txtANGL.Size = New Size(50, 23)
         txtANGL.TabIndex = 16
@@ -4422,7 +4622,7 @@ Partial Class frmMain
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(529, 5)
+        Label1.Location = New Point(640, 5)
         Label1.Name = "Label1"
         Label1.Size = New Size(52, 15)
         Label1.TabIndex = 26
@@ -4430,7 +4630,7 @@ Partial Class frmMain
         ' 
         ' txtSpeed
         ' 
-        txtSpeed.Location = New Point(529, 23)
+        txtSpeed.Location = New Point(640, 21)
         txtSpeed.Name = "txtSpeed"
         txtSpeed.Size = New Size(50, 23)
         txtSpeed.TabIndex = 27
@@ -4439,13 +4639,13 @@ Partial Class frmMain
         ' 
         ' Panel2
         ' 
+        Panel2.Controls.Add(chkRocket)
         Panel2.Controls.Add(lstG3pgm)
         Panel2.Controls.Add(lstG2pgm)
         Panel2.Controls.Add(lstG1pgm)
         Panel2.Controls.Add(Label31)
         Panel2.Controls.Add(Label30)
         Panel2.Controls.Add(Label28)
-        Panel2.Controls.Add(btnLoad)
         Panel2.Controls.Add(LstPGMs)
         Panel2.Controls.Add(btnGoHome)
         Panel2.Controls.Add(Label21)
@@ -4459,10 +4659,20 @@ Partial Class frmMain
         Panel2.Controls.Add(btnStartStopDroid)
         Panel2.Controls.Add(Label6)
         Panel2.Dock = DockStyle.Left
-        Panel2.Location = New Point(0, 0)
+        Panel2.Location = New Point(0, 24)
         Panel2.Name = "Panel2"
-        Panel2.Size = New Size(123, 752)
+        Panel2.Size = New Size(123, 813)
         Panel2.TabIndex = 29
+        ' 
+        ' chkRocket
+        ' 
+        chkRocket.AutoSize = True
+        chkRocket.Location = New Point(12, 161)
+        chkRocket.Name = "chkRocket"
+        chkRocket.Size = New Size(62, 19)
+        chkRocket.TabIndex = 117
+        chkRocket.Text = "Rocket"
+        chkRocket.UseVisualStyleBackColor = True
         ' 
         ' lstG3pgm
         ' 
@@ -4521,21 +4731,11 @@ Partial Class frmMain
         Label28.TabIndex = 111
         Label28.Text = "Garage 1"
         ' 
-        ' btnLoad
-        ' 
-        btnLoad.Location = New Point(9, 155)
-        btnLoad.Name = "btnLoad"
-        btnLoad.Size = New Size(100, 28)
-        btnLoad.TabIndex = 107
-        btnLoad.Text = "Load Droid"
-        btnLoad.UseVisualStyleBackColor = True
-        ' 
         ' LstPGMs
         ' 
         LstPGMs.FormattingEnabled = True
         LstPGMs.ItemHeight = 15
-        LstPGMs.Items.AddRange(New Object() {"Go Home|HOME", "Gar1 1|WP13|WP12|WP15|SP3|WP14|WP17|WT2|WP17|WP17|WP18|MF10|WP18|WP48|LP2|WP48|WP46|SP19|WP46|WP44|SP20|WP45|WP47|SP21|WP47|HOME", "Gar1 2|WP13|SP9|WP57|DR11|WP57|WP41|SP18|WP39|DR28|WP39|WP38|SP16|WP42|WP45|WP47|SP21|WP47|WP48|LP3|WP48|WP46|SP19|WP46|WP44|SP20|WP45|HOME", "Gar1 3|WP16|WP15|WP12|SP16|DR25|WP38|WP39|SP18|WP39|WP56|SP9|WP57|DR11|WP57|WP45|WP47|SP21|WP47|WP48|LP3|WP48|WP46|SP19|WP46|WP44|SP20|WP45|WP13|HOME", "Gar1 4|WP16|WP15|SP3|WP14|WP17|WT2|WP17|WP18|MF10|WP18|WP20|HOME", "Gar2 1|WP35|SP5|WP35|WP36|WT3|WP36|WP34|WP33|DR19|WP32|HOME", "Gar2 2|WP32|WP31|WP23|SP17|WP49|DR22|WP49|WP24|DR5|DR8|WP40|WP26|SP8|WP31|HOME", "Gar2 3|WP34|SP8|DR7|WP40|WP51|SP4|WP53|DR16|WP59|DR2|WP59|SP6|WP60|WP22|DR22|SP17|WP23|HOME", "Gar2 4|WP34|WP51|SP4|WP53|DR15|WP54|DR2|WP59|SP6|WP60|DR22|WP49|SP17|WP23|DR17|WP31|WP35|SP5|WP35|HOME", "Gar3 1|WP30|WP2|SP1|WP2|WP9|WT1|WP1|MF8|WP1|WP6|WP4|SP2|WP5|WP3|SP7|WP3|WP30|HOME", "Gar3 2|WP2|SP1|WP30|WP3|SP7|WP3|WP5|WP4|SP2|WP4|MF2|WP6|WP1|WT1|WP9|WP2|HOME", "Gar3 3|WP8|WP27|SP10|SP11|WP27|WP28|SP13|SP12|WP28|WP29|SP14|SP15|WP29|WP8|HOME", "Gar3 4|WP8|WP3|SP7|WP3|WP5|WP4|SP2|WP4|WP6|MF3|WP6|WP1|WT1|WP9|WP2|SP1|HOME"})
-        LstPGMs.Location = New Point(9, 58)
+        LstPGMs.Location = New Point(11, 57)
         LstPGMs.Name = "LstPGMs"
         LstPGMs.Size = New Size(100, 94)
         LstPGMs.TabIndex = 106
@@ -4614,52 +4814,60 @@ Partial Class frmMain
         ' 
         ' txtTow
         ' 
-        txtTow.Location = New Point(315, 21)
+        txtTow.Location = New Point(426, 21)
         txtTow.Name = "txtTow"
         txtTow.Size = New Size(39, 23)
         txtTow.TabIndex = 105
         ' 
         ' txtOGpgm
         ' 
-        txtOGpgm.Location = New Point(216, 23)
+        txtOGpgm.Location = New Point(327, 21)
         txtOGpgm.Name = "txtOGpgm"
         txtOGpgm.Size = New Size(92, 23)
         txtOGpgm.TabIndex = 104
         ' 
         ' txtPGM
         ' 
-        txtPGM.Location = New Point(117, 23)
+        txtPGM.Location = New Point(228, 21)
         txtPGM.Name = "txtPGM"
         txtPGM.Size = New Size(92, 23)
         txtPGM.TabIndex = 103
         ' 
         ' txtDest
         ' 
-        txtDest.Location = New Point(70, 23)
+        txtDest.Location = New Point(181, 21)
         txtDest.Name = "txtDest"
         txtDest.Size = New Size(41, 23)
         txtDest.TabIndex = 102
         ' 
         ' txtGarge
         ' 
-        txtGarge.Location = New Point(42, 23)
+        txtGarge.Location = New Point(42, 21)
         txtGarge.Name = "txtGarge"
         txtGarge.Size = New Size(22, 23)
         txtGarge.TabIndex = 101
         ' 
         ' txtDroid
         ' 
-        txtDroid.Location = New Point(10, 23)
+        txtDroid.Location = New Point(10, 21)
         txtDroid.Name = "txtDroid"
         txtDroid.Size = New Size(26, 23)
         txtDroid.TabIndex = 100
         ' 
         ' Panel3
         ' 
+        Panel3.Controls.Add(Label48)
+        Panel3.Controls.Add(txtType)
+        Panel3.Controls.Add(Label47)
+        Panel3.Controls.Add(Label46)
+        Panel3.Controls.Add(Label45)
+        Panel3.Controls.Add(Label26)
+        Panel3.Controls.Add(Label43)
+        Panel3.Controls.Add(Label41)
+        Panel3.Controls.Add(btnShowStatus)
         Panel3.Controls.Add(lblOTemp)
         Panel3.Controls.Add(Label35)
         Panel3.Controls.Add(lblTemptxt)
-        Panel3.Controls.Add(Label26)
         Panel3.Controls.Add(txtTow)
         Panel3.Controls.Add(btnMapping)
         Panel3.Controls.Add(txtOGpgm)
@@ -4667,7 +4875,6 @@ Partial Class frmMain
         Panel3.Controls.Add(txtPGM)
         Panel3.Controls.Add(lblTimeOfDay)
         Panel3.Controls.Add(txtDest)
-        Panel3.Controls.Add(picClear)
         Panel3.Controls.Add(txtGarge)
         Panel3.Controls.Add(txtYPOS)
         Panel3.Controls.Add(txtDroid)
@@ -4677,18 +4884,95 @@ Partial Class frmMain
         Panel3.Controls.Add(Label3)
         Panel3.Controls.Add(Label1)
         Panel3.Controls.Add(txtANGL)
-        Panel3.Controls.Add(picDroid)
         Panel3.Controls.Add(Label5)
         Panel3.Dock = DockStyle.Top
-        Panel3.Location = New Point(123, 0)
+        Panel3.Location = New Point(123, 24)
         Panel3.Name = "Panel3"
-        Panel3.Size = New Size(927, 78)
+        Panel3.Size = New Size(1091, 78)
         Panel3.TabIndex = 30
+        ' 
+        ' Label48
+        ' 
+        Label48.AutoSize = True
+        Label48.Location = New Point(70, 5)
+        Label48.Name = "Label48"
+        Label48.Size = New Size(32, 15)
+        Label48.TabIndex = 116
+        Label48.Text = "Type"
+        ' 
+        ' txtType
+        ' 
+        txtType.Location = New Point(70, 21)
+        txtType.Name = "txtType"
+        txtType.Size = New Size(105, 23)
+        txtType.TabIndex = 115
+        ' 
+        ' Label47
+        ' 
+        Label47.AutoSize = True
+        Label47.Location = New Point(42, 5)
+        Label47.Name = "Label47"
+        Label47.Size = New Size(26, 15)
+        Label47.TabIndex = 114
+        Label47.Text = "Grg"
+        ' 
+        ' Label46
+        ' 
+        Label46.AutoSize = True
+        Label46.Location = New Point(181, 5)
+        Label46.Name = "Label46"
+        Label46.Size = New Size(30, 15)
+        Label46.TabIndex = 113
+        Label46.Text = "Dest"
+        ' 
+        ' Label45
+        ' 
+        Label45.AutoSize = True
+        Label45.Location = New Point(228, 5)
+        Label45.Name = "Label45"
+        Label45.Size = New Size(33, 15)
+        Label45.TabIndex = 112
+        Label45.Text = "PGM"
+        ' 
+        ' Label26
+        ' 
+        Label26.Location = New Point(4, 5)
+        Label26.Name = "Label26"
+        Label26.Size = New Size(74, 15)
+        Label26.TabIndex = 105
+        Label26.Text = "Droid"
+        ' 
+        ' Label43
+        ' 
+        Label43.AutoSize = True
+        Label43.Location = New Point(327, 5)
+        Label43.Name = "Label43"
+        Label43.Size = New Size(49, 15)
+        Label43.TabIndex = 111
+        Label43.Text = "OGpgm"
+        ' 
+        ' Label41
+        ' 
+        Label41.AutoSize = True
+        Label41.Location = New Point(426, 5)
+        Label41.Name = "Label41"
+        Label41.Size = New Size(29, 15)
+        Label41.TabIndex = 110
+        Label41.Text = "Tow"
+        ' 
+        ' btnShowStatus
+        ' 
+        btnShowStatus.Location = New Point(696, 4)
+        btnShowStatus.Name = "btnShowStatus"
+        btnShowStatus.Size = New Size(56, 42)
+        btnShowStatus.TabIndex = 109
+        btnShowStatus.Text = "Show Status"
+        btnShowStatus.UseVisualStyleBackColor = True
         ' 
         ' lblOTemp
         ' 
         lblOTemp.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        lblOTemp.Location = New Point(835, 29)
+        lblOTemp.Location = New Point(999, 29)
         lblOTemp.Name = "lblOTemp"
         lblOTemp.Size = New Size(80, 17)
         lblOTemp.TabIndex = 108
@@ -4698,7 +4982,7 @@ Partial Class frmMain
         ' 
         ' Label35
         ' 
-        Label35.Location = New Point(752, 12)
+        Label35.Location = New Point(911, 12)
         Label35.Name = "Label35"
         Label35.Size = New Size(37, 16)
         Label35.TabIndex = 107
@@ -4706,20 +4990,12 @@ Partial Class frmMain
         ' 
         ' lblTemptxt
         ' 
-        lblTemptxt.Location = New Point(751, 30)
+        lblTemptxt.Location = New Point(910, 30)
         lblTemptxt.Name = "lblTemptxt"
         lblTemptxt.Size = New Size(80, 16)
         lblTemptxt.TabIndex = 106
         lblTemptxt.Text = "Temperature: "
         ToolTip1.SetToolTip(lblTemptxt, "hi")
-        ' 
-        ' Label26
-        ' 
-        Label26.Location = New Point(4, 5)
-        Label26.Name = "Label26"
-        Label26.Size = New Size(350, 15)
-        Label26.TabIndex = 105
-        Label26.Text = "Droid   Grg       Dest   PGM                          OGpgm                  Tow "
         ' 
         ' btnMapping
         ' 
@@ -4736,13 +5012,13 @@ Partial Class frmMain
         txtPGMmap.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         txtPGMmap.Location = New Point(84, 50)
         txtPGMmap.Name = "txtPGMmap"
-        txtPGMmap.Size = New Size(830, 23)
+        txtPGMmap.Size = New Size(994, 23)
         txtPGMmap.TabIndex = 30
         ' 
         ' lblTimeOfDay
         ' 
         lblTimeOfDay.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        lblTimeOfDay.Location = New Point(835, 9)
+        lblTimeOfDay.Location = New Point(999, 9)
         lblTimeOfDay.Name = "lblTimeOfDay"
         lblTimeOfDay.Size = New Size(80, 17)
         lblTimeOfDay.TabIndex = 29
@@ -4752,7 +5028,7 @@ Partial Class frmMain
         ' picClear
         ' 
         picClear.BackColor = Color.Transparent
-        picClear.Location = New Point(589, 12)
+        picClear.Location = New Point(127, 112)
         picClear.Name = "picClear"
         picClear.Size = New Size(30, 30)
         picClear.TabIndex = 28
@@ -4762,7 +5038,7 @@ Partial Class frmMain
         ' picDroid
         ' 
         picDroid.BackColor = Color.IndianRed
-        picDroid.Location = New Point(623, 12)
+        picDroid.Location = New Point(127, 145)
         picDroid.Name = "picDroid"
         picDroid.Size = New Size(30, 30)
         picDroid.TabIndex = 20
@@ -4773,11 +5049,12 @@ Partial Class frmMain
         ' 
         pnlView.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         pnlView.AutoScroll = True
+        pnlView.BackColor = SystemColors.ActiveCaption
         pnlView.BorderStyle = BorderStyle.FixedSingle
         pnlView.Controls.Add(pnlMain)
-        pnlView.Location = New Point(180, 79)
+        pnlView.Location = New Point(180, 103)
         pnlView.Name = "pnlView"
-        pnlView.Size = New Size(857, 661)
+        pnlView.Size = New Size(1022, 729)
         pnlView.TabIndex = 31
         ' 
         ' pwXXX101
@@ -4861,11 +5138,76 @@ Partial Class frmMain
         tmrTick.Enabled = True
         tmrTick.Interval = 1000
         ' 
+        ' MenuStrip1
+        ' 
+        MenuStrip1.Items.AddRange(New ToolStripItem() {ConfigToolStripMenuItem})
+        MenuStrip1.Location = New Point(0, 0)
+        MenuStrip1.Name = "MenuStrip1"
+        MenuStrip1.Size = New Size(1214, 24)
+        MenuStrip1.TabIndex = 104
+        MenuStrip1.Text = "MenuStrip1"
+        ' 
+        ' ConfigToolStripMenuItem
+        ' 
+        ConfigToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {ConfigFileNameToolStripMenuItem})
+        ConfigToolStripMenuItem.Name = "ConfigToolStripMenuItem"
+        ConfigToolStripMenuItem.Size = New Size(55, 20)
+        ConfigToolStripMenuItem.Text = "Config"
+        ' 
+        ' ConfigFileNameToolStripMenuItem
+        ' 
+        ConfigFileNameToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {txtConfigFileName, txtMainPath, txtGarages})
+        ConfigFileNameToolStripMenuItem.Name = "ConfigFileNameToolStripMenuItem"
+        ConfigFileNameToolStripMenuItem.Size = New Size(166, 22)
+        ConfigFileNameToolStripMenuItem.Text = "Config File Name"
+        ' 
+        ' txtConfigFileName
+        ' 
+        txtConfigFileName.Name = "txtConfigFileName"
+        txtConfigFileName.Size = New Size(100, 23)
+        txtConfigFileName.Text = "C:\Files\Droids\Config.txt"
+        ' 
+        ' txtMainPath
+        ' 
+        txtMainPath.Name = "txtMainPath"
+        txtMainPath.Size = New Size(160, 22)
+        txtMainPath.Text = "C:\Files\Droids\"
+        ' 
+        ' txtGarages
+        ' 
+        txtGarages.Name = "txtGarages"
+        txtGarages.Size = New Size(160, 22)
+        txtGarages.Text = "Garages"
+        ' 
+        ' DroidStructBindingSource
+        ' 
+        DroidStructBindingSource.DataSource = GetType(DroidStruct)
+        ' 
+        ' imgListD
+        ' 
+        imgListD.ColorDepth = ColorDepth.Depth32Bit
+        imgListD.ImageStream = CType(resources.GetObject("imgListD.ImageStream"), ImageListStreamer)
+        imgListD.TransparentColor = Color.Transparent
+        imgListD.Images.SetKeyName(0, "Droid1.bmp")
+        imgListD.Images.SetKeyName(1, "Droid1r.bmp")
+        imgListD.Images.SetKeyName(2, "Droid2.bmp")
+        imgListD.Images.SetKeyName(3, "Droid2r.bmp")
+        imgListD.Images.SetKeyName(4, "Droid2e.bmp")
+        imgListD.Images.SetKeyName(5, "Droid2er.bmp")
+        imgListD.Images.SetKeyName(6, "Droid3.bmp")
+        imgListD.Images.SetKeyName(7, "Droid3r.bmp")
+        imgListD.Images.SetKeyName(8, "Droid4.bmp")
+        imgListD.Images.SetKeyName(9, "Droid4r.bmp")
+        imgListD.Images.SetKeyName(10, "Droid5.bmp")
+        imgListD.Images.SetKeyName(11, "Droid5r.bmp")
+        imgListD.Images.SetKeyName(12, "Droid6.bmp")
+        imgListD.Images.SetKeyName(13, "Droid6r.bmp")
+        ' 
         ' frmMain
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1050, 752)
+        ClientSize = New Size(1214, 837)
         Controls.Add(PictureBox36)
         Controls.Add(PictureBox8)
         Controls.Add(PictureBox7)
@@ -4877,16 +5219,48 @@ Partial Class frmMain
         Controls.Add(Panel3)
         Controls.Add(Panel2)
         Controls.Add(PictureBox11)
+        Controls.Add(MenuStrip1)
+        Controls.Add(picClear)
+        Controls.Add(picDroid)
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
+        MainMenuStrip = MenuStrip1
         Name = "frmMain"
         Text = "Main"
         pnlMain.ResumeLayout(False)
         pnlMain.PerformLayout()
+        CType(pad2b, ComponentModel.ISupportInitialize).EndInit()
+        CType(pad2a, ComponentModel.ISupportInitialize).EndInit()
+        CType(dN2, ComponentModel.ISupportInitialize).EndInit()
+        CType(dN3, ComponentModel.ISupportInitialize).EndInit()
+        CType(dN1, ComponentModel.ISupportInitialize).EndInit()
+        CType(pmz3, ComponentModel.ISupportInitialize).EndInit()
+        CType(pmz2, ComponentModel.ISupportInitialize).EndInit()
+        CType(pmz1, ComponentModel.ISupportInitialize).EndInit()
+        CType(wp80, ComponentModel.ISupportInitialize).EndInit()
+        CType(wp76, ComponentModel.ISupportInitialize).EndInit()
+        CType(wp79, ComponentModel.ISupportInitialize).EndInit()
+        CType(wp77, ComponentModel.ISupportInitialize).EndInit()
+        CType(wp75, ComponentModel.ISupportInitialize).EndInit()
+        CType(wp78, ComponentModel.ISupportInitialize).EndInit()
+        CType(wp74, ComponentModel.ISupportInitialize).EndInit()
+        CType(wp67, ComponentModel.ISupportInitialize).EndInit()
+        CType(wp73, ComponentModel.ISupportInitialize).EndInit()
         CType(wp60, ComponentModel.ISupportInitialize).EndInit()
+        CType(wp72, ComponentModel.ISupportInitialize).EndInit()
+        CType(wp66, ComponentModel.ISupportInitialize).EndInit()
+        CType(wp71, ComponentModel.ISupportInitialize).EndInit()
         CType(wp59, ComponentModel.ISupportInitialize).EndInit()
+        CType(wp65, ComponentModel.ISupportInitialize).EndInit()
         CType(wp50, ComponentModel.ISupportInitialize).EndInit()
+        CType(wp64, ComponentModel.ISupportInitialize).EndInit()
         CType(wp30, ComponentModel.ISupportInitialize).EndInit()
+        CType(wp70, ComponentModel.ISupportInitialize).EndInit()
+        CType(wp63, ComponentModel.ISupportInitialize).EndInit()
+        CType(wp69, ComponentModel.ISupportInitialize).EndInit()
         CType(wp51, ComponentModel.ISupportInitialize).EndInit()
+        CType(wp62, ComponentModel.ISupportInitialize).EndInit()
         CType(wp39, ComponentModel.ISupportInitialize).EndInit()
+        CType(wp61, ComponentModel.ISupportInitialize).EndInit()
         CType(wp52, ComponentModel.ISupportInitialize).EndInit()
         CType(wp53, ComponentModel.ISupportInitialize).EndInit()
         CType(wp38, ComponentModel.ISupportInitialize).EndInit()
@@ -4933,9 +5307,9 @@ Partial Class frmMain
         CType(PictureBox13, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox12, ComponentModel.ISupportInitialize).EndInit()
-        CType(pada1, ComponentModel.ISupportInitialize).EndInit()
+        CType(pad1a, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox10, ComponentModel.ISupportInitialize).EndInit()
-        CType(padb1, ComponentModel.ISupportInitialize).EndInit()
+        CType(pad1b, ComponentModel.ISupportInitialize).EndInit()
         CType(wp25, ComponentModel.ISupportInitialize).EndInit()
         CType(ps18, ComponentModel.ISupportInitialize).EndInit()
         CType(wp26, ComponentModel.ISupportInitialize).EndInit()
@@ -4947,7 +5321,7 @@ Partial Class frmMain
         CType(PictureBox15, ComponentModel.ISupportInitialize).EndInit()
         CType(wp24, ComponentModel.ISupportInitialize).EndInit()
         CType(ps20, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox19, ComponentModel.ISupportInitialize).EndInit()
+        CType(wp68, ComponentModel.ISupportInitialize).EndInit()
         CType(wp19, ComponentModel.ISupportInitialize).EndInit()
         CType(wp20, ComponentModel.ISupportInitialize).EndInit()
         CType(wp12, ComponentModel.ISupportInitialize).EndInit()
@@ -4985,21 +5359,13 @@ Partial Class frmMain
         CType(dD21, ComponentModel.ISupportInitialize).EndInit()
         CType(pd5, ComponentModel.ISupportInitialize).EndInit()
         CType(pm2, ComponentModel.ISupportInitialize).EndInit()
-        CType(dM16, ComponentModel.ISupportInitialize).EndInit()
         CType(dD19, ComponentModel.ISupportInitialize).EndInit()
-        CType(dM15, ComponentModel.ISupportInitialize).EndInit()
         CType(pwl7, ComponentModel.ISupportInitialize).EndInit()
-        CType(dM14, ComponentModel.ISupportInitialize).EndInit()
         CType(dD17, ComponentModel.ISupportInitialize).EndInit()
-        CType(dM13, ComponentModel.ISupportInitialize).EndInit()
         CType(pel9, ComponentModel.ISupportInitialize).EndInit()
-        CType(dM12, ComponentModel.ISupportInitialize).EndInit()
         CType(dD20, ComponentModel.ISupportInitialize).EndInit()
-        CType(dM11, ComponentModel.ISupportInitialize).EndInit()
         CType(pd2, ComponentModel.ISupportInitialize).EndInit()
-        CType(dM10, ComponentModel.ISupportInitialize).EndInit()
         CType(dD18, ComponentModel.ISupportInitialize).EndInit()
-        CType(dM9, ComponentModel.ISupportInitialize).EndInit()
         CType(pwl6, ComponentModel.ISupportInitialize).EndInit()
         CType(pel10, ComponentModel.ISupportInitialize).EndInit()
         CType(pwt3, ComponentModel.ISupportInitialize).EndInit()
@@ -5009,22 +5375,15 @@ Partial Class frmMain
         CType(ps7, ComponentModel.ISupportInitialize).EndInit()
         CType(pm1, ComponentModel.ISupportInitialize).EndInit()
         CType(ps9, ComponentModel.ISupportInitialize).EndInit()
-        CType(dM8, ComponentModel.ISupportInitialize).EndInit()
-        CType(dM7, ComponentModel.ISupportInitialize).EndInit()
-        CType(dM6, ComponentModel.ISupportInitialize).EndInit()
-        CType(dM5, ComponentModel.ISupportInitialize).EndInit()
         CType(dW2, ComponentModel.ISupportInitialize).EndInit()
         CType(dS9, ComponentModel.ISupportInitialize).EndInit()
         CType(dD7, ComponentModel.ISupportInitialize).EndInit()
         CType(dD5, ComponentModel.ISupportInitialize).EndInit()
-        CType(dM4, ComponentModel.ISupportInitialize).EndInit()
         CType(dD8, ComponentModel.ISupportInitialize).EndInit()
         CType(dD6, ComponentModel.ISupportInitialize).EndInit()
-        CType(dM3, ComponentModel.ISupportInitialize).EndInit()
         CType(pd3, ComponentModel.ISupportInitialize).EndInit()
         CType(pwl9, ComponentModel.ISupportInitialize).EndInit()
         CType(dD2, ComponentModel.ISupportInitialize).EndInit()
-        CType(dM2, ComponentModel.ISupportInitialize).EndInit()
         CType(dD1, ComponentModel.ISupportInitialize).EndInit()
         CType(dD4, ComponentModel.ISupportInitialize).EndInit()
         CType(dD3, ComponentModel.ISupportInitialize).EndInit()
@@ -5123,10 +5482,6 @@ Partial Class frmMain
         CType(PictureBox17, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox18, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox23, ComponentModel.ISupportInitialize).EndInit()
-        CType(dP4, ComponentModel.ISupportInitialize).EndInit()
-        CType(dP1, ComponentModel.ISupportInitialize).EndInit()
-        CType(dP3, ComponentModel.ISupportInitialize).EndInit()
-        CType(dP2, ComponentModel.ISupportInitialize).EndInit()
         CType(dS21, ComponentModel.ISupportInitialize).EndInit()
         CType(dS20, ComponentModel.ISupportInitialize).EndInit()
         CType(dS19, ComponentModel.ISupportInitialize).EndInit()
@@ -5147,6 +5502,8 @@ Partial Class frmMain
         CType(PictureBox28, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox35, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox24, ComponentModel.ISupportInitialize).EndInit()
+        CType(dM2, ComponentModel.ISupportInitialize).EndInit()
+        CType(dP1, ComponentModel.ISupportInitialize).EndInit()
         Panel2.ResumeLayout(False)
         Panel2.PerformLayout()
         Panel3.ResumeLayout(False)
@@ -5163,7 +5520,11 @@ Partial Class frmMain
         CType(PictureBox8, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox11, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox36, ComponentModel.ISupportInitialize).EndInit()
+        MenuStrip1.ResumeLayout(False)
+        MenuStrip1.PerformLayout()
+        CType(DroidStructBindingSource, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
+        PerformLayout()
     End Sub
     Friend WithEvents pnlMain As Panel
     Friend WithEvents btnClear As Button
@@ -5228,15 +5589,9 @@ Partial Class frmMain
     Friend WithEvents Label10 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents pm1 As PictureBox
-    Friend WithEvents dM5 As PictureBox
     Friend WithEvents Label13 As Label
     Friend WithEvents pnlView As Panel
     Friend WithEvents dM1 As PictureBox
-    Friend WithEvents dM8 As PictureBox
-    Friend WithEvents dM7 As PictureBox
-    Friend WithEvents dM6 As PictureBox
-    Friend WithEvents dM4 As PictureBox
-    Friend WithEvents dM3 As PictureBox
     Friend WithEvents dM2 As PictureBox
     Friend WithEvents Label16 As Label
     Friend WithEvents Label15 As Label
@@ -5325,14 +5680,6 @@ Partial Class frmMain
     Friend WithEvents pwl14 As PictureBox
     Friend WithEvents Label19 As Label
     Friend WithEvents pm2 As PictureBox
-    Friend WithEvents dM16 As PictureBox
-    Friend WithEvents dM15 As PictureBox
-    Friend WithEvents dM14 As PictureBox
-    Friend WithEvents dM13 As PictureBox
-    Friend WithEvents dM12 As PictureBox
-    Friend WithEvents dM11 As PictureBox
-    Friend WithEvents dM10 As PictureBox
-    Friend WithEvents dM9 As PictureBox
     Friend WithEvents pel19 As PictureBox
     Friend WithEvents pel18 As PictureBox
     Friend WithEvents pel17 As PictureBox
@@ -5399,7 +5746,7 @@ Partial Class frmMain
     Friend WithEvents wp21 As PictureBox
     Friend WithEvents PictureBox15 As PictureBox
     Friend WithEvents wp24 As PictureBox
-    Friend WithEvents PictureBox19 As PictureBox
+    Friend WithEvents wp68 As PictureBox
     Friend WithEvents wp19 As PictureBox
     Friend WithEvents wp20 As PictureBox
     Friend WithEvents wp12 As PictureBox
@@ -5450,8 +5797,8 @@ Partial Class frmMain
     Friend WithEvents lbls16 As Label
     Friend WithEvents dS16 As PictureBox
     Friend WithEvents ps16 As PictureBox
-    Friend WithEvents pada1 As PictureBox
-    Friend WithEvents padb1 As PictureBox
+    Friend WithEvents pad1a As PictureBox
+    Friend WithEvents pad1b As PictureBox
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents PictureBox16 As PictureBox
@@ -5469,10 +5816,7 @@ Partial Class frmMain
     Friend WithEvents PictureBox22 As PictureBox
     Friend WithEvents PictureBox23 As PictureBox
     Friend WithEvents lblp1 As Label
-    Friend WithEvents dP4 As PictureBox
     Friend WithEvents dP1 As PictureBox
-    Friend WithEvents dP3 As PictureBox
-    Friend WithEvents dP2 As PictureBox
     Friend WithEvents wp28 As PictureBox
     Friend WithEvents wp29 As PictureBox
     Friend WithEvents wp27 As PictureBox
@@ -5541,7 +5885,6 @@ Partial Class frmMain
     Friend WithEvents txtTow As TextBox
     Friend WithEvents LstPGMs As ListBox
     Friend WithEvents Label26 As Label
-    Friend WithEvents btnLoad As Button
     Friend WithEvents Label31 As Label
     Friend WithEvents Label30 As Label
     Friend WithEvents Label28 As Label
@@ -5553,5 +5896,54 @@ Partial Class frmMain
     Friend WithEvents Label35 As Label
     Friend WithEvents ToolTip1 As ToolTip
     Friend WithEvents tmrTick As Timer
+    Friend WithEvents wp62 As PictureBox
+    Friend WithEvents wp61 As PictureBox
+    Friend WithEvents wp63 As PictureBox
+    Friend WithEvents wp64 As PictureBox
+    Friend WithEvents wp65 As PictureBox
+    Friend WithEvents wp66 As PictureBox
+    Friend WithEvents wp67 As PictureBox
+    Friend WithEvents wp69 As PictureBox
+    Friend WithEvents wp70 As PictureBox
+    Friend WithEvents wp71 As PictureBox
+    Friend WithEvents wp72 As PictureBox
+    Friend WithEvents wp73 As PictureBox
+    Friend WithEvents wp74 As PictureBox
+    Friend WithEvents wp75 As PictureBox
+    Friend WithEvents wp76 As PictureBox
+    Friend WithEvents wp77 As PictureBox
+    Friend WithEvents wp78 As PictureBox
+    Friend WithEvents wp80 As PictureBox
+    Friend WithEvents wp79 As PictureBox
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents ConfigToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ConfigFileNameToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents txtConfigFileName As ToolStripTextBox
+    Friend WithEvents txtGarages As ToolStripMenuItem
+    Friend WithEvents txtMainPath As ToolStripMenuItem
+    Friend WithEvents btnShowStatus As Button
+    Friend WithEvents DroidStructBindingSource As BindingSource
+    Friend WithEvents pmz1 As PictureBox
+    Friend WithEvents Label33 As Label
+    Friend WithEvents dN1 As PictureBox
+    Friend WithEvents dN2 As PictureBox
+    Friend WithEvents Label37 As Label
+    Friend WithEvents pmz2 As PictureBox
+    Friend WithEvents imgListD As ImageList
+    Friend WithEvents dN3 As PictureBox
+    Friend WithEvents Label39 As Label
+    Friend WithEvents pmz3 As PictureBox
+    Friend WithEvents Label47 As Label
+    Friend WithEvents Label46 As Label
+    Friend WithEvents Label45 As Label
+    Friend WithEvents Label43 As Label
+    Friend WithEvents Label41 As Label
+    Friend WithEvents Label48 As Label
+    Friend WithEvents txtType As TextBox
+    Friend WithEvents lblmCnt1 As Label
+    Friend WithEvents lblmCnt2 As Label
+    Friend WithEvents pad2b As PictureBox
+    Friend WithEvents pad2a As PictureBox
+    Friend WithEvents chkRocket As CheckBox
 
 End Class
