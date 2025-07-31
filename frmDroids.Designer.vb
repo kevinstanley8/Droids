@@ -327,13 +327,23 @@ Partial Class frmDroids
         tmrScanDroids = New Timer(components)
         pnlDroid = New Panel()
         pnlWindow = New Panel()
+        txtBatt10 = New TextBox()
+        txtBatt9 = New TextBox()
+        txtBatt8 = New TextBox()
+        txtBatt7 = New TextBox()
+        txtBatt6 = New TextBox()
+        txtBatt5 = New TextBox()
+        txtBatt4 = New TextBox()
+        txtBatt3 = New TextBox()
+        txtBatt2 = New TextBox()
+        txtBatt1 = New TextBox()
         pnlDroid.SuspendLayout()
         pnlWindow.SuspendLayout()
         SuspendLayout()
         ' 
         ' txtTow1
         ' 
-        txtTow1.Location = New Point(388, 3)
+        txtTow1.Location = New Point(81, 33)
         txtTow1.Margin = New Padding(4, 3, 4, 3)
         txtTow1.Name = "txtTow1"
         txtTow1.Size = New Size(49, 24)
@@ -341,10 +351,10 @@ Partial Class frmDroids
         ' 
         ' txtOGpgm1
         ' 
-        txtOGpgm1.Location = New Point(263, 3)
+        txtOGpgm1.Location = New Point(481, 3)
         txtOGpgm1.Margin = New Padding(4, 3, 4, 3)
         txtOGpgm1.Name = "txtOGpgm1"
-        txtOGpgm1.Size = New Size(117, 24)
+        txtOGpgm1.Size = New Size(335, 24)
         txtOGpgm1.TabIndex = 114
         ' 
         ' txtPGM1
@@ -352,7 +362,7 @@ Partial Class frmDroids
         txtPGM1.Location = New Point(138, 3)
         txtPGM1.Margin = New Padding(4, 3, 4, 3)
         txtPGM1.Name = "txtPGM1"
-        txtPGM1.Size = New Size(117, 24)
+        txtPGM1.Size = New Size(335, 24)
         txtPGM1.TabIndex = 113
         ' 
         ' txtDest1
@@ -373,7 +383,7 @@ Partial Class frmDroids
         ' 
         ' txtYPOS1
         ' 
-        txtYPOS1.Location = New Point(519, 3)
+        txtYPOS1.Location = New Point(209, 33)
         txtYPOS1.Margin = New Padding(4, 3, 4, 3)
         txtYPOS1.Name = "txtYPOS1"
         txtYPOS1.Size = New Size(63, 24)
@@ -391,7 +401,7 @@ Partial Class frmDroids
         ' 
         ' txtXPOS1
         ' 
-        txtXPOS1.Location = New Point(448, 3)
+        txtXPOS1.Location = New Point(138, 33)
         txtXPOS1.Margin = New Padding(4, 3, 4, 3)
         txtXPOS1.Name = "txtXPOS1"
         txtXPOS1.Size = New Size(63, 24)
@@ -401,7 +411,7 @@ Partial Class frmDroids
         ' 
         ' txtSpeed1
         ' 
-        txtSpeed1.Location = New Point(662, 3)
+        txtSpeed1.Location = New Point(352, 33)
         txtSpeed1.Margin = New Padding(4, 3, 4, 3)
         txtSpeed1.Name = "txtSpeed1"
         txtSpeed1.Size = New Size(63, 24)
@@ -411,7 +421,7 @@ Partial Class frmDroids
         ' 
         ' txtANGL1
         ' 
-        txtANGL1.Location = New Point(591, 3)
+        txtANGL1.Location = New Point(281, 33)
         txtANGL1.Margin = New Padding(4, 3, 4, 3)
         txtANGL1.Name = "txtANGL1"
         txtANGL1.Size = New Size(63, 24)
@@ -421,7 +431,7 @@ Partial Class frmDroids
         ' 
         ' txtTow2
         ' 
-        txtTow2.Location = New Point(388, 29)
+        txtTow2.Location = New Point(81, 95)
         txtTow2.Margin = New Padding(4, 3, 4, 3)
         txtTow2.Name = "txtTow2"
         txtTow2.Size = New Size(49, 24)
@@ -429,23 +439,23 @@ Partial Class frmDroids
         ' 
         ' txtOGpgm2
         ' 
-        txtOGpgm2.Location = New Point(263, 29)
+        txtOGpgm2.Location = New Point(481, 65)
         txtOGpgm2.Margin = New Padding(4, 3, 4, 3)
         txtOGpgm2.Name = "txtOGpgm2"
-        txtOGpgm2.Size = New Size(117, 24)
+        txtOGpgm2.Size = New Size(335, 24)
         txtOGpgm2.TabIndex = 124
         ' 
         ' txtPGM2
         ' 
-        txtPGM2.Location = New Point(138, 29)
+        txtPGM2.Location = New Point(138, 65)
         txtPGM2.Margin = New Padding(4, 3, 4, 3)
         txtPGM2.Name = "txtPGM2"
-        txtPGM2.Size = New Size(117, 24)
+        txtPGM2.Size = New Size(335, 24)
         txtPGM2.TabIndex = 123
         ' 
         ' txtDest2
         ' 
-        txtDest2.Location = New Point(78, 29)
+        txtDest2.Location = New Point(78, 65)
         txtDest2.Margin = New Padding(4, 3, 4, 3)
         txtDest2.Name = "txtDest2"
         txtDest2.Size = New Size(52, 24)
@@ -453,7 +463,7 @@ Partial Class frmDroids
         ' 
         ' txtGarge2
         ' 
-        txtGarge2.Location = New Point(43, 29)
+        txtGarge2.Location = New Point(43, 65)
         txtGarge2.Margin = New Padding(4, 3, 4, 3)
         txtGarge2.Name = "txtGarge2"
         txtGarge2.Size = New Size(27, 24)
@@ -461,7 +471,7 @@ Partial Class frmDroids
         ' 
         ' txtYPOS2
         ' 
-        txtYPOS2.Location = New Point(519, 29)
+        txtYPOS2.Location = New Point(209, 95)
         txtYPOS2.Margin = New Padding(4, 3, 4, 3)
         txtYPOS2.Name = "txtYPOS2"
         txtYPOS2.Size = New Size(63, 24)
@@ -471,7 +481,7 @@ Partial Class frmDroids
         ' 
         ' txtDroid2
         ' 
-        txtDroid2.Location = New Point(3, 29)
+        txtDroid2.Location = New Point(3, 65)
         txtDroid2.Margin = New Padding(4, 3, 4, 3)
         txtDroid2.Name = "txtDroid2"
         txtDroid2.Size = New Size(32, 24)
@@ -479,7 +489,7 @@ Partial Class frmDroids
         ' 
         ' txtXPOS2
         ' 
-        txtXPOS2.Location = New Point(448, 29)
+        txtXPOS2.Location = New Point(138, 95)
         txtXPOS2.Margin = New Padding(4, 3, 4, 3)
         txtXPOS2.Name = "txtXPOS2"
         txtXPOS2.Size = New Size(63, 24)
@@ -489,7 +499,7 @@ Partial Class frmDroids
         ' 
         ' txtSpeed2
         ' 
-        txtSpeed2.Location = New Point(662, 29)
+        txtSpeed2.Location = New Point(352, 95)
         txtSpeed2.Margin = New Padding(4, 3, 4, 3)
         txtSpeed2.Name = "txtSpeed2"
         txtSpeed2.Size = New Size(63, 24)
@@ -499,7 +509,7 @@ Partial Class frmDroids
         ' 
         ' txtANGL2
         ' 
-        txtANGL2.Location = New Point(591, 29)
+        txtANGL2.Location = New Point(281, 95)
         txtANGL2.Margin = New Padding(4, 3, 4, 3)
         txtANGL2.Name = "txtANGL2"
         txtANGL2.Size = New Size(63, 24)
@@ -509,7 +519,7 @@ Partial Class frmDroids
         ' 
         ' txtTow3
         ' 
-        txtTow3.Location = New Point(388, 56)
+        txtTow3.Location = New Point(81, 155)
         txtTow3.Margin = New Padding(4, 3, 4, 3)
         txtTow3.Name = "txtTow3"
         txtTow3.Size = New Size(49, 24)
@@ -517,23 +527,23 @@ Partial Class frmDroids
         ' 
         ' txtOGpgm3
         ' 
-        txtOGpgm3.Location = New Point(263, 56)
+        txtOGpgm3.Location = New Point(481, 125)
         txtOGpgm3.Margin = New Padding(4, 3, 4, 3)
         txtOGpgm3.Name = "txtOGpgm3"
-        txtOGpgm3.Size = New Size(117, 24)
+        txtOGpgm3.Size = New Size(335, 24)
         txtOGpgm3.TabIndex = 134
         ' 
         ' txtPGM3
         ' 
-        txtPGM3.Location = New Point(138, 56)
+        txtPGM3.Location = New Point(138, 125)
         txtPGM3.Margin = New Padding(4, 3, 4, 3)
         txtPGM3.Name = "txtPGM3"
-        txtPGM3.Size = New Size(117, 24)
+        txtPGM3.Size = New Size(335, 24)
         txtPGM3.TabIndex = 133
         ' 
         ' txtDest3
         ' 
-        txtDest3.Location = New Point(78, 56)
+        txtDest3.Location = New Point(78, 125)
         txtDest3.Margin = New Padding(4, 3, 4, 3)
         txtDest3.Name = "txtDest3"
         txtDest3.Size = New Size(52, 24)
@@ -541,7 +551,7 @@ Partial Class frmDroids
         ' 
         ' txtGarge3
         ' 
-        txtGarge3.Location = New Point(43, 56)
+        txtGarge3.Location = New Point(43, 125)
         txtGarge3.Margin = New Padding(4, 3, 4, 3)
         txtGarge3.Name = "txtGarge3"
         txtGarge3.Size = New Size(27, 24)
@@ -549,7 +559,7 @@ Partial Class frmDroids
         ' 
         ' txtYPOS3
         ' 
-        txtYPOS3.Location = New Point(519, 56)
+        txtYPOS3.Location = New Point(209, 155)
         txtYPOS3.Margin = New Padding(4, 3, 4, 3)
         txtYPOS3.Name = "txtYPOS3"
         txtYPOS3.Size = New Size(63, 24)
@@ -559,7 +569,7 @@ Partial Class frmDroids
         ' 
         ' txtDroid3
         ' 
-        txtDroid3.Location = New Point(3, 56)
+        txtDroid3.Location = New Point(3, 125)
         txtDroid3.Margin = New Padding(4, 3, 4, 3)
         txtDroid3.Name = "txtDroid3"
         txtDroid3.Size = New Size(32, 24)
@@ -567,7 +577,7 @@ Partial Class frmDroids
         ' 
         ' txtXPOS3
         ' 
-        txtXPOS3.Location = New Point(448, 56)
+        txtXPOS3.Location = New Point(138, 155)
         txtXPOS3.Margin = New Padding(4, 3, 4, 3)
         txtXPOS3.Name = "txtXPOS3"
         txtXPOS3.Size = New Size(63, 24)
@@ -577,7 +587,7 @@ Partial Class frmDroids
         ' 
         ' txtSpeed3
         ' 
-        txtSpeed3.Location = New Point(662, 56)
+        txtSpeed3.Location = New Point(352, 155)
         txtSpeed3.Margin = New Padding(4, 3, 4, 3)
         txtSpeed3.Name = "txtSpeed3"
         txtSpeed3.Size = New Size(63, 24)
@@ -587,7 +597,7 @@ Partial Class frmDroids
         ' 
         ' txtANGL3
         ' 
-        txtANGL3.Location = New Point(591, 56)
+        txtANGL3.Location = New Point(281, 155)
         txtANGL3.Margin = New Padding(4, 3, 4, 3)
         txtANGL3.Name = "txtANGL3"
         txtANGL3.Size = New Size(63, 24)
@@ -597,7 +607,7 @@ Partial Class frmDroids
         ' 
         ' txtTow4
         ' 
-        txtTow4.Location = New Point(388, 82)
+        txtTow4.Location = New Point(81, 215)
         txtTow4.Margin = New Padding(4, 3, 4, 3)
         txtTow4.Name = "txtTow4"
         txtTow4.Size = New Size(49, 24)
@@ -605,23 +615,23 @@ Partial Class frmDroids
         ' 
         ' txtOGpgm4
         ' 
-        txtOGpgm4.Location = New Point(263, 82)
+        txtOGpgm4.Location = New Point(481, 185)
         txtOGpgm4.Margin = New Padding(4, 3, 4, 3)
         txtOGpgm4.Name = "txtOGpgm4"
-        txtOGpgm4.Size = New Size(117, 24)
+        txtOGpgm4.Size = New Size(335, 24)
         txtOGpgm4.TabIndex = 144
         ' 
         ' txtPGM4
         ' 
-        txtPGM4.Location = New Point(138, 82)
+        txtPGM4.Location = New Point(138, 185)
         txtPGM4.Margin = New Padding(4, 3, 4, 3)
         txtPGM4.Name = "txtPGM4"
-        txtPGM4.Size = New Size(117, 24)
+        txtPGM4.Size = New Size(335, 24)
         txtPGM4.TabIndex = 143
         ' 
         ' txtDest4
         ' 
-        txtDest4.Location = New Point(78, 82)
+        txtDest4.Location = New Point(78, 185)
         txtDest4.Margin = New Padding(4, 3, 4, 3)
         txtDest4.Name = "txtDest4"
         txtDest4.Size = New Size(52, 24)
@@ -629,7 +639,7 @@ Partial Class frmDroids
         ' 
         ' txtGarge4
         ' 
-        txtGarge4.Location = New Point(43, 82)
+        txtGarge4.Location = New Point(43, 185)
         txtGarge4.Margin = New Padding(4, 3, 4, 3)
         txtGarge4.Name = "txtGarge4"
         txtGarge4.Size = New Size(27, 24)
@@ -637,7 +647,7 @@ Partial Class frmDroids
         ' 
         ' txtYPOS4
         ' 
-        txtYPOS4.Location = New Point(519, 82)
+        txtYPOS4.Location = New Point(212, 215)
         txtYPOS4.Margin = New Padding(4, 3, 4, 3)
         txtYPOS4.Name = "txtYPOS4"
         txtYPOS4.Size = New Size(63, 24)
@@ -647,7 +657,7 @@ Partial Class frmDroids
         ' 
         ' txtDroid4
         ' 
-        txtDroid4.Location = New Point(3, 82)
+        txtDroid4.Location = New Point(3, 185)
         txtDroid4.Margin = New Padding(4, 3, 4, 3)
         txtDroid4.Name = "txtDroid4"
         txtDroid4.Size = New Size(32, 24)
@@ -655,7 +665,7 @@ Partial Class frmDroids
         ' 
         ' txtXPOS4
         ' 
-        txtXPOS4.Location = New Point(448, 82)
+        txtXPOS4.Location = New Point(141, 215)
         txtXPOS4.Margin = New Padding(4, 3, 4, 3)
         txtXPOS4.Name = "txtXPOS4"
         txtXPOS4.Size = New Size(63, 24)
@@ -665,7 +675,7 @@ Partial Class frmDroids
         ' 
         ' txtSpeed4
         ' 
-        txtSpeed4.Location = New Point(662, 82)
+        txtSpeed4.Location = New Point(355, 215)
         txtSpeed4.Margin = New Padding(4, 3, 4, 3)
         txtSpeed4.Name = "txtSpeed4"
         txtSpeed4.Size = New Size(63, 24)
@@ -675,7 +685,7 @@ Partial Class frmDroids
         ' 
         ' txtANGL4
         ' 
-        txtANGL4.Location = New Point(591, 82)
+        txtANGL4.Location = New Point(284, 215)
         txtANGL4.Margin = New Padding(4, 3, 4, 3)
         txtANGL4.Name = "txtANGL4"
         txtANGL4.Size = New Size(63, 24)
@@ -685,7 +695,7 @@ Partial Class frmDroids
         ' 
         ' txtTow5
         ' 
-        txtTow5.Location = New Point(388, 108)
+        txtTow5.Location = New Point(81, 275)
         txtTow5.Margin = New Padding(4, 3, 4, 3)
         txtTow5.Name = "txtTow5"
         txtTow5.Size = New Size(49, 24)
@@ -693,23 +703,23 @@ Partial Class frmDroids
         ' 
         ' txtOGpgm5
         ' 
-        txtOGpgm5.Location = New Point(263, 108)
+        txtOGpgm5.Location = New Point(481, 245)
         txtOGpgm5.Margin = New Padding(4, 3, 4, 3)
         txtOGpgm5.Name = "txtOGpgm5"
-        txtOGpgm5.Size = New Size(117, 24)
+        txtOGpgm5.Size = New Size(335, 24)
         txtOGpgm5.TabIndex = 154
         ' 
         ' txtPGM5
         ' 
-        txtPGM5.Location = New Point(138, 108)
+        txtPGM5.Location = New Point(138, 245)
         txtPGM5.Margin = New Padding(4, 3, 4, 3)
         txtPGM5.Name = "txtPGM5"
-        txtPGM5.Size = New Size(117, 24)
+        txtPGM5.Size = New Size(335, 24)
         txtPGM5.TabIndex = 153
         ' 
         ' txtDest5
         ' 
-        txtDest5.Location = New Point(78, 108)
+        txtDest5.Location = New Point(78, 245)
         txtDest5.Margin = New Padding(4, 3, 4, 3)
         txtDest5.Name = "txtDest5"
         txtDest5.Size = New Size(52, 24)
@@ -717,7 +727,7 @@ Partial Class frmDroids
         ' 
         ' txtGarge5
         ' 
-        txtGarge5.Location = New Point(43, 108)
+        txtGarge5.Location = New Point(43, 245)
         txtGarge5.Margin = New Padding(4, 3, 4, 3)
         txtGarge5.Name = "txtGarge5"
         txtGarge5.Size = New Size(27, 24)
@@ -725,7 +735,7 @@ Partial Class frmDroids
         ' 
         ' txtYPOS5
         ' 
-        txtYPOS5.Location = New Point(519, 108)
+        txtYPOS5.Location = New Point(212, 275)
         txtYPOS5.Margin = New Padding(4, 3, 4, 3)
         txtYPOS5.Name = "txtYPOS5"
         txtYPOS5.Size = New Size(63, 24)
@@ -735,7 +745,7 @@ Partial Class frmDroids
         ' 
         ' txtDroid5
         ' 
-        txtDroid5.Location = New Point(3, 108)
+        txtDroid5.Location = New Point(3, 245)
         txtDroid5.Margin = New Padding(4, 3, 4, 3)
         txtDroid5.Name = "txtDroid5"
         txtDroid5.Size = New Size(32, 24)
@@ -743,7 +753,7 @@ Partial Class frmDroids
         ' 
         ' txtXPOS5
         ' 
-        txtXPOS5.Location = New Point(448, 108)
+        txtXPOS5.Location = New Point(141, 275)
         txtXPOS5.Margin = New Padding(4, 3, 4, 3)
         txtXPOS5.Name = "txtXPOS5"
         txtXPOS5.Size = New Size(63, 24)
@@ -753,7 +763,7 @@ Partial Class frmDroids
         ' 
         ' txtSpeed5
         ' 
-        txtSpeed5.Location = New Point(662, 108)
+        txtSpeed5.Location = New Point(355, 275)
         txtSpeed5.Margin = New Padding(4, 3, 4, 3)
         txtSpeed5.Name = "txtSpeed5"
         txtSpeed5.Size = New Size(63, 24)
@@ -763,7 +773,7 @@ Partial Class frmDroids
         ' 
         ' txtANGL5
         ' 
-        txtANGL5.Location = New Point(591, 108)
+        txtANGL5.Location = New Point(284, 275)
         txtANGL5.Margin = New Padding(4, 3, 4, 3)
         txtANGL5.Name = "txtANGL5"
         txtANGL5.Size = New Size(63, 24)
@@ -773,7 +783,7 @@ Partial Class frmDroids
         ' 
         ' txtTow6
         ' 
-        txtTow6.Location = New Point(388, 134)
+        txtTow6.Location = New Point(81, 335)
         txtTow6.Margin = New Padding(4, 3, 4, 3)
         txtTow6.Name = "txtTow6"
         txtTow6.Size = New Size(49, 24)
@@ -781,23 +791,23 @@ Partial Class frmDroids
         ' 
         ' txtOGpgm6
         ' 
-        txtOGpgm6.Location = New Point(263, 134)
+        txtOGpgm6.Location = New Point(481, 305)
         txtOGpgm6.Margin = New Padding(4, 3, 4, 3)
         txtOGpgm6.Name = "txtOGpgm6"
-        txtOGpgm6.Size = New Size(117, 24)
+        txtOGpgm6.Size = New Size(335, 24)
         txtOGpgm6.TabIndex = 164
         ' 
         ' txtPGM6
         ' 
-        txtPGM6.Location = New Point(138, 134)
+        txtPGM6.Location = New Point(138, 305)
         txtPGM6.Margin = New Padding(4, 3, 4, 3)
         txtPGM6.Name = "txtPGM6"
-        txtPGM6.Size = New Size(117, 24)
+        txtPGM6.Size = New Size(335, 24)
         txtPGM6.TabIndex = 163
         ' 
         ' txtDest6
         ' 
-        txtDest6.Location = New Point(78, 134)
+        txtDest6.Location = New Point(78, 305)
         txtDest6.Margin = New Padding(4, 3, 4, 3)
         txtDest6.Name = "txtDest6"
         txtDest6.Size = New Size(52, 24)
@@ -805,7 +815,7 @@ Partial Class frmDroids
         ' 
         ' txtGarge6
         ' 
-        txtGarge6.Location = New Point(43, 134)
+        txtGarge6.Location = New Point(43, 305)
         txtGarge6.Margin = New Padding(4, 3, 4, 3)
         txtGarge6.Name = "txtGarge6"
         txtGarge6.Size = New Size(27, 24)
@@ -813,7 +823,7 @@ Partial Class frmDroids
         ' 
         ' txtYPOS6
         ' 
-        txtYPOS6.Location = New Point(519, 134)
+        txtYPOS6.Location = New Point(212, 335)
         txtYPOS6.Margin = New Padding(4, 3, 4, 3)
         txtYPOS6.Name = "txtYPOS6"
         txtYPOS6.Size = New Size(63, 24)
@@ -823,7 +833,7 @@ Partial Class frmDroids
         ' 
         ' txtDroid6
         ' 
-        txtDroid6.Location = New Point(3, 134)
+        txtDroid6.Location = New Point(3, 305)
         txtDroid6.Margin = New Padding(4, 3, 4, 3)
         txtDroid6.Name = "txtDroid6"
         txtDroid6.Size = New Size(32, 24)
@@ -831,7 +841,7 @@ Partial Class frmDroids
         ' 
         ' txtXPOS6
         ' 
-        txtXPOS6.Location = New Point(448, 134)
+        txtXPOS6.Location = New Point(141, 335)
         txtXPOS6.Margin = New Padding(4, 3, 4, 3)
         txtXPOS6.Name = "txtXPOS6"
         txtXPOS6.Size = New Size(63, 24)
@@ -841,7 +851,7 @@ Partial Class frmDroids
         ' 
         ' txtSpeed6
         ' 
-        txtSpeed6.Location = New Point(662, 134)
+        txtSpeed6.Location = New Point(355, 335)
         txtSpeed6.Margin = New Padding(4, 3, 4, 3)
         txtSpeed6.Name = "txtSpeed6"
         txtSpeed6.Size = New Size(63, 24)
@@ -851,7 +861,7 @@ Partial Class frmDroids
         ' 
         ' txtANGL6
         ' 
-        txtANGL6.Location = New Point(591, 134)
+        txtANGL6.Location = New Point(284, 335)
         txtANGL6.Margin = New Padding(4, 3, 4, 3)
         txtANGL6.Name = "txtANGL6"
         txtANGL6.Size = New Size(63, 24)
@@ -861,7 +871,7 @@ Partial Class frmDroids
         ' 
         ' txtTow7
         ' 
-        txtTow7.Location = New Point(388, 160)
+        txtTow7.Location = New Point(81, 395)
         txtTow7.Margin = New Padding(4, 3, 4, 3)
         txtTow7.Name = "txtTow7"
         txtTow7.Size = New Size(49, 24)
@@ -869,23 +879,23 @@ Partial Class frmDroids
         ' 
         ' txtOGpgm7
         ' 
-        txtOGpgm7.Location = New Point(263, 160)
+        txtOGpgm7.Location = New Point(481, 365)
         txtOGpgm7.Margin = New Padding(4, 3, 4, 3)
         txtOGpgm7.Name = "txtOGpgm7"
-        txtOGpgm7.Size = New Size(117, 24)
+        txtOGpgm7.Size = New Size(335, 24)
         txtOGpgm7.TabIndex = 174
         ' 
         ' txtPGM7
         ' 
-        txtPGM7.Location = New Point(138, 160)
+        txtPGM7.Location = New Point(138, 365)
         txtPGM7.Margin = New Padding(4, 3, 4, 3)
         txtPGM7.Name = "txtPGM7"
-        txtPGM7.Size = New Size(117, 24)
+        txtPGM7.Size = New Size(335, 24)
         txtPGM7.TabIndex = 173
         ' 
         ' txtDest7
         ' 
-        txtDest7.Location = New Point(78, 160)
+        txtDest7.Location = New Point(78, 365)
         txtDest7.Margin = New Padding(4, 3, 4, 3)
         txtDest7.Name = "txtDest7"
         txtDest7.Size = New Size(52, 24)
@@ -893,7 +903,7 @@ Partial Class frmDroids
         ' 
         ' txtGarge7
         ' 
-        txtGarge7.Location = New Point(43, 160)
+        txtGarge7.Location = New Point(43, 365)
         txtGarge7.Margin = New Padding(4, 3, 4, 3)
         txtGarge7.Name = "txtGarge7"
         txtGarge7.Size = New Size(27, 24)
@@ -901,7 +911,7 @@ Partial Class frmDroids
         ' 
         ' txtYPOS7
         ' 
-        txtYPOS7.Location = New Point(519, 160)
+        txtYPOS7.Location = New Point(212, 395)
         txtYPOS7.Margin = New Padding(4, 3, 4, 3)
         txtYPOS7.Name = "txtYPOS7"
         txtYPOS7.Size = New Size(63, 24)
@@ -911,7 +921,7 @@ Partial Class frmDroids
         ' 
         ' txtDroid7
         ' 
-        txtDroid7.Location = New Point(3, 160)
+        txtDroid7.Location = New Point(3, 365)
         txtDroid7.Margin = New Padding(4, 3, 4, 3)
         txtDroid7.Name = "txtDroid7"
         txtDroid7.Size = New Size(32, 24)
@@ -919,7 +929,7 @@ Partial Class frmDroids
         ' 
         ' txtXPOS7
         ' 
-        txtXPOS7.Location = New Point(448, 160)
+        txtXPOS7.Location = New Point(141, 395)
         txtXPOS7.Margin = New Padding(4, 3, 4, 3)
         txtXPOS7.Name = "txtXPOS7"
         txtXPOS7.Size = New Size(63, 24)
@@ -929,7 +939,7 @@ Partial Class frmDroids
         ' 
         ' txtSpeed7
         ' 
-        txtSpeed7.Location = New Point(662, 160)
+        txtSpeed7.Location = New Point(355, 395)
         txtSpeed7.Margin = New Padding(4, 3, 4, 3)
         txtSpeed7.Name = "txtSpeed7"
         txtSpeed7.Size = New Size(63, 24)
@@ -939,7 +949,7 @@ Partial Class frmDroids
         ' 
         ' txtANGL7
         ' 
-        txtANGL7.Location = New Point(591, 160)
+        txtANGL7.Location = New Point(284, 395)
         txtANGL7.Margin = New Padding(4, 3, 4, 3)
         txtANGL7.Name = "txtANGL7"
         txtANGL7.Size = New Size(63, 24)
@@ -949,7 +959,7 @@ Partial Class frmDroids
         ' 
         ' txtTow8
         ' 
-        txtTow8.Location = New Point(388, 186)
+        txtTow8.Location = New Point(81, 455)
         txtTow8.Margin = New Padding(4, 3, 4, 3)
         txtTow8.Name = "txtTow8"
         txtTow8.Size = New Size(49, 24)
@@ -957,23 +967,23 @@ Partial Class frmDroids
         ' 
         ' txtOGpgm8
         ' 
-        txtOGpgm8.Location = New Point(263, 186)
+        txtOGpgm8.Location = New Point(481, 425)
         txtOGpgm8.Margin = New Padding(4, 3, 4, 3)
         txtOGpgm8.Name = "txtOGpgm8"
-        txtOGpgm8.Size = New Size(117, 24)
+        txtOGpgm8.Size = New Size(335, 24)
         txtOGpgm8.TabIndex = 184
         ' 
         ' txtPGM8
         ' 
-        txtPGM8.Location = New Point(138, 186)
+        txtPGM8.Location = New Point(138, 425)
         txtPGM8.Margin = New Padding(4, 3, 4, 3)
         txtPGM8.Name = "txtPGM8"
-        txtPGM8.Size = New Size(117, 24)
+        txtPGM8.Size = New Size(335, 24)
         txtPGM8.TabIndex = 183
         ' 
         ' txtDest8
         ' 
-        txtDest8.Location = New Point(78, 186)
+        txtDest8.Location = New Point(78, 425)
         txtDest8.Margin = New Padding(4, 3, 4, 3)
         txtDest8.Name = "txtDest8"
         txtDest8.Size = New Size(52, 24)
@@ -981,7 +991,7 @@ Partial Class frmDroids
         ' 
         ' txtGarge8
         ' 
-        txtGarge8.Location = New Point(43, 186)
+        txtGarge8.Location = New Point(43, 425)
         txtGarge8.Margin = New Padding(4, 3, 4, 3)
         txtGarge8.Name = "txtGarge8"
         txtGarge8.Size = New Size(27, 24)
@@ -989,7 +999,7 @@ Partial Class frmDroids
         ' 
         ' txtYPOS8
         ' 
-        txtYPOS8.Location = New Point(519, 186)
+        txtYPOS8.Location = New Point(212, 455)
         txtYPOS8.Margin = New Padding(4, 3, 4, 3)
         txtYPOS8.Name = "txtYPOS8"
         txtYPOS8.Size = New Size(63, 24)
@@ -999,7 +1009,7 @@ Partial Class frmDroids
         ' 
         ' txtDroid8
         ' 
-        txtDroid8.Location = New Point(3, 186)
+        txtDroid8.Location = New Point(3, 425)
         txtDroid8.Margin = New Padding(4, 3, 4, 3)
         txtDroid8.Name = "txtDroid8"
         txtDroid8.Size = New Size(32, 24)
@@ -1007,7 +1017,7 @@ Partial Class frmDroids
         ' 
         ' txtXPOS8
         ' 
-        txtXPOS8.Location = New Point(448, 186)
+        txtXPOS8.Location = New Point(141, 455)
         txtXPOS8.Margin = New Padding(4, 3, 4, 3)
         txtXPOS8.Name = "txtXPOS8"
         txtXPOS8.Size = New Size(63, 24)
@@ -1017,7 +1027,7 @@ Partial Class frmDroids
         ' 
         ' txtSpeed8
         ' 
-        txtSpeed8.Location = New Point(662, 186)
+        txtSpeed8.Location = New Point(355, 455)
         txtSpeed8.Margin = New Padding(4, 3, 4, 3)
         txtSpeed8.Name = "txtSpeed8"
         txtSpeed8.Size = New Size(63, 24)
@@ -1027,7 +1037,7 @@ Partial Class frmDroids
         ' 
         ' txtANGL8
         ' 
-        txtANGL8.Location = New Point(591, 186)
+        txtANGL8.Location = New Point(284, 455)
         txtANGL8.Margin = New Padding(4, 3, 4, 3)
         txtANGL8.Name = "txtANGL8"
         txtANGL8.Size = New Size(63, 24)
@@ -1037,7 +1047,7 @@ Partial Class frmDroids
         ' 
         ' txtTow9
         ' 
-        txtTow9.Location = New Point(388, 212)
+        txtTow9.Location = New Point(81, 515)
         txtTow9.Margin = New Padding(4, 3, 4, 3)
         txtTow9.Name = "txtTow9"
         txtTow9.Size = New Size(49, 24)
@@ -1045,23 +1055,23 @@ Partial Class frmDroids
         ' 
         ' txtOGpgm9
         ' 
-        txtOGpgm9.Location = New Point(263, 212)
+        txtOGpgm9.Location = New Point(481, 485)
         txtOGpgm9.Margin = New Padding(4, 3, 4, 3)
         txtOGpgm9.Name = "txtOGpgm9"
-        txtOGpgm9.Size = New Size(117, 24)
+        txtOGpgm9.Size = New Size(335, 24)
         txtOGpgm9.TabIndex = 194
         ' 
         ' txtPGM9
         ' 
-        txtPGM9.Location = New Point(138, 212)
+        txtPGM9.Location = New Point(138, 485)
         txtPGM9.Margin = New Padding(4, 3, 4, 3)
         txtPGM9.Name = "txtPGM9"
-        txtPGM9.Size = New Size(117, 24)
+        txtPGM9.Size = New Size(335, 24)
         txtPGM9.TabIndex = 193
         ' 
         ' txtDest9
         ' 
-        txtDest9.Location = New Point(78, 212)
+        txtDest9.Location = New Point(78, 485)
         txtDest9.Margin = New Padding(4, 3, 4, 3)
         txtDest9.Name = "txtDest9"
         txtDest9.Size = New Size(52, 24)
@@ -1069,7 +1079,7 @@ Partial Class frmDroids
         ' 
         ' txtGarge9
         ' 
-        txtGarge9.Location = New Point(43, 212)
+        txtGarge9.Location = New Point(43, 485)
         txtGarge9.Margin = New Padding(4, 3, 4, 3)
         txtGarge9.Name = "txtGarge9"
         txtGarge9.Size = New Size(27, 24)
@@ -1077,7 +1087,7 @@ Partial Class frmDroids
         ' 
         ' txtYPOS9
         ' 
-        txtYPOS9.Location = New Point(519, 212)
+        txtYPOS9.Location = New Point(212, 515)
         txtYPOS9.Margin = New Padding(4, 3, 4, 3)
         txtYPOS9.Name = "txtYPOS9"
         txtYPOS9.Size = New Size(63, 24)
@@ -1087,7 +1097,7 @@ Partial Class frmDroids
         ' 
         ' txtDroid9
         ' 
-        txtDroid9.Location = New Point(3, 212)
+        txtDroid9.Location = New Point(3, 485)
         txtDroid9.Margin = New Padding(4, 3, 4, 3)
         txtDroid9.Name = "txtDroid9"
         txtDroid9.Size = New Size(32, 24)
@@ -1095,7 +1105,7 @@ Partial Class frmDroids
         ' 
         ' txtXPOS9
         ' 
-        txtXPOS9.Location = New Point(448, 212)
+        txtXPOS9.Location = New Point(141, 515)
         txtXPOS9.Margin = New Padding(4, 3, 4, 3)
         txtXPOS9.Name = "txtXPOS9"
         txtXPOS9.Size = New Size(63, 24)
@@ -1105,7 +1115,7 @@ Partial Class frmDroids
         ' 
         ' txtSpeed9
         ' 
-        txtSpeed9.Location = New Point(662, 212)
+        txtSpeed9.Location = New Point(355, 515)
         txtSpeed9.Margin = New Padding(4, 3, 4, 3)
         txtSpeed9.Name = "txtSpeed9"
         txtSpeed9.Size = New Size(63, 24)
@@ -1115,7 +1125,7 @@ Partial Class frmDroids
         ' 
         ' txtANGL9
         ' 
-        txtANGL9.Location = New Point(591, 212)
+        txtANGL9.Location = New Point(284, 515)
         txtANGL9.Margin = New Padding(4, 3, 4, 3)
         txtANGL9.Name = "txtANGL9"
         txtANGL9.Size = New Size(63, 24)
@@ -1125,7 +1135,7 @@ Partial Class frmDroids
         ' 
         ' txtTow10
         ' 
-        txtTow10.Location = New Point(388, 238)
+        txtTow10.Location = New Point(81, 575)
         txtTow10.Margin = New Padding(4, 3, 4, 3)
         txtTow10.Name = "txtTow10"
         txtTow10.Size = New Size(49, 24)
@@ -1133,23 +1143,23 @@ Partial Class frmDroids
         ' 
         ' txtOGpgm10
         ' 
-        txtOGpgm10.Location = New Point(263, 238)
+        txtOGpgm10.Location = New Point(481, 545)
         txtOGpgm10.Margin = New Padding(4, 3, 4, 3)
         txtOGpgm10.Name = "txtOGpgm10"
-        txtOGpgm10.Size = New Size(117, 24)
+        txtOGpgm10.Size = New Size(335, 24)
         txtOGpgm10.TabIndex = 204
         ' 
         ' txtPGM10
         ' 
-        txtPGM10.Location = New Point(138, 238)
+        txtPGM10.Location = New Point(138, 545)
         txtPGM10.Margin = New Padding(4, 3, 4, 3)
         txtPGM10.Name = "txtPGM10"
-        txtPGM10.Size = New Size(117, 24)
+        txtPGM10.Size = New Size(335, 24)
         txtPGM10.TabIndex = 203
         ' 
         ' txtDest10
         ' 
-        txtDest10.Location = New Point(78, 238)
+        txtDest10.Location = New Point(78, 545)
         txtDest10.Margin = New Padding(4, 3, 4, 3)
         txtDest10.Name = "txtDest10"
         txtDest10.Size = New Size(52, 24)
@@ -1157,7 +1167,7 @@ Partial Class frmDroids
         ' 
         ' txtGarge10
         ' 
-        txtGarge10.Location = New Point(43, 238)
+        txtGarge10.Location = New Point(43, 545)
         txtGarge10.Margin = New Padding(4, 3, 4, 3)
         txtGarge10.Name = "txtGarge10"
         txtGarge10.Size = New Size(27, 24)
@@ -1165,7 +1175,7 @@ Partial Class frmDroids
         ' 
         ' txtYPOS10
         ' 
-        txtYPOS10.Location = New Point(519, 238)
+        txtYPOS10.Location = New Point(212, 575)
         txtYPOS10.Margin = New Padding(4, 3, 4, 3)
         txtYPOS10.Name = "txtYPOS10"
         txtYPOS10.Size = New Size(63, 24)
@@ -1175,7 +1185,7 @@ Partial Class frmDroids
         ' 
         ' txtDroid10
         ' 
-        txtDroid10.Location = New Point(3, 238)
+        txtDroid10.Location = New Point(3, 545)
         txtDroid10.Margin = New Padding(4, 3, 4, 3)
         txtDroid10.Name = "txtDroid10"
         txtDroid10.Size = New Size(32, 24)
@@ -1183,7 +1193,7 @@ Partial Class frmDroids
         ' 
         ' txtXPOS10
         ' 
-        txtXPOS10.Location = New Point(448, 238)
+        txtXPOS10.Location = New Point(141, 575)
         txtXPOS10.Margin = New Padding(4, 3, 4, 3)
         txtXPOS10.Name = "txtXPOS10"
         txtXPOS10.Size = New Size(63, 24)
@@ -1193,7 +1203,7 @@ Partial Class frmDroids
         ' 
         ' txtSpeed10
         ' 
-        txtSpeed10.Location = New Point(662, 238)
+        txtSpeed10.Location = New Point(355, 575)
         txtSpeed10.Margin = New Padding(4, 3, 4, 3)
         txtSpeed10.Name = "txtSpeed10"
         txtSpeed10.Size = New Size(63, 24)
@@ -1203,7 +1213,7 @@ Partial Class frmDroids
         ' 
         ' txtANGL10
         ' 
-        txtANGL10.Location = New Point(591, 238)
+        txtANGL10.Location = New Point(284, 575)
         txtANGL10.Margin = New Padding(4, 3, 4, 3)
         txtANGL10.Name = "txtANGL10"
         txtANGL10.Size = New Size(63, 24)
@@ -1213,7 +1223,7 @@ Partial Class frmDroids
         ' 
         ' txtTow20
         ' 
-        txtTow20.Location = New Point(388, 505)
+        txtTow20.Location = New Point(87, 1204)
         txtTow20.Margin = New Padding(4, 3, 4, 3)
         txtTow20.Name = "txtTow20"
         txtTow20.Size = New Size(49, 24)
@@ -1221,23 +1231,23 @@ Partial Class frmDroids
         ' 
         ' txtOGpgm20
         ' 
-        txtOGpgm20.Location = New Point(263, 505)
+        txtOGpgm20.Location = New Point(483, 1167)
         txtOGpgm20.Margin = New Padding(4, 3, 4, 3)
         txtOGpgm20.Name = "txtOGpgm20"
-        txtOGpgm20.Size = New Size(117, 24)
+        txtOGpgm20.Size = New Size(335, 24)
         txtOGpgm20.TabIndex = 306
         ' 
         ' txtPGM20
         ' 
-        txtPGM20.Location = New Point(138, 506)
+        txtPGM20.Location = New Point(141, 1169)
         txtPGM20.Margin = New Padding(4, 3, 4, 3)
         txtPGM20.Name = "txtPGM20"
-        txtPGM20.Size = New Size(117, 24)
+        txtPGM20.Size = New Size(332, 24)
         txtPGM20.TabIndex = 305
         ' 
         ' txtDest20
         ' 
-        txtDest20.Location = New Point(78, 505)
+        txtDest20.Location = New Point(81, 1168)
         txtDest20.Margin = New Padding(4, 3, 4, 3)
         txtDest20.Name = "txtDest20"
         txtDest20.Size = New Size(52, 24)
@@ -1245,7 +1255,7 @@ Partial Class frmDroids
         ' 
         ' txtGarge20
         ' 
-        txtGarge20.Location = New Point(43, 505)
+        txtGarge20.Location = New Point(46, 1168)
         txtGarge20.Margin = New Padding(4, 3, 4, 3)
         txtGarge20.Name = "txtGarge20"
         txtGarge20.Size = New Size(27, 24)
@@ -1253,7 +1263,7 @@ Partial Class frmDroids
         ' 
         ' txtYPOS20
         ' 
-        txtYPOS20.Location = New Point(519, 505)
+        txtYPOS20.Location = New Point(218, 1204)
         txtYPOS20.Margin = New Padding(4, 3, 4, 3)
         txtYPOS20.Name = "txtYPOS20"
         txtYPOS20.Size = New Size(63, 24)
@@ -1263,7 +1273,7 @@ Partial Class frmDroids
         ' 
         ' txtDroid20
         ' 
-        txtDroid20.Location = New Point(3, 505)
+        txtDroid20.Location = New Point(6, 1168)
         txtDroid20.Margin = New Padding(4, 3, 4, 3)
         txtDroid20.Name = "txtDroid20"
         txtDroid20.Size = New Size(32, 24)
@@ -1271,7 +1281,7 @@ Partial Class frmDroids
         ' 
         ' txtXPOS20
         ' 
-        txtXPOS20.Location = New Point(448, 505)
+        txtXPOS20.Location = New Point(147, 1204)
         txtXPOS20.Margin = New Padding(4, 3, 4, 3)
         txtXPOS20.Name = "txtXPOS20"
         txtXPOS20.Size = New Size(63, 24)
@@ -1281,7 +1291,7 @@ Partial Class frmDroids
         ' 
         ' txtSpeed20
         ' 
-        txtSpeed20.Location = New Point(662, 505)
+        txtSpeed20.Location = New Point(361, 1204)
         txtSpeed20.Margin = New Padding(4, 3, 4, 3)
         txtSpeed20.Name = "txtSpeed20"
         txtSpeed20.Size = New Size(63, 24)
@@ -1291,7 +1301,7 @@ Partial Class frmDroids
         ' 
         ' txtANGL20
         ' 
-        txtANGL20.Location = New Point(591, 505)
+        txtANGL20.Location = New Point(290, 1204)
         txtANGL20.Margin = New Padding(4, 3, 4, 3)
         txtANGL20.Name = "txtANGL20"
         txtANGL20.Size = New Size(63, 24)
@@ -1301,7 +1311,7 @@ Partial Class frmDroids
         ' 
         ' txtTow19
         ' 
-        txtTow19.Location = New Point(388, 479)
+        txtTow19.Location = New Point(80, 1139)
         txtTow19.Margin = New Padding(4, 3, 4, 3)
         txtTow19.Name = "txtTow19"
         txtTow19.Size = New Size(49, 24)
@@ -1309,23 +1319,23 @@ Partial Class frmDroids
         ' 
         ' txtOGpgm19
         ' 
-        txtOGpgm19.Location = New Point(263, 479)
+        txtOGpgm19.Location = New Point(480, 1107)
         txtOGpgm19.Margin = New Padding(4, 3, 4, 3)
         txtOGpgm19.Name = "txtOGpgm19"
-        txtOGpgm19.Size = New Size(117, 24)
+        txtOGpgm19.Size = New Size(335, 24)
         txtOGpgm19.TabIndex = 296
         ' 
         ' txtPGM19
         ' 
-        txtPGM19.Location = New Point(138, 479)
+        txtPGM19.Location = New Point(138, 1108)
         txtPGM19.Margin = New Padding(4, 3, 4, 3)
         txtPGM19.Name = "txtPGM19"
-        txtPGM19.Size = New Size(117, 24)
+        txtPGM19.Size = New Size(332, 24)
         txtPGM19.TabIndex = 295
         ' 
         ' txtDest19
         ' 
-        txtDest19.Location = New Point(78, 479)
+        txtDest19.Location = New Point(78, 1108)
         txtDest19.Margin = New Padding(4, 3, 4, 3)
         txtDest19.Name = "txtDest19"
         txtDest19.Size = New Size(52, 24)
@@ -1333,7 +1343,7 @@ Partial Class frmDroids
         ' 
         ' txtGarge19
         ' 
-        txtGarge19.Location = New Point(43, 479)
+        txtGarge19.Location = New Point(43, 1108)
         txtGarge19.Margin = New Padding(4, 3, 4, 3)
         txtGarge19.Name = "txtGarge19"
         txtGarge19.Size = New Size(27, 24)
@@ -1341,7 +1351,7 @@ Partial Class frmDroids
         ' 
         ' txtYPOS19
         ' 
-        txtYPOS19.Location = New Point(519, 479)
+        txtYPOS19.Location = New Point(211, 1139)
         txtYPOS19.Margin = New Padding(4, 3, 4, 3)
         txtYPOS19.Name = "txtYPOS19"
         txtYPOS19.Size = New Size(63, 24)
@@ -1351,7 +1361,7 @@ Partial Class frmDroids
         ' 
         ' txtDroid19
         ' 
-        txtDroid19.Location = New Point(3, 479)
+        txtDroid19.Location = New Point(3, 1108)
         txtDroid19.Margin = New Padding(4, 3, 4, 3)
         txtDroid19.Name = "txtDroid19"
         txtDroid19.Size = New Size(32, 24)
@@ -1359,7 +1369,7 @@ Partial Class frmDroids
         ' 
         ' txtXPOS19
         ' 
-        txtXPOS19.Location = New Point(448, 479)
+        txtXPOS19.Location = New Point(140, 1139)
         txtXPOS19.Margin = New Padding(4, 3, 4, 3)
         txtXPOS19.Name = "txtXPOS19"
         txtXPOS19.Size = New Size(63, 24)
@@ -1369,7 +1379,7 @@ Partial Class frmDroids
         ' 
         ' txtSpeed19
         ' 
-        txtSpeed19.Location = New Point(662, 479)
+        txtSpeed19.Location = New Point(354, 1139)
         txtSpeed19.Margin = New Padding(4, 3, 4, 3)
         txtSpeed19.Name = "txtSpeed19"
         txtSpeed19.Size = New Size(63, 24)
@@ -1379,7 +1389,7 @@ Partial Class frmDroids
         ' 
         ' txtANGL19
         ' 
-        txtANGL19.Location = New Point(591, 479)
+        txtANGL19.Location = New Point(283, 1139)
         txtANGL19.Margin = New Padding(4, 3, 4, 3)
         txtANGL19.Name = "txtANGL19"
         txtANGL19.Size = New Size(63, 24)
@@ -1389,7 +1399,7 @@ Partial Class frmDroids
         ' 
         ' txtTow18
         ' 
-        txtTow18.Location = New Point(388, 453)
+        txtTow18.Location = New Point(80, 1081)
         txtTow18.Margin = New Padding(4, 3, 4, 3)
         txtTow18.Name = "txtTow18"
         txtTow18.Size = New Size(49, 24)
@@ -1397,23 +1407,23 @@ Partial Class frmDroids
         ' 
         ' txtOGpgm18
         ' 
-        txtOGpgm18.Location = New Point(263, 453)
+        txtOGpgm18.Location = New Point(480, 1051)
         txtOGpgm18.Margin = New Padding(4, 3, 4, 3)
         txtOGpgm18.Name = "txtOGpgm18"
-        txtOGpgm18.Size = New Size(117, 24)
+        txtOGpgm18.Size = New Size(335, 24)
         txtOGpgm18.TabIndex = 286
         ' 
         ' txtPGM18
         ' 
-        txtPGM18.Location = New Point(138, 453)
+        txtPGM18.Location = New Point(138, 1052)
         txtPGM18.Margin = New Padding(4, 3, 4, 3)
         txtPGM18.Name = "txtPGM18"
-        txtPGM18.Size = New Size(117, 24)
+        txtPGM18.Size = New Size(335, 24)
         txtPGM18.TabIndex = 285
         ' 
         ' txtDest18
         ' 
-        txtDest18.Location = New Point(78, 453)
+        txtDest18.Location = New Point(78, 1052)
         txtDest18.Margin = New Padding(4, 3, 4, 3)
         txtDest18.Name = "txtDest18"
         txtDest18.Size = New Size(52, 24)
@@ -1421,7 +1431,7 @@ Partial Class frmDroids
         ' 
         ' txtGarge18
         ' 
-        txtGarge18.Location = New Point(43, 453)
+        txtGarge18.Location = New Point(43, 1052)
         txtGarge18.Margin = New Padding(4, 3, 4, 3)
         txtGarge18.Name = "txtGarge18"
         txtGarge18.Size = New Size(27, 24)
@@ -1429,7 +1439,7 @@ Partial Class frmDroids
         ' 
         ' txtYPOS18
         ' 
-        txtYPOS18.Location = New Point(519, 453)
+        txtYPOS18.Location = New Point(211, 1081)
         txtYPOS18.Margin = New Padding(4, 3, 4, 3)
         txtYPOS18.Name = "txtYPOS18"
         txtYPOS18.Size = New Size(63, 24)
@@ -1439,7 +1449,7 @@ Partial Class frmDroids
         ' 
         ' txtDroid18
         ' 
-        txtDroid18.Location = New Point(3, 453)
+        txtDroid18.Location = New Point(3, 1052)
         txtDroid18.Margin = New Padding(4, 3, 4, 3)
         txtDroid18.Name = "txtDroid18"
         txtDroid18.Size = New Size(32, 24)
@@ -1447,7 +1457,7 @@ Partial Class frmDroids
         ' 
         ' txtXPOS18
         ' 
-        txtXPOS18.Location = New Point(448, 453)
+        txtXPOS18.Location = New Point(140, 1081)
         txtXPOS18.Margin = New Padding(4, 3, 4, 3)
         txtXPOS18.Name = "txtXPOS18"
         txtXPOS18.Size = New Size(63, 24)
@@ -1457,7 +1467,7 @@ Partial Class frmDroids
         ' 
         ' txtSpeed18
         ' 
-        txtSpeed18.Location = New Point(662, 453)
+        txtSpeed18.Location = New Point(354, 1081)
         txtSpeed18.Margin = New Padding(4, 3, 4, 3)
         txtSpeed18.Name = "txtSpeed18"
         txtSpeed18.Size = New Size(63, 24)
@@ -1467,7 +1477,7 @@ Partial Class frmDroids
         ' 
         ' txtANGL18
         ' 
-        txtANGL18.Location = New Point(591, 453)
+        txtANGL18.Location = New Point(283, 1081)
         txtANGL18.Margin = New Padding(4, 3, 4, 3)
         txtANGL18.Name = "txtANGL18"
         txtANGL18.Size = New Size(63, 24)
@@ -1477,7 +1487,7 @@ Partial Class frmDroids
         ' 
         ' txtTow17
         ' 
-        txtTow17.Location = New Point(388, 427)
+        txtTow17.Location = New Point(80, 1024)
         txtTow17.Margin = New Padding(4, 3, 4, 3)
         txtTow17.Name = "txtTow17"
         txtTow17.Size = New Size(49, 24)
@@ -1485,23 +1495,23 @@ Partial Class frmDroids
         ' 
         ' txtOGpgm17
         ' 
-        txtOGpgm17.Location = New Point(263, 427)
+        txtOGpgm17.Location = New Point(480, 990)
         txtOGpgm17.Margin = New Padding(4, 3, 4, 3)
         txtOGpgm17.Name = "txtOGpgm17"
-        txtOGpgm17.Size = New Size(117, 24)
+        txtOGpgm17.Size = New Size(335, 24)
         txtOGpgm17.TabIndex = 276
         ' 
         ' txtPGM17
         ' 
-        txtPGM17.Location = New Point(138, 427)
+        txtPGM17.Location = New Point(138, 991)
         txtPGM17.Margin = New Padding(4, 3, 4, 3)
         txtPGM17.Name = "txtPGM17"
-        txtPGM17.Size = New Size(117, 24)
+        txtPGM17.Size = New Size(335, 24)
         txtPGM17.TabIndex = 275
         ' 
         ' txtDest17
         ' 
-        txtDest17.Location = New Point(78, 427)
+        txtDest17.Location = New Point(78, 991)
         txtDest17.Margin = New Padding(4, 3, 4, 3)
         txtDest17.Name = "txtDest17"
         txtDest17.Size = New Size(52, 24)
@@ -1509,7 +1519,7 @@ Partial Class frmDroids
         ' 
         ' txtGarge17
         ' 
-        txtGarge17.Location = New Point(43, 427)
+        txtGarge17.Location = New Point(43, 991)
         txtGarge17.Margin = New Padding(4, 3, 4, 3)
         txtGarge17.Name = "txtGarge17"
         txtGarge17.Size = New Size(27, 24)
@@ -1517,7 +1527,7 @@ Partial Class frmDroids
         ' 
         ' txtYPOS17
         ' 
-        txtYPOS17.Location = New Point(519, 427)
+        txtYPOS17.Location = New Point(211, 1024)
         txtYPOS17.Margin = New Padding(4, 3, 4, 3)
         txtYPOS17.Name = "txtYPOS17"
         txtYPOS17.Size = New Size(63, 24)
@@ -1527,7 +1537,7 @@ Partial Class frmDroids
         ' 
         ' txtDroid17
         ' 
-        txtDroid17.Location = New Point(3, 427)
+        txtDroid17.Location = New Point(3, 991)
         txtDroid17.Margin = New Padding(4, 3, 4, 3)
         txtDroid17.Name = "txtDroid17"
         txtDroid17.Size = New Size(32, 24)
@@ -1535,7 +1545,7 @@ Partial Class frmDroids
         ' 
         ' txtXPOS17
         ' 
-        txtXPOS17.Location = New Point(448, 427)
+        txtXPOS17.Location = New Point(140, 1024)
         txtXPOS17.Margin = New Padding(4, 3, 4, 3)
         txtXPOS17.Name = "txtXPOS17"
         txtXPOS17.Size = New Size(63, 24)
@@ -1545,7 +1555,7 @@ Partial Class frmDroids
         ' 
         ' txtSpeed17
         ' 
-        txtSpeed17.Location = New Point(662, 427)
+        txtSpeed17.Location = New Point(354, 1024)
         txtSpeed17.Margin = New Padding(4, 3, 4, 3)
         txtSpeed17.Name = "txtSpeed17"
         txtSpeed17.Size = New Size(63, 24)
@@ -1555,7 +1565,7 @@ Partial Class frmDroids
         ' 
         ' txtANGL17
         ' 
-        txtANGL17.Location = New Point(591, 427)
+        txtANGL17.Location = New Point(283, 1024)
         txtANGL17.Margin = New Padding(4, 3, 4, 3)
         txtANGL17.Name = "txtANGL17"
         txtANGL17.Size = New Size(63, 24)
@@ -1565,7 +1575,7 @@ Partial Class frmDroids
         ' 
         ' txtTow16
         ' 
-        txtTow16.Location = New Point(388, 401)
+        txtTow16.Location = New Point(79, 958)
         txtTow16.Margin = New Padding(4, 3, 4, 3)
         txtTow16.Name = "txtTow16"
         txtTow16.Size = New Size(49, 24)
@@ -1573,23 +1583,23 @@ Partial Class frmDroids
         ' 
         ' txtOGpgm16
         ' 
-        txtOGpgm16.Location = New Point(263, 401)
+        txtOGpgm16.Location = New Point(482, 928)
         txtOGpgm16.Margin = New Padding(4, 3, 4, 3)
         txtOGpgm16.Name = "txtOGpgm16"
-        txtOGpgm16.Size = New Size(117, 24)
+        txtOGpgm16.Size = New Size(335, 24)
         txtOGpgm16.TabIndex = 266
         ' 
         ' txtPGM16
         ' 
-        txtPGM16.Location = New Point(138, 401)
+        txtPGM16.Location = New Point(140, 929)
         txtPGM16.Margin = New Padding(4, 3, 4, 3)
         txtPGM16.Name = "txtPGM16"
-        txtPGM16.Size = New Size(117, 24)
+        txtPGM16.Size = New Size(335, 24)
         txtPGM16.TabIndex = 265
         ' 
         ' txtDest16
         ' 
-        txtDest16.Location = New Point(78, 401)
+        txtDest16.Location = New Point(80, 929)
         txtDest16.Margin = New Padding(4, 3, 4, 3)
         txtDest16.Name = "txtDest16"
         txtDest16.Size = New Size(52, 24)
@@ -1597,7 +1607,7 @@ Partial Class frmDroids
         ' 
         ' txtGarge16
         ' 
-        txtGarge16.Location = New Point(43, 401)
+        txtGarge16.Location = New Point(45, 929)
         txtGarge16.Margin = New Padding(4, 3, 4, 3)
         txtGarge16.Name = "txtGarge16"
         txtGarge16.Size = New Size(27, 24)
@@ -1605,7 +1615,7 @@ Partial Class frmDroids
         ' 
         ' txtYPOS16
         ' 
-        txtYPOS16.Location = New Point(519, 401)
+        txtYPOS16.Location = New Point(210, 958)
         txtYPOS16.Margin = New Padding(4, 3, 4, 3)
         txtYPOS16.Name = "txtYPOS16"
         txtYPOS16.Size = New Size(63, 24)
@@ -1615,7 +1625,7 @@ Partial Class frmDroids
         ' 
         ' txtDroid16
         ' 
-        txtDroid16.Location = New Point(3, 401)
+        txtDroid16.Location = New Point(5, 929)
         txtDroid16.Margin = New Padding(4, 3, 4, 3)
         txtDroid16.Name = "txtDroid16"
         txtDroid16.Size = New Size(32, 24)
@@ -1623,7 +1633,7 @@ Partial Class frmDroids
         ' 
         ' txtXPOS16
         ' 
-        txtXPOS16.Location = New Point(448, 401)
+        txtXPOS16.Location = New Point(139, 958)
         txtXPOS16.Margin = New Padding(4, 3, 4, 3)
         txtXPOS16.Name = "txtXPOS16"
         txtXPOS16.Size = New Size(63, 24)
@@ -1633,7 +1643,7 @@ Partial Class frmDroids
         ' 
         ' txtSpeed16
         ' 
-        txtSpeed16.Location = New Point(662, 401)
+        txtSpeed16.Location = New Point(353, 958)
         txtSpeed16.Margin = New Padding(4, 3, 4, 3)
         txtSpeed16.Name = "txtSpeed16"
         txtSpeed16.Size = New Size(63, 24)
@@ -1643,7 +1653,7 @@ Partial Class frmDroids
         ' 
         ' txtANGL16
         ' 
-        txtANGL16.Location = New Point(591, 401)
+        txtANGL16.Location = New Point(282, 958)
         txtANGL16.Margin = New Padding(4, 3, 4, 3)
         txtANGL16.Name = "txtANGL16"
         txtANGL16.Size = New Size(63, 24)
@@ -1653,7 +1663,7 @@ Partial Class frmDroids
         ' 
         ' txtTow15
         ' 
-        txtTow15.Location = New Point(388, 375)
+        txtTow15.Location = New Point(84, 900)
         txtTow15.Margin = New Padding(4, 3, 4, 3)
         txtTow15.Name = "txtTow15"
         txtTow15.Size = New Size(49, 24)
@@ -1661,23 +1671,23 @@ Partial Class frmDroids
         ' 
         ' txtOGpgm15
         ' 
-        txtOGpgm15.Location = New Point(263, 375)
+        txtOGpgm15.Location = New Point(480, 869)
         txtOGpgm15.Margin = New Padding(4, 3, 4, 3)
         txtOGpgm15.Name = "txtOGpgm15"
-        txtOGpgm15.Size = New Size(117, 24)
+        txtOGpgm15.Size = New Size(335, 24)
         txtOGpgm15.TabIndex = 256
         ' 
         ' txtPGM15
         ' 
-        txtPGM15.Location = New Point(138, 375)
+        txtPGM15.Location = New Point(138, 870)
         txtPGM15.Margin = New Padding(4, 3, 4, 3)
         txtPGM15.Name = "txtPGM15"
-        txtPGM15.Size = New Size(117, 24)
+        txtPGM15.Size = New Size(335, 24)
         txtPGM15.TabIndex = 255
         ' 
         ' txtDest15
         ' 
-        txtDest15.Location = New Point(78, 375)
+        txtDest15.Location = New Point(78, 870)
         txtDest15.Margin = New Padding(4, 3, 4, 3)
         txtDest15.Name = "txtDest15"
         txtDest15.Size = New Size(52, 24)
@@ -1685,7 +1695,7 @@ Partial Class frmDroids
         ' 
         ' txtGarge15
         ' 
-        txtGarge15.Location = New Point(43, 375)
+        txtGarge15.Location = New Point(43, 870)
         txtGarge15.Margin = New Padding(4, 3, 4, 3)
         txtGarge15.Name = "txtGarge15"
         txtGarge15.Size = New Size(27, 24)
@@ -1693,7 +1703,7 @@ Partial Class frmDroids
         ' 
         ' txtYPOS15
         ' 
-        txtYPOS15.Location = New Point(519, 375)
+        txtYPOS15.Location = New Point(215, 900)
         txtYPOS15.Margin = New Padding(4, 3, 4, 3)
         txtYPOS15.Name = "txtYPOS15"
         txtYPOS15.Size = New Size(63, 24)
@@ -1703,7 +1713,7 @@ Partial Class frmDroids
         ' 
         ' txtDroid15
         ' 
-        txtDroid15.Location = New Point(3, 375)
+        txtDroid15.Location = New Point(3, 870)
         txtDroid15.Margin = New Padding(4, 3, 4, 3)
         txtDroid15.Name = "txtDroid15"
         txtDroid15.Size = New Size(32, 24)
@@ -1711,7 +1721,7 @@ Partial Class frmDroids
         ' 
         ' txtXPOS15
         ' 
-        txtXPOS15.Location = New Point(448, 375)
+        txtXPOS15.Location = New Point(144, 900)
         txtXPOS15.Margin = New Padding(4, 3, 4, 3)
         txtXPOS15.Name = "txtXPOS15"
         txtXPOS15.Size = New Size(63, 24)
@@ -1721,7 +1731,7 @@ Partial Class frmDroids
         ' 
         ' txtSpeed15
         ' 
-        txtSpeed15.Location = New Point(662, 375)
+        txtSpeed15.Location = New Point(358, 900)
         txtSpeed15.Margin = New Padding(4, 3, 4, 3)
         txtSpeed15.Name = "txtSpeed15"
         txtSpeed15.Size = New Size(63, 24)
@@ -1731,7 +1741,7 @@ Partial Class frmDroids
         ' 
         ' txtANGL15
         ' 
-        txtANGL15.Location = New Point(591, 375)
+        txtANGL15.Location = New Point(287, 900)
         txtANGL15.Margin = New Padding(4, 3, 4, 3)
         txtANGL15.Name = "txtANGL15"
         txtANGL15.Size = New Size(63, 24)
@@ -1741,7 +1751,7 @@ Partial Class frmDroids
         ' 
         ' txtTow14
         ' 
-        txtTow14.Location = New Point(388, 349)
+        txtTow14.Location = New Point(82, 841)
         txtTow14.Margin = New Padding(4, 3, 4, 3)
         txtTow14.Name = "txtTow14"
         txtTow14.Size = New Size(49, 24)
@@ -1749,23 +1759,23 @@ Partial Class frmDroids
         ' 
         ' txtOGpgm14
         ' 
-        txtOGpgm14.Location = New Point(263, 349)
+        txtOGpgm14.Location = New Point(479, 807)
         txtOGpgm14.Margin = New Padding(4, 3, 4, 3)
         txtOGpgm14.Name = "txtOGpgm14"
-        txtOGpgm14.Size = New Size(117, 24)
+        txtOGpgm14.Size = New Size(335, 24)
         txtOGpgm14.TabIndex = 246
         ' 
         ' txtPGM14
         ' 
-        txtPGM14.Location = New Point(138, 349)
+        txtPGM14.Location = New Point(137, 807)
         txtPGM14.Margin = New Padding(4, 3, 4, 3)
         txtPGM14.Name = "txtPGM14"
-        txtPGM14.Size = New Size(117, 24)
+        txtPGM14.Size = New Size(335, 24)
         txtPGM14.TabIndex = 245
         ' 
         ' txtDest14
         ' 
-        txtDest14.Location = New Point(78, 349)
+        txtDest14.Location = New Point(77, 807)
         txtDest14.Margin = New Padding(4, 3, 4, 3)
         txtDest14.Name = "txtDest14"
         txtDest14.Size = New Size(52, 24)
@@ -1773,7 +1783,7 @@ Partial Class frmDroids
         ' 
         ' txtGarge14
         ' 
-        txtGarge14.Location = New Point(43, 349)
+        txtGarge14.Location = New Point(42, 807)
         txtGarge14.Margin = New Padding(4, 3, 4, 3)
         txtGarge14.Name = "txtGarge14"
         txtGarge14.Size = New Size(27, 24)
@@ -1781,7 +1791,7 @@ Partial Class frmDroids
         ' 
         ' txtYPOS14
         ' 
-        txtYPOS14.Location = New Point(519, 349)
+        txtYPOS14.Location = New Point(213, 841)
         txtYPOS14.Margin = New Padding(4, 3, 4, 3)
         txtYPOS14.Name = "txtYPOS14"
         txtYPOS14.Size = New Size(63, 24)
@@ -1791,7 +1801,7 @@ Partial Class frmDroids
         ' 
         ' txtDroid14
         ' 
-        txtDroid14.Location = New Point(3, 349)
+        txtDroid14.Location = New Point(2, 807)
         txtDroid14.Margin = New Padding(4, 3, 4, 3)
         txtDroid14.Name = "txtDroid14"
         txtDroid14.Size = New Size(32, 24)
@@ -1799,7 +1809,7 @@ Partial Class frmDroids
         ' 
         ' txtXPOS14
         ' 
-        txtXPOS14.Location = New Point(448, 349)
+        txtXPOS14.Location = New Point(142, 841)
         txtXPOS14.Margin = New Padding(4, 3, 4, 3)
         txtXPOS14.Name = "txtXPOS14"
         txtXPOS14.Size = New Size(63, 24)
@@ -1809,7 +1819,7 @@ Partial Class frmDroids
         ' 
         ' txtSpeed14
         ' 
-        txtSpeed14.Location = New Point(662, 349)
+        txtSpeed14.Location = New Point(356, 841)
         txtSpeed14.Margin = New Padding(4, 3, 4, 3)
         txtSpeed14.Name = "txtSpeed14"
         txtSpeed14.Size = New Size(63, 24)
@@ -1819,7 +1829,7 @@ Partial Class frmDroids
         ' 
         ' txtANGL14
         ' 
-        txtANGL14.Location = New Point(591, 349)
+        txtANGL14.Location = New Point(285, 841)
         txtANGL14.Margin = New Padding(4, 3, 4, 3)
         txtANGL14.Name = "txtANGL14"
         txtANGL14.Size = New Size(63, 24)
@@ -1829,7 +1839,7 @@ Partial Class frmDroids
         ' 
         ' txtTow13
         ' 
-        txtTow13.Location = New Point(388, 323)
+        txtTow13.Location = New Point(83, 776)
         txtTow13.Margin = New Padding(4, 3, 4, 3)
         txtTow13.Name = "txtTow13"
         txtTow13.Size = New Size(49, 24)
@@ -1837,23 +1847,23 @@ Partial Class frmDroids
         ' 
         ' txtOGpgm13
         ' 
-        txtOGpgm13.Location = New Point(263, 323)
+        txtOGpgm13.Location = New Point(479, 746)
         txtOGpgm13.Margin = New Padding(4, 3, 4, 3)
         txtOGpgm13.Name = "txtOGpgm13"
-        txtOGpgm13.Size = New Size(117, 24)
+        txtOGpgm13.Size = New Size(335, 24)
         txtOGpgm13.TabIndex = 236
         ' 
         ' txtPGM13
         ' 
-        txtPGM13.Location = New Point(138, 323)
+        txtPGM13.Location = New Point(137, 747)
         txtPGM13.Margin = New Padding(4, 3, 4, 3)
         txtPGM13.Name = "txtPGM13"
-        txtPGM13.Size = New Size(117, 24)
+        txtPGM13.Size = New Size(335, 24)
         txtPGM13.TabIndex = 235
         ' 
         ' txtDest13
         ' 
-        txtDest13.Location = New Point(78, 323)
+        txtDest13.Location = New Point(77, 747)
         txtDest13.Margin = New Padding(4, 3, 4, 3)
         txtDest13.Name = "txtDest13"
         txtDest13.Size = New Size(52, 24)
@@ -1861,7 +1871,7 @@ Partial Class frmDroids
         ' 
         ' txtGarge13
         ' 
-        txtGarge13.Location = New Point(43, 323)
+        txtGarge13.Location = New Point(42, 747)
         txtGarge13.Margin = New Padding(4, 3, 4, 3)
         txtGarge13.Name = "txtGarge13"
         txtGarge13.Size = New Size(27, 24)
@@ -1869,7 +1879,7 @@ Partial Class frmDroids
         ' 
         ' txtYPOS13
         ' 
-        txtYPOS13.Location = New Point(519, 323)
+        txtYPOS13.Location = New Point(214, 776)
         txtYPOS13.Margin = New Padding(4, 3, 4, 3)
         txtYPOS13.Name = "txtYPOS13"
         txtYPOS13.Size = New Size(63, 24)
@@ -1879,7 +1889,7 @@ Partial Class frmDroids
         ' 
         ' txtDroid13
         ' 
-        txtDroid13.Location = New Point(3, 323)
+        txtDroid13.Location = New Point(2, 747)
         txtDroid13.Margin = New Padding(4, 3, 4, 3)
         txtDroid13.Name = "txtDroid13"
         txtDroid13.Size = New Size(32, 24)
@@ -1887,7 +1897,7 @@ Partial Class frmDroids
         ' 
         ' txtXPOS13
         ' 
-        txtXPOS13.Location = New Point(448, 323)
+        txtXPOS13.Location = New Point(143, 776)
         txtXPOS13.Margin = New Padding(4, 3, 4, 3)
         txtXPOS13.Name = "txtXPOS13"
         txtXPOS13.Size = New Size(63, 24)
@@ -1897,7 +1907,7 @@ Partial Class frmDroids
         ' 
         ' txtSpeed13
         ' 
-        txtSpeed13.Location = New Point(662, 323)
+        txtSpeed13.Location = New Point(357, 776)
         txtSpeed13.Margin = New Padding(4, 3, 4, 3)
         txtSpeed13.Name = "txtSpeed13"
         txtSpeed13.Size = New Size(63, 24)
@@ -1907,7 +1917,7 @@ Partial Class frmDroids
         ' 
         ' txtANGL13
         ' 
-        txtANGL13.Location = New Point(591, 323)
+        txtANGL13.Location = New Point(286, 776)
         txtANGL13.Margin = New Padding(4, 3, 4, 3)
         txtANGL13.Name = "txtANGL13"
         txtANGL13.Size = New Size(63, 24)
@@ -1917,7 +1927,7 @@ Partial Class frmDroids
         ' 
         ' txtTow12
         ' 
-        txtTow12.Location = New Point(388, 297)
+        txtTow12.Location = New Point(81, 715)
         txtTow12.Margin = New Padding(4, 3, 4, 3)
         txtTow12.Name = "txtTow12"
         txtTow12.Size = New Size(49, 24)
@@ -1925,23 +1935,23 @@ Partial Class frmDroids
         ' 
         ' txtOGpgm12
         ' 
-        txtOGpgm12.Location = New Point(263, 297)
+        txtOGpgm12.Location = New Point(480, 687)
         txtOGpgm12.Margin = New Padding(4, 3, 4, 3)
         txtOGpgm12.Name = "txtOGpgm12"
-        txtOGpgm12.Size = New Size(117, 24)
+        txtOGpgm12.Size = New Size(335, 24)
         txtOGpgm12.TabIndex = 226
         ' 
         ' txtPGM12
         ' 
-        txtPGM12.Location = New Point(138, 297)
+        txtPGM12.Location = New Point(138, 688)
         txtPGM12.Margin = New Padding(4, 3, 4, 3)
         txtPGM12.Name = "txtPGM12"
-        txtPGM12.Size = New Size(117, 24)
+        txtPGM12.Size = New Size(335, 24)
         txtPGM12.TabIndex = 225
         ' 
         ' txtDest12
         ' 
-        txtDest12.Location = New Point(78, 297)
+        txtDest12.Location = New Point(78, 688)
         txtDest12.Margin = New Padding(4, 3, 4, 3)
         txtDest12.Name = "txtDest12"
         txtDest12.Size = New Size(52, 24)
@@ -1949,7 +1959,7 @@ Partial Class frmDroids
         ' 
         ' txtGarge12
         ' 
-        txtGarge12.Location = New Point(43, 297)
+        txtGarge12.Location = New Point(43, 688)
         txtGarge12.Margin = New Padding(4, 3, 4, 3)
         txtGarge12.Name = "txtGarge12"
         txtGarge12.Size = New Size(27, 24)
@@ -1957,7 +1967,7 @@ Partial Class frmDroids
         ' 
         ' txtYPOS12
         ' 
-        txtYPOS12.Location = New Point(519, 297)
+        txtYPOS12.Location = New Point(212, 715)
         txtYPOS12.Margin = New Padding(4, 3, 4, 3)
         txtYPOS12.Name = "txtYPOS12"
         txtYPOS12.Size = New Size(63, 24)
@@ -1967,7 +1977,7 @@ Partial Class frmDroids
         ' 
         ' txtDroid12
         ' 
-        txtDroid12.Location = New Point(3, 297)
+        txtDroid12.Location = New Point(3, 688)
         txtDroid12.Margin = New Padding(4, 3, 4, 3)
         txtDroid12.Name = "txtDroid12"
         txtDroid12.Size = New Size(32, 24)
@@ -1975,7 +1985,7 @@ Partial Class frmDroids
         ' 
         ' txtXPOS12
         ' 
-        txtXPOS12.Location = New Point(448, 297)
+        txtXPOS12.Location = New Point(141, 715)
         txtXPOS12.Margin = New Padding(4, 3, 4, 3)
         txtXPOS12.Name = "txtXPOS12"
         txtXPOS12.Size = New Size(63, 24)
@@ -1985,7 +1995,7 @@ Partial Class frmDroids
         ' 
         ' txtSpeed12
         ' 
-        txtSpeed12.Location = New Point(662, 297)
+        txtSpeed12.Location = New Point(355, 715)
         txtSpeed12.Margin = New Padding(4, 3, 4, 3)
         txtSpeed12.Name = "txtSpeed12"
         txtSpeed12.Size = New Size(63, 24)
@@ -1995,7 +2005,7 @@ Partial Class frmDroids
         ' 
         ' txtANGL12
         ' 
-        txtANGL12.Location = New Point(591, 297)
+        txtANGL12.Location = New Point(284, 715)
         txtANGL12.Margin = New Padding(4, 3, 4, 3)
         txtANGL12.Name = "txtANGL12"
         txtANGL12.Size = New Size(63, 24)
@@ -2005,7 +2015,7 @@ Partial Class frmDroids
         ' 
         ' txtTow11
         ' 
-        txtTow11.Location = New Point(388, 271)
+        txtTow11.Location = New Point(81, 655)
         txtTow11.Margin = New Padding(4, 3, 4, 3)
         txtTow11.Name = "txtTow11"
         txtTow11.Size = New Size(49, 24)
@@ -2013,23 +2023,23 @@ Partial Class frmDroids
         ' 
         ' txtOGpgm11
         ' 
-        txtOGpgm11.Location = New Point(263, 271)
+        txtOGpgm11.Location = New Point(481, 622)
         txtOGpgm11.Margin = New Padding(4, 3, 4, 3)
         txtOGpgm11.Name = "txtOGpgm11"
-        txtOGpgm11.Size = New Size(117, 24)
+        txtOGpgm11.Size = New Size(335, 24)
         txtOGpgm11.TabIndex = 216
         ' 
         ' txtPGM11
         ' 
-        txtPGM11.Location = New Point(138, 271)
+        txtPGM11.Location = New Point(139, 623)
         txtPGM11.Margin = New Padding(4, 3, 4, 3)
         txtPGM11.Name = "txtPGM11"
-        txtPGM11.Size = New Size(117, 24)
+        txtPGM11.Size = New Size(335, 24)
         txtPGM11.TabIndex = 215
         ' 
         ' txtDest11
         ' 
-        txtDest11.Location = New Point(78, 271)
+        txtDest11.Location = New Point(79, 623)
         txtDest11.Margin = New Padding(4, 3, 4, 3)
         txtDest11.Name = "txtDest11"
         txtDest11.Size = New Size(52, 24)
@@ -2037,7 +2047,7 @@ Partial Class frmDroids
         ' 
         ' txtGarge11
         ' 
-        txtGarge11.Location = New Point(43, 271)
+        txtGarge11.Location = New Point(44, 623)
         txtGarge11.Margin = New Padding(4, 3, 4, 3)
         txtGarge11.Name = "txtGarge11"
         txtGarge11.Size = New Size(27, 24)
@@ -2045,7 +2055,7 @@ Partial Class frmDroids
         ' 
         ' txtYPOS11
         ' 
-        txtYPOS11.Location = New Point(519, 271)
+        txtYPOS11.Location = New Point(212, 655)
         txtYPOS11.Margin = New Padding(4, 3, 4, 3)
         txtYPOS11.Name = "txtYPOS11"
         txtYPOS11.Size = New Size(63, 24)
@@ -2055,7 +2065,7 @@ Partial Class frmDroids
         ' 
         ' txtDroid11
         ' 
-        txtDroid11.Location = New Point(3, 271)
+        txtDroid11.Location = New Point(4, 623)
         txtDroid11.Margin = New Padding(4, 3, 4, 3)
         txtDroid11.Name = "txtDroid11"
         txtDroid11.Size = New Size(32, 24)
@@ -2063,7 +2073,7 @@ Partial Class frmDroids
         ' 
         ' txtXPOS11
         ' 
-        txtXPOS11.Location = New Point(448, 271)
+        txtXPOS11.Location = New Point(141, 655)
         txtXPOS11.Margin = New Padding(4, 3, 4, 3)
         txtXPOS11.Name = "txtXPOS11"
         txtXPOS11.Size = New Size(63, 24)
@@ -2073,7 +2083,7 @@ Partial Class frmDroids
         ' 
         ' txtSpeed11
         ' 
-        txtSpeed11.Location = New Point(662, 271)
+        txtSpeed11.Location = New Point(355, 655)
         txtSpeed11.Margin = New Padding(4, 3, 4, 3)
         txtSpeed11.Name = "txtSpeed11"
         txtSpeed11.Size = New Size(63, 24)
@@ -2083,7 +2093,7 @@ Partial Class frmDroids
         ' 
         ' txtANGL11
         ' 
-        txtANGL11.Location = New Point(591, 271)
+        txtANGL11.Location = New Point(284, 655)
         txtANGL11.Margin = New Padding(4, 3, 4, 3)
         txtANGL11.Name = "txtANGL11"
         txtANGL11.Size = New Size(63, 24)
@@ -2093,7 +2103,7 @@ Partial Class frmDroids
         ' 
         ' txtTow30
         ' 
-        txtTow30.Location = New Point(388, 773)
+        txtTow30.Location = New Point(388, 1590)
         txtTow30.Margin = New Padding(4, 3, 4, 3)
         txtTow30.Name = "txtTow30"
         txtTow30.Size = New Size(49, 24)
@@ -2101,7 +2111,7 @@ Partial Class frmDroids
         ' 
         ' txtOGpgm30
         ' 
-        txtOGpgm30.Location = New Point(263, 773)
+        txtOGpgm30.Location = New Point(263, 1590)
         txtOGpgm30.Margin = New Padding(4, 3, 4, 3)
         txtOGpgm30.Name = "txtOGpgm30"
         txtOGpgm30.Size = New Size(117, 24)
@@ -2109,7 +2119,7 @@ Partial Class frmDroids
         ' 
         ' txtPGM30
         ' 
-        txtPGM30.Location = New Point(138, 773)
+        txtPGM30.Location = New Point(138, 1590)
         txtPGM30.Margin = New Padding(4, 3, 4, 3)
         txtPGM30.Name = "txtPGM30"
         txtPGM30.Size = New Size(117, 24)
@@ -2117,7 +2127,7 @@ Partial Class frmDroids
         ' 
         ' txtDest30
         ' 
-        txtDest30.Location = New Point(78, 773)
+        txtDest30.Location = New Point(78, 1590)
         txtDest30.Margin = New Padding(4, 3, 4, 3)
         txtDest30.Name = "txtDest30"
         txtDest30.Size = New Size(52, 24)
@@ -2125,7 +2135,7 @@ Partial Class frmDroids
         ' 
         ' txtGarge30
         ' 
-        txtGarge30.Location = New Point(43, 773)
+        txtGarge30.Location = New Point(43, 1590)
         txtGarge30.Margin = New Padding(4, 3, 4, 3)
         txtGarge30.Name = "txtGarge30"
         txtGarge30.Size = New Size(27, 24)
@@ -2133,7 +2143,7 @@ Partial Class frmDroids
         ' 
         ' txtYPOS30
         ' 
-        txtYPOS30.Location = New Point(519, 773)
+        txtYPOS30.Location = New Point(519, 1590)
         txtYPOS30.Margin = New Padding(4, 3, 4, 3)
         txtYPOS30.Name = "txtYPOS30"
         txtYPOS30.Size = New Size(63, 24)
@@ -2143,7 +2153,7 @@ Partial Class frmDroids
         ' 
         ' txtDroid30
         ' 
-        txtDroid30.Location = New Point(3, 773)
+        txtDroid30.Location = New Point(3, 1590)
         txtDroid30.Margin = New Padding(4, 3, 4, 3)
         txtDroid30.Name = "txtDroid30"
         txtDroid30.Size = New Size(32, 24)
@@ -2151,7 +2161,7 @@ Partial Class frmDroids
         ' 
         ' txtXPOS30
         ' 
-        txtXPOS30.Location = New Point(448, 773)
+        txtXPOS30.Location = New Point(448, 1590)
         txtXPOS30.Margin = New Padding(4, 3, 4, 3)
         txtXPOS30.Name = "txtXPOS30"
         txtXPOS30.Size = New Size(63, 24)
@@ -2161,7 +2171,7 @@ Partial Class frmDroids
         ' 
         ' txtSpeed30
         ' 
-        txtSpeed30.Location = New Point(664, 773)
+        txtSpeed30.Location = New Point(664, 1590)
         txtSpeed30.Margin = New Padding(4, 3, 4, 3)
         txtSpeed30.Name = "txtSpeed30"
         txtSpeed30.Size = New Size(63, 24)
@@ -2171,7 +2181,7 @@ Partial Class frmDroids
         ' 
         ' txtANGL30
         ' 
-        txtANGL30.Location = New Point(591, 773)
+        txtANGL30.Location = New Point(591, 1590)
         txtANGL30.Margin = New Padding(4, 3, 4, 3)
         txtANGL30.Name = "txtANGL30"
         txtANGL30.Size = New Size(63, 24)
@@ -2181,7 +2191,7 @@ Partial Class frmDroids
         ' 
         ' txtTow29
         ' 
-        txtTow29.Location = New Point(388, 747)
+        txtTow29.Location = New Point(388, 1564)
         txtTow29.Margin = New Padding(4, 3, 4, 3)
         txtTow29.Name = "txtTow29"
         txtTow29.Size = New Size(49, 24)
@@ -2189,7 +2199,7 @@ Partial Class frmDroids
         ' 
         ' txtOGpgm29
         ' 
-        txtOGpgm29.Location = New Point(263, 747)
+        txtOGpgm29.Location = New Point(263, 1564)
         txtOGpgm29.Margin = New Padding(4, 3, 4, 3)
         txtOGpgm29.Name = "txtOGpgm29"
         txtOGpgm29.Size = New Size(117, 24)
@@ -2197,7 +2207,7 @@ Partial Class frmDroids
         ' 
         ' txtPGM29
         ' 
-        txtPGM29.Location = New Point(138, 747)
+        txtPGM29.Location = New Point(138, 1564)
         txtPGM29.Margin = New Padding(4, 3, 4, 3)
         txtPGM29.Name = "txtPGM29"
         txtPGM29.Size = New Size(117, 24)
@@ -2205,7 +2215,7 @@ Partial Class frmDroids
         ' 
         ' txtDest29
         ' 
-        txtDest29.Location = New Point(78, 747)
+        txtDest29.Location = New Point(78, 1564)
         txtDest29.Margin = New Padding(4, 3, 4, 3)
         txtDest29.Name = "txtDest29"
         txtDest29.Size = New Size(52, 24)
@@ -2213,7 +2223,7 @@ Partial Class frmDroids
         ' 
         ' txtGarge29
         ' 
-        txtGarge29.Location = New Point(43, 747)
+        txtGarge29.Location = New Point(43, 1564)
         txtGarge29.Margin = New Padding(4, 3, 4, 3)
         txtGarge29.Name = "txtGarge29"
         txtGarge29.Size = New Size(27, 24)
@@ -2221,7 +2231,7 @@ Partial Class frmDroids
         ' 
         ' txtYPOS29
         ' 
-        txtYPOS29.Location = New Point(519, 747)
+        txtYPOS29.Location = New Point(519, 1564)
         txtYPOS29.Margin = New Padding(4, 3, 4, 3)
         txtYPOS29.Name = "txtYPOS29"
         txtYPOS29.Size = New Size(63, 24)
@@ -2231,7 +2241,7 @@ Partial Class frmDroids
         ' 
         ' txtDroid29
         ' 
-        txtDroid29.Location = New Point(3, 747)
+        txtDroid29.Location = New Point(3, 1564)
         txtDroid29.Margin = New Padding(4, 3, 4, 3)
         txtDroid29.Name = "txtDroid29"
         txtDroid29.Size = New Size(32, 24)
@@ -2239,7 +2249,7 @@ Partial Class frmDroids
         ' 
         ' txtXPOS29
         ' 
-        txtXPOS29.Location = New Point(448, 747)
+        txtXPOS29.Location = New Point(448, 1564)
         txtXPOS29.Margin = New Padding(4, 3, 4, 3)
         txtXPOS29.Name = "txtXPOS29"
         txtXPOS29.Size = New Size(63, 24)
@@ -2249,7 +2259,7 @@ Partial Class frmDroids
         ' 
         ' txtSpeed29
         ' 
-        txtSpeed29.Location = New Point(664, 747)
+        txtSpeed29.Location = New Point(664, 1564)
         txtSpeed29.Margin = New Padding(4, 3, 4, 3)
         txtSpeed29.Name = "txtSpeed29"
         txtSpeed29.Size = New Size(63, 24)
@@ -2259,7 +2269,7 @@ Partial Class frmDroids
         ' 
         ' txtANGL29
         ' 
-        txtANGL29.Location = New Point(591, 747)
+        txtANGL29.Location = New Point(591, 1564)
         txtANGL29.Margin = New Padding(4, 3, 4, 3)
         txtANGL29.Name = "txtANGL29"
         txtANGL29.Size = New Size(63, 24)
@@ -2269,7 +2279,7 @@ Partial Class frmDroids
         ' 
         ' txtTow28
         ' 
-        txtTow28.Location = New Point(388, 721)
+        txtTow28.Location = New Point(388, 1538)
         txtTow28.Margin = New Padding(4, 3, 4, 3)
         txtTow28.Name = "txtTow28"
         txtTow28.Size = New Size(49, 24)
@@ -2277,7 +2287,7 @@ Partial Class frmDroids
         ' 
         ' txtOGpgm28
         ' 
-        txtOGpgm28.Location = New Point(263, 721)
+        txtOGpgm28.Location = New Point(263, 1538)
         txtOGpgm28.Margin = New Padding(4, 3, 4, 3)
         txtOGpgm28.Name = "txtOGpgm28"
         txtOGpgm28.Size = New Size(117, 24)
@@ -2285,7 +2295,7 @@ Partial Class frmDroids
         ' 
         ' txtPGM28
         ' 
-        txtPGM28.Location = New Point(138, 721)
+        txtPGM28.Location = New Point(138, 1538)
         txtPGM28.Margin = New Padding(4, 3, 4, 3)
         txtPGM28.Name = "txtPGM28"
         txtPGM28.Size = New Size(117, 24)
@@ -2293,7 +2303,7 @@ Partial Class frmDroids
         ' 
         ' txtDest28
         ' 
-        txtDest28.Location = New Point(78, 721)
+        txtDest28.Location = New Point(78, 1538)
         txtDest28.Margin = New Padding(4, 3, 4, 3)
         txtDest28.Name = "txtDest28"
         txtDest28.Size = New Size(52, 24)
@@ -2301,7 +2311,7 @@ Partial Class frmDroids
         ' 
         ' txtGarge28
         ' 
-        txtGarge28.Location = New Point(43, 721)
+        txtGarge28.Location = New Point(43, 1538)
         txtGarge28.Margin = New Padding(4, 3, 4, 3)
         txtGarge28.Name = "txtGarge28"
         txtGarge28.Size = New Size(27, 24)
@@ -2309,7 +2319,7 @@ Partial Class frmDroids
         ' 
         ' txtYPOS28
         ' 
-        txtYPOS28.Location = New Point(519, 721)
+        txtYPOS28.Location = New Point(519, 1538)
         txtYPOS28.Margin = New Padding(4, 3, 4, 3)
         txtYPOS28.Name = "txtYPOS28"
         txtYPOS28.Size = New Size(63, 24)
@@ -2319,7 +2329,7 @@ Partial Class frmDroids
         ' 
         ' txtDroid28
         ' 
-        txtDroid28.Location = New Point(3, 721)
+        txtDroid28.Location = New Point(3, 1538)
         txtDroid28.Margin = New Padding(4, 3, 4, 3)
         txtDroid28.Name = "txtDroid28"
         txtDroid28.Size = New Size(32, 24)
@@ -2327,7 +2337,7 @@ Partial Class frmDroids
         ' 
         ' txtXPOS28
         ' 
-        txtXPOS28.Location = New Point(448, 721)
+        txtXPOS28.Location = New Point(448, 1538)
         txtXPOS28.Margin = New Padding(4, 3, 4, 3)
         txtXPOS28.Name = "txtXPOS28"
         txtXPOS28.Size = New Size(63, 24)
@@ -2337,7 +2347,7 @@ Partial Class frmDroids
         ' 
         ' txtSpeed28
         ' 
-        txtSpeed28.Location = New Point(664, 721)
+        txtSpeed28.Location = New Point(664, 1538)
         txtSpeed28.Margin = New Padding(4, 3, 4, 3)
         txtSpeed28.Name = "txtSpeed28"
         txtSpeed28.Size = New Size(63, 24)
@@ -2347,7 +2357,7 @@ Partial Class frmDroids
         ' 
         ' txtANGL28
         ' 
-        txtANGL28.Location = New Point(591, 721)
+        txtANGL28.Location = New Point(591, 1538)
         txtANGL28.Margin = New Padding(4, 3, 4, 3)
         txtANGL28.Name = "txtANGL28"
         txtANGL28.Size = New Size(63, 24)
@@ -2357,7 +2367,7 @@ Partial Class frmDroids
         ' 
         ' txtTow27
         ' 
-        txtTow27.Location = New Point(388, 695)
+        txtTow27.Location = New Point(388, 1512)
         txtTow27.Margin = New Padding(4, 3, 4, 3)
         txtTow27.Name = "txtTow27"
         txtTow27.Size = New Size(49, 24)
@@ -2365,7 +2375,7 @@ Partial Class frmDroids
         ' 
         ' txtOGpgm27
         ' 
-        txtOGpgm27.Location = New Point(263, 695)
+        txtOGpgm27.Location = New Point(263, 1512)
         txtOGpgm27.Margin = New Padding(4, 3, 4, 3)
         txtOGpgm27.Name = "txtOGpgm27"
         txtOGpgm27.Size = New Size(117, 24)
@@ -2373,7 +2383,7 @@ Partial Class frmDroids
         ' 
         ' txtPGM27
         ' 
-        txtPGM27.Location = New Point(138, 695)
+        txtPGM27.Location = New Point(138, 1512)
         txtPGM27.Margin = New Padding(4, 3, 4, 3)
         txtPGM27.Name = "txtPGM27"
         txtPGM27.Size = New Size(117, 24)
@@ -2381,7 +2391,7 @@ Partial Class frmDroids
         ' 
         ' txtDest27
         ' 
-        txtDest27.Location = New Point(78, 695)
+        txtDest27.Location = New Point(78, 1512)
         txtDest27.Margin = New Padding(4, 3, 4, 3)
         txtDest27.Name = "txtDest27"
         txtDest27.Size = New Size(52, 24)
@@ -2389,7 +2399,7 @@ Partial Class frmDroids
         ' 
         ' txtGarge27
         ' 
-        txtGarge27.Location = New Point(43, 695)
+        txtGarge27.Location = New Point(43, 1512)
         txtGarge27.Margin = New Padding(4, 3, 4, 3)
         txtGarge27.Name = "txtGarge27"
         txtGarge27.Size = New Size(27, 24)
@@ -2397,7 +2407,7 @@ Partial Class frmDroids
         ' 
         ' txtYPOS27
         ' 
-        txtYPOS27.Location = New Point(519, 695)
+        txtYPOS27.Location = New Point(519, 1512)
         txtYPOS27.Margin = New Padding(4, 3, 4, 3)
         txtYPOS27.Name = "txtYPOS27"
         txtYPOS27.Size = New Size(63, 24)
@@ -2407,7 +2417,7 @@ Partial Class frmDroids
         ' 
         ' txtDroid27
         ' 
-        txtDroid27.Location = New Point(3, 695)
+        txtDroid27.Location = New Point(3, 1512)
         txtDroid27.Margin = New Padding(4, 3, 4, 3)
         txtDroid27.Name = "txtDroid27"
         txtDroid27.Size = New Size(32, 24)
@@ -2415,7 +2425,7 @@ Partial Class frmDroids
         ' 
         ' txtXPOS27
         ' 
-        txtXPOS27.Location = New Point(448, 695)
+        txtXPOS27.Location = New Point(448, 1512)
         txtXPOS27.Margin = New Padding(4, 3, 4, 3)
         txtXPOS27.Name = "txtXPOS27"
         txtXPOS27.Size = New Size(63, 24)
@@ -2425,7 +2435,7 @@ Partial Class frmDroids
         ' 
         ' txtSpeed27
         ' 
-        txtSpeed27.Location = New Point(664, 695)
+        txtSpeed27.Location = New Point(664, 1512)
         txtSpeed27.Margin = New Padding(4, 3, 4, 3)
         txtSpeed27.Name = "txtSpeed27"
         txtSpeed27.Size = New Size(63, 24)
@@ -2435,7 +2445,7 @@ Partial Class frmDroids
         ' 
         ' txtANGL27
         ' 
-        txtANGL27.Location = New Point(591, 695)
+        txtANGL27.Location = New Point(591, 1512)
         txtANGL27.Margin = New Padding(4, 3, 4, 3)
         txtANGL27.Name = "txtANGL27"
         txtANGL27.Size = New Size(63, 24)
@@ -2445,7 +2455,7 @@ Partial Class frmDroids
         ' 
         ' txtTow26
         ' 
-        txtTow26.Location = New Point(388, 669)
+        txtTow26.Location = New Point(388, 1486)
         txtTow26.Margin = New Padding(4, 3, 4, 3)
         txtTow26.Name = "txtTow26"
         txtTow26.Size = New Size(49, 24)
@@ -2453,7 +2463,7 @@ Partial Class frmDroids
         ' 
         ' txtOGpgm26
         ' 
-        txtOGpgm26.Location = New Point(263, 669)
+        txtOGpgm26.Location = New Point(263, 1486)
         txtOGpgm26.Margin = New Padding(4, 3, 4, 3)
         txtOGpgm26.Name = "txtOGpgm26"
         txtOGpgm26.Size = New Size(117, 24)
@@ -2461,7 +2471,7 @@ Partial Class frmDroids
         ' 
         ' txtPGM26
         ' 
-        txtPGM26.Location = New Point(138, 669)
+        txtPGM26.Location = New Point(138, 1486)
         txtPGM26.Margin = New Padding(4, 3, 4, 3)
         txtPGM26.Name = "txtPGM26"
         txtPGM26.Size = New Size(117, 24)
@@ -2469,7 +2479,7 @@ Partial Class frmDroids
         ' 
         ' txtDest26
         ' 
-        txtDest26.Location = New Point(78, 669)
+        txtDest26.Location = New Point(78, 1486)
         txtDest26.Margin = New Padding(4, 3, 4, 3)
         txtDest26.Name = "txtDest26"
         txtDest26.Size = New Size(52, 24)
@@ -2477,7 +2487,7 @@ Partial Class frmDroids
         ' 
         ' txtGarge26
         ' 
-        txtGarge26.Location = New Point(43, 669)
+        txtGarge26.Location = New Point(43, 1486)
         txtGarge26.Margin = New Padding(4, 3, 4, 3)
         txtGarge26.Name = "txtGarge26"
         txtGarge26.Size = New Size(27, 24)
@@ -2485,7 +2495,7 @@ Partial Class frmDroids
         ' 
         ' txtYPOS26
         ' 
-        txtYPOS26.Location = New Point(519, 669)
+        txtYPOS26.Location = New Point(519, 1486)
         txtYPOS26.Margin = New Padding(4, 3, 4, 3)
         txtYPOS26.Name = "txtYPOS26"
         txtYPOS26.Size = New Size(63, 24)
@@ -2495,7 +2505,7 @@ Partial Class frmDroids
         ' 
         ' txtDroid26
         ' 
-        txtDroid26.Location = New Point(3, 669)
+        txtDroid26.Location = New Point(3, 1486)
         txtDroid26.Margin = New Padding(4, 3, 4, 3)
         txtDroid26.Name = "txtDroid26"
         txtDroid26.Size = New Size(32, 24)
@@ -2503,7 +2513,7 @@ Partial Class frmDroids
         ' 
         ' txtXPOS26
         ' 
-        txtXPOS26.Location = New Point(448, 669)
+        txtXPOS26.Location = New Point(448, 1486)
         txtXPOS26.Margin = New Padding(4, 3, 4, 3)
         txtXPOS26.Name = "txtXPOS26"
         txtXPOS26.Size = New Size(63, 24)
@@ -2513,7 +2523,7 @@ Partial Class frmDroids
         ' 
         ' txtSpeed26
         ' 
-        txtSpeed26.Location = New Point(664, 669)
+        txtSpeed26.Location = New Point(664, 1486)
         txtSpeed26.Margin = New Padding(4, 3, 4, 3)
         txtSpeed26.Name = "txtSpeed26"
         txtSpeed26.Size = New Size(63, 24)
@@ -2523,7 +2533,7 @@ Partial Class frmDroids
         ' 
         ' txtANGL26
         ' 
-        txtANGL26.Location = New Point(591, 669)
+        txtANGL26.Location = New Point(591, 1486)
         txtANGL26.Margin = New Padding(4, 3, 4, 3)
         txtANGL26.Name = "txtANGL26"
         txtANGL26.Size = New Size(63, 24)
@@ -2533,7 +2543,7 @@ Partial Class frmDroids
         ' 
         ' txtTow25
         ' 
-        txtTow25.Location = New Point(388, 643)
+        txtTow25.Location = New Point(388, 1460)
         txtTow25.Margin = New Padding(4, 3, 4, 3)
         txtTow25.Name = "txtTow25"
         txtTow25.Size = New Size(49, 24)
@@ -2541,7 +2551,7 @@ Partial Class frmDroids
         ' 
         ' txtOGpgm25
         ' 
-        txtOGpgm25.Location = New Point(263, 643)
+        txtOGpgm25.Location = New Point(263, 1460)
         txtOGpgm25.Margin = New Padding(4, 3, 4, 3)
         txtOGpgm25.Name = "txtOGpgm25"
         txtOGpgm25.Size = New Size(117, 24)
@@ -2549,7 +2559,7 @@ Partial Class frmDroids
         ' 
         ' txtPGM25
         ' 
-        txtPGM25.Location = New Point(138, 643)
+        txtPGM25.Location = New Point(138, 1460)
         txtPGM25.Margin = New Padding(4, 3, 4, 3)
         txtPGM25.Name = "txtPGM25"
         txtPGM25.Size = New Size(117, 24)
@@ -2557,7 +2567,7 @@ Partial Class frmDroids
         ' 
         ' txtDest25
         ' 
-        txtDest25.Location = New Point(78, 643)
+        txtDest25.Location = New Point(78, 1460)
         txtDest25.Margin = New Padding(4, 3, 4, 3)
         txtDest25.Name = "txtDest25"
         txtDest25.Size = New Size(52, 24)
@@ -2565,7 +2575,7 @@ Partial Class frmDroids
         ' 
         ' txtGarge25
         ' 
-        txtGarge25.Location = New Point(43, 643)
+        txtGarge25.Location = New Point(43, 1460)
         txtGarge25.Margin = New Padding(4, 3, 4, 3)
         txtGarge25.Name = "txtGarge25"
         txtGarge25.Size = New Size(27, 24)
@@ -2573,7 +2583,7 @@ Partial Class frmDroids
         ' 
         ' txtYPOS25
         ' 
-        txtYPOS25.Location = New Point(519, 643)
+        txtYPOS25.Location = New Point(519, 1460)
         txtYPOS25.Margin = New Padding(4, 3, 4, 3)
         txtYPOS25.Name = "txtYPOS25"
         txtYPOS25.Size = New Size(63, 24)
@@ -2583,7 +2593,7 @@ Partial Class frmDroids
         ' 
         ' txtDroid25
         ' 
-        txtDroid25.Location = New Point(3, 643)
+        txtDroid25.Location = New Point(3, 1460)
         txtDroid25.Margin = New Padding(4, 3, 4, 3)
         txtDroid25.Name = "txtDroid25"
         txtDroid25.Size = New Size(32, 24)
@@ -2591,7 +2601,7 @@ Partial Class frmDroids
         ' 
         ' txtXPOS25
         ' 
-        txtXPOS25.Location = New Point(448, 643)
+        txtXPOS25.Location = New Point(448, 1460)
         txtXPOS25.Margin = New Padding(4, 3, 4, 3)
         txtXPOS25.Name = "txtXPOS25"
         txtXPOS25.Size = New Size(63, 24)
@@ -2601,7 +2611,7 @@ Partial Class frmDroids
         ' 
         ' txtSpeed25
         ' 
-        txtSpeed25.Location = New Point(664, 643)
+        txtSpeed25.Location = New Point(664, 1460)
         txtSpeed25.Margin = New Padding(4, 3, 4, 3)
         txtSpeed25.Name = "txtSpeed25"
         txtSpeed25.Size = New Size(63, 24)
@@ -2611,7 +2621,7 @@ Partial Class frmDroids
         ' 
         ' txtANGL25
         ' 
-        txtANGL25.Location = New Point(591, 643)
+        txtANGL25.Location = New Point(591, 1460)
         txtANGL25.Margin = New Padding(4, 3, 4, 3)
         txtANGL25.Name = "txtANGL25"
         txtANGL25.Size = New Size(63, 24)
@@ -2621,7 +2631,7 @@ Partial Class frmDroids
         ' 
         ' txtTow24
         ' 
-        txtTow24.Location = New Point(388, 617)
+        txtTow24.Location = New Point(388, 1434)
         txtTow24.Margin = New Padding(4, 3, 4, 3)
         txtTow24.Name = "txtTow24"
         txtTow24.Size = New Size(49, 24)
@@ -2629,7 +2639,7 @@ Partial Class frmDroids
         ' 
         ' txtOGpgm24
         ' 
-        txtOGpgm24.Location = New Point(263, 617)
+        txtOGpgm24.Location = New Point(263, 1434)
         txtOGpgm24.Margin = New Padding(4, 3, 4, 3)
         txtOGpgm24.Name = "txtOGpgm24"
         txtOGpgm24.Size = New Size(117, 24)
@@ -2637,7 +2647,7 @@ Partial Class frmDroids
         ' 
         ' txtPGM24
         ' 
-        txtPGM24.Location = New Point(138, 617)
+        txtPGM24.Location = New Point(138, 1434)
         txtPGM24.Margin = New Padding(4, 3, 4, 3)
         txtPGM24.Name = "txtPGM24"
         txtPGM24.Size = New Size(117, 24)
@@ -2645,7 +2655,7 @@ Partial Class frmDroids
         ' 
         ' txtDest24
         ' 
-        txtDest24.Location = New Point(78, 617)
+        txtDest24.Location = New Point(78, 1434)
         txtDest24.Margin = New Padding(4, 3, 4, 3)
         txtDest24.Name = "txtDest24"
         txtDest24.Size = New Size(52, 24)
@@ -2653,7 +2663,7 @@ Partial Class frmDroids
         ' 
         ' txtGarge24
         ' 
-        txtGarge24.Location = New Point(43, 617)
+        txtGarge24.Location = New Point(43, 1434)
         txtGarge24.Margin = New Padding(4, 3, 4, 3)
         txtGarge24.Name = "txtGarge24"
         txtGarge24.Size = New Size(27, 24)
@@ -2661,7 +2671,7 @@ Partial Class frmDroids
         ' 
         ' txtYPOS24
         ' 
-        txtYPOS24.Location = New Point(519, 617)
+        txtYPOS24.Location = New Point(519, 1434)
         txtYPOS24.Margin = New Padding(4, 3, 4, 3)
         txtYPOS24.Name = "txtYPOS24"
         txtYPOS24.Size = New Size(63, 24)
@@ -2671,7 +2681,7 @@ Partial Class frmDroids
         ' 
         ' txtDroid24
         ' 
-        txtDroid24.Location = New Point(3, 617)
+        txtDroid24.Location = New Point(3, 1434)
         txtDroid24.Margin = New Padding(4, 3, 4, 3)
         txtDroid24.Name = "txtDroid24"
         txtDroid24.Size = New Size(32, 24)
@@ -2679,7 +2689,7 @@ Partial Class frmDroids
         ' 
         ' txtXPOS24
         ' 
-        txtXPOS24.Location = New Point(448, 617)
+        txtXPOS24.Location = New Point(448, 1434)
         txtXPOS24.Margin = New Padding(4, 3, 4, 3)
         txtXPOS24.Name = "txtXPOS24"
         txtXPOS24.Size = New Size(63, 24)
@@ -2689,7 +2699,7 @@ Partial Class frmDroids
         ' 
         ' txtSpeed24
         ' 
-        txtSpeed24.Location = New Point(664, 617)
+        txtSpeed24.Location = New Point(664, 1434)
         txtSpeed24.Margin = New Padding(4, 3, 4, 3)
         txtSpeed24.Name = "txtSpeed24"
         txtSpeed24.Size = New Size(63, 24)
@@ -2699,7 +2709,7 @@ Partial Class frmDroids
         ' 
         ' txtANGL24
         ' 
-        txtANGL24.Location = New Point(591, 617)
+        txtANGL24.Location = New Point(591, 1434)
         txtANGL24.Margin = New Padding(4, 3, 4, 3)
         txtANGL24.Name = "txtANGL24"
         txtANGL24.Size = New Size(63, 24)
@@ -2709,7 +2719,7 @@ Partial Class frmDroids
         ' 
         ' txtTow23
         ' 
-        txtTow23.Location = New Point(388, 590)
+        txtTow23.Location = New Point(388, 1407)
         txtTow23.Margin = New Padding(4, 3, 4, 3)
         txtTow23.Name = "txtTow23"
         txtTow23.Size = New Size(49, 24)
@@ -2717,7 +2727,7 @@ Partial Class frmDroids
         ' 
         ' txtOGpgm23
         ' 
-        txtOGpgm23.Location = New Point(263, 590)
+        txtOGpgm23.Location = New Point(263, 1407)
         txtOGpgm23.Margin = New Padding(4, 3, 4, 3)
         txtOGpgm23.Name = "txtOGpgm23"
         txtOGpgm23.Size = New Size(117, 24)
@@ -2725,7 +2735,7 @@ Partial Class frmDroids
         ' 
         ' txtPGM23
         ' 
-        txtPGM23.Location = New Point(138, 590)
+        txtPGM23.Location = New Point(138, 1407)
         txtPGM23.Margin = New Padding(4, 3, 4, 3)
         txtPGM23.Name = "txtPGM23"
         txtPGM23.Size = New Size(117, 24)
@@ -2733,7 +2743,7 @@ Partial Class frmDroids
         ' 
         ' txtDest23
         ' 
-        txtDest23.Location = New Point(78, 590)
+        txtDest23.Location = New Point(78, 1407)
         txtDest23.Margin = New Padding(4, 3, 4, 3)
         txtDest23.Name = "txtDest23"
         txtDest23.Size = New Size(52, 24)
@@ -2741,7 +2751,7 @@ Partial Class frmDroids
         ' 
         ' txtGarge23
         ' 
-        txtGarge23.Location = New Point(43, 590)
+        txtGarge23.Location = New Point(43, 1407)
         txtGarge23.Margin = New Padding(4, 3, 4, 3)
         txtGarge23.Name = "txtGarge23"
         txtGarge23.Size = New Size(27, 24)
@@ -2749,7 +2759,7 @@ Partial Class frmDroids
         ' 
         ' txtYPOS23
         ' 
-        txtYPOS23.Location = New Point(519, 590)
+        txtYPOS23.Location = New Point(519, 1407)
         txtYPOS23.Margin = New Padding(4, 3, 4, 3)
         txtYPOS23.Name = "txtYPOS23"
         txtYPOS23.Size = New Size(63, 24)
@@ -2759,7 +2769,7 @@ Partial Class frmDroids
         ' 
         ' txtDroid23
         ' 
-        txtDroid23.Location = New Point(3, 590)
+        txtDroid23.Location = New Point(3, 1407)
         txtDroid23.Margin = New Padding(4, 3, 4, 3)
         txtDroid23.Name = "txtDroid23"
         txtDroid23.Size = New Size(32, 24)
@@ -2767,7 +2777,7 @@ Partial Class frmDroids
         ' 
         ' txtXPOS23
         ' 
-        txtXPOS23.Location = New Point(448, 590)
+        txtXPOS23.Location = New Point(448, 1407)
         txtXPOS23.Margin = New Padding(4, 3, 4, 3)
         txtXPOS23.Name = "txtXPOS23"
         txtXPOS23.Size = New Size(63, 24)
@@ -2777,7 +2787,7 @@ Partial Class frmDroids
         ' 
         ' txtSpeed23
         ' 
-        txtSpeed23.Location = New Point(664, 590)
+        txtSpeed23.Location = New Point(664, 1407)
         txtSpeed23.Margin = New Padding(4, 3, 4, 3)
         txtSpeed23.Name = "txtSpeed23"
         txtSpeed23.Size = New Size(63, 24)
@@ -2787,7 +2797,7 @@ Partial Class frmDroids
         ' 
         ' txtANGL23
         ' 
-        txtANGL23.Location = New Point(591, 590)
+        txtANGL23.Location = New Point(591, 1407)
         txtANGL23.Margin = New Padding(4, 3, 4, 3)
         txtANGL23.Name = "txtANGL23"
         txtANGL23.Size = New Size(63, 24)
@@ -2797,7 +2807,7 @@ Partial Class frmDroids
         ' 
         ' txtTow22
         ' 
-        txtTow22.Location = New Point(388, 564)
+        txtTow22.Location = New Point(388, 1381)
         txtTow22.Margin = New Padding(4, 3, 4, 3)
         txtTow22.Name = "txtTow22"
         txtTow22.Size = New Size(49, 24)
@@ -2805,7 +2815,7 @@ Partial Class frmDroids
         ' 
         ' txtOGpgm22
         ' 
-        txtOGpgm22.Location = New Point(263, 564)
+        txtOGpgm22.Location = New Point(263, 1381)
         txtOGpgm22.Margin = New Padding(4, 3, 4, 3)
         txtOGpgm22.Name = "txtOGpgm22"
         txtOGpgm22.Size = New Size(117, 24)
@@ -2813,7 +2823,7 @@ Partial Class frmDroids
         ' 
         ' txtPGM22
         ' 
-        txtPGM22.Location = New Point(138, 564)
+        txtPGM22.Location = New Point(138, 1381)
         txtPGM22.Margin = New Padding(4, 3, 4, 3)
         txtPGM22.Name = "txtPGM22"
         txtPGM22.Size = New Size(117, 24)
@@ -2821,7 +2831,7 @@ Partial Class frmDroids
         ' 
         ' txtDest22
         ' 
-        txtDest22.Location = New Point(78, 564)
+        txtDest22.Location = New Point(78, 1381)
         txtDest22.Margin = New Padding(4, 3, 4, 3)
         txtDest22.Name = "txtDest22"
         txtDest22.Size = New Size(52, 24)
@@ -2829,7 +2839,7 @@ Partial Class frmDroids
         ' 
         ' txtGarge22
         ' 
-        txtGarge22.Location = New Point(43, 564)
+        txtGarge22.Location = New Point(43, 1381)
         txtGarge22.Margin = New Padding(4, 3, 4, 3)
         txtGarge22.Name = "txtGarge22"
         txtGarge22.Size = New Size(27, 24)
@@ -2837,7 +2847,7 @@ Partial Class frmDroids
         ' 
         ' txtYPOS22
         ' 
-        txtYPOS22.Location = New Point(519, 564)
+        txtYPOS22.Location = New Point(519, 1381)
         txtYPOS22.Margin = New Padding(4, 3, 4, 3)
         txtYPOS22.Name = "txtYPOS22"
         txtYPOS22.Size = New Size(63, 24)
@@ -2847,7 +2857,7 @@ Partial Class frmDroids
         ' 
         ' txtDroid22
         ' 
-        txtDroid22.Location = New Point(3, 564)
+        txtDroid22.Location = New Point(3, 1381)
         txtDroid22.Margin = New Padding(4, 3, 4, 3)
         txtDroid22.Name = "txtDroid22"
         txtDroid22.Size = New Size(32, 24)
@@ -2855,7 +2865,7 @@ Partial Class frmDroids
         ' 
         ' txtXPOS22
         ' 
-        txtXPOS22.Location = New Point(448, 564)
+        txtXPOS22.Location = New Point(448, 1381)
         txtXPOS22.Margin = New Padding(4, 3, 4, 3)
         txtXPOS22.Name = "txtXPOS22"
         txtXPOS22.Size = New Size(63, 24)
@@ -2865,7 +2875,7 @@ Partial Class frmDroids
         ' 
         ' txtSpeed22
         ' 
-        txtSpeed22.Location = New Point(664, 564)
+        txtSpeed22.Location = New Point(664, 1381)
         txtSpeed22.Margin = New Padding(4, 3, 4, 3)
         txtSpeed22.Name = "txtSpeed22"
         txtSpeed22.Size = New Size(63, 24)
@@ -2875,7 +2885,7 @@ Partial Class frmDroids
         ' 
         ' txtANGL22
         ' 
-        txtANGL22.Location = New Point(591, 564)
+        txtANGL22.Location = New Point(591, 1381)
         txtANGL22.Margin = New Padding(4, 3, 4, 3)
         txtANGL22.Name = "txtANGL22"
         txtANGL22.Size = New Size(63, 24)
@@ -2885,7 +2895,7 @@ Partial Class frmDroids
         ' 
         ' txtTow21
         ' 
-        txtTow21.Location = New Point(388, 538)
+        txtTow21.Location = New Point(388, 1355)
         txtTow21.Margin = New Padding(4, 3, 4, 3)
         txtTow21.Name = "txtTow21"
         txtTow21.Size = New Size(49, 24)
@@ -2893,7 +2903,7 @@ Partial Class frmDroids
         ' 
         ' txtOGpgm21
         ' 
-        txtOGpgm21.Location = New Point(263, 538)
+        txtOGpgm21.Location = New Point(263, 1355)
         txtOGpgm21.Margin = New Padding(4, 3, 4, 3)
         txtOGpgm21.Name = "txtOGpgm21"
         txtOGpgm21.Size = New Size(117, 24)
@@ -2901,7 +2911,7 @@ Partial Class frmDroids
         ' 
         ' txtPGM21
         ' 
-        txtPGM21.Location = New Point(138, 538)
+        txtPGM21.Location = New Point(138, 1355)
         txtPGM21.Margin = New Padding(4, 3, 4, 3)
         txtPGM21.Name = "txtPGM21"
         txtPGM21.Size = New Size(117, 24)
@@ -2909,7 +2919,7 @@ Partial Class frmDroids
         ' 
         ' txtDest21
         ' 
-        txtDest21.Location = New Point(78, 538)
+        txtDest21.Location = New Point(78, 1355)
         txtDest21.Margin = New Padding(4, 3, 4, 3)
         txtDest21.Name = "txtDest21"
         txtDest21.Size = New Size(52, 24)
@@ -2917,7 +2927,7 @@ Partial Class frmDroids
         ' 
         ' txtGarge21
         ' 
-        txtGarge21.Location = New Point(43, 538)
+        txtGarge21.Location = New Point(43, 1355)
         txtGarge21.Margin = New Padding(4, 3, 4, 3)
         txtGarge21.Name = "txtGarge21"
         txtGarge21.Size = New Size(27, 24)
@@ -2925,7 +2935,7 @@ Partial Class frmDroids
         ' 
         ' txtYPOS21
         ' 
-        txtYPOS21.Location = New Point(519, 538)
+        txtYPOS21.Location = New Point(519, 1355)
         txtYPOS21.Margin = New Padding(4, 3, 4, 3)
         txtYPOS21.Name = "txtYPOS21"
         txtYPOS21.Size = New Size(63, 24)
@@ -2935,7 +2945,7 @@ Partial Class frmDroids
         ' 
         ' txtDroid21
         ' 
-        txtDroid21.Location = New Point(3, 538)
+        txtDroid21.Location = New Point(3, 1355)
         txtDroid21.Margin = New Padding(4, 3, 4, 3)
         txtDroid21.Name = "txtDroid21"
         txtDroid21.Size = New Size(32, 24)
@@ -2943,7 +2953,7 @@ Partial Class frmDroids
         ' 
         ' txtXPOS21
         ' 
-        txtXPOS21.Location = New Point(448, 538)
+        txtXPOS21.Location = New Point(448, 1355)
         txtXPOS21.Margin = New Padding(4, 3, 4, 3)
         txtXPOS21.Name = "txtXPOS21"
         txtXPOS21.Size = New Size(63, 24)
@@ -2953,7 +2963,7 @@ Partial Class frmDroids
         ' 
         ' txtSpeed21
         ' 
-        txtSpeed21.Location = New Point(664, 538)
+        txtSpeed21.Location = New Point(664, 1355)
         txtSpeed21.Margin = New Padding(4, 3, 4, 3)
         txtSpeed21.Name = "txtSpeed21"
         txtSpeed21.Size = New Size(63, 24)
@@ -2963,7 +2973,7 @@ Partial Class frmDroids
         ' 
         ' txtANGL21
         ' 
-        txtANGL21.Location = New Point(591, 538)
+        txtANGL21.Location = New Point(591, 1355)
         txtANGL21.Margin = New Padding(4, 3, 4, 3)
         txtANGL21.Name = "txtANGL21"
         txtANGL21.Size = New Size(63, 24)
@@ -2986,6 +2996,16 @@ Partial Class frmDroids
         ' 
         ' pnlDroid
         ' 
+        pnlDroid.Controls.Add(txtBatt10)
+        pnlDroid.Controls.Add(txtBatt9)
+        pnlDroid.Controls.Add(txtBatt8)
+        pnlDroid.Controls.Add(txtBatt7)
+        pnlDroid.Controls.Add(txtBatt6)
+        pnlDroid.Controls.Add(txtBatt5)
+        pnlDroid.Controls.Add(txtBatt4)
+        pnlDroid.Controls.Add(txtBatt3)
+        pnlDroid.Controls.Add(txtBatt2)
+        pnlDroid.Controls.Add(txtBatt1)
         pnlDroid.Controls.Add(txtDroid1)
         pnlDroid.Controls.Add(txtDroid2)
         pnlDroid.Controls.Add(txtSpeed30)
@@ -3288,7 +3308,7 @@ Partial Class frmDroids
         pnlDroid.Controls.Add(txtOGpgm9)
         pnlDroid.Location = New Point(7, 3)
         pnlDroid.Name = "pnlDroid"
-        pnlDroid.Size = New Size(740, 815)
+        pnlDroid.Size = New Size(884, 1624)
         pnlDroid.TabIndex = 410
         ' 
         ' pnlWindow
@@ -3299,15 +3319,115 @@ Partial Class frmDroids
         pnlWindow.Controls.Add(pnlDroid)
         pnlWindow.Location = New Point(12, 39)
         pnlWindow.Name = "pnlWindow"
-        pnlWindow.Size = New Size(787, 372)
+        pnlWindow.Size = New Size(935, 524)
         pnlWindow.TabIndex = 411
+        ' 
+        ' txtBatt10
+        ' 
+        txtBatt10.Location = New Point(426, 575)
+        txtBatt10.Margin = New Padding(4, 3, 4, 3)
+        txtBatt10.Name = "txtBatt10"
+        txtBatt10.Size = New Size(63, 24)
+        txtBatt10.TabIndex = 417
+        txtBatt10.Text = "0"
+        txtBatt10.TextAlign = HorizontalAlignment.Right
+        ' 
+        ' txtBatt9
+        ' 
+        txtBatt9.Location = New Point(426, 515)
+        txtBatt9.Margin = New Padding(4, 3, 4, 3)
+        txtBatt9.Name = "txtBatt9"
+        txtBatt9.Size = New Size(63, 24)
+        txtBatt9.TabIndex = 416
+        txtBatt9.Text = "0"
+        txtBatt9.TextAlign = HorizontalAlignment.Right
+        ' 
+        ' txtBatt8
+        ' 
+        txtBatt8.Location = New Point(426, 455)
+        txtBatt8.Margin = New Padding(4, 3, 4, 3)
+        txtBatt8.Name = "txtBatt8"
+        txtBatt8.Size = New Size(63, 24)
+        txtBatt8.TabIndex = 415
+        txtBatt8.Text = "0"
+        txtBatt8.TextAlign = HorizontalAlignment.Right
+        ' 
+        ' txtBatt7
+        ' 
+        txtBatt7.Location = New Point(426, 395)
+        txtBatt7.Margin = New Padding(4, 3, 4, 3)
+        txtBatt7.Name = "txtBatt7"
+        txtBatt7.Size = New Size(63, 24)
+        txtBatt7.TabIndex = 414
+        txtBatt7.Text = "0"
+        txtBatt7.TextAlign = HorizontalAlignment.Right
+        ' 
+        ' txtBatt6
+        ' 
+        txtBatt6.Location = New Point(426, 335)
+        txtBatt6.Margin = New Padding(4, 3, 4, 3)
+        txtBatt6.Name = "txtBatt6"
+        txtBatt6.Size = New Size(63, 24)
+        txtBatt6.TabIndex = 413
+        txtBatt6.Text = "0"
+        txtBatt6.TextAlign = HorizontalAlignment.Right
+        ' 
+        ' txtBatt5
+        ' 
+        txtBatt5.Location = New Point(426, 275)
+        txtBatt5.Margin = New Padding(4, 3, 4, 3)
+        txtBatt5.Name = "txtBatt5"
+        txtBatt5.Size = New Size(63, 24)
+        txtBatt5.TabIndex = 412
+        txtBatt5.Text = "0"
+        txtBatt5.TextAlign = HorizontalAlignment.Right
+        ' 
+        ' txtBatt4
+        ' 
+        txtBatt4.Location = New Point(426, 215)
+        txtBatt4.Margin = New Padding(4, 3, 4, 3)
+        txtBatt4.Name = "txtBatt4"
+        txtBatt4.Size = New Size(63, 24)
+        txtBatt4.TabIndex = 411
+        txtBatt4.Text = "0"
+        txtBatt4.TextAlign = HorizontalAlignment.Right
+        ' 
+        ' txtBatt3
+        ' 
+        txtBatt3.Location = New Point(423, 155)
+        txtBatt3.Margin = New Padding(4, 3, 4, 3)
+        txtBatt3.Name = "txtBatt3"
+        txtBatt3.Size = New Size(63, 24)
+        txtBatt3.TabIndex = 410
+        txtBatt3.Text = "0"
+        txtBatt3.TextAlign = HorizontalAlignment.Right
+        ' 
+        ' txtBatt2
+        ' 
+        txtBatt2.Location = New Point(423, 95)
+        txtBatt2.Margin = New Padding(4, 3, 4, 3)
+        txtBatt2.Name = "txtBatt2"
+        txtBatt2.Size = New Size(63, 24)
+        txtBatt2.TabIndex = 409
+        txtBatt2.Text = "0"
+        txtBatt2.TextAlign = HorizontalAlignment.Right
+        ' 
+        ' txtBatt1
+        ' 
+        txtBatt1.Location = New Point(423, 33)
+        txtBatt1.Margin = New Padding(4, 3, 4, 3)
+        txtBatt1.Name = "txtBatt1"
+        txtBatt1.Size = New Size(63, 24)
+        txtBatt1.TabIndex = 408
+        txtBatt1.Text = "0"
+        txtBatt1.TextAlign = HorizontalAlignment.Right
         ' 
         ' frmDroids
         ' 
         AccessibleDescription = "3"
         AutoScaleDimensions = New SizeF(9F, 17F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(815, 431)
+        ClientSize = New Size(963, 583)
         Controls.Add(pnlWindow)
         Controls.Add(Label1)
         Font = New Font("Courier New", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
@@ -3625,4 +3745,14 @@ Partial Class frmDroids
     Friend WithEvents tmrScanDroids As Timer
     Friend WithEvents pnlDroid As Panel
     Friend WithEvents pnlWindow As Panel
+    Friend WithEvents txtBatt10 As TextBox
+    Friend WithEvents txtBatt9 As TextBox
+    Friend WithEvents txtBatt8 As TextBox
+    Friend WithEvents txtBatt7 As TextBox
+    Friend WithEvents txtBatt6 As TextBox
+    Friend WithEvents txtBatt5 As TextBox
+    Friend WithEvents txtBatt4 As TextBox
+    Friend WithEvents txtBatt3 As TextBox
+    Friend WithEvents txtBatt2 As TextBox
+    Friend WithEvents txtBatt1 As TextBox
 End Class

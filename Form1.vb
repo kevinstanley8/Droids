@@ -1,6 +1,8 @@
-﻿Imports System.Diagnostics.CodeAnalysis
+﻿Imports System.ComponentModel.DataAnnotations
+Imports System.Diagnostics.CodeAnalysis
 Imports System.IO
 Imports System.Runtime.InteropServices.JavaScript.JSType
+Imports System.Xml
 
 Public Class frmMain
     Public G, M As Graphics
@@ -12,10 +14,11 @@ Public Class frmMain
     Public angl, Speed, TOD, OutsideTemp, LowTemp, HighTemp As Single
     Public cntlfnd As Boolean = True
     Public DaysfromStart As Integer
-    Public droidData(30, 16) As Single '(Droid number,Parameter)
+    'Public droidData(30, 16) As Single '(Droid number,Parameter)
     Public Mapping As Boolean
     Public RocketOnPad As Boolean
     Public dr As DroidStruct
+    Public pl As PlaceStruct
     Public CurrTI As Single
     Public arrray(100) As String
     '
@@ -24,6 +27,10 @@ Public Class frmMain
     '                 Descr|Node|Node|Node|Node
     '
     Public Const NoOfDroids = 30
+    Public Const NoOfPlaces = 67                '    30   + 2   + 3   + 21   + 3   + 7   + 1
+    '                                           ' HO=30  MF=2  MZ=3  SP=21  WT=3  DR=7  LP=1
+    '
+
 
     Public Const noOfPix = 100
     Public Const ScreenSize = 7000 'the total coordinate screen space is 7000 X 7000
@@ -93,6 +100,7 @@ Public Class frmMain
     'Public Const I_OGpgm = 4  ' Original Program
     'Public Const I_Tow = 5    ' Tow Droid Name
     Public droidlist As New List(Of DroidStruct)
+    Public PlacesList As New List(Of PlaceStruct)
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         G = pnlMain.CreateGraphics()
@@ -105,7 +113,14 @@ Public Class frmMain
             Droids.Enabled = False
             droidlist.Add(Droids)
         Next
+
+        For ix = 0 To NoOfPlaces
+            Dim plc As New PlaceStruct
+            plc.Name = "PL" + ix.ToString
+            PlacesList.Add(plc)
+        Next
         OutsideTemp = 100
+        TOD = 6
         RocketOnPad = False
         Dim pnt As PointF
         xPos = 0 : yPos = 0 : angl = 0 : Speed = 0
@@ -166,6 +181,7 @@ Public Class frmMain
     Private Sub InitializeDroids()
         Dim objst As System.Object
         Dim XX, YY, DD, VV, GRG As Single
+        Dim plx As Integer
 
         For drds = 1 To NoOfDroids
             dr = droidlist(drds)
@@ -204,6 +220,124 @@ Public Class frmMain
                 Call LoadPrograms()
             End If
         Next
+        plx = 0
+        For ix = 1 To 30 'garages
+            plx = plx + 1
+            pl = PlacesList(plx)
+            pl.PType = "HO"
+            pl.OType = "dG"
+            pl.Name = pl.PType + ix.ToString
+            pl.LBLName = ""
+            pl.Goods = 0
+            pl.HStatus = 70
+            pl.X = 0
+            pl.Y = 0
+            objst = Findcntl(pl.OType, ix, pnlMain, cntlfnd)
+            If cntlfnd Then
+                GetDocDta(objst, pl.X, pl.Y)
+            End If
+
+        Next
+        For ix = 1 To 2
+            plx = plx + 1
+            pl = PlacesList(plx)
+            pl.PType = "MF"
+            pl.OType = "dM"
+            pl.LBLName = "lblm" + ix.ToString
+            pl.Name = pl.PType + ix.ToString
+            pl.Goods = 0
+            pl.HStatus = 70
+            pl.X = 0
+            pl.Y = 0
+            objst = Findcntl(pl.OType, ix, pnlMain, cntlfnd)
+            If cntlfnd Then
+                GetDocDta(objst, pl.X, pl.Y)
+            End If
+        Next
+        For ix = 1 To 3
+            plx = plx + 1
+            pl = PlacesList(plx)
+            pl.PType = "MZ"
+            pl.OType = "dN"
+            pl.Name = pl.PType + ix.ToString
+            pl.LBLName = ""
+            pl.Goods = 0
+            pl.HStatus = 70
+            pl.X = 0
+            pl.Y = 0
+            objst = Findcntl(pl.OType, ix, pnlMain, cntlfnd)
+            If cntlfnd Then
+                GetDocDta(objst, pl.X, pl.Y)
+            End If
+        Next
+        For ix = 1 To 21
+            plx = plx + 1
+            pl = PlacesList(plx)
+            pl.PType = "SP"
+            pl.OType = "dS"
+            pl.Name = pl.PType + ix.ToString
+            pl.LBLName = "lbls" + ix.ToString
+
+            pl.Goods = 0
+            pl.HStatus = 70
+            pl.X = 0
+            pl.Y = 0
+            objst = Findcntl(pl.OType, ix, pnlMain, cntlfnd)
+            If cntlfnd Then
+                GetDocDta(objst, pl.X, pl.Y)
+            End If
+        Next
+        For ix = 1 To 3
+            plx = plx + 1
+            pl = PlacesList(plx)
+            pl.PType = "WT"
+            pl.OType = "dW"
+            pl.Name = pl.PType + ix.ToString
+            pl.LBLName = "lblwt" + ix.ToString
+
+            pl.Goods = 0
+            pl.HStatus = 70
+            pl.X = 0
+            pl.Y = 0
+            objst = Findcntl(pl.OType, ix, pnlMain, cntlfnd)
+            If cntlfnd Then
+                GetDocDta(objst, pl.X, pl.Y)
+            End If
+        Next
+        For ix = 1 To 7
+            plx = plx + 1
+            pl = PlacesList(plx)
+            pl.PType = "DR"
+            pl.OType = "dD"
+            pl.Name = pl.PType + ix.ToString
+            pl.LBLName = "lbld" + ix.ToString
+
+            pl.Goods = 0
+            pl.HStatus = 70
+            pl.X = 0
+            pl.Y = 0
+            objst = Findcntl(pl.OType, ix, pnlMain, cntlfnd)
+            If cntlfnd Then
+                GetDocDta(objst, pl.X, pl.Y)
+            End If
+        Next
+        For ix = 1 To 1
+            plx = plx + 1
+            pl = PlacesList(plx)
+            pl.PType = "LP"
+            pl.OType = "dP"
+            pl.Name = pl.PType + ix.ToString
+            pl.LBLName = "lblp" + ix.ToString
+            pl.Goods = 0
+            pl.HStatus = 70
+            pl.X = 0
+            pl.Y = 0
+            objst = Findcntl(pl.OType, ix, pnlMain, cntlfnd)
+            If cntlfnd Then
+                GetDocDta(objst, pl.X, pl.Y)
+            End If
+        Next
+
     End Sub
     Private Sub LoadCfgFiles()
         Call loadCull(arrray, txtConfigFileName.Text)
@@ -321,6 +455,7 @@ Public Class frmMain
     Private Sub MoveAllDroids()
         For drds = 1 To NoOfDroids
             dr = droidlist(drds)
+            DroidTemperature(dr)
             If dr.Enabled = True Then
                 Call DrawDroid(False, dr)
                 Call MoveDroid(dr)
@@ -415,7 +550,8 @@ Public Class frmMain
         End Select
 
         If Arrived(dr) Then
-            Call GetNexDest(dr)
+            Call WhatsGoingOn(dr)
+
         End If
 
         angl = dr.Dir
@@ -434,6 +570,51 @@ Public Class frmMain
 
 
     End Sub
+    Private Sub WhatsGoingOn(ByRef dr As DroidStruct)
+        Dim st As String
+        Dim ix As Integer
+        Dim fnd As Boolean
+
+        '
+        ' We Have arrived at ???
+        '
+        st = Mid(dr.Dest, 1, 2)
+        Select Case st
+            Case "WP"
+                Call GetNexDest(dr)
+            Case "SP", "LP", "DR", "WT", "HO", "MF", "MZ"
+
+                fnd = False
+                For ix = 1 To NoOfPlaces
+                    pl = PlacesList(ix)
+                    If pl.Name = dr.Dest Then
+                        fnd = True
+                        Exit For
+                    End If
+                Next
+                If Not fnd Then
+                    Call GetNexDest(dr)
+                Else
+                    dr.Connected = True
+                    dr.ConnectionName = dr.Dest
+                    dr.Dir = 180
+                    dr.Speed = 0
+                    pl.HStatus = pl.HStatus + 10
+                    If pl.HStatus > 100 Then
+                        pl.HStatus = 100
+                        dr.Connected = False
+                        dr.ConnectionName = ""
+                        Call GetNexDest(dr)
+                    Else
+                        'Stay connected
+                        fnd = False
+                    End If
+                End If
+            Case Else
+                Call GetNexDest(dr)
+        End Select
+
+    End Sub
     Private Function Dist2Dest(ByRef dr As DroidStruct) As Integer
         Dim dstX, dstY, drdX, drdY As Single
         drdX = dr.X
@@ -444,6 +625,9 @@ Public Class frmMain
     End Function
 
     Private Sub DrawMap()
+        '
+        ' This routine Fills in the small map on the left side of the screen
+        '
         Dim objmap As System.Object
         Dim px, py As Integer
         Dim ps As String
@@ -512,8 +696,12 @@ Public Class frmMain
 
         Dim oxj As Object
         pnlstr = objName + Trim(Str(objIndx))
-        oxj = Me.Controls.Find(pnlstr, True)
+        If objIndx = 0 Then
+            pnlstr = objName
+        End If
         fnd = False
+        If pnlstr = "" Then Exit Function
+        oxj = Me.Controls.Find(pnlstr, True)
         For Each cntrl As Control In root.Controls
             If cntrl.Name = pnlstr Then
                 oxj = cntrl
@@ -563,10 +751,9 @@ Public Class frmMain
             Case "L"
                 X = pic.Location.X ' - pic.Size.Width
                 Y = pic.Location.Y + pic.Size.Height / 2
-            Case "C"
+            Case Else   '  "C"
                 X = pic.Location.X + pic.Size.Width / 2
                 Y = pic.Location.Y + pic.Size.Height / 2
-            Case Else
         End Select
     End Sub
 
@@ -604,6 +791,9 @@ Public Class frmMain
     End Function
     Private Sub RealWorld()
         Dim ccc1 As Single
+        Dim fnd As Boolean
+        Dim iv As Integer
+        Dim objHStat As New System.Object
         '
         '  Time Of Day
         '
@@ -634,6 +824,24 @@ Public Class frmMain
         ToolTip1.SetToolTip(lblOTemp, " Highest:" + Str(HighTemp!) + "   Lowest:" + Str(LowTemp!))
         ToolTip1.SetToolTip(lblTemptxt, " Highest:" + Str(HighTemp!) + "   Lowest:" + Str(LowTemp!))
         'Call TimeViewSet(TOD!, outsidetemp)
+        '
+        'Display Health Status
+        '
+
+        For ix = 1 To NoOfPlaces
+            pl = PlacesList(ix)
+            fnd = False
+            Select Case pl.PType
+                Case "SP", "LP", "DR", "WT", "MF", "MZ"
+                    iv = Val(Mid(pl.Name, 3))
+
+                    objHStat = Findcntl(pl.LBLName, 0, pnlMain, fnd)
+                    If fnd Then
+                        objHStat.text = pl.HStatus.ToString
+                    End If
+                Case Else
+            End Select
+        Next
     End Sub
     Private Sub DisplayDroid()
         Dim drd As Integer
@@ -659,6 +867,92 @@ Public Class frmMain
         txtYPOS.Text = dr.Y.ToString
         txtSpeed.Text = dr.Speed.ToString
         txtANGL.Text = dr.Dir.ToString
+        txtETemp.Text = dr.ETemp.ToString
+        txtITemp.Text = dr.ITemp.ToString
+        txtEnvCnt.Text = dr.EnvSet.ToString
+    End Sub
+    Private Sub DroidTemperature(ByRef dr As DroidStruct)
+        Dim et, it, dt, hc As Single
+        Dim ev As Integer
+        et = dr.ETemp
+        it = dr.ITemp
+        ev = dr.EnvSet
+        '
+        ' Handle Droid external skin Temp
+        '
+        dt = et - OutsideTemp
+        If dt > 0 Then                      ' is it Hot outside?
+            If Math.Abs(dt) < coolval Then
+                et = OutsideTemp            'leave et alone
+            Else
+                et = et - (dt / 200)        'skin temp will get colder
+            End If
+        ElseIf (dt < 0) Then
+            If Math.Abs(dt) < heatval Then
+                et = OutsideTemp            'leave et alone
+            Else
+                et = et + (Math.Abs(dt) / 200) 'skin temp will get hotter 
+            End If
+        End If
+        '
+        ' Handle Droid Internal Skin temp
+        '
+        dt = et - it                    ' Temp difference
+        txtDiff.Text = dt.ToString
+        it = it + (dt / 60)            ' ext temp effects internal temp
+        Select Case it
+            Case < -30
+                ev = 10
+            Case < -20
+                ev = 9
+            Case < 0
+                ev = 8
+            Case < 30
+                ev = 7
+            Case < 50
+                ev = 6
+            Case < 60
+                ev = 5
+            Case < 64
+                ev = 4
+            Case < 66
+                ev = 3
+            Case < 68
+                ev = 2
+            Case < 70
+                ev = 1
+            Case > 250
+                ev = -20
+            Case > 200
+                ev = -16
+            Case > 170
+                ev = -14
+            Case > 100
+                ev = -12
+            Case > 90
+                ev = -10
+            Case > 80
+                ev = -8
+            Case > 78
+                ev = -6
+            Case > 74
+                ev = -3
+            Case > 72
+                ev = -2
+            Case > 70
+                ev = -1
+            Case Else
+                ev = 0
+        End Select
+        hc = 1 * ev
+
+        If dr.Batt > 20 Then
+            it = it + hc!
+            dr.Batt = dr.Batt - DroidEnvDrain - Math.Abs(hc! / 10)
+        End If
+        dr.ETemp = et
+        dr.ITemp = it
+        dr.EnvSet = ev
     End Sub
     Private Sub GetDest(ByRef dr As DroidStruct)
         Dim St, statn As String
@@ -724,7 +1018,6 @@ Public Class frmMain
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         G.Clear(bgColor)
     End Sub
-
     Private Sub btnCW_Click(sender As Object, e As EventArgs)
         DrawDroid(False, droidlist(1))
         angl = Val(txtANGL.Text) + 10
@@ -734,7 +1027,6 @@ Public Class frmMain
         txtANGL.Text = Trim(Str(angl))
         DrawDroid(True, droidlist(1))
     End Sub
-
     Private Sub btnCCW_Click(sender As Object, e As EventArgs)
         DrawDroid(False, droidlist(1))
         angl = Val(txtANGL.Text) - 10
@@ -744,7 +1036,6 @@ Public Class frmMain
         txtANGL.Text = Trim(Str(angl))
         DrawDroid(True, droidlist(1))
     End Sub
-
     Private Sub btnStartStopDroid_Click(sender As Object, e As EventArgs) Handles btnStartStopDroid.Click
         If tmrMovebot.Enabled = True Then
             tmrMovebot.Enabled = False
@@ -754,7 +1045,6 @@ Public Class frmMain
             tmrMovebot.Enabled = True
         End If
     End Sub
-
     Private Sub dG_Click(sender As Object, e As EventArgs) Handles dG1.Click, dG2.Click, dG3.Click,
             dG4.Click, dG5.Click, dG6.Click, dG7.Click, dG8.Click, dG9.Click, dG10.Click,
         dG11.Click, dG12.Click, dG13.Click, dG14.Click, dG15.Click, dG16.Click, dG17.Click,
@@ -791,11 +1081,9 @@ Public Class frmMain
 
         SelDroid.Text = "Droid " + Trim(Str(drd))
     End Sub
-
     Private Sub btnDrawMap_Click(sender As Object, e As EventArgs) Handles btnDrawMap.Click
         frmMap.Show()
     End Sub
-
     Private Sub pnlMap_MouseDown(sender As Object, ByVal e As MouseEventArgs) Handles pnlMap.MouseDown
         Dim px, py As Integer
         Dim pnt As Point
@@ -805,7 +1093,6 @@ Public Class frmMain
 
         pnlView.AutoScrollPosition = pnt
     End Sub
-
     Private Sub btnSendDroid_Click(sender As Object, e As EventArgs) Handles btnSendDroid.Click
         Dim drds, statn, P1 As String
         Dim drdno, statno As Integer
@@ -871,7 +1158,6 @@ Public Class frmMain
 
 
     End Sub
-
     Private Sub dM_Click(sender As Object, e As EventArgs) Handles dM1.Click, dM2.Click
         'Manufaturing port
         Dim nm, tg As String
@@ -885,7 +1171,6 @@ Public Class frmMain
             txtPGMmap.Text = txtPGMmap.Text + "|MF" + mfg.ToString
         End If
     End Sub
-
     Private Sub dS_Click(sender As Object, e As EventArgs) Handles dS1.Click, dS2.Click, dS3.Click,
         dS4.Click, dS5.Click, dS6.Click, dS7.Click, dS8.Click, dS9.Click, dS10.Click,
         dS11.Click, dS12.Click, dS13.Click, dS14.Click, dS15.Click, dS16.Click, dS17.Click,
@@ -902,7 +1187,6 @@ Public Class frmMain
             txtPGMmap.Text = txtPGMmap.Text + "|SP" + sol.ToString
         End If
     End Sub
-
     Private Sub dP1_Click(sender As Object, e As EventArgs) Handles dP1.Click
         'Landing Pad port
         Dim nm, tg As String
@@ -947,12 +1231,7 @@ Public Class frmMain
         End If
 
     End Sub
-
-    Private Sub dD_Click(sender As Object, e As EventArgs) Handles dD1.Click, dD2.Click, dD3.Click,
-        dD4.Click, dD5.Click, dD6.Click, dD7.Click, dD8.Click, dD9.Click, dD10.Click,
-        dD11.Click, dD12.Click, dD13.Click, dD14.Click, dD15.Click, dD16.Click, dD17.Click,
-        dD18.Click, dD19.Click, dD20.Click, dD21.Click, dD22.Click, dD23.Click, dD24.Click,
-        dD25.Click, dD26.Click, dD27.Click, dD28.Click ', dD29.Click
+    Private Sub dD_Click(sender As Object, e As EventArgs) Handles dD1.Click, dD2.Click, dD3.Click, dD4.Click, dD5.Click, dD6.Click, dD7.Click
         'Drill port
         Dim nm, tg As String
         Dim drl As Integer
@@ -1008,7 +1287,6 @@ Public Class frmMain
             txtDroid.Text = Trim(fnddrd.ToString)
         End If
     End Sub
-
     Private Sub btnGoHome_Click(sender As Object, e As EventArgs) Handles btnGoHome.Click
         Dim drds, P1 As String
         Dim drdno, drx, dry, xv As Integer
@@ -1041,7 +1319,6 @@ Public Class frmMain
         If Math.Abs(xv) < 3 Then dr.Enabled = False
 
     End Sub
-
     Private Sub btnMapping_Click(sender As Object, e As EventArgs) Handles btnMapping.Click
         Mapping = Not Mapping
         If Mapping Then
@@ -1050,18 +1327,15 @@ Public Class frmMain
             btnMapping.BackColor = Color.LightCoral
         End If
     End Sub
-
     Private Sub btnShowStatus_Click(sender As Object, e As EventArgs) Handles btnShowStatus.Click
         frmDroids.Show()
     End Sub
-
     Private Sub SelDroid_SelectedIndexChanged(sender As Object, e As EventArgs) Handles SelDroid.SelectedIndexChanged
         Dim dd As String
         dd = SelDroid.Text
         txtDroid.Text = Mid(dd, 7)
         DisplayDroid()
     End Sub
-
     Private Sub chkRocket_CheckedChanged(sender As Object, e As EventArgs) Handles chkRocket.CheckedChanged
         RocketOnPad = chkRocket.Checked
     End Sub
@@ -1077,6 +1351,7 @@ Public Class DroidStruct
     Public BaseX As Single          ' Home Base X Position
     Public BaseY As Single          ' Home Base Y Position
 
+    Public Dest As String           ' Droid Destination Name
     Public DestX As Integer         ' Droid Destination X-Coord
     Public DestY As Integer         ' Droid Destination Y-Coord
 
@@ -1099,6 +1374,15 @@ Public Class DroidStruct
     Public Tow As String            ' Droid is towing another Droid (droid in tow)
 
     Public Garage As String         ' Droid Garage Assignment
-    Public Dest As String           ' Droid Destination Name
-
+End Class
+Public Class PlaceStruct
+    Public Name As String           ' Place Name
+    Public PType As String          ' type of Place     HO=Garage SP=SolarPanel DR=Drill LP=LaunchPad WP=WaterTower MF=MFG MZ=MiningZone
+    Public OType As String          ' object type       dG=Garage dS=SolarPanel dD=Drill dP=LaunchPad dW=WaterTower dM=MFG dN=MiningZone
+    Public LBLName As String        ' name of the status display label
+    Public X As Integer             ' X Coordinate                  
+    Public Y As Integer             ' Y Coordinate
+    Public HStatus As Single        ' Health Status 
+    Public Goods As Integer         ' How many goods produced or needed 
+    '
 End Class
