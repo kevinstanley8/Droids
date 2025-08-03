@@ -19,6 +19,7 @@ Public Class frmMain
     Public RocketOnPad As Boolean
     Public dr As DroidStruct
     Public pl As PlaceStruct
+    Public bs As ElectricalBuss
     Public CurrTI As Single
     Public arrray(100) As String
     '
@@ -26,9 +27,11 @@ Public Class frmMain
     '
     '                 Descr|Node|Node|Node|Node
     '
+    Public Const NoOfSP = 21
+    Public Const NoOfBusses = 5
     Public Const NoOfDroids = 30
-    Public Const NoOfPlaces = 67                '    30   + 2   + 3   + 21   + 3   + 7   + 1
-    '                                           ' HO=30  MF=2  MZ=3  SP=21  WT=3  DR=7  LP=1
+    Public Const NoOfPlaces = 70                '    30   + 2   + 3   + 21   + 3   + 7   + 1   + 3
+    '                                           ' HO=30  MF=2  MZ=3  SP=21  WT=3  DR=7  LP=1  GR=3
     '
 
 
@@ -37,8 +40,8 @@ Public Class frmMain
 
     'Public Droid(NoOfDroids, 30) As Single
     'Public Info(NoOfDroids, 10) As String
-    Public status(NoOfDroids) As String
-    Public Prg(NoOfDroids, 2, 30) As Single
+    'Public status(NoOfDroids) As String
+    'Public Prg(NoOfDroids, 2, 30) As Single
     Public FailureFrequency As Integer
 
     Public Const TimeOfTick = 0.01    '0.002
@@ -101,6 +104,7 @@ Public Class frmMain
     'Public Const I_Tow = 5    ' Tow Droid Name
     Public droidlist As New List(Of DroidStruct)
     Public PlacesList As New List(Of PlaceStruct)
+    Public BussesList As New List(Of ElectricalBuss)
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         G = pnlMain.CreateGraphics()
@@ -119,6 +123,16 @@ Public Class frmMain
             plc.Name = "PL" + ix.ToString
             PlacesList.Add(plc)
         Next
+
+        For ix = 0 To NoOfBusses
+            Dim Buss As New ElectricalBuss
+            Buss.Name = "Buss " + ix.ToString
+            Buss.Capacity = 0
+            Buss.NoOfProvider = 0
+            Buss.NoOfUsers = 0
+            BussesList.Add(Buss)
+        Next
+
         OutsideTemp = 100
         TOD = 6
         RocketOnPad = False
@@ -129,25 +143,11 @@ Public Class frmMain
         txtXPOS.Text = xPos : txtYPOS.Text = yPos : txtANGL.Text = angl : txtSpeed.Text = Speed
         pnt.X = xPos
         pnt.Y = yPos
-        picDroid.Image = imgListD.Images(0) ' droid1
-        'picDroid.Image = Image.FromFile(txtMainPath.Text + "Droid1.bmp")
-        'picDroidSel.Image = imgListD.Images(1) ' droid1r
-        'picDroidSel.Image = Image.FromFile(txtMainPath.Text + "Droid1r.bmp")
 
-        'picDroid.Image = Image.FromFile(txtMainPath.Text + "Droid2.bmp")
-        'picDroidSel.Image = Image.FromFile(txtMainPath.Text + "Droid2r.bmp")
 
-        'picDroidSel.Image = Image.FromFile(txtMainPath.Text + "Droid2e.bmp")
-        'picDroid.Image = Image.FromFile(txtMainPath.Text + "Droid2er.bmp")
-
-        picClear.Image = Image.FromFile(txtMainPath.Text + "Clear.bmp")
-
-        'pb1.Image = Image.FromFile(txtMainPath.Text + "Base.bmp")
-        'pb2.Image = Image.FromFile(txtMainPath.Text + "Base.bmp")
-        'pb3.Image = Image.FromFile(txtMainPath.Text + "Base.bmp")
-        G.DrawImage(picDroid.Image, pnt)
+        G.DrawImage(imgListD.Images(1), pnt)
         bgColor = pnlMain.BackColor
-
+        Call InitializeBusses()
         txtDroid.Text = "1"
         SelDroid.Items.Clear()
         selStation.Items.Clear()
@@ -176,7 +176,7 @@ Public Class frmMain
         tmrMovebot.Enabled = True
         tmrFlashLights.Enabled = True
         DaysfromStart = 0
-
+        Me.WindowState = FormWindowState.Maximized
     End Sub
     Private Sub InitializeDroids()
         Dim objst As System.Object
@@ -221,7 +221,7 @@ Public Class frmMain
             End If
         Next
         plx = 0
-        For ix = 1 To 30 'garages
+        For ix = 1 To 30                        'garage ports
             plx = plx + 1
             pl = PlacesList(plx)
             pl.PType = "HO"
@@ -238,7 +238,24 @@ Public Class frmMain
             End If
 
         Next
-        For ix = 1 To 2
+        For ix = 1 To 3                         'Base
+            plx = plx + 1
+            pl = PlacesList(plx)
+            pl.PType = "GR"
+            pl.OType = "pB"
+            pl.Name = pl.PType + ix.ToString
+            pl.LBLName = "lblb" + ix.ToString
+            pl.Goods = 0
+            pl.HStatus = 70
+            pl.X = 0
+            pl.Y = 0
+            objst = Findcntl(pl.OType, ix, pnlMain, cntlfnd)
+            If cntlfnd Then
+                GetDocDta(objst, pl.X, pl.Y)
+            End If
+        Next
+
+        For ix = 1 To 2                         'Manufacturing
             plx = plx + 1
             pl = PlacesList(plx)
             pl.PType = "MF"
@@ -254,11 +271,11 @@ Public Class frmMain
                 GetDocDta(objst, pl.X, pl.Y)
             End If
         Next
-        For ix = 1 To 3
+        For ix = 1 To 3                         ' Mining Zones
             plx = plx + 1
             pl = PlacesList(plx)
             pl.PType = "MZ"
-            pl.OType = "dN"
+            pl.OType = "dZ"
             pl.Name = pl.PType + ix.ToString
             pl.LBLName = ""
             pl.Goods = 0
@@ -270,7 +287,7 @@ Public Class frmMain
                 GetDocDta(objst, pl.X, pl.Y)
             End If
         Next
-        For ix = 1 To 21
+        For ix = 1 To NoOfSP                        ' Solar Panels
             plx = plx + 1
             pl = PlacesList(plx)
             pl.PType = "SP"
@@ -278,7 +295,7 @@ Public Class frmMain
             pl.Name = pl.PType + ix.ToString
             pl.LBLName = "lbls" + ix.ToString
 
-            pl.Goods = 0
+            pl.Goods = 100
             pl.HStatus = 70
             pl.X = 0
             pl.Y = 0
@@ -287,13 +304,13 @@ Public Class frmMain
                 GetDocDta(objst, pl.X, pl.Y)
             End If
         Next
-        For ix = 1 To 3
+        For ix = 1 To 3                         ' Water Towers
             plx = plx + 1
             pl = PlacesList(plx)
             pl.PType = "WT"
             pl.OType = "dW"
             pl.Name = pl.PType + ix.ToString
-            pl.LBLName = "lblwt" + ix.ToString
+            pl.LBLName = "lblw" + ix.ToString
 
             pl.Goods = 0
             pl.HStatus = 70
@@ -304,7 +321,7 @@ Public Class frmMain
                 GetDocDta(objst, pl.X, pl.Y)
             End If
         Next
-        For ix = 1 To 7
+        For ix = 1 To 7                         ' Drill Rigs
             plx = plx + 1
             pl = PlacesList(plx)
             pl.PType = "DR"
@@ -321,7 +338,7 @@ Public Class frmMain
                 GetDocDta(objst, pl.X, pl.Y)
             End If
         Next
-        For ix = 1 To 1
+        For ix = 1 To 1                         ' Landing Pad
             plx = plx + 1
             pl = PlacesList(plx)
             pl.PType = "LP"
@@ -339,10 +356,213 @@ Public Class frmMain
         Next
 
     End Sub
+    Private Sub InitializeBusses()
+        '
+        ' Power connections
+        '
+        ' Solar Panel connections
+        '                               'S1  ==>  MF1|WT1|GR3          NO Buss     S4  ==> DR1
+        '                               'S2  ==>  MF1|WT1|GR3          NO Buss     S6  ==> DR3
+        '                               'S7  ==>  MF1|WT1|GR3          NO Buss     S8  ==> DR2
+        '                Buss1          'S10 ==>  MF1|WT1|GR3          NO Buss     S9  ==> DR4
+        '                               'S11 ==>  MF1|WT1|GR3          NO Buss     S17 ==> DR6
+        '                               'S12 ==>  MF1|WT1|GR3
+        '                               'S13 ==>  MF1|WT1|GR3                      S19 ==> LP1
+        '                               'S14 ==>  MF1|WT1|GR3          Buss4       S20 ==> LP1
+        '                               'S15 ==>  MF1|WT1|GR3                      S21 ==> LP1
+        '
+        '                Buss2          'S3  ==>  GR1|MF2|WT2          Buss5       S16 ==> DR7
+        '                                                              Buss5       S18 ==> DR7
+        '                Buss3          'S5  ==>  GR2|WT3|DR5         
+        '
+        '   Buss1   =>  3 users  9 Providers
+        '   Buss2   =>  3 users  1 Provider
+        '   Buss3   =>  3 users  1 Provider
+        '   Buss4   =>  1 user   3 Providers
+        '   Buss5   =>  1 user   2 Providers
+        '
+        '   MF1=Buss1       GR1=Buss2       GR2=Buss3       LP1=Buss4
+        '   WT1=Buss1       MF2=BUSS2       WT2=Buss3       DR7=Buss5
+        '   GR3=Buss1       WT2=Buss2       DR5=Buss3
+        '   
+        '
+
+        bs = BussesList(1)
+        bs.Name = "Buss1"
+        bs.NoOfUsers = 3
+        bs.NoOfProvider = 9
+        bs.Capacity = 0
+
+        bs = BussesList(2)
+        bs.Name = "Buss2"
+        bs.NoOfUsers = 3
+        bs.NoOfProvider = 1
+        bs.Capacity = 0
+
+        bs = BussesList(3)
+        bs.Name = "Buss3"
+        bs.NoOfUsers = 3
+        bs.NoOfProvider = 1
+        bs.Capacity = 0
+
+        bs = BussesList(4)
+        bs.Name = "Buss4"
+        bs.NoOfUsers = 1
+        bs.NoOfProvider = 3
+        bs.Capacity = 0
+
+
+        bs = BussesList(5)
+        bs.Name = "Buss5"
+        bs.NoOfUsers = 1
+        bs.NoOfProvider = 2
+        bs.Capacity = 0
+
+        Call LoadPanel("SP1", "Buss1")
+        Call LoadPanel("SP2", "Buss1")
+        Call LoadPanel("SP3", "Buss2")
+        Call LoadPanel("SP4", "DR1")
+        Call LoadPanel("SP5", "Buss3")
+        Call LoadPanel("SP6", "DR3")
+        Call LoadPanel("SP7", "Buss1")
+        Call LoadPanel("SP8", "DR2")
+        Call LoadPanel("SP9", "DR4")
+        Call LoadPanel("SP10", "Buss1")
+        Call LoadPanel("SP11", "Buss1")
+        Call LoadPanel("SP12", "Buss1")
+        Call LoadPanel("SP13", "Buss1")
+        Call LoadPanel("SP14", "Buss1")
+        Call LoadPanel("SP15", "Buss1")
+        Call LoadPanel("SP16", "Buss5")
+        Call LoadPanel("SP17", "DR6")
+        Call LoadPanel("SP18", "Buss5")
+        Call LoadPanel("SP19", "Buss4")
+        Call LoadPanel("SP20", "Buss4")
+        Call LoadPanel("SP21", "Buss4")
+        '   MF1=Buss1       GR1=Buss2       GR2=Buss3       LP1=Buss4
+        '   WT1=Buss1       MF2=BUSS2       WT2=Buss3       DR7=Buss5
+        '   GR3=Buss1       WT2=Buss2       DR5=Buss3
+
+        Call LoadUsers("MF1", "Buss1")
+        Call LoadUsers("WT1", "Buss1")
+        Call LoadUsers("GR3", "Buss1")
+
+        Call LoadUsers("GR1", "Buss2")
+        Call LoadUsers("MF2", "Buss2")
+        Call LoadUsers("WT2", "Buss2")
+
+        Call LoadUsers("GR2", "Buss3")
+        Call LoadUsers("WT2", "Buss3")
+        Call LoadUsers("DR5", "Buss3")
+
+        Call LoadUsers("LP1", "Buss4")
+
+        Call LoadUsers("DR7", "Buss4")
+    End Sub
+
+    Private Sub LoadUsers(usr As String, Bsss As String)
+        For ix = 1 To NoOfPlaces
+            pl = PlacesList(ix)
+            If pl.Name = usr Then
+                pl.PowerConn = Bsss
+                Exit For
+            End If
+        Next
+    End Sub
+    Private Sub LoadPanel(SolP As String, Buss As String)
+
+        '
+        ' insert the link to the output place into each SP
+        '    the outout name can be a buss or directly to a device
+        '
+        For ix = 1 To NoOfPlaces
+            pl = PlacesList(ix)
+            If pl.Name = SolP Then
+                pl.PowerConn = Buss
+                Exit For
+            End If
+        Next
+    End Sub
+    Private Sub DistributePower()
+        Dim pconn As String
+        Dim pwrLvl As Single
+        '
+        ' zero all buss levels
+        '
+        For ix = 1 To NoOfBusses
+            bs = BussesList(ix)
+            bs.Capacity = 0
+        Next
+        '
+        '  send power to users
+        '
+        For ix = 1 To NoOfPlaces
+            pl = PlacesList(ix)
+            If pl.PType = "SP" Then             ' get each SP out put and direct it to its user
+                pconn = pl.PowerConn            ' who to send power
+                pwrLvl = pl.Goods               ' SP's power is in th goods entry
+                If Mid(pconn, 1, 4) = "Buss" Then
+                    LoadBuss(pconn, pwrLvl)     ' put Power into Buss
+                Else
+                    loadplacePower(pconn, pwrLvl)   'put Power into device
+                End If
+            End If
+        Next
+        '
+        '  distribute accumulated buss power to the user
+        '
+        For ix = 1 To NoOfPlaces
+            pl = PlacesList(ix)
+            If pl.PType <> "SP" Then
+                pconn = pl.PowerConn
+                If Mid(pconn, 1, 4) = "Buss" Then
+                    pwrLvl = GetBussLevel(pconn)
+                    pl.AvailablePower = pwrLvl
+                End If
+            End If
+        Next
+    End Sub
+    Private Sub LoadBuss(bussname As String, pwrlvl As Single)
+        Dim fnd As Boolean = False
+        For ix = 1 To NoOfBusses
+            bs = BussesList(ix)
+            If bs.Name = bussname Then
+                fnd = True
+                Exit For
+            End If
+        Next
+        If fnd Then bs.Capacity = bs.Capacity + pwrlvl
+    End Sub
+    Private Sub loadplacePower(plc As String, pwrlvl As Single)
+        For ix = 1 To NoOfPlaces
+            pl = PlacesList(ix)
+            If pl.Name = plc Then
+                pl.AvailablePower = pwrlvl
+                Exit For
+            End If
+        Next
+    End Sub
+    Private Function GetBussLevel(bussname As String) As Single
+        Dim fnd As Boolean = False
+        Dim cap As Single = 0
+        For ix = 1 To NoOfBusses
+            bs = BussesList(ix)
+            If bs.Name = bussname Then
+                fnd = True
+                Exit For
+            End If
+        Next
+        If fnd Then
+            If bs.NoOfProvider <> 0 Then
+                cap = bs.Capacity / bs.NoOfProvider
+            End If
+        End If
+        GetBussLevel = cap
+    End Function
     Private Sub LoadCfgFiles()
         Call loadCull(arrray, txtConfigFileName.Text)
         txtGarages.Text = Cull(arrray, "Garages", "Garage")
-        txtMainPath.Text = pathCheck(Cull(arrray, "MainPath", "C:\Files\Droid\"))
+        txtMainPath.Text = pathCheck(Cull(arrray, "MainPath", "C:\Projects\Droid\"))
         LoadListbox(pathCheck(txtMainPath.Text) + txtGarages.Text, LstPGMs)
     End Sub
     Private Sub LoadPrograms()
@@ -471,65 +691,75 @@ Public Class frmMain
         '
         ' Droids are 30 pixels square.  Its position is offset by 15 X 15 
         '
-        ' droid types 0=Maintenance 1=SolarRep 2=DrillRep 3=LaunchRep 4=WTRep 5=MfgRep 6=Mining
+        ' droid types 0=Maintenance 1=Mining Full 2=Mining Empty 3=SolarRep 4=DrillRep 5=WTRep  6=LaunchRep 7=notusedMfgRep 
         '
         pnt.X = dr.X - 15 : pnt.Y = dr.Y - 15
         If drw Then
             cntr.X = 15 : cntr.Y = 15
+
+            If dr.DroidType = 1 Or dr.DroidType = 2 Then            ' This is a Mining Droid
+                If dr.PrdOnBoard = 0 Then
+                    dr.DroidType = 2
+                Else
+                    dr.DroidType = 1
+                End If
+
+            End If
+
             Select Case dr.DroidType
                 Case 0          'Maintenance Droid
                     If Mid(dr.Name, 7) <> txtDroid.Text Then
-                        G.DrawImage(RotateImage(imgListD.Images(0), cntr, Val(dr.Dir).ToString), pnt)
-                    Else
                         G.DrawImage(RotateImage(imgListD.Images(1), cntr, Val(dr.Dir).ToString), pnt)
+                    Else
+                        G.DrawImage(RotateImage(imgListD.Images(2), cntr, Val(dr.Dir).ToString), pnt)
                     End If
                 Case 1          'Mining Full Droid
                     If Mid(dr.Name, 7) <> txtDroid.Text Then
-                        G.DrawImage(RotateImage(imgListD.Images(2), cntr, Val(dr.Dir).ToString), pnt)
-                    Else
                         G.DrawImage(RotateImage(imgListD.Images(3), cntr, Val(dr.Dir).ToString), pnt)
+                    Else
+                        G.DrawImage(RotateImage(imgListD.Images(4), cntr, Val(dr.Dir).ToString), pnt)
                     End If
                 Case 2          'Mining Empty Droid
                     If Mid(dr.Name, 7) <> txtDroid.Text Then
-                        G.DrawImage(RotateImage(imgListD.Images(4), cntr, Val(dr.Dir).ToString), pnt)
-                    Else
                         G.DrawImage(RotateImage(imgListD.Images(5), cntr, Val(dr.Dir).ToString), pnt)
+                    Else
+                        G.DrawImage(RotateImage(imgListD.Images(6), cntr, Val(dr.Dir).ToString), pnt)
                     End If
                 Case 3          'Solar Repair Droid
                     If Mid(dr.Name, 7) <> txtDroid.Text Then
-                        G.DrawImage(RotateImage(imgListD.Images(6), cntr, Val(dr.Dir).ToString), pnt)
-                    Else
                         G.DrawImage(RotateImage(imgListD.Images(7), cntr, Val(dr.Dir).ToString), pnt)
+                    Else
+                        G.DrawImage(RotateImage(imgListD.Images(8), cntr, Val(dr.Dir).ToString), pnt)
                     End If
                 Case 4          'Drill Repair Droid
                     If Mid(dr.Name, 7) <> txtDroid.Text Then
-                        G.DrawImage(RotateImage(imgListD.Images(8), cntr, Val(dr.Dir).ToString), pnt)
-                    Else
                         G.DrawImage(RotateImage(imgListD.Images(9), cntr, Val(dr.Dir).ToString), pnt)
+                    Else
+                        G.DrawImage(RotateImage(imgListD.Images(10), cntr, Val(dr.Dir).ToString), pnt)
                     End If
                 Case 5          'Water Tower Repair Droid
                     If Mid(dr.Name, 7) <> txtDroid.Text Then
-                        G.DrawImage(RotateImage(imgListD.Images(10), cntr, Val(dr.Dir).ToString), pnt)
-                    Else
                         G.DrawImage(RotateImage(imgListD.Images(11), cntr, Val(dr.Dir).ToString), pnt)
+                    Else
+                        G.DrawImage(RotateImage(imgListD.Images(12), cntr, Val(dr.Dir).ToString), pnt)
                     End If
                 Case 6          'Water Tower Repair Droid
                     If Mid(dr.Name, 7) <> txtDroid.Text Then
-                        G.DrawImage(RotateImage(imgListD.Images(12), cntr, Val(dr.Dir).ToString), pnt)
-                    Else
                         G.DrawImage(RotateImage(imgListD.Images(13), cntr, Val(dr.Dir).ToString), pnt)
+                    Else
+                        G.DrawImage(RotateImage(imgListD.Images(14), cntr, Val(dr.Dir).ToString), pnt)
                     End If
                 Case Else       ' unknown Droid type
                     If Mid(dr.Name, 7) <> txtDroid.Text Then
-                        G.DrawImage(RotateImage(imgListD.Images(0), cntr, Val(dr.Dir).ToString), pnt)
-                    Else
                         G.DrawImage(RotateImage(imgListD.Images(1), cntr, Val(dr.Dir).ToString), pnt)
+                    Else
+                        G.DrawImage(RotateImage(imgListD.Images(2), cntr, Val(dr.Dir).ToString), pnt)
                     End If
             End Select
 
         Else
             cntr.X = 15 : cntr.Y = 15
-            G.DrawImage(picClear.Image, pnt)
+            G.DrawImage(imgListD.Images(0), pnt)
         End If
 
     End Sub
@@ -599,7 +829,27 @@ Public Class frmMain
                     dr.ConnectionName = dr.Dest
                     dr.Dir = 180
                     dr.Speed = 0
-                    pl.HStatus = pl.HStatus + 10
+
+                    If st = "MZ" And (dr.DroidType = 1 Or dr.DroidType = 2) Then
+                        dr.PrdOnBoard = dr.PrdOnBoard + 10
+                        If dr.PrdOnBoard > 100 Then
+                            dr.DroidType = 1
+                            dr.PrdOnBoard = 100
+                            pl.HStatus = pl.HStatus + 1
+                        End If
+
+                    ElseIf st = "MF" And (dr.DroidType = 1 Or dr.DroidType = 2) Then
+                        dr.PrdOnBoard = dr.PrdOnBoard - 10
+                        If dr.PrdOnBoard < 0 Then
+                            dr.DroidType = 2
+                            dr.PrdOnBoard = 0
+                            pl.HStatus = pl.HStatus + 1
+                        End If
+
+                    Else
+                        pl.HStatus = pl.HStatus + 1
+                    End If
+
                     If pl.HStatus > 100 Then
                         pl.HStatus = 100
                         dr.Connected = False
@@ -700,7 +950,11 @@ Public Class frmMain
             pnlstr = objName
         End If
         fnd = False
-        If pnlstr = "" Then Exit Function
+        If pnlstr = "" Then
+            oxj = vbNull
+            Findcntl = oxj
+            Exit Function
+        End If
         oxj = Me.Controls.Find(pnlstr, True)
         For Each cntrl As Control In root.Controls
             If cntrl.Name = pnlstr Then
@@ -792,6 +1046,7 @@ Public Class frmMain
     Private Sub RealWorld()
         Dim ccc1 As Single
         Dim fnd As Boolean
+        Dim st As String
         Dim iv As Integer
         Dim objHStat As New System.Object
         '
@@ -827,18 +1082,43 @@ Public Class frmMain
         '
         'Display Health Status
         '
+        Call DistributePower()
 
         For ix = 1 To NoOfPlaces
             pl = PlacesList(ix)
             fnd = False
             Select Case pl.PType
-                Case "SP", "LP", "DR", "WT", "MF", "MZ"
+                Case "SP", "LP", "DR", "MF", "WT", "MZ"
                     iv = Val(Mid(pl.Name, 3))
-
                     objHStat = Findcntl(pl.LBLName, 0, pnlMain, fnd)
                     If fnd Then
-                        objHStat.text = pl.HStatus.ToString
+                        objHStat.text = pl.HStatus.ToString + "%"
                     End If
+                    st = "pwr" + UCase(Mid(pl.LBLName, 4))
+                    objHStat = Findcntl(st, 0, pnlMain, fnd)
+                    If fnd Then
+                        If pl.PType = "SP" Then
+                            objHStat.text = pl.Goods.ToString
+                        Else
+                            objHStat.text = pl.AvailablePower.ToString
+                        End If
+                    End If
+                Case "GR"
+                    iv = Val(Mid(pl.Name, 3))
+                    objHStat = Findcntl(pl.LBLName, 0, pnlMain, fnd)
+                    If fnd Then
+                        objHStat.text = pl.HStatus.ToString + "%"
+                    End If
+                    st = "pwr" + UCase(Mid(pl.LBLName, 4))
+                    objHStat = Findcntl(st, 0, pnlMain, fnd)
+                    If fnd Then
+                        If pl.PType = "SP" Then
+                            objHStat.text = pl.Goods.ToString
+                        Else
+                            objHStat.text = pl.AvailablePower.ToString
+                        End If
+                    End If
+
                 Case Else
             End Select
         Next
@@ -944,7 +1224,7 @@ Public Class frmMain
             Case Else
                 ev = 0
         End Select
-        hc = 1 * ev
+        hc = 0.5 * ev
 
         If dr.Batt > 20 Then
             it = it + hc!
@@ -974,7 +1254,7 @@ Public Class frmMain
             Case "MF"   ' Manuf
                 statn = "dM"
             Case "MZ"   ' Mining Zone
-                statn = "dN"
+                statn = "dZ"
             Case "SP"   ' Solar Panel
                 statn = "dS"
             Case "LP"   ' pad
@@ -1119,7 +1399,7 @@ Public Class frmMain
             Case "Pad"
                 statn = "dP"
             Case "MineZone"
-                statn = "dN"
+                statn = "dZ"
             Case "WayPoint"
                 statn = "wp"
             Case Else
@@ -1216,7 +1496,7 @@ Public Class frmMain
         End If
 
     End Sub
-    Private Sub dN_Click(sender As Object, e As EventArgs) Handles dN1.Click, dN2.Click, dN3.Click
+    Private Sub dZ_Click(sender As Object, e As EventArgs) Handles dZ1.Click, dZ2.Click, dZ3.Click
         'Mining Zone port
         Dim nm, tg As String
         Dim mnz As Integer
@@ -1339,6 +1619,7 @@ Public Class frmMain
     Private Sub chkRocket_CheckedChanged(sender As Object, e As EventArgs) Handles chkRocket.CheckedChanged
         RocketOnPad = chkRocket.Checked
     End Sub
+
 End Class
 Public Class DroidStruct
     Public Name As String           ' Droid X
@@ -1359,10 +1640,11 @@ Public Class DroidStruct
     Public Dir As Single            ' Travel Direction
     Public Vel As Single            ' Travel Velocity
     Public Batt As Integer          ' Battery Power 0-100
+    Public PrdOnBoard As Integer    ' Product Capacity
+
     Public ETemp As Single          ' Ext skin temp
     Public ITemp As Single          ' internal temp
-    Public EnvSet As Integer        ' Environmental Control setting
-    Public PrdOnBoard As Integer    ' Product Capacity
+    Public EnvSet As Integer        ' Environmental Control setting -10 -> 10
 
     Public Connected As Boolean     ' Connected to a station
     Public ConnectionName As String ' Conected Device
@@ -1378,11 +1660,20 @@ End Class
 Public Class PlaceStruct
     Public Name As String           ' Place Name
     Public PType As String          ' type of Place     HO=Garage SP=SolarPanel DR=Drill LP=LaunchPad WP=WaterTower MF=MFG MZ=MiningZone
-    Public OType As String          ' object type       dG=Garage dS=SolarPanel dD=Drill dP=LaunchPad dW=WaterTower dM=MFG dN=MiningZone
-    Public LBLName As String        ' name of the status display label
+    Public OType As String          ' object type       dG=Garage dS=SolarPanel dD=Drill dP=LaunchPad dW=WaterTower dM=MFG dZ=MiningZone
+    Public LBLName As String        ' status display    lblb      lblsn         lbldn    lblpn        lblwtn        lblmn               
     Public X As Integer             ' X Coordinate                  
     Public Y As Integer             ' Y Coordinate
     Public HStatus As Single        ' Health Status 
+    Public PowerConn As String      ' Power Connection    which Buss is is providing Power no Buss if directly connected
+    Public AvailablePower As Single ' amount of power available from powerconnection
     Public Goods As Integer         ' How many goods produced or needed 
-    '
+
+End Class
+Public Class ElectricalBuss
+    Public Name As String           ' Buss~
+    Public NoOfUsers As Integer     ' number of Places that use this power
+    Public NoOfProvider As Integer  ' number of Solar Panels that generate this power
+    Public Capacity As Single       ' amount of Power Available from SP's
+
 End Class

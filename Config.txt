@@ -1,0 +1,2 @@
+MainPath=C:\Projects\Droids\
+Garages=Garages.txt
